@@ -1,0 +1,57 @@
+main:
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
+  - title: "About"
+    url: /about/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Global Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Configuration"
+        url: /docs/configuration/
+  - title: Customization
+    children:
+      - title: "Basic Information"
+        url: /docs/basic-info/
+      - title: "Creating Models"
+        url: /docs/creating-models/
+      - title: "Models lifecycle"
+        url: /docs/models-lifecycle/
+      - title: "Records & Receipts"
+        url: /docs/records-receipts/
+      - title: "Operator access"
+        url: /docs/operator-access/
+      - title: "User access"
+        url: /docs/user-access/
+  - title: Integration
+    children:
+      - title: "User Authentication"
+        url: /docs/user-auth/
+      - title: "Querying consents"
+        url: /docs/pages/
+      - title: "Generating forms"
+        url: /docs/forms/
+  - title: Extras
+    children:
+      - title: "Stylesheets"
+        url: /docs/stylesheets/
+      - title: "Emails"
+        url: /docs/emails/
+  - title: Meta
+    children:
+      - title: "History"
+        url: /docs/history/
+      - title: "Contributing"
+        url: /docs/contributing/
+      - title: "License"
+        url: /docs/license/
+      - title: "Terms &amp; Privacy Policy"
+        url: /terms/
+
