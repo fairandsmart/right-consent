@@ -5,36 +5,41 @@ last_modified_at: 2020-12-11
 toc: true
 ---
 
-Right Consent is composed of an angular user interface and a java (quarkus) backend. The whole is 
-using a standard OpenID Connect Identity Provider provided by Redhat: keycloak.
+Right Consent is composed of a web based (angular) GUI, 
+a quarkus (java/REST) backend and an external identity provider (redaht/keycloak/OIDC).
 
 ## Installing the software
 
-### Using docker
+As all components are available throught docker, building a local instance is the simplier solution to built a running instance.
 
-### Local build (harder)
+### docker-compose method
 
-## Managing customer consents
+Project source includes a docker-compose file and specific imports files.
 
-### Operator interface
+```bash
+$ git clone git@github.com:fairandsmart/right-consent.git
+$ cd right-consent
+$ docker-compose up
+```
 
-### Perform modifications
+Once all containers are up, please go to visit <http://localhost:4200> using already imported accounts (admin/admin, operator/operator, user/user).  
+You can also access Identity Provider service in order to manage accounts : <http://localhost:8080/auth> (admin/admin123)
 
-### Generate receipt
 
-### Notify customer
+### local method
 
-## Giving user access
+Requirements: 
+- Maven (>= 3.6.3)
+- JDK (>= 11)
 
-### User interface
 
-## Collecting UX
+## First steps
 
-### Integration
 
-## Extracting truth
- 
-### Synchronize 
+
+Feel free to visit specific documentation sections to use your Right Consent : 
+
+<http://localhost:4000/right-consent/docs/basic-info/>
 
 
 
