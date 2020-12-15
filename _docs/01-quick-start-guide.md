@@ -28,9 +28,7 @@ You can also access Identity Provider service in order to manage accounts : <htt
 
 ### local method
 
-Requirements: 
-- Maven (>= 3.6.3)
-- JDK (>= 11)
+Local installation requires a JDK and Maven. Go to specific [local installation](../installation/) documentation page for detailed instructions.
 
 
 ## First steps

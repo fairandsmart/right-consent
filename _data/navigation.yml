@@ -1,6 +1,8 @@
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
+  - title: "News"
+    url: /news/  
   - title: "About"
     url: /about/
 
@@ -11,7 +13,7 @@ docs:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
       - title: "Global Structure"
-        url: /docs/structure/
+        url: /docs/global-structure/
       - title: "Installation"
         url: /docs/installation/
       - title: "Configuration"
@@ -54,4 +56,3 @@ docs:
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
         url: /terms/
-
