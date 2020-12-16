@@ -3,7 +3,7 @@ version: '2.4'
 services:
   right-consents-auth:
     container_name: right-consents-auth
-    image: jboss/keycloak:11.0.2
+    image: jboss/keycloak:11.0.3
     restart: unless-stopped
     environment:
       KEYCLOAK_IMPORT: /opt/jboss/keycloak/imports/right-consents.json
