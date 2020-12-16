@@ -17,7 +17,7 @@ subtitle                 : "Community Edition"  # site tagline that appears belo
 name                     : &name Fair[&]Smart
 description              : &description "An European Universal Consents & Preferences Open Source Management Plateform"
 url                      : https://fairandsmart.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/right-consent" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/right-consents" # the subpath of your site, e.g. "/blog"
 repository               : "fairandsmart/right-consent"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
