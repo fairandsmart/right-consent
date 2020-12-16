@@ -57,6 +57,11 @@ services:
       FS_GUI_URI: http://127.0.0.1
     ports:
       - 80:80
+    healthcheck:
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1", "-o", "/dev/null"]
+      interval: 5s
+      retries: 200
+      timeout: 5s
     depends_on:
       right-consents-back:
         condition: service_healthy
