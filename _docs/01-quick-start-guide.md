@@ -12,9 +12,10 @@ a java/REST backend (jboss/quarkus) and an external identity provider (Redhat/Ke
 
 All required components are available as docker images ; using docker compose becomes de facto the simplier way to start a local instance.
 
-### docker-compose method
+### docker method
 
-First step is to clone the github repository which contains elements needed to start the docker compose instance.
+Right Consents comes with a ready to run docker compose configuration.
+First step is to clone the github repository which contains elements needed to start the docker compose configuration.
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consent.git
@@ -24,7 +25,7 @@ $ docker-compose up
 
 This should make all components running in docker.
 
-{% include video id="1QS2pyM_tc0AsI5j7nUWU32XFbG1UQEO9" provider="google-drive" %}
+{% include video id="1NS4eueAFqihJ-dnQQu7NnG_hBZvntHy9" provider="google-drive" %}
 
 Then you can open backoffice url <http://localhost:4200> using imported accounts (admin/admin, operator/operator, user/user).  
 You can also access Identity Provider service in order to manage accounts : <http://localhost:8080/auth> (admin/admin123).  
@@ -33,7 +34,7 @@ API is accessible via http://localhost:9080/api/health
 
 ### local method
 
-Local installation requires more specific tools (JDK and Maven) and some more specific skills. Please visit the dedicated [documentation page](../installation/) for this type of installation.
+Local installation requires specific tools (JDK and Maven) and skills. Please visit the dedicated [documentation page](../installation/) for this type of installation.
 
 
 ## First steps
