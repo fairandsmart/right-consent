@@ -15,7 +15,7 @@ title                    : "Right Consents"
 title_separator          : "-"
 subtitle                 : "Community Edition"  # site tagline that appears below site title in masthead
 name                     : &name Fair[&]Smart
-description              : &description "An European Universal Consent & Preferences Open Source Management Plateform"
+description              : &description "An European Universal Consents & Preferences Open Source Management Plateform"
 url                      : https://fairandsmart.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/right-consent" # the subpath of your site, e.g. "/blog"
 repository               : "fairandsmart/right-consent"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,7 +90,7 @@ analytics:
 author:
   name             : *name
   avatar           : # "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "is a startup that provide a distributed personal data governance platform that offers a full range of solutions to meet the needs of individuals and businesses."
+  bio              : "is a startup providing a distributed personal data governance platform that offers a full range of solutions to meet the needs of individuals and businesses."
   location         : "Metz - France"
   email            : "contact@fairandsmart.com"
   links:
