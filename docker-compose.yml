@@ -68,6 +68,3 @@ services:
 volumes:
   auth-data:
   back-data:
-networks:
-  rights-consents:
-    driver: bridge
