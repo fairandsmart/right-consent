@@ -27,14 +27,13 @@ services:
       - 8087:8087
     environment:
       FS_AUTH_BACK_URI: http://right-consents-auth:8080
-      FS_AUTH_FRONT_URI: http://127.0.0.1:8080
+      FS_AUTH_FRONT_URI: http://localhost:8080
       FS_AUTH_REALM: RightConsents
       FS_AUTH_CLIENTID: cmclient
       FS_CONSENT_PROCESSOR: https://www.fairandsmart.com
       FS_UNAUTHENTICATED: anonymous
-      FS_CORS_ORIGINS: http://127.0.0.1
       FS_CORE_URL: https://core.dev.env.fairandsmart.tech/api
-      FS_PUBLIC_URL: http://127.0.0.1:8087
+      FS_PUBLIC_URL: http://localhost:8087
     depends_on:
       right-consents-auth:
         condition: service_healthy
@@ -52,9 +51,9 @@ services:
     environment:
       FS_AUTH_CLIENTID: cmclient
       FS_AUTH_REALM: RightConsents
-      FS_MANAGER_URI:  http://127.0.0.1:8087
-      FS_AUTH_URI: http://127.0.0.1:8080/auth
-      FS_GUI_URI: http://127.0.0.1
+      FS_MANAGER_URI:  http://localhost:8087
+      FS_AUTH_URI: http://localhost:8080/auth
+      FS_GUI_URI: http://localhost
     ports:
       - 80:80
     healthcheck:
