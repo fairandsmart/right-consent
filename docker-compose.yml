@@ -1,0 +1,68 @@
+version: '2.4'
+
+services:
+  right-consents-auth:
+    container_name: right-consents-auth
+    image: jboss/keycloak:11.0.2
+    restart: unless-stopped
+    environment:
+      KEYCLOAK_IMPORT: /opt/jboss/keycloak/imports/right-consents.json
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    volumes:
+      - auth-data:/opt/jboss/keycloak/standalone/data
+      - ./imports:/opt/jboss/keycloak/imports
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8080/auth/realms/master/.well-known/openid-configuration", "-o", "/dev/null"]
+      interval: 5s
+      retries: 200
+      timeout: 5s
+  right-consents-back:
+    container_name: right-consents-back
+    restart: unless-stopped
+    image: fairandsmart/consent-manager-back
+    ports:
+      - 8087:8087
+    environment:
+      FS_AUTH_BACK_URI: http://right-consents-auth:8080
+      FS_AUTH_FRONT_URI: http://127.0.0.1:8080
+      FS_AUTH_REALM: RightConsents
+      FS_AUTH_CLIENTID: cmclient
+      FS_CONSENT_PROCESSOR: https://www.fairandsmart.com
+      FS_UNAUTHENTICATED: anonymous
+      FS_CORS_ORIGINS: http://127.0.0.1
+      FS_CORE_URL: https://core.dev.env.fairandsmart.tech/api
+      FS_PUBLIC_URL: http://127.0.0.1:8087
+    depends_on:
+      right-consents-auth:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/system/users/me", "-o", "/dev/null"]
+      interval: 5s
+      retries: 200
+      timeout: 5s
+    volumes:
+      - back-data:/data
+  right-consents-gui:
+    container_name: right-consents-gui
+    restart: unless-stopped
+    image: fairandsmart/consent-manager-gui
+    environment:
+      FS_AUTH_CLIENTID: cmclient
+      FS_AUTH_REALM: RightConsents
+      FS_MANAGER_URI:  http://127.0.0.1:8087
+      FS_AUTH_URI: http://127.0.0.1:8080
+      FS_GUI_URI: http://127.0.0.1
+    ports:
+      - 80:80
+    depends_on:
+      right-consents-back:
+        condition: service_healthy
+volumes:
+  auth-data:
+  back-data:
+networks:
+  rights-consents:
+    driver: bridge
