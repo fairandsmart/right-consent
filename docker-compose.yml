@@ -39,7 +39,7 @@ services:
       right-consents-auth:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/system/users/me", "-o", "/dev/null"]
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/health", "-o", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
