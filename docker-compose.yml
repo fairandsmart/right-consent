@@ -53,7 +53,7 @@ services:
       FS_AUTH_CLIENTID: cmclient
       FS_AUTH_REALM: RightConsents
       FS_MANAGER_URI:  http://127.0.0.1:8087
-      FS_AUTH_URI: http://127.0.0.1:8080
+      FS_AUTH_URI: http://127.0.0.1:8080/auth
       FS_GUI_URI: http://127.0.0.1
     ports:
       - 80:80
