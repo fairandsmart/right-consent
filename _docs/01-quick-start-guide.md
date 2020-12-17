@@ -1,7 +1,7 @@
 ---
 title: Quick-Start guide
 permalink: /docs/quick-start-guide/
-last_modified_at: 2020-12-11
+last_modified_at: 2020-12-16
 toc: true
 ---
 

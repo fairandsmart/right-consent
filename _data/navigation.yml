@@ -20,6 +20,8 @@ docs:
         url: /docs/configuration/
   - title: Customization
     children:
+      - title: "Overview"
+        url: /docs/overview/
       - title: "Basic Information"
         url: /docs/basic-info/
       - title: "Creating Models"
@@ -37,19 +39,17 @@ docs:
       - title: "User Authentication"
         url: /docs/user-auth/
       - title: "Querying consents"
-        url: /docs/pages/
+        url: /docs/queries/
       - title: "Generating forms"
         url: /docs/forms/
   - title: Extras
     children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
+      - title: "Themes"
+        url: /docs/themes/
       - title: "Emails"
         url: /docs/emails/
   - title: Meta
     children:
-      - title: "History"
-        url: /docs/history/
       - title: "Contributing"
         url: /docs/contributing/
       - title: "License"
