@@ -34,6 +34,9 @@ services:
       FS_UNAUTHENTICATED: anonymous
       FS_CORE_URL: https://core.dev.env.fairandsmart.tech/api
       FS_PUBLIC_URL: http://localhost:8087
+      FS_MAILER_FROM: demo@demo.com
+      FS_MAILER_HOST: right-consents-mail
+      FS_MAILER_PORT: 25
     depends_on:
       right-consents-auth:
         condition: service_healthy
@@ -58,6 +61,19 @@ services:
       - 80:80
     healthcheck:
       test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1", "-o", "/dev/null"]
+      interval: 5s
+      retries: 200
+      timeout: 5s
+    depends_on:
+      right-consents-back:
+        condition: service_healthy
+  right-consents-mail:
+    image: maildev/maildev
+    command: bin/maildev --smtp 25 --web 80 --outgoing-host smtp.gmail.com --outgoing-port 465 --outgoing-user XXXXXXXX --outgoing-pass XXXXXXXX
+    ports:
+    - 81:80
+    healthcheck:
+      test: ["CMD", "wget", "-q", "http://127.0.0.1", "-O", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
