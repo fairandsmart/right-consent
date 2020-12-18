@@ -1,24 +1,38 @@
 version: '2.4'
 
 services:
+  right-consents-mail:
+    image: maildev/maildev
+    container_name: right-consents-mail
+    command: bin/maildev --outgoing-host smtp.gmail.com --outgoing-port 465 --outgoing-user XXXXXXXXXXXXXXXx --outgoing-pass XXXXXXXXXXXXXXXx
+    ports:
+      - 4288:1080
+    healthcheck:
+      test: ["CMD", "wget", "-q", "http://127.0.0.1:1080", "-O", "/dev/null"]
+      interval: 5s
+      retries: 200
+      timeout: 5s
   right-consents-auth:
     container_name: right-consents-auth
     image: jboss/keycloak:11.0.3
     restart: unless-stopped
     environment:
       KEYCLOAK_IMPORT: /opt/jboss/keycloak/imports/right-consents.json
-      KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
+      KEYCLOAK_USER: admin
     volumes:
       - auth-data:/opt/jboss/keycloak/standalone/data
       - ./imports:/opt/jboss/keycloak/imports
     ports:
       - 4285:8080
     healthcheck:
-      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:4285/auth/realms/master/.well-known/openid-configuration", "-o", "/dev/null"]
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8080/auth/realms/master/.well-known/openid-configuration", "-o", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
+    depends_on:
+      right-consents-mail:
+        condition: service_healthy
   right-consents-back:
     container_name: right-consents-back
     restart: unless-stopped
@@ -27,21 +41,24 @@ services:
       - 4287:8087
     environment:
       FS_AUTH_BACK_URI: http://right-consents-auth:8080
+      FS_AUTH_CLIENTID: cmclient
       FS_AUTH_FRONT_URI: http://localhost:4285
       FS_AUTH_REALM: RightConsents
-      FS_AUTH_CLIENTID: cmclient
       FS_CONSENT_PROCESSOR: https://www.fairandsmart.com
-      FS_UNAUTHENTICATED: anonymous
       FS_CORE_URL: https://core.dev.env.fairandsmart.tech/api
-      FS_PUBLIC_URL: http://localhost:4287
+      FS_GUI_URI: http://localhost:4286
       FS_MAILER_FROM: demo@demo.com
       FS_MAILER_HOST: right-consents-mail
-      FS_MAILER_PORT: 25
+      FS_MAILER_PORT: 1025
+      FS_PUBLIC_URL: http://localhost:4287
+      FS_UNAUTHENTICATED: anonymous
     depends_on:
       right-consents-auth:
         condition: service_healthy
+      right-consents-mail:
+        condition: service_healthy
     healthcheck:
-      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:4287/health", "-o", "/dev/null"]
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/health", "-o", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
@@ -54,26 +71,13 @@ services:
     environment:
       FS_AUTH_CLIENTID: cmclient
       FS_AUTH_REALM: RightConsents
-      FS_MANAGER_URI:  http://localhost:4287
       FS_AUTH_URI: http://localhost:4285/auth
       FS_GUI_URI: http://localhost:4286
+      FS_MANAGER_URI:  http://localhost:4287
     ports:
       - 4286:80
     healthcheck:
-      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:4286", "-o", "/dev/null"]
-      interval: 5s
-      retries: 200
-      timeout: 5s
-    depends_on:
-      right-consents-back:
-        condition: service_healthy
-  right-consents-mail:
-    image: maildev/maildev
-    command: bin/maildev --smtp 25 --web 80 --outgoing-host smtp.gmail.com --outgoing-port 465 --outgoing-user XXXXXXXX --outgoing-pass XXXXXXXX
-    ports:
-    - 81:80
-    healthcheck:
-      test: ["CMD", "wget", "-q", "http://127.0.0.1", "-O", "/dev/null"]
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:80", "-o", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
