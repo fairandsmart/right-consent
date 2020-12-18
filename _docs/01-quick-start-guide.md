@@ -27,14 +27,16 @@ This should make all components running in docker.
 
 {% include video id="1NS4eueAFqihJ-dnQQu7NnG_hBZvntHy9" provider="google-drive" %}
 
-Then you can open backoffice url <http://localhost:4200> using imported accounts (admin/admin, operator/operator, user/user).  
-You can also access Identity Provider service in order to manage accounts : <http://localhost:8080/auth> (admin/admin123).  
-API is accessible via http://localhost:9080/api/health
+Backoffice web application url: <http://localhost:4286>  
+Identity Provider manager url: <http://localhost:4285/auth>  
+Backend API url: <http://localhost:4287/api/health>
+
+Username & password: *demo@demo.com/demo42*
 
 
-### local method
+### source method
 
-Local installation requires specific tools (JDK and Maven) and skills. Please visit the dedicated [documentation page](../installation/) for this type of installation.
+Source based installation requires specific tools (JDK and Maven) and skills. Please visit the dedicated [installation page](../installation/) for this type of installation.
 
 
 ## First steps
@@ -47,14 +49,10 @@ Backoffice access allows to apply some modification to any existing or non-exist
 
 As that customer as never setup any preferences or consents, the page is empty but the account has been created and activity date is recorder as a starting point.
 
-Now, perform some modifications on the available sample consent and/or preferences. Notice that changes are stacked, waiting unti you commit those modifications. While stacked operations
-are not commited, nothing is effective for that customer. 
+Now, perform some modifications on the available sample consent and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. While stacked operations
+are not commited, nothing is effective for the customer. 
 
 //TODO Screencast 2 - Cha
-
-Many more elements and aspects
-
-<http://localhost:4000/right-consent/docs/basic-info/>
 
 
 

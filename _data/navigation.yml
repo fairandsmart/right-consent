@@ -18,7 +18,7 @@ docs:
         url: /docs/installation/
       - title: "Configuration"
         url: /docs/configuration/
-  - title: Customization
+  - title: Managing content
     children:
       - title: "Overview"
         url: /docs/overview/
