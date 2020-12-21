@@ -1,28 +1,28 @@
 ---
 title: Model Store
 permalink: /docs/model-store/
-excerpt: "Model store defines elements that needs end user choice or consent on"
+excerpt: "Model store defines elements that need end user choice or consent on"
 last_modified_at: 2020-12-21
 toc: true
 ---
 
-Right Consent has some similarities with Content Management Systems but in a more specific goal : collecting user consent and preferences.
+Right Consents has some common points with existing Content Management Systems but with a more specific goal : collecting consent and preferences.
 
-In order to produce end user's consent forms, organisation has to **define their processes** and/or preferences needing end user's collect. Right Consent comes with 3 models of elements that compose a form : Processing, Preference and Conditions. There is also a more generic model that includes **commons information** needed in forms for collecting consent.
+In order to produce end-user consent forms, the organisation has to **define its processes** and/or preferences that need end user consent collection. Right Consents comes with 3 models of elements that can be put together within forms : Processings, Preferences and Terms of use. Moreover, there is also a more generic type of model that includes **common information** needed in forms for collecting consent, such as the link to your privacy policy for example.
 
-Others models exists (themes and email) but with another goal than producing forms and they will be detailed later in the documentation.
+Other models exist (themes and email) but they have another goal than just creating forms and they will be detailed later on in the documentation.
 
 ## Processing
 
-**Processing** element model allows to defines processes as the European GDPR defines it. It is based on the French CNIL recommandations in terms of processings registry. Even if all the processing registry could be defined in Right Consent, only processings that needs user consent as a legal basis are concerned here.
+The processing element model allows to define processes as the European GDPR defines it. It is based on the French CNIL recommendations in terms of processings registry and allows, more or less, to define that registry. Nevertheless, in Right Consents, only processings that need user consent are necessary.
 
-All processings needs to gives end user specific informations that will make him confident in giving consent. For exemple it contains the **data concerned by the processing**, the **data retention period** and the main information : **the processing purpose**. 
+All processings need to give  end user specific informations that will make him confident in giving consent. For exemple it contains the **data concerned by the processing**, the **data retention period** and the main information : **the processing purpose**. 
 
-Some satelite informations are also availables but mainly optional (a specific **treatment processor**, if data processed are sensitives or medical, ...)
+Some satelite informations are also included mainly optional (a specific **treatment processor**, if data processed are sensitives nor medical, ...)
 
 The **possible values** of a processing element are **accepted** or **rejected** and empty values are NOT allowed.
 
-A processing model can also be linked with a list of preferences models making those preferences not accessible until consent is given for the processing and/or a specific layout in the form (preferences appears just behind the processing).
+A processing model can also be linked with a list of preferences models making those preferences not accessible until consent is given for the specific processing and/or a specific layout in the form (preferences appears just behind the processing).
 
 ## Preference
 
@@ -39,16 +39,16 @@ Preferences are **NOT** included in Consent Receipts and if a context is made on
 
 Condition element model is a very **generic model** that contains a title and a body (html). It has to be used for **terms of service** or similar elements that need to be accepted prior to any service usage. 
 
-The **possible values** of a condition are accepted or refused only and the value is mandatory. Labels of those values can be customized.
+The **possible values** of a condition are accepted or refused only and the value is mandatory. Labels of those possible values can be customized.
 
-Conditions are usualy used as a single element form because of the mandatory aspect of the response.
+Conditions are usualy used as a single element form because of the aspects mandatory of acceptation.
 {: .notice--info}
 
 ## Generic Information
 
 Generic informations element model contains all informations that are common to any kind of element. It is mainly used to defined headers and footer in forms but also legal informations that are mandatory in consent form regarding GDPR regulation : data controller and privacy policy url.
 
-Some information are automatically included in the generated forms and in the receipt where some can be configured to only appear in the receipt.
+Some information are automatically included in the generated forms and in the receipt where some can be configured to only appears in the receipt.
 
 It is NOT possible to define multiple instance of generic informations.
 {: .notice--info}
