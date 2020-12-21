@@ -2,8 +2,13 @@
 title: Global Structure Description
 permalink: /docs/global-structure/
 excerpt: "Global description of concepts and architecture used in Right Consent"
-last_modified_at: 2020-12-15
+last_modified_at: 2020-12-21
 toc: true
+gallery:
+  - url: /assets/images/global-structure.png
+    image_path: /assets/images/global-structure.png
+    alt: "Global Structure Schema"
+    title: "Global Structure Schema"
 ---
 
 The default composition of Right Consents is made of 3 main components : an authentication server, a web application and a backend. 
@@ -14,7 +19,7 @@ This instance is for demonstration or **testing purpose only** and should NOT be
 
 The provided docker compose environment deploy a set of components describe in the following schema : 
 
-{% include figure image_path="/assets/images/global-structure.png" alt="Global Structure Schema" %}
+{% include gallery %}
 
 ### Keycloak (localhost:4285)
 
