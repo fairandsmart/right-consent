@@ -24,7 +24,7 @@ In Right Consents authentication is fully decoupled from other components allowi
 
 Container is populated with a provided user realm (RightConsents) that include an existing admin account (demo@demo.com/demo42). Storage subsystem is an embedded H2 database for testing purpose and should not be used in production also. Outgoing SMTP server is NOT configured. All files are located in a specific docker volume avoiding loss of data between different runs.
 
-IdP manager is accessible via the [dedicated web interface](http://localhost:4285/auth). This url is also used to authenticate user when accessing RightConsent web app, like any SSO solution.
+IdP manager is accessible via the [dedicated web interface](http://localhost:4285/auth) (admin/admin). This url is also used to authenticate user when accessing RightConsent web app, like any SSO solution.
 
 
 ### Quarkus Backend (localhost:4287)

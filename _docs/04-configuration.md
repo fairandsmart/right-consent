@@ -10,10 +10,21 @@ Configuration of the whole composition is not available in a single place. Each 
 
 ## IdP (keycloak) configuration
 
-Configuration of the IdP if available using the manager interface <http://localhost:4285/auth>
+Configuration of the IdP if available using the manager interface <http://localhost:4285/auth>.
+
+All is already documented in the keycloak project dedicated page <>
 
 ## SMTP Server
 
 ## Backend
+
+Backend configuration is in a specific file 
+
+```
+src/main/resources/application.properties
+```
+
+
+
 
 ## Web Application

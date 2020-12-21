@@ -40,12 +40,19 @@ Starting keycloak in a docker container is better if you use a dedicated volume 
 
 ```bash
 $ mkdir /var/keycloak
-$ 
+$ mkdir /var/keycloak/data
+$ mkdir /var/keycloak/import
+$ cd /var/keycloak/import
+$ wget https://raw.githubusercontent.com/fairandsmart/right-consents/main/imports/right-consents.json
+$ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/opt/jboss/keycloak/imports/right-consents.json -v /var/keycloak/data:/opt/jboss/keycloak/standalone/data -v /var/keycloak/imports:/opt/jboss/keycloak/imports jboss/keyloak 
 ```
 
-### Backend
+**Be aware** that created host folders (/var/keycloak/*) must grant read/write/execute permissions to the user that starts the container.
+{: .notice--info}
 
 ### SMTP server
+
+### Backend
 
 ### Web Application
 

@@ -22,18 +22,18 @@ docs:
     children:
       - title: "Overview"
         url: /docs/overview/
-      - title: "Basic Information"
-        url: /docs/basic-info/
-      - title: "Creating Models"
-        url: /docs/creating-models/
-      - title: "Models lifecycle"
-        url: /docs/models-lifecycle/
+      - title: "Context Anatomy"
+        url: /docs/context-anatomy/
+      - title: "Model types"
+        url: /docs/models-types/
       - title: "Records & Receipts"
         url: /docs/records-receipts/
-      - title: "Operator access"
-        url: /docs/operator-access/
-      - title: "User access"
-        url: /docs/user-access/
+      - title: "Model lifecycle"
+        url: /docs/model-lifecycle/
+      - title: "Operator interface"
+        url: /docs/operator-interface/
+      - title: "User interface"
+        url: /docs/user-interface/
   - title: Integration
     children:
       - title: "User Authentication"
