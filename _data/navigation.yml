@@ -18,14 +18,14 @@ docs:
         url: /docs/installation/
       - title: "Configuration"
         url: /docs/configuration/
-  - title: Managing content
+  - title: Collecting consent
     children:
       - title: "Overview"
         url: /docs/overview/
       - title: "Context Anatomy"
         url: /docs/context-anatomy/
       - title: "Model types"
-        url: /docs/models-types/
+        url: /docs/model-types/
       - title: "Records & Receipts"
         url: /docs/records-receipts/
       - title: "Model lifecycle"
@@ -34,7 +34,7 @@ docs:
         url: /docs/operator-interface/
       - title: "User interface"
         url: /docs/user-interface/
-  - title: Integration
+  - title: UX Integration
     children:
       - title: "User Authentication"
         url: /docs/user-auth/
