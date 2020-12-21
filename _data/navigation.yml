@@ -22,10 +22,10 @@ docs:
     children:
       - title: "Overview"
         url: /docs/overview/
+      - title: "Model Store"
+        url: /docs/model-store/
       - title: "Context Anatomy"
         url: /docs/context-anatomy/
-      - title: "Model types"
-        url: /docs/model-types/
       - title: "Records & Receipts"
         url: /docs/records-receipts/
       - title: "Model lifecycle"
