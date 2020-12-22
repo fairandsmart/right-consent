@@ -1,7 +1,9 @@
 ---
-title: Record & Receipts
+title: Records & Receipts
 permalink: /docs/records-receipts/
-excerpt: "WHat is the relaion between a consent receipt and records ?"
+excerpt: "What are the caracteristics and the differences between Records and Receipts"
 last_modified_at: 2020-12-15
 toc: true
 ---
+
+plop

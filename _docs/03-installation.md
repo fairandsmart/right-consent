@@ -52,8 +52,47 @@ $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e K
 
 ### SMTP server
 
+Outgoing SMTP Service is also an external tool we use to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface allows to consult outgoing emails, if you configure the relay, email will be also routed to any external SMTP relay (you may have to provide credentials for some smtp relay).
+
+```bash
+$ docker pull djfarrelly/maildev
+$ docker run -p 1080:80 -p 1025:25 djfarrelly/maildev
+```
+
+You can for sure use a postifx local install as an alternative to that tool.
+{: .notice--info}
+
 ### Backend
 
+Backend service is developed in Java using quarkus. It exposes a REST API that is accessed front other services. It also integrate configuration elements for working with keycloak.
+
+In order to run the backend, you need to clone the github repository and to run a local instance using Java and Maven :
+
+```bash
+$ git clone git@github.com:fairandsmart/consent-manager-back.git
+$ cd consent-manager-back
+$ mvn clean package -DskipTests quarkus:dev
+```
+
+This could take a while as maven is going to download all dependencies but after all you should see the server running : 
+
+//TODO include a small screen cast of that steps and the final screen state while server running
+
 ### Web Application
+
+Front Web Application is developped using Angular. It is also built to work with keycloak by default.
+
+In order to run the frontend, you need to clone the github repository and to run a local instance using NodeJS, npm and angular cli : 
+
+```bash
+$ git clone git@github.com:fairandsmart/consent-manager-gui.git
+$ cd consent-manager-gui
+$ npm install
+$ ng serve -c local
+```
+
+This could take a while as maven is going to download all dependencies but after all you should see the server running : 
+
+//TODO include a small screen cast of that steps and the final screen state while server running
 
 
