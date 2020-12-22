@@ -1,7 +1,7 @@
 ---
 title: Consent Context Anatomy
 permalink: /docs/context-anatomy/
-excerpt: "Anatmoy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
+excerpt: "Anatomy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
 last_modified_at: 2020-12-21
 toc: true
 gallery:
