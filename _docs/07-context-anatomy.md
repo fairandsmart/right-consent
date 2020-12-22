@@ -4,9 +4,16 @@ permalink: /docs/context-anatomy/
 excerpt: "Anatmoy of the Consent Context that will define content, look'n'feel and behaviour of the Consent Form"
 last_modified_at: 2020-12-21
 toc: true
+gallery:
+  - url: /assets/images/context-anatomy.png
+    image_path: /assets/images/context-anatomy.png
+    alt: "Context Anatomy"
+    title: "Context Anatomy"
 ---
 
-The Consent Context is the entry point of any consent collect process. It can define all aspects of the Consent Form.
+The Consent Context is the entry point of any consent collect process. It can define all aspects of the Consent Form content, behaviour and look'n'feel.
+
+{% include gallery %}
 
 ## Content
 
@@ -61,7 +68,7 @@ The receipt delivry type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows to co
 The receipt display type [NONE, HTML, PDF, TXT, XML] allows to choose if the receipt is going to be display after the Consent Form submission and using which mime type.
 
 Setting Receipt Delivery Type to NONE imply a Receipt Display Type of NONE
-{! .notice--warning}
+{: .notice--warning}
 
 ### Notification
 
@@ -91,6 +98,6 @@ Themes are mostly composed of css customization elements.
 
 ### Options
 
-Some smal options can also be customized in the context like displaying a 'Accept All' button, placing the footer on top of the form instead of on the bottom and an option to associate preferences in processing elements display (a particular
+Other options allows specific customization like displaying a 'Accept All' button, placing the footer on top of the form instead of on the bottom and associating preferences with processing elements.
 
 
