@@ -2,7 +2,7 @@
 title: User Dedicated Interface
 permalink: /docs/user-access/
 excerpt: "How my customers can access a dedicated interface allowing them to update their consents & preferences ?"
-last_modified_at: 2020-12-15
+last_modified_at: 2020-12-23
 toc: true
 gallery:
   - url: /assets/images/user-access.PNG
