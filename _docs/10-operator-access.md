@@ -6,7 +6,7 @@ last_modified_at: 2020-12-23
 toc: true
 gallery:
   - url: /assets/images/Operator access.png
-    image_path: /assets/images/operator access.png
+    image_path: /assets/images/Operator access.png
     alt: "Operator Access Screen"
     title: "Operator Access Screen"
 ---
