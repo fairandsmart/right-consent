@@ -5,8 +5,8 @@ excerpt: "How my customers can access a dedicated interface allowing them to upd
 last_modified_at: 2020-12-15
 toc: true
 gallery:
-  - url: /assets/images/user-access.png
-    image_path: /assets/images/user-access.png
+  - url: /assets/images/user-access.PNG
+    image_path: /assets/images/user-access.PNG
     alt: "User Access Screen"
     title: "User Access Screen"
 ---
