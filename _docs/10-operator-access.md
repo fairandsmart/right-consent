@@ -2,10 +2,10 @@
 title: Operator access
 permalink: /docs/operator-access/
 excerpt: "How an operator is able to manage customer consents and preferences ?"
-last_modified_at: 2020-12-22
+last_modified_at: 2020-12-23
 toc: true
 gallery:
-  - url: /assets/images/global-structure.png
+  - url: /assets/images/Operator access.png
     image_path: /assets/images/operator access.png
     alt: "Operator Access Screen"
     title: "Operator Access Screen"
