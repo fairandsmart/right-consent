@@ -31,9 +31,9 @@ docs:
       - title: "Model lifecycle"
         url: /docs/model-lifecycle/
       - title: "Operator interface"
-        url: /docs/operator-interface/
+        url: /docs/operator-access/
       - title: "User interface"
-        url: /docs/user-interface/
+        url: /docs/user-access/
   - title: UX Integration
     children:
       - title: "User Authentication"
