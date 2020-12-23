@@ -20,38 +20,38 @@ docs:
         url: /docs/installation/
       - title: "Configuration"
         url: /docs/configuration/
-  - title: Customization
+  - title: Collecting consent
     children:
-      - title: "Basic Information"
-        url: /docs/basic-info/
-      - title: "Creating Models"
-        url: /docs/creating-models/
-      - title: "Models lifecycle"
-        url: /docs/models-lifecycle/
+      - title: "Overview"
+        url: /docs/overview/
+      - title: "Model Store"
+        url: /docs/model-store/
+      - title: "Context Anatomy"
+        url: /docs/context-anatomy/
       - title: "Records & Receipts"
         url: /docs/records-receipts/
-      - title: "Operator access"
+      - title: "Model lifecycle"
+        url: /docs/model-lifecycle/
+      - title: "Operator interface"
         url: /docs/operator-access/
-      - title: "User access"
+      - title: "User interface"
         url: /docs/user-access/
-  - title: Integration
+  - title: UX Integration
     children:
       - title: "User Authentication"
         url: /docs/user-auth/
       - title: "Querying consents"
-        url: /docs/pages/
+        url: /docs/queries/
       - title: "Generating forms"
         url: /docs/forms/
   - title: Extras
     children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
+      - title: "Themes"
+        url: /docs/themes/
       - title: "Emails"
         url: /docs/emails/
   - title: Meta
     children:
-      - title: "History"
-        url: /docs/history/
       - title: "Contributing"
         url: /docs/contributing/
       - title: "License"

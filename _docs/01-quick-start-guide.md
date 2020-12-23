@@ -1,21 +1,21 @@
 ---
 title: Quick-Start guide
 permalink: /docs/quick-start-guide/
-last_modified_at: 2020-12-11
+last_modified_at: 2020-12-21
 toc: true
 ---
 
-Right Consent is composed of a web application (angular), 
+Right Consents is composed of a web application (angular), 
 a java/REST backend (jboss/quarkus) and an external identity provider (Redhat/Keycloak/OpenID).
 
 ## Installing the software
 
-All required components are available as docker images ; using docker compose becomes de facto the simplier way to start a local instance.
+All required components are available as docker images ; using docker compose becomes de facto the most simple way to start a local instance.
 
 ### docker method
 
-Right Consents comes with a ready to run docker compose configuration.
-First step is to clone the github repository which contains elements needed to start the docker compose configuration.
+Right Consents comes with a ready-to-run docker compose configuration.
+The first step is to clone the github repository which contains the elements needed to start the docker compose configuration.
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consent.git
@@ -27,34 +27,31 @@ This should make all components running in docker.
 
 {% include video id="1NS4eueAFqihJ-dnQQu7NnG_hBZvntHy9" provider="google-drive" %}
 
-Then you can open backoffice url <http://localhost:4200> using imported accounts (admin/admin, operator/operator, user/user).  
-You can also access Identity Provider service in order to manage accounts : <http://localhost:8080/auth> (admin/admin123).  
-API is accessible via http://localhost:9080/api/health
+Backoffice web application url: <http://localhost:4286>  
+Identity Provider manager url: <http://localhost:4285/auth>  
+Backend API url: <http://localhost:4287/api/health>
+
+Username & password: *demo@demo.com/demo42*
 
 
-### local method
+### source method
 
-Local installation requires specific tools (JDK and Maven) and skills. Please visit the dedicated [documentation page](../installation/) for this type of installation.
+The source based installation requires specific tools (JDK and Maven) and skills. Please visit the dedicated [installation page](../installation/) for this type of installation.
 
 
 ## First steps
 
 As soon as the main components are started, you should be able to access the provided backoffice and start using consent & preferences collection and interrogation. 
 
-Backoffice access allows to apply some modification to any existing or non-existing customer. In the search field, specify a customer id to access its consent & preferences page :
+Backoffice access allows to apply some modification to any existing or non-existing customer. In the search field, specify a customer id to access his dedicated consent & preferences page :
 
 //TODO Screencast 1 - Access customer page
 
-As that customer as never setup any preferences or consents, the page is empty but the account has been created and activity date is recorder as a starting point.
+If that customer has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as a starting point.
 
-Now, perform some modifications on the available sample consent and/or preferences. Notice that changes are stacked, waiting unti you commit those modifications. While stacked operations
-are not commited, nothing is effective for that customer. 
+Now, perform some modifications on the available sample consent and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not commited, nothing is effective for the end-customer. 
 
 //TODO Screencast 2 - Cha
-
-Many more elements and aspects
-
-<http://localhost:4000/right-consent/docs/basic-info/>
 
 
 
