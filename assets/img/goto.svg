@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="chevron-circle-up"
+   class="svg-inline--fa fa-chevron-circle-up fa-w-16"
+   role="img"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg3881"
+   sodipodi:docname="goto.svg"
+   width="20"
+   height="20"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata3887">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3885" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3883"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.6162671"
+     inkscape:cx="248"
+     inkscape:cy="253.51346"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3881" />
+  <path
+     fill="currentColor"
+     d="M 10,0 C 15.524194,0 20,4.475806 20,10 20,15.524194 15.524194,20 10,20 4.475806,20 0,15.524194 0,10 0,4.475806 4.475806,0 10,0 Z m 4.592742,9.314516 -5.46371,-5.46371 C 8.75,3.471774 8.137097,3.471774 7.762097,3.850806 L 7.076613,4.53629 c -0.379032,0.379033 -0.379032,0.991936 0,1.366936 L 11.173387,10 7.076613,14.096774 c -0.379032,0.379032 -0.379032,0.991936 0,1.366936 l 0.685484,0.685484 c 0.379032,0.379032 0.991935,0.379032 1.366935,0 l 5.46371,-5.46371 c 0.379032,-0.379032 0.379032,-0.991936 0,-1.370968 z"
+     id="path3879"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.0403226" />
+</svg>

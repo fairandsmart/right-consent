@@ -1,0 +1,23 @@
+<header class="top">
+
+  <h1 id="community">{{ site.title | replace_first: " ", " <span class='blue'>"}}</span> <span class="subproduct">{{ site.subtitle }}</span></h1>
+
+  <p class="subtitle">{{page.excerpt}}</p>
+
+      {%- if page.title -%}
+  <button class="quickstart" onclick="window.location.href='{{ page.header.actions.url | relative_url }}'"><span>{{ page.header.actions.label }}</span></button>
+  {%- endif -%}
+
+  <p class="release">
+    <a href="{{page.last_release.link | relative_url}}">{{page.last_release.label}}</a>
+    <a href="{{page.release_note.link | relative_url}}">{{page.release_note.label}}</a>
+
+  </p>
+
+  <p class="privacy">
+     {{page.excerpt_2_sub}}
+  </p>
+  {% include nav.html %}
+
+
+</header>

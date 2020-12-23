@@ -1,0 +1,26 @@
+
+		<footer class="bottom">
+			<aside>
+				<h2 class="logow">fair&smart - Personal Data Solutions</h2>
+				  {% include social_list.html %}
+			</aside>
+			{% include navfoot.html %}
+
+
+	    <aside class="incitive">
+	      <button onclick="window.location.href='{{ page.header.actions.url | relative_url }}'">
+	        <span>{{ page.header.actions.label }}</span>
+	      </button>
+	    </aside>
+
+
+		</footer>
+		<p class="legal">
+					&copy; 2020 Fair[&]Smart. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+		</p>
+
+
+
+	<link rel="preload" href="{{site.baseurl}}/assets/css/rightconsents.css" as="style" onload="this.rel='stylesheet'">
+
+	<!--script type="text/javascript" src="assets/js/vendor.js"></script-->

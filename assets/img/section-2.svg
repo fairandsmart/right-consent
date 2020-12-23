@@ -1,0 +1,63 @@
+<svg id="section_2_trame_devant" data-name="section 2 trame devant" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1281" height="486.813" viewBox="0 0 1281 486.813">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #262626;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #006b88;
+      }
+
+      .cls-3 {
+        fill: #b42100;
+      }
+
+      .cls-4 {
+        fill: #e85624;
+      }
+
+      .cls-5 {
+        fill: #4cbbda;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #575656;
+      }
+
+      .cls-6 {
+        filter: url(#filter);
+      }
+
+      .cls-7 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="276" y="410" width="649" height="359" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="276" y="410" width="649" height="359" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjQ5IiBoZWlnaHQ9IjM1OSIgdmlld0JveD0iMCAwIDY0OSAzNTkiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNTI7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxMTguMDA5IiB4Mj0iNTMwLjk5MSIgeTI9IjM1OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMTMxMzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjQ2MSIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTg5ODkiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjY0OSIgaGVpZ2h0PSIzNTkiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="879" y="548" width="678" height="328" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="879" y="548" width="678" height="328" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjc4IiBoZWlnaHQ9IjMyOCIgdmlld0JveD0iMCAwIDY3OCAzMjgiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNTI7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxNTAuMzQiIHgyPSI1MjcuNjYiIHkyPSIzMjgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzEzMTMxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC40NjEiIHN0b3AtY29sb3I9IiMzMTMxMzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODk4OTg5Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI2NzgiIGhlaWdodD0iMzI4Ii8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rectangle_2_copie" data-name="Rectangle 2 copie" class="cls-1" d="M1479,889.06V682.552L1533,671l24,205Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_7" data-name="Rectangle 2 copie 7" class="cls-2" d="M1479,889.094V687.93L1531,676l5,203Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_2" data-name="Rectangle 2 copie 2" class="cls-3" d="M1479,690.3l52-14.3-16,204-36,6.428V690.3Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_10" data-name="Rectangle 2 copie 10" class="cls-1" d="M360,542.473L276,548l46-138,38-7.713V542.473Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_9" data-name="Rectangle 2 copie 9" class="cls-2" d="M360,541.4L279,556l49-141,32-7.183V541.4Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_8" data-name="Rectangle 2 copie 8" class="cls-3" d="M360,555.319L287,563l53-146,20-4.059V555.319Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_2-2" data-name="Rectangle 2 copie 2" class="cls-4" d="M1515,880L902,787l38-219,591,108Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_14" data-name="Rectangle 2 copie 14" class="cls-4" d="M904,787L287,563l38-145L941,567Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_15" data-name="Rectangle 2 copie 15" class="cls-5" d="M890,778L279,556l46-138L933,557Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_7-2" data-name="Rectangle 2 copie 7" class="cls-5" d="M1536,879L889,778l43-221,599,119Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie_16" data-name="Rectangle 2 copie 16" class="cls-6" d="M880,769L276,548l46-138L925,548Z" transform="translate(-276 -402.281)"/>
+  <path id="Rectangle_2_copie-2" data-name="Rectangle 2 copie" class="cls-7" d="M1557,876L879,769l45-221,609,123Z" transform="translate(-276 -402.281)"/>
+</svg>

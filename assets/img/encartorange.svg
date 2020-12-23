@@ -1,0 +1,19 @@
+<svg id="Groupe_10" data-name="Groupe 10" xmlns="http://www.w3.org/2000/svg" width="433" height="361" viewBox="0 0 433 361">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db240b;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #e85419;
+      }
+    </style>
+  </defs>
+  <path id="Rectangle_16_copie" data-name="Rectangle 16 copie" class="cls-1" d="M1480,1189l19,5-2,350-17,6V1189Z" transform="translate(-1066 -1189)"/>
+  <path class="cls-2" d="M1066,1226l433-32-2,350-430-23Z" transform="translate(-1066 -1189)"/>
+</svg>

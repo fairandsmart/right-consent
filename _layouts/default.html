@@ -1,0 +1,27 @@
+<!--[if lt IE 7]>
+<html class="ie ie6 lt-ie9 lt-ie8 lt-ie7" lang="{{ page.lang | default: site.lang | default: "en" }}"> <![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7 lt-ie9 lt-ie8" lang="{{ page.lang | default: site.lang | default: "en" }}"> <![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 lt-ie9" lang="{{ page.lang | default: site.lang | default: "en" }}"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<!--<![endif]-->
+{% include head.html %}
+<body id="LandingPageRightConsentsCommunity" class="{{page.layout}}">
+
+
+  	<div class="container">
+    {% if page.layout == "home" %}
+    {% include header.html %}
+    {% include feature_list.html %}
+    {% else %}
+    {% include header_simple.html %}
+    {% endif %}
+
+    {{content}}
+
+    {% include footer.html %}
+    </div>
+</body>
+</html>

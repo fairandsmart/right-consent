@@ -1,0 +1,91 @@
+<svg id="section_3_trame_devant" data-name="section 3 trame devant" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="539.75" height="260.88" viewBox="0 0 539.75 260.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #262626;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #006b88;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #b42100;
+      }
+
+      .cls-4 {
+        fill: #891901;
+      }
+
+      .cls-6 {
+        fill: #044d61;
+      }
+
+      .cls-7 {
+        filter: url(#filter);
+      }
+
+      .cls-8 {
+        fill: #d35225;
+      }
+
+      .cls-9 {
+        fill: #e85624;
+      }
+
+      .cls-10, .cls-11 {
+        fill: #575656;
+      }
+
+      .cls-10 {
+        filter: url(#filter-2);
+      }
+
+      .cls-11 {
+        filter: url(#filter-3);
+      }
+
+      .cls-12 {
+        fill: #4cbbda;
+      }
+
+      .cls-13 {
+        fill: #41abc8;
+      }
+    </style>
+    <filter id="filter" x="306.75" y="1653.41" width="424.438" height="175.22" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="306.75" y="1653.41" width="424.438" height="175.22" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDI0LjQzOCIgaGVpZ2h0PSIxNzUuMjIiIHZpZXdCb3g9IjAgMCA0MjQuNDM4IDE3NS4yMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC41NjsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjI5Ni44MjMiIHkxPSIxNzUuMjIiIHgyPSIxMjcuNjE1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjQyNC40MzgiIGhlaWdodD0iMTc1LjIyIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="overlay" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="694.844" y="1691.25" width="94.469" height="171.53" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="694.844" y="1691.25" width="94.469" height="171.53" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTQuNDY5IiBoZWlnaHQ9IjE3MS41MyIgdmlld0JveD0iMCAwIDk0LjQ2OSAxNzEuNTMiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNTI7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI5NC40NjkiIHkxPSIxMjYuODI1IiB4Mj0iMCIgeTI9IjQ0LjcwNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMTMxMzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjQ2MSIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM1MDUwNTAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9Ijk0LjQ2OSIgaGVpZ2h0PSIxNzEuNTMiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="254.813" y="1711.38" width="465.656" height="163.75" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="254.813" y="1711.38" width="465.656" height="163.75" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDY1LjY1NiIgaGVpZ2h0PSIxNjMuNzUiIHZpZXdCb3g9IjAgMCA0NjUuNjU2IDE2My43NSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC41MjsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjEzOC42NDIiIHgyPSIzMjcuMDE0IiB5Mj0iMTYzLjc1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDYxIiBzdG9wLWNvbG9yPSIjMzEzMTMxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg5ODk4OSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDY1LjY1NiIgaGVpZ2h0PSIxNjMuNzUiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rectangle_2_copie_10" data-name="Rectangle 2 copie 10" class="cls-1" d="M361,1891.89l-53.493-16.76-52.692-81.35L361,1831.04v60.85Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_9" data-name="Rectangle 2 copie 9" class="cls-2" d="M361,1839.45l-94.43-54.09,13.438-52.03L361,1777.46v61.99Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_8" data-name="Rectangle 2 copie 8" class="cls-3" d="M361,1882.17l-49.43-14.81,6.418-96.72L361,1788.53v93.64Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_2" data-name="Rectangle 2 copie 2" class="cls-4" d="M361,1750.33l-27.472,10.18L306.75,1653.4,361,1631.03v119.3Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie" data-name="Rectangle 2 copie" class="cls-5" d="M361,1743.5l-37.43-91.14,37.43-16.3V1743.5Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_7" data-name="Rectangle 2 copie 7" class="cls-6" d="M361,1751.82l-16.976,6.27L335.7,1649.02l25.3-10.27v113.07Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_18" data-name="Rectangle 2 copie 18" class="cls-2" d="M344.024,1758.09l394.519,43.27,21.907-112.51L335.7,1649.02Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_17" data-name="Rectangle 2 copie 17" class="cls-1" d="M744.347,1691.24L324.57,1651.36l19,113,408.662,41.27Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_19" data-name="Rectangle 2 copie 19" class="cls-7" d="M731.191,1692.21L306.75,1653.4l26.778,107.11,396.657,68.13Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_16" data-name="Rectangle 2 copie 16" class="cls-8" d="M710.288,1706.81l20.75-13.61,43.5,127.3-81.432,33.9Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_2-2" data-name="Rectangle 2 copie 2" class="cls-9" d="M711.276,1706.97l-393.288,63.67-6.288,97.05,381.41-13.29Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_14" data-name="Rectangle 2 copie 14" class="cls-10" d="M719.486,1711.24l24.861-20,44.95,125.48-94.451,46.05Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie-2" data-name="Rectangle 2 copie" class="cls-11" d="M720.474,1711.39l-465.659,82.39,52.692,81.35,388.328-12.21Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_15" data-name="Rectangle 2 copie 15" class="cls-12" d="M720.215,1725.74l-440.207,7.59L265.7,1785.69l444.249,72.85Z" transform="translate(-254.813 -1631.03)"/>
+  <path id="Rectangle_2_copie_7-2" data-name="Rectangle 2 copie 7" class="cls-13" d="M719.227,1725.59l40.235-36.89,35.108,129.66-84.621,40.18Z" transform="translate(-254.813 -1631.03)"/>
+</svg>
