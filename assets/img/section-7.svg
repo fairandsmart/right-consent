@@ -1,0 +1,89 @@
+<svg id="section_3_trame_devant" data-name="section 3 trame devant" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1279.94" height="1264" viewBox="0 0 1279.94 1264">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: #262626;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #b42100;
+      }
+
+      .cls-3 {
+        fill: #006b88;
+      }
+
+      .cls-4 {
+        fill: #4cbbda;
+      }
+
+      .cls-5 {
+        fill: #e85624;
+      }
+
+      .cls-10, .cls-11, .cls-6, .cls-9 {
+        fill: #575656;
+      }
+
+      .cls-6 {
+        filter: url(#filter);
+      }
+
+      .cls-7 {
+        filter: url(#filter-2);
+      }
+
+      .cls-8 {
+        fill: #e85419;
+      }
+
+      .cls-10 {
+        filter: url(#filter-3);
+      }
+
+      .cls-11 {
+        filter: url(#filter-4);
+      }
+    </style>
+    <filter id="filter" x="560" y="92.438" width="1040.94" height="208.563" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="560" y="92.4375" width="1040.94" height="208.563" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTA0MC45NCIgaGVpZ2h0PSIyMDguNTYzIiB2aWV3Qm94PSIwIDAgMTA0MC45NCAyMDguNTYzIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjUyOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDAwLjUwOCIgeDI9IjY0MC40MzIiIHkyPSIyMDguNTYzIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDYxIiBzdG9wLWNvbG9yPSIjMzEzMTMxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg5ODk4OSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTA0MC45NCIgaGVpZ2h0PSIyMDguNTYzIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="491.5" y="142" width="327.5" height="159" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="491.5" y="142" width="327.5" height="159" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzI3LjUiIGhlaWdodD0iMTU5IiB2aWV3Qm94PSIwIDAgMzI3LjUgMTU5Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjUyOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNzIuMjk2IiB4Mj0iMjU1LjIwNCIgeTI9IjE1OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMTMxMzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjQ2MSIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4OTg5ODkiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjMyNy41IiBoZWlnaHQ9IjE1OSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="470" y="949" width="427" height="239" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="470" y="949" width="427" height="239" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDI3IiBoZWlnaHQ9IjIzOSIgdmlld0JveD0iMCAwIDQyNyAyMzkiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNjU7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxNzQuNjcyIiB5MT0iMjM5IiB4Mj0iMjUyLjMyOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMTMxMzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjODk4OTg5Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0MjciIGhlaWdodD0iMjM5Ii8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="321" y="1105" width="1200" height="184" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="321" y="1105" width="1200" height="184" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxODQiIHZpZXdCb3g9IjAgMCAxMjAwIDE4NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgb3BhY2l0eTogMC41MjsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjYwOC4wNDkiIHkxPSIxODQiIHgyPSI1OTEuOTUxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzMxMzEzMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDYxIiBzdG9wLWNvbG9yPSIjMzEzMTMxIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg5ODk4OSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxODQiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rectangle_2_copie_10" data-name="Rectangle 2 copie 10" class="cls-1" d="M1481,177.722V80.791l54.75,11.644,65.2,115.122Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_8" data-name="Rectangle 2 copie 8" class="cls-2" d="M1481,214.048V91.284l31.53,6.311,64.15,139.516Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_9" data-name="Rectangle 2 copie 9" class="cls-3" d="M1481,226.224V96.662L1494.5,100l66,156Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_15" data-name="Rectangle 2 copie 15" class="cls-4" d="M1079,298l481.5-42-66-156L850,180Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_23" data-name="Rectangle 2 copie 23" class="cls-3" d="M1079,298L1031,73,790,106l60,74Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_2" data-name="Rectangle 2 copie 2" class="cls-5" d="M1392,256.5l184.68-19.389L1512.37,97.28,1107,148Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_14" data-name="Rectangle 2 copie 14" class="cls-2" d="M1392,256.5L1330,40,1087,89l46,116Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie" data-name="Rectangle 2 copie" class="cls-6" d="M819,301l781.95-93.443-65.2-115.122L560,196Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_17" data-name="Rectangle 2 copie 17" class="cls-7" d="M819,301L735.5,142l-244,40L553,218Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_24" data-name="Rectangle 2 copie 24" class="cls-4" d="M1032,1250L1031,73,790,106l-1,1144.5Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_16" data-name="Rectangle 2 copie 16" class="cls-8" d="M1330,1249.5V40L1087,89V1250Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_18" data-name="Rectangle 2 copie 18" class="cls-9" d="M734.5,1041l1-899-244,40V951Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_19" data-name="Rectangle 2 copie 19" class="cls-10" d="M734.5,1039L897,1188l-427-56,21.5-183Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_25" data-name="Rectangle 2 copie 25" class="cls-1" d="M1062,1121l-165,67-427-56,229-27Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_26" data-name="Rectangle 2 copie 26" class="cls-11" d="M1062,1121l459,168L321,1221l378-116Z" transform="translate(-321 -40)"/>
+  <path id="Rectangle_2_copie_27" data-name="Rectangle 2 copie 27" class="cls-9" d="M1521,1304v-16.5l-1200-68v85Z" transform="translate(-321 -40)"/>
+</svg>

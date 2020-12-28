@@ -1,0 +1,29 @@
+<svg id="fondbouton" xmlns="http://www.w3.org/2000/svg" width="365" height="102.81" viewBox="0 0 365 102.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #575656;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #4cbbda;
+      }
+
+      .cls-3 {
+        fill: #49b8d9;
+      }
+
+      .cls-4 {
+        fill: #706f6f;
+      }
+    </style>
+  </defs>
+  <path id="Rectangle_13_copie_6" data-name="Rectangle 13 copie 6" class="cls-1" d="M1066.95,1505.7L1056,1508l-4-68,14.69-10.82Z" transform="translate(-1052 -1429.19)"/>
+  <path id="Rectangle_13_copie_3" data-name="Rectangle 13 copie 3" class="cls-2" d="M1066.94,1503.54L1057,1511l1-70,8.7-7.25Z" transform="translate(-1052 -1429.19)"/>
+  <path id="Rectangle_13_copie_2" data-name="Rectangle 13 copie 2" class="cls-3" d="M1058,1443l353,1v88l-353-18v-71Z" transform="translate(-1052 -1429.19)"/>
+  <path id="Rectangle_13_copie_5" data-name="Rectangle 13 copie 5" class="cls-4" d="M1052,1440l365,1v84l-364-14Z" transform="translate(-1052 -1429.19)"/>
+</svg>

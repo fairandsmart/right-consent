@@ -1,0 +1,24 @@
+<svg id="Groupe_6" data-name="Groupe 6" xmlns="http://www.w3.org/2000/svg" width="1200" height="55" viewBox="0 0 1200 55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4cbbda;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #e85419;
+      }
+
+      .cls-3 {
+        fill: #575656;
+      }
+    </style>
+  </defs>
+  <path id="Rectangle_2_copie_27" data-name="Rectangle 2 copie 27" class="cls-1" d="M387,55L1533,14V-20L387-5V55Z" transform="translate(-360)"/>
+  <path id="Rectangle_2_copie_30" data-name="Rectangle 2 copie 30" class="cls-2" d="M371,50L1545,6V-28L371-5V50Z" transform="translate(-360)"/>
+  <path id="Rectangle_2_copie_29" data-name="Rectangle 2 copie 29" class="cls-3" d="M360,41L1560-1,360-3V41Z" transform="translate(-360)"/>
+</svg>

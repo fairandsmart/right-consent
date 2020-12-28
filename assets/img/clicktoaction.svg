@@ -1,0 +1,46 @@
+<svg id="clic_to_action_opensource" data-name="clic to action opensource" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="301" height="60" viewBox="0 0 301 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006b88;
+      }
+
+      .cls-2 {
+        fill: #b42100;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #706f6f;
+      }
+
+      .cls-3 {
+        filter: url(#filter);
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: #e85419;
+      }
+
+      .cls-6 {
+        fill: #4cbbda;
+      }
+    </style>
+    <filter id="filter" x="3" y="9" width="298" height="48" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="3" y="9" width="298" height="48" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjk4IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjk4IDQ4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBvcGFjaXR5OiAwLjMyOwogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB5MT0iMzcuMDM2IiB4Mj0iMjk4IiB5Mj0iMTAuOTY0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iLTAuMjUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxLjI1IiBzdG9wLWNvbG9yPSIjZmZmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIyOTgiIGhlaWdodD0iNDgiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="fondbouton">
+    <rect id="Rectangle_13_copie_2" data-name="Rectangle 13 copie 2" class="cls-1" y="12" width="298" height="48"/>
+    <rect id="Rectangle_13_copie" data-name="Rectangle 13 copie" class="cls-2" x="2" y="10" width="298" height="48"/>
+    <rect id="Rectangle_13_copie_5" data-name="Rectangle 13 copie 5" class="cls-3" x="3" y="9" width="298" height="48"/>
+    <path id="Rectangle_13_copie_6" data-name="Rectangle 13 copie 6" class="cls-4" d="M433,351l28-7-9,51-19,4V351Z" transform="translate(-430 -342)"/>
+    <path id="Rectangle_13_copie_4" data-name="Rectangle 13 copie 4" class="cls-5" d="M432,352l22-9-5,51-17,6V352Z" transform="translate(-430 -342)"/>
+    <path id="Rectangle_13_copie_3" data-name="Rectangle 13 copie 3" class="cls-6" d="M430,352l17-10-1,51-16,9V352Z" transform="translate(-430 -342)"/>
+  </g>
+</svg>

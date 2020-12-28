@@ -1,0 +1,10 @@
+<section class="features nbFeat-{{page.features_list.size}}">
+  {%- for feature in page.features_list -%}
+  <article>
+    <header class="subtop">
+      <h3>{{feature.title | escape}}</h3>
+        {{feature.excerpt | markdownify}}
+    </header>
+  </article>
+  {%- endfor -%}
+</section>
