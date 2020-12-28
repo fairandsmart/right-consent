@@ -8,11 +8,16 @@ toc: true
 
 Models are designed to **ensure content preservation**. More or less like existing versionning systems, **models are versionned** and some specific business rules defines their lifecycle mostly to ensure that previous versions **won't be modified**.
 
-A model is made of three parts : the model **entry** which is mainly a pointer that carry a **unique key** and defines a **content type**, a list of **versions** and for each version a list of language based **content**.
+A model is made of three parts : 
+  - the model **entry** which is mainly a pointer that carry a **unique key** and defines a **content type**, 
+  - a list of **versions**, 
+  - for each version a list of language based **content**.
 
 ![Model Structure](/right-consents/assets/images/model-structure.png)
 
-A model version is identified with a **unique serial number** that will be used in forms and records. When a version goes in state **ACTIVE**, nor more modification can be done on the content without creating a new **DRAFT** version. Previous version content is duplicated in the new one. You have to set if a version is MINOR or MAJOR. **MINOR versions** should be used for simple modifications and **will not imply invalidation** of previous records collected whereas **MAJOR version** should be used in case of big modification and **will imply invalidation** of all previous records collected for all previous versions. 
+A model version is identified with a **unique serial number** that will be used in forms and records. When a version goes in state **ACTIVE**, no more modification can be done on the content without creating a new **DRAFT** version. Previous version content is then duplicated in the new one.
+
+It is possibile to set the type of a version to MINOR or MAJOR. **MINOR versions** should be used for simple modifications and **will not imply invalidation** of previous records collected whereas **MAJOR version** should be used in case of big modification and **will imply invalidation** of all previous records collected for all previous versions. 
 
 ## Create a new model
 

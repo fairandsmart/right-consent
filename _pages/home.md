@@ -9,7 +9,7 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/quick-start/"
 excerpt: >
-  An Open Source European Universal Consents & Preferences Management Plateform <br />
+  The fair[&]smart way for collecting your customers consents <br />
   <small><a href="https://github.com/fairandsmart/right-consent/releases/tag/1.0.13">Latest release v1.0.13</a></small>
 feature_row:
   - image_path: /assets/images/collect.2.png
