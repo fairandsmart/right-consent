@@ -4,16 +4,11 @@ permalink: /docs/context-anatomy/
 excerpt: "Anatomy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
 last_modified_at: 2020-12-21
 toc: true
-gallery:
-  - url: /assets/images/context-anatomy.png
-    image_path: /assets/images/context-anatomy.png
-    alt: "Context Anatomy"
-    title: "Context Anatomy"
 ---
 
 The Consent Context is the entry point of any consent collection process. It can define all aspects of the Consent Form content, behaviour and look'n'feel.
 
-{% include gallery %}
+![Context Anatomy](/right-consents/assets/images/context-anatomy.png)
 
 ## Content
 

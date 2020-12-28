@@ -30,13 +30,13 @@ When everything is up (check vidéo) you can access component with the following
 
 Backoffice web application url: <http://localhost:4286>  
 Identity Provider manager url: <http://localhost:4285/auth>  
-Backend API url: <http://localhost:4287/api/health>
+Backend API url: <http://localhost:4287/api/health>  
 SMTP interface url: <http://localhost:4288>
 
 Username & password: *demo@demo.com/demo42*
 
 More installation options are available in the [Installation](/docs/installation/) documentation page.
-{! .notice--info}
+{: .notice--info}
 
 ## First steps
 
