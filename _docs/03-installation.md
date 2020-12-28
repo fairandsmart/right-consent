@@ -59,7 +59,7 @@ $ docker pull djfarrelly/maildev
 $ docker run -p 1080:80 -p 1025:25 djfarrelly/maildev
 ```
 
-You can for sure use a postifx local install as an alternative to that tool.
+You can also replace this component by using a postifx local install as an alternative (or any existing outgoing smtp server by changing configuration).
 {: .notice--info}
 
 ### Backend

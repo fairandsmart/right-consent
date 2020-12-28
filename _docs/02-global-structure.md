@@ -31,6 +31,10 @@ The container is populated with a provided user realm (RightConsents) that inclu
 
 The IdP manager is accessible via the [dedicated web interface](http://localhost:4285/auth) (admin/admin). This url is also used to authenticate user when accessing RightConsents web app, like any SSO solution.
 
+### Mail Display/Relay (localhost:4288)
+
+//TODO 
+
 
 ### Quarkus Backend (localhost:4287)
 
