@@ -22,7 +22,7 @@ Consent Record **stores the value** given by the subject for that particular ele
 
 Finally, it **keeps track** of the context by storing extra informations like author, attributes or even a comment.
 
-**Status validity** of a record is **NOT stored** in the base to avoid complex updates. It is a transient information **evaluated at runtime**. The evaluation algorithm uses a query context to extract relevant records and then **applies a set of specific rules** to determine a status : *VALID, OBSOLETE, EXPIRED, IRRELEVANT, UNKNOWN*. Business rules can be **customized**. Evaluation status can then differ if query context is not the same, even for a single element.
+**Status validity** of a record is **NOT stored** in the base to avoid complex updates. It is a transient information **evaluated at runtime**. The evaluation algorithm uses a query context to extract relevant records and then **applies a set of specific rules** to determine a status : *VALID, OBSOLETE, EXPIRED, IRRELEVANT, UNKNOWN*. **Business rules can be customized** to introduce specific behaviour in status determination (for exemple by taking into consideration the consent collect place). Evaluation status can then differ if query context is not the same, even for a single element.
 
 Consent Record storage is designed to be **performant in writing** but also **performant at evaluation time**. It is stored in a single table but specific index (and sharding) strategies are possibles in that objective.
 
@@ -32,7 +32,7 @@ Consent Receipt are **unique for a single transaction**. There is a one to many 
 
 Consent Receipt are designed to act more or less **like any classic receipt**. It is a single document that **holds informations** on choices made at a particular time and into a specific context and conditions between a subject and a data controller. That document should be **opposable** to any counterparts in case of conflict or in any needs to change choices.
 
-Consent Receipt have to **be portable* and to allow its holder to use it at any moment to **express any changes**. That's why it also holds a link to an online form with a valid context allowing to retrieve the previoulsy given values and to change any of them.
+Consent Receipt have to **be portable** and to allow its holder to use it at any moment to **express any changes**. That's why it also holds a link to an online form with a valid context allowing to retrieve the previoulsy given values and to change any of them.
 
 Consent Receipt also have to follow existings and upcoming **standards** : [ISO/IEC 29184:2020](https://www.iso.org/standard/70331.html) [ISO/IEC WD TS 27560](https://www.iso.org/standard/80392.html). 
 
