@@ -27,3 +27,14 @@ Finally, it **keeps track** of the context by storing extra informations like au
 Consent Records storage is designed to be performant in writing speed but also at evaluation time. It is stored in a single table but specific index (and sharding) strategies are designed in that objective.
 
 ## Consent Receipt
+
+Consent Receipt are unique for a single transaction. There is a one to many assocation between the Consent Receipt and the Consent Records. Consent Receipt is the proof that a Consent Records has been collected in a conform way.
+
+Consent Receipt are designed to act more or less like any classic receipt. It is a single document that hold informations on choices made at a particular time and into a specific context and conditions between a subject and a data controller. That document should be opposable to any counterparts in case of conflict or in any needs to change choices.
+
+Consent Receipt have to be portable and to allow its holder to use it at any moment to express any changes.
+
+Consent Receipt also have to follow upcoming standard (ISO ). Any electronic version of that kind of document should be transfered to counterpart as a justification.
+
+It is modelise in an XML document that can be transform in any other 
+
