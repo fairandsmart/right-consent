@@ -13,10 +13,10 @@
 
   	<div class="container">
     {% if page.layout == "home" %}
-    {% include header.html %}
-    {% include feature_list.html %}
+      {% include header.html %}
+      {% include feature_list.html %}
     {% else %}
-    {% include header_simple.html %}
+      {% include header_simple.html %}
     {% endif %}
 
     {{content}}
