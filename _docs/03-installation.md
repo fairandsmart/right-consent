@@ -24,7 +24,7 @@ As soon as the composition is up, you can go to the [web application](http://loc
 
 For development purpose or to have a more configurable installation, you can install a local instance. Some components will be deployed using docker and others using the source code directly.
 
-## Requirements
+### Requirements
 
 In order to build projects you will need : 
 - JDK 11
@@ -47,8 +47,8 @@ $ wget https://raw.githubusercontent.com/fairandsmart/right-consents/main/import
 $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/opt/jboss/keycloak/imports/right-consents.json -v /var/keycloak/data:/opt/jboss/keycloak/standalone/data -v /var/keycloak/imports:/opt/jboss/keycloak/imports jboss/keyloak 
 ```
 
-**Be aware** that created host folders (/var/keycloak/*) must grant read/write/execute permissions to the user that starts the container.
-{: .notice--info}
+<i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Be aware that created host folders (/var/keycloak/*) must grant read/write/execute permissions to the user that starts the container.
+{: .notice--warning}
 
 ### SMTP server
 
@@ -59,7 +59,7 @@ $ docker pull djfarrelly/maildev
 $ docker run -p 1080:80 -p 1025:25 djfarrelly/maildev
 ```
 
-You can for sure use a postifx local install as an alternative to that tool.
+<i class="fa fa-info-circle"></i> <b>Info:</b> You can also replace this component by using a postifx local install as an alternative (or any existing outgoing smtp server by changing configuration).
 {: .notice--info}
 
 ### Backend

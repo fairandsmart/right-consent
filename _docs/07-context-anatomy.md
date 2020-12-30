@@ -4,16 +4,11 @@ permalink: /docs/context-anatomy/
 excerpt: "Anatomy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
 last_modified_at: 2020-12-21
 toc: true
-gallery:
-  - url: /assets/images/context-anatomy.png
-    image_path: /assets/images/context-anatomy.png
-    alt: "Context Anatomy"
-    title: "Context Anatomy"
 ---
 
 The Consent Context is the entry point of any consent collection process. It can define all aspects of the Consent Form content, behaviour and look'n'feel.
 
-{% include gallery %}
+![Context Anatomy](/right-consents/assets/images/context-anatomy.png)
 
 ## Content
 
@@ -25,7 +20,7 @@ Setting the validity (ISO 8601 duration format) will define how long the Records
 
 It is mandatory to set the model keys of elements that need to be visible in that Consent Form. With that parameter, it is possible to collect the consent for only one processing at a time or for a whole bunch of processings, depending on the integration target. 
 
-Basic information is always integrated in Consent Forms as it contains mandatory information.
+<i class="fa fa-info-circle"></i> <b>Info:</b> Basic information is always integrated in Consent Forms as it contains mandatory information.
 {: .notice--info}
 
 ### Form Type
@@ -38,7 +33,7 @@ It is possible to set any Context Attributes (key/value). Those attributes will 
 
 It is mainly used to split the records for consent collected by a specific zone, or by a specific version of a product...
 
-Using a lot of attributes can generate heavy tokens, use with caution
+<i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Using a lot of attributes can generate heavy tokens, use with caution
 {: .notice--warning}
 
 ### User Information
@@ -47,7 +42,7 @@ It is possible to set any User Personal Information in the context. This informa
 
 The goal is to identify the subject providing specific user information that could enforce the identification of the subject with the Receipt. 
 
-Using a lot of information can generate heavy tokens, use with caution
+<i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Using a lot of information can generate heavy tokens, use with caution
 {: .notice--warning}
 
 ## Behaviour
@@ -56,7 +51,7 @@ Using a lot of information can generate heavy tokens, use with caution
 
 If you set a callback url, the user will be redirected to that URL after consent submission or receipt display. 
 
-If the form is displayed in an IFrame, this parameter is not necessary.
+<i class="fa fa-info-circle"></i> <b>Info:</b> If the form is displayed in an IFrame, this parameter is not necessary.
 {: .notice--info}
 
 ### Receipt Delivery Type
@@ -67,7 +62,7 @@ The receipt delivery type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows to c
 
 The receipt display type [NONE, HTML, PDF, TXT, XML] allows to choose if the receipt is going to be displayed after the Consent Form submission and using which mime type.
 
-Setting Receipt Delivery Type to NONE implies a Receipt Display Type of NONE
+<i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Setting Receipt Delivery Type to NONE implies a Receipt Display Type of NONE
 {: .notice--warning}
 
 ### Notification
@@ -86,14 +81,14 @@ Multiple language support is not available in the community edition.
 
 2 types of layout are supported in the community edition HORIZONTAL and VERTICAL. Using the preview you should be able to have a look at the differences between those 2 layouts.
 
-More layouts will be included in the enterprise edition
+<i class="fa fa-info-circle"></i> <b>Info:</b> More layouts will be included in the enterprise edition
 {: .notice--info}
 
 ### Theme
 
 It is possible to apply an existing theme model element key to change the appearence of all elements of a consent collection process (form, email, receipt). 
 
-Themes are mostly composed of css customization elements.
+<i class="fa fa-info-circle"></i> <b>Info:</b> Themes are mostly composed of css customization elements.
 {: .notice--info}
 
 ### Options

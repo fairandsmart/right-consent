@@ -6,30 +6,33 @@ title: "About" #head only
 excerpt: "An Open Source European Universal Consents & Preferences Management Platform"
 header:
   actions:
-    label: "Get started"
-    url: "/quick-start/"
-
-last_release :
-   label : "Latest release v1.0.13"
-   link : "#"
-release_note :
-   label :  "Release notes"
-   link : "#"
-excerpt_2_sub : "By using Right Consents Comunity, you agree to its <a hreh='#'>License and privacy statement.</a>"
-features_list:
-  - title: "collect"
-    excerpt: "Integrate consent form in **any existing user experience** like web or mobile application and define **custom processing and preference models** to push fine graine form at the best time."
-  - title: "analyse"
-    excerpt: "Use **dedicated metrics** to ensure processing consent acknowledgment and to compare different **model formulation** in an A/B testing way."
-  - title: "preserve"
-    excerpt: "Preserve your **user's choices** by feeding a central **truth base**, and ensure the best conformity using standardized consent receipts as proof and **long time** and secured conservation."
-enterprise_features:
-  list :
-    - item : "Save time with an easy to implement SaaS solution."
-    - item : "Limit transfers outside the EU by using a 100% European solution."
-    - item : "Reduce your legal costs thanks to the regulation monitoring integrated into the solution..."
-  clicktoaction : "Request a demo of | Right Consents Enterprise"
-  url : "https://www.fairandsmart.com/solution-gestion-consentements-rgpd-cmp/"
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/quick-start/"
+excerpt: >
+  The fair[&]smart way for collecting your customers consents <br />
+  <small><a href="https://github.com/fairandsmart/right-consent/releases/tag/1.0.13">Latest release v1.0.13</a></small>
+feature_row:
+  - image_path: /assets/images/collect.2.png
+    alt: "collect"
+    title: ""
+    excerpt: "Integrate consent form in <b>any existing user experience</b> like web or mobile application and define <b>custom processing and preference models</b> to push fine graine form at the best time."
+    url: "/docs/forms/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/analyse.2.png
+    alt: "analyse"
+    title: ""
+    excerpt: "Use <b>dedicated metrics</b> to ensure processing consent acknowledgment and to compare different <b>model formulation</b> in an A/B testing way."
+    url: "/docs//"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/preserve.2.png
+    alt: "preserve"
+    title: ""
+    excerpt: "Preserve your <b>user's choices</b> by feeding a central <b>truth base</b>, and ensure the best conformity using standardized consent receipts as proof and <b>long time</b> and secured conservation."
+    url: "/docs/records-receipts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
 
 
