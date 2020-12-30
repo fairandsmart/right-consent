@@ -35,7 +35,7 @@ SMTP interface url: <http://localhost:4288>
 
 Username & password: *demo@demo.com/demo42*
 
-More installation options are available in the [Installation](/docs/installation/) documentation page.
+<i class="fa fa-info-circle"></i> <b>Info:</b> More installation options are available in the [Installation](/docs/installation/) documentation page.
 {: .notice--info}
 
 ## First steps

@@ -32,7 +32,7 @@ Preference model is much simpler than the processing model because it **does not
 
 The **possible values** of a preference can be very different depending on the type of value : yes/no, multiple choice, radio button, single choice list, mltiple choice list. Some options are possible : if the preference can be ignored or not and if a default value needs to be applied.
 
-Preferences are **NOT** included in Consent Receipts and if a context is made only of preferences elements, it won't generate any Receipt but only Records.
+<i class="fa fa-info-circle"></i> <b>Info:</b> Preferences are **NOT** included in Consent Receipts and if a context is made only of preferences elements, it won't generate any Receipt but only Records.
 {: .notice--info}
 
 ## Conditions
@@ -41,7 +41,7 @@ Condition element model is a very **generic model** that contains a title and a 
 
 The **possible values** of a condition are accepted or refused only and the value is mandatory. The labels of those values can be customized.
 
-Conditions are usually used as a single element form because of the mandatory aspect of the response.
+<i class="fa fa-info-circle"></i> <b>Info:</b> Conditions are usually used as a single element form because of the mandatory aspect of the response.
 {: .notice--info}
 
 ## Generic Information
@@ -50,7 +50,7 @@ Generic information element model contains the information that is common to any
 
 Some information is automatically included in the generated forms and in the receipt where some can be configured to only appear in the receipt.
 
-It is NOT possible to define multiple instances of generic information.
+<i class="fa fa-info-circle"></i> <b>Info:</b> It is NOT possible to define multiple instances of generic information.
 {: .notice--info}
 
 

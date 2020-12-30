@@ -12,5 +12,9 @@ body {
   font-size: 85%;
 }
 
+p .notice--info {
+  font-size: .85em !important;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
