@@ -26,7 +26,7 @@ $ docker-compose up
 
 When everything is up (check vidéo) you can access component with the following urls : 
 
-{% include video id="1NS4eueAFqihJ-dnQQu7NnG_hBZvntHy9" provider="google-drive" %}
+{% include video id="1ca--eXQost8BZDL28xqPg7i2q1Nl10ji" provider="google-drive" %}
 
 Backoffice web application url: <http://localhost:4286>  
 Identity Provider manager url: <http://localhost:4285/auth>  
