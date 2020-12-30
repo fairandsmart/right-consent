@@ -28,12 +28,14 @@ When everything is up (check vidéo) you can access component with the following
 
 {% include video id="1ca--eXQost8BZDL28xqPg7i2q1Nl10ji" provider="google-drive" %}
 
-Backoffice web application url: <http://localhost:4286>  
-Identity Provider manager url: <http://localhost:4285/auth>  
-Backend API url: <http://localhost:4287/api/health>  
-SMTP interface url: <http://localhost:4288>
+**Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286) using <b>Username & password:</b> *demo@demo.com/demo42*
 
-Username & password: *demo@demo.com/demo42*
+<b>Other components dedicated interface:</b>  
+<i class="fa fa-users"></i> Identity Provider manager [http://localhost:4285/auth](http://localhost:4285/auth)  
+<i class="fa fa-desktop"></i> Backend API health check url: [http://localhost:4287/health](http://localhost:4287/health)  
+<i class="fa fa-inbox"></i> MailDev Outgoing SMTP interface url: [http://localhost:4288](http://localhost:4288)  
+{: .notice}
+
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> More installation options are available in the [Installation](/docs/installation/) documentation page.
 {: .notice--info}

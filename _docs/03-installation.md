@@ -24,7 +24,7 @@ As soon as the composition is up, you can go to the [web application](http://loc
 
 For development purpose or to have a more configurable installation, you can install a local instance. Some components will be deployed using docker and others using the source code directly.
 
-## Requirements
+### Requirements
 
 In order to build projects you will need : 
 - JDK 11
