@@ -46,13 +46,11 @@ As soon as the main components are started, you should be able to **access the p
 
 Backoffice access allows to apply some modifications to any existing or non-existing customer. In the search field, specify a customer id to access his dedicated consent & preferences page :
 
-//TODO Screencast 1 - Access customer page
+{% include video id="1L5BGNc1JNMxLxLFZyuAleZ2t1r9ZxxWk" provider="google-drive" %}
 
 If that customer has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as a starting point.
 
 Now, **perform some modifications** on the available sample consent and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not commited, nothing is effective for the end-customer. 
-
-//TODO Screencast 2 - Perform changes
 
 When everything is done you can **commit changes** and you may choose to **notify the customer** that something as changed on his consent/preferences by sending an email. That email will contains an attached receipt but also a link that will allows the customer to access a specific user interface, similar to the operator one, allowing him to **make its own choices**. That user interface can be disable. You can also access the outgoing SMTP server interface to check sent email.
 
