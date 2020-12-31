@@ -26,7 +26,7 @@ $ docker-compose up
 
 When everything is up (check vidéo) you can access component with the following urls : 
 
-{% include video id="1ca--eXQost8BZDL28xqPg7i2q1Nl10ji" provider="google-drive" %}
+{% include video id="1SS-QuplSlwof2igaMz9VxXK1LgnW8WnW" provider="google-drive" %}
 
 **Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286) using <b>Username & password:</b> *demo@demo.com/demo42*
 
