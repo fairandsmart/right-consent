@@ -2,7 +2,7 @@
 title: Global Structure Description
 permalink: /docs/global-structure/
 excerpt: "Global description of concepts and architecture used in Right Consents"
-last_modified_at: 2020-12-21
+last_modified_at: 2021-01-04
 toc: true
 gallery:
   - url: /assets/images/global-structure.png
@@ -46,7 +46,7 @@ As for the IdP, the backend is configured to use an embedded H2 database, a loca
 
 Responsive web application is served using a classic nginx server and is developed using Angular. It is a single page web application that calls directly the backend and the IdP via http/REST protocols. For demonstration, http communications are not secured (no ssl).
 
-Form based consent & preference collect and receipt consultation URLs are served directly from the backend.
+Form based consent & preference collection and receipt consultation URLs are served directly from the backend.
 
 
 
