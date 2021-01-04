@@ -13,7 +13,7 @@ a convenient **outgoing SMTP** server.
 
 ## Installing the software
 
-All required components are available as **docker images** that is the de facto simpliest way to start a local instance. 
+All required components are available as **docker images** that is the de facto simplest way to start a local instance. 
 
 Right Consents comes with a **ready-to-run docker compose** configuration.
 The first step is to clone the github repository which contains the elements needed to start the docker compose configuration.
@@ -24,7 +24,7 @@ $ cd right-consent
 $ docker-compose up
 ```
 
-When everything is up (check vidéo) you can access component with the following urls : 
+When everything is up (check video) you can access the different components with the following urls : 
 
 {% include video id="1SS-QuplSlwof2igaMz9VxXK1LgnW8WnW" provider="google-drive" %}
 
@@ -42,29 +42,29 @@ When everything is up (check vidéo) you can access component with the following
 
 ## First steps
 
-As soon as the main components are started, you should be able to **access the provided backoffice** and start using consent & preferences collection and interrogation. 
+As soon as the main components are started, you should be able to **access the provided backoffice** and start using consent & preferences collection and interrogation. A sample set dataset is provided.
 
 Backoffice access allows to apply some modifications to any existing or non-existing customer. In the search field, specify a customer id to access his dedicated consent & preferences page :
 
 {% include video id="1L5BGNc1JNMxLxLFZyuAleZ2t1r9ZxxWk" provider="google-drive" %}
 
-If that customer has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as a starting point.
+If that customer has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as the starting point.
 
-Now, **perform some modifications** on the available sample consent and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not commited, nothing is effective for the end-customer. 
+Now, **perform some modifications** on the available sample consents and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not actually committed, nothing is effective for the end-customer. 
 
-When everything is done you can **commit changes** and you may choose to **notify the customer** that something as changed on his consent/preferences by sending an email. That email will contains an attached receipt but also a link that will allows the customer to access a specific user interface, similar to the operator one, allowing him to **make its own choices**. That user interface can be disable. You can also access the outgoing SMTP server interface to check sent email.
+When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to access a specific user interface, similar to the operator one, allowing him to **make his own choices**. That user interface can be disabled. You can also access the outgoing SMTP server interface to check sent email.
 
 //TODO Screencast 3 - Commit changes and notify by email, consult email in outgoing smtp
 
 ## Doing more
 
-When you are confortable with the operator interface and the modification of existing consent and preferences you can go throught the **configuration section** to declare new treatments and processings and see how it integrate with the existing ones.
+When you are comfortable with the operator interface and the modification of existing consents and preferences you can go through the **configuration section** to register new processings and preferences and see how they integrate with the existing ones.
 
 //TODO Screencast 4 - Adding a processing model
 
 ## Integrate with other apps
 
-ALl we have seen yet is inside the application itselft and is not dedicated to customers directly. You probably want to see now how you could **integrate consent collect form** in any existing application ?
+Everything we have seen so far is the inside of the application itself and is not dedicated to your end-customers directly. You probably want to see now how you could **integrate consent collection form** in an existing application ?
 
 // TODO Screencast 5 - Integration in external app
 
