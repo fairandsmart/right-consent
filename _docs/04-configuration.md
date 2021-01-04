@@ -2,17 +2,17 @@
 title: Configuration
 permalink: /docs/configuration/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
-last_modified_at: 2020-12-21
+last_modified_at: 2021-01-04
 toc: true
 ---
 
-The configuration of the whole composition is not available in a single place. Each component of the system holds a part of the configuration. Nevertheless, the bckend configuration is probably the most important as it concerns directly behaviour and functionnal aspects of the main part of the software.
+The configuration of the whole composition is not available in a single place. Each component of the system holds a part of the configuration. Nevertheless, the backend configuration is probably the most important as it concerns directly the behaviour and functionnal aspects of the main part of the software.
 
 ## IdP (keycloak) configuration
 
 The configuration of the IdP is available using the manager interface <http://localhost:4285/auth>.
 
-You can find dedicated Keycloak documentation on the [product website](https://www.keycloak.org/docs/latest/server_admin/index.html)
+You can find the dedicated Keycloak documentation on the [product website](https://www.keycloak.org/docs/latest/server_admin/index.html)
 
 ## SMTP Server
 
@@ -26,7 +26,7 @@ Backend configuration is located in a specific file :
 $ consent-manager-back/src/main/resources/application.properties
 ```
 
-All configuration elements can be override at startup by providing command line alternative avoiding recompiling the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/guides/config#overriding-properties-at-runtime) 
+All configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/guides/config#overriding-properties-at-runtime) 
 
 ```bash
 $ java -jar -Dquarkus.http.port=9999 ...
@@ -34,7 +34,7 @@ $ java -jar -Dquarkus.http.port=9999 ...
 
 ### HTTP & Common config options
 
-First part of the file allows to set specific HTTP server configuration options like ports, CORS, proxy header management, and logs.
+The first part of the file allows you to set specific HTTP server configuration options such as ports, CORS, proxy header management, and logs.
 
 ```properties
 quarkus.http.port=8087
@@ -57,7 +57,7 @@ quarkus.http.access-log.rotate=true
 
 Authentication is configured with two types : OpenID-Connect and HTTP BasicAuth. 
 
-OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP : Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also acts as a Identity Broker by allowing to build a identity federation with integration of any other external compliant IdP (OIDS or SAML) or any other source of accounts (LDAP, Database, etc...).
+OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP : Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of any other external compliant IdP (OIDS or SAML) or any other source of accounts (LDAP, Database, etc...).
 
 HTTP BasicAuth is used for System API access only and uses specific keys that can be generated inside the application. You should NOT disable this type of authentication.
 
@@ -72,7 +72,7 @@ quarkus.oidc.authentication.scopes=profile,email,roles
 
 ### Datasource configation
 
-By default, application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported SGBD and specific [configuration options](https://quarkus.io/guides/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification. 
+By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported SGBD and specific [configuration options](https://quarkus.io/guides/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification. 
 
 ```properties
 quarkus.datasource.db-kind=h2
@@ -99,13 +99,13 @@ quarkus.mailer.mock=false
 
 ### Main config options
 
-It is possible to set an instance name. That name allows to have many instances running on the the same database. All tables will be prefixed using that instance name, keep it uppercase.
+It is possible to set an instance name. That name allows you to have many instances running on the the same database. All tables will be prefixed using that instance name, keep it uppercase.
 
-If the data.import option is set to true, some model samples will be imported at startup otherwise, database will be kept empty.
+If the data.import option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty.
 
 The home folder config will host receipts and other files needed by the instance. 
 
-Public URL allows to ensure that CORS will be correctly setup when backend runs behind a proxy.
+Public URL allows you to ensure that CORS will be correctly setup when backend runs behind a proxy.
 
 ```properties
 # MainConfig
@@ -120,7 +120,7 @@ consent.thintoken=true
 
 ### Support options
 
-A support service is available online and allows the backend to check for newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any commnication with the central service.
+A support service is available online and allows the backend to check for the newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any commnication with the central service.
 
 ```properties
 # SupportServiceConfig
@@ -134,7 +134,7 @@ consent.support.api/mp-rest/scope=javax.inject.Singleton
 
 ### Security
 
-Security roles can be override using those options but in most of the cases, it won't be neeed at all.
+Security roles can be override using those options but in most cases, it won't be needed at all.
 
 ```properties
 # SecurityConfig
@@ -146,7 +146,7 @@ consent.security.roles.api=api
 
 ### External TSA
 
-A Timestamp authority needs to be declared in order to get certified timestamp on consent receipt. This is optionnal.
+A Timestamp authority needs to be declared in order to get a certified timestamp on consent receipt. This is optional.
 
 ```properties
 # TsaConfig
@@ -158,7 +158,7 @@ consent.tsa.auth.password=password
 
 ### Serial config
 
-Serial numbers can be customized. Internal serial management is based on a slot reservation in the DB avoiding too many serialized transaction and storage bottleneck on this critical point. Slot size can be customized in case of very heavy load of the system. Also a specific serial prefix may allow to distinguish different instances of serials (production or tests).
+Serial numbers can be customized. Internal serial management is based on a slot reservation in the DB avoiding too many serialized transactions and storage bottlenecks on this critical point. Slot size can be customized in case of very heavy load of the system. Also a specific serial prefix may allow you to distinguish different instances of serials (production or tests).
 
 ```properties
 # SerialConfig
@@ -169,7 +169,7 @@ consent.serial.slot.initial=0
 
 ### Client access page configuration
 
-A specific client page can be enabled and content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported in another application.
+A specific client page can be enabled and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
 
 ```properties
 # ClientConfig
