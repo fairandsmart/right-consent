@@ -99,7 +99,7 @@ quarkus.mailer.mock=false
 
 ### Main config options
 
-It is possible to set an instance name. That name allows you to have many instances running on the the same database. All tables will be prefixed using that instance name, keep it uppercase.
+It is possible to set an instance name. That name allows you to have several instances running on the the same database. All tables will be prefixed using that instance name. Keep it uppercase.
 
 If the data.import option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty.
 
@@ -120,7 +120,7 @@ consent.thintoken=true
 
 ### Support options
 
-A support service is available online and allows the backend to check for the newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any commnication with the central service.
+A support service is available online and allows the backend to check for the newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any communication with the central service.
 
 ```properties
 # SupportServiceConfig
@@ -169,7 +169,7 @@ consent.serial.slot.initial=0
 
 ### Client access page configuration
 
-A specific client page can be enabled and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
+A dedicated page can made available to your end customers and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
 
 ```properties
 # ClientConfig
