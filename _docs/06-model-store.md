@@ -1,12 +1,12 @@
 ---
 title: Model Store
 permalink: /docs/model-store/
-excerpt: "Model store defines elements that need end user choice or consent on"
-last_modified_at: 2020-12-22
+excerpt: "Model store defines the elements that need end user choice or consent on"
+last_modified_at: 2021-01-05
 toc: true
 ---
 
-Right Consents has some similarities with Content Management Systems but with a more specific goal : collecting user consent and preferences.
+Right Consents has some similarities with Consent Management Systems but with a more specific goal : collecting user consent and preferences.
 
 In order to create end user's consent forms, the organisation has to **define its processes** and/or preferences that need end user consent collection. Right Consents comes with 3 models of elements that can be put together within forms : Processings, Preferences and Terms of use. Moreover, there is also a more generic type of model that includes **common information** needed in forms for collecting consent, such as the link to your privacy policy for example.
 
@@ -22,7 +22,7 @@ Some additional information is also available but mainly optional (a specific **
 
 The **possible values** of a processing element are **accepted** or **rejected** and empty values are NOT allowed.
 
-A processing model can also be linked with a list of preference models making those preferences not accessible until consent is given for the processing and/or a specific layout in the form (linked preferences appear just below the processing they are linked to).
+A processing model can also be linked with a list of preference models making those preferences not accessible until consent is given for the processing and/or a specific layout within the form (linked preferences appear just below the processing they are linked to).
 
 ## Preference
 
@@ -30,9 +30,9 @@ Preference element model allows to define **user based preferences** in a way th
 
 Preference model is much simpler than the processing model because it **does not include data information**, it simply consists of a label and a description. Response type can be different depending on the preference type.
 
-The **possible values** of a preference can be very different depending on the type of value : yes/no, multiple choice, radio button, single choice list, mltiple choice list. Some options are possible : if the preference can be ignored or not and if a default value needs to be applied.
+The **possible values** of a preference can be very different depending on the type of value : yes/no, multiple choice, radio button, single choice list, multiple choice list. Some options are possible : if the preference can be ignored or not and if a default value needs to be applied.
 
-<i class="fa fa-info-circle"></i> <b>Info:</b> Preferences are **NOT** included in Consent Receipts and if a context is made only of preferences elements, it won't generate any Receipt but only Records.
+<i class="fa fa-info-circle"></i> <b>Info:</b> Preferences are **NOT** included in Consent Receipts and if a context is made only of preferences elements, it will not generate any Receipt but only Records.
 {: .notice--info}
 
 ## Conditions
