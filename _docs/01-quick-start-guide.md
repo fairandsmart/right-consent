@@ -60,7 +60,7 @@ When everything is done you can **commit changes** and you may choose to **notif
 
 When you are comfortable with the operator interface and the modification of existing consents and preferences you can go through the **configuration section** to register new processings and preferences and see how they integrate with the existing ones.
 
-//TODO Screencast 4 - Adding a processing model
+{% include video id="1UEyoy2leJxRCX4cffuMJz1lDd4KquJSM" provider="google-drive" %}
 
 ## Integrate with other apps
 
