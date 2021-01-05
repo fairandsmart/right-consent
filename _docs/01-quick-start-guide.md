@@ -1,7 +1,7 @@
 ---
 title: Quick-Start guide
 permalink: /docs/quick-start-guide/
-last_modified_at: 2021-01-04
+last_modified_at: 2021-01-05
 toc: true
 ---
 
@@ -52,7 +52,7 @@ If that customer has never setup his preferences or consents before, the page is
 
 Now, **perform some modifications** on the available sample consents and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not actually committed, nothing is effective for the end-customer. 
 
-When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to **make his own choices**. There is two types of user access provided by the software : a dedicated web interface similar to the operator one (requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check sent email without using real recipient as shown in the screencast.
+When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to **make his own choices**. There is two types of user access provided by the software : a dedicated web interface similar to the operator one (which requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check send email without using a real recipient as shown in the screencast.
 
 {% include video id="1XdpCbyZu4itjMqqfWVNhuKeIYWqZ7P7O" provider="google-drive" %}
 
