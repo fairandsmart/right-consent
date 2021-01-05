@@ -37,7 +37,7 @@ Once the content of the version suits your needs, you have to **ACTIVATE the ver
 <i class="fa fa-exclamation-circle"></i> <b>Notice:</b> As soon as the version is ACTIVE, you will not be able to modify the content anymore for that specific version (serial).
 {: .notice--warning}
 
-## Update content
+## Update the content
 
 If you need to **perform some content updates** on an already ACTIVATED version, a new one will be generated and its content duplicated. You can operate changes on the DRAFT version until you decide to ACTIVATE it.
 
