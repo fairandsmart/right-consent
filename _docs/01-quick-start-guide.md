@@ -52,9 +52,9 @@ If that customer has never setup his preferences or consents before, the page is
 
 Now, **perform some modifications** on the available sample consents and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not actually committed, nothing is effective for the end-customer. 
 
-When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to access a specific user interface, similar to the operator one, allowing him to **make his own choices**. That user interface can be disabled. You can also access the outgoing SMTP server interface to check sent email.
+When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to **make his own choices**. There is two types of user access provided by the software : a dedicated web interface similar to the operator one (requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check sent email without using real recipient as shown in the screencast.
 
-//TODO Screencast 3 - Commit changes and notify by email, consult email in outgoing smtp
+{% include video id="1XdpCbyZu4itjMqqfWVNhuKeIYWqZ7P7O" provider="google-drive" %}
 
 ## Doing more
 
@@ -64,7 +64,7 @@ When you are comfortable with the operator interface and the modification of exi
 
 ## Integrate with other apps
 
-Everything we have seen so far is the inside of the application itself and is not dedicated to your end-customers directly. You probably want to see now how you could **integrate consent collection form** in an existing application ?
+Everything we have seen so far is the inside of the application itself and is not dedicated to your end-customers directly (except receipts and inmail form links). You probably want to see now how you could **integrate consent collection form** in an existing application ?
 
 // TODO Screencast 5 - Integration in external app
 
