@@ -42,17 +42,18 @@ When everything is up (check video) you can access the different components with
 
 ## First steps
 
-As soon as the main components are started, you should be able to **access the provided backoffice** and start using consent & preferences collection and interrogation. A sample set dataset is provided.
+As soon as the main components are started, you should be able to **access the provided backoffice** and start using consents & preferences collection and interrogation. A sample test dataset is provided.
 
-Backoffice access allows to apply some modifications to any existing or non-existing customer. In the search field, specify a customer id to access his dedicated consent & preferences page :
+Backoffice access allows to apply some modifications to any existing or non-existing end-user. In the search field, specify a end-user id to access his dedicated consents & preferences page :
 
 {% include video id="1L5BGNc1JNMxLxLFZyuAleZ2t1r9ZxxWk" provider="google-drive" %}
 
-If that customer has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as the starting point.
+By the way, by "end-user" we mean the final user, who can be a citizen, a customer, a member...
+If that end-user has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as the end-user's activity starting point .
 
-Now, **perform some modifications** on the available sample consents and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not actually committed, nothing is effective for the end-customer. 
+Now, **perform some modifications** on the available sample consents and/or preferences. Notice that changes are stacked, waiting until you commit those modifications. As long as the stacked operations are not actually committed, nothing is effective for the end-user. 
 
-When everything is done you can **commit changes** and you may choose to **notify the customer** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the customer to **make his own choices**. There is two types of user access provided by the software : a dedicated web interface similar to the operator one (which requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check send email without using a real recipient as shown in the screencast.
+When everything is done you can **commit changes** and you may choose to **notify the end-user** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the end-user to **make his own choices**. There are two types of user access provided by the software : a dedicated web interface similar to the operator one (which requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check "send email" without using a real recipient as shown in the screencast.
 
 {% include video id="1XdpCbyZu4itjMqqfWVNhuKeIYWqZ7P7O" provider="google-drive" %}
 
@@ -64,7 +65,7 @@ When you are comfortable with the operator interface and the modification of exi
 
 ## Integrate with other apps
 
-Everything we have seen so far is the inside of the application itself and is not dedicated to your end-customers directly (except receipts and inmail form links). You probably want to see now how you could **integrate consent collection form** in an existing application ?
+Everything we have seen so far is the inside of the application itself and is not dedicated to your end-users directly (except receipts and inmail form links). You probably want to see now how you could **integrate a consent collection form** in an existing application ?
 
 // TODO Screencast 5 - Integration in external app
 
