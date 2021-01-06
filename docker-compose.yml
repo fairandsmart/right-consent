@@ -74,6 +74,7 @@ services:
       FS_AUTH_URL: http://localhost:4285/auth
       FS_GUI_URL: http://localhost:4286
       FS_MANAGER_URL:  http://localhost:4287
+      FS_MANAGER_PRIVATE_URL:  http://right-consents-back:8087
     ports:
       - 4286:80
     healthcheck:
