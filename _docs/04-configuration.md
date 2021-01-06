@@ -6,7 +6,7 @@ last_modified_at: 2021-01-06
 toc: true
 ---
 
-The configuration of the whole composition is not available in a single place. Each component of the system holds a part of the configuration. Nevertheless, the backend configuration is probably the most important as it concerns directly the behaviour and functionnal aspects of the main part of the software.
+The configuration of the whole composition is not available in a single place. Each component of the system holds a part of the configuration. Nevertheless, the backend configuration is probably the most important as it concerns directly the behaviour and functional aspects of the main part of the software.
 
 ## IdP (keycloak) configuration
 
