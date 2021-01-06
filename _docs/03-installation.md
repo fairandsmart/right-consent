@@ -2,7 +2,7 @@
 title: Detailed Installation
 permalink: /docs/installation/
 excerpt: "Instructions for building and installing right consents in a local environment."
-last_modified_at: 2021-01-04
+last_modified_at: 2021-01-06
 toc: true
 ---
 
@@ -10,7 +10,7 @@ toc: true
 
 As mentionned in the quick start guide, the docker installation is based on a docker-compose deployment configuration that does everything for you.
 
-Assuming you have a already installed docker-compose you can start a local instance with the following commands : 
+Assuming you have a docker-compose already installed you can start a local instance with the following commands : 
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consent.git
@@ -64,7 +64,7 @@ $ docker run -p 1080:80 -p 1025:25 djfarrelly/maildev
 
 ### Backend
 
-Backend service is developed in Java using quarkus. It exposes a REST API that is accessed front other services. It also integrates configuration elements for working with keycloak.
+Backend service is developed in Java using quarkus. It exposes a REST API that is accessed from other services. It also integrates configuration elements for working with keycloak.
 
 In order to run the backend, you need to clone the github repository and to run a local instance using Java and Maven :
 
