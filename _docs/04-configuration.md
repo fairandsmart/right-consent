@@ -2,7 +2,7 @@
 title: Configuration
 permalink: /docs/configuration/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
-last_modified_at: 2021-01-04
+last_modified_at: 2021-01-06
 toc: true
 ---
 
@@ -57,7 +57,7 @@ quarkus.http.access-log.rotate=true
 
 Authentication is configured with two types : OpenID-Connect and HTTP BasicAuth. 
 
-OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP : Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of any other external compliant IdP (OIDS or SAML) or any other source of accounts (LDAP, Database, etc...).
+OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP : Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of other external compliant IdPs (OIDS or SAML) or other sources of accounts (LDAP, Database, etc...).
 
 HTTP BasicAuth is used for System API access only and uses specific keys that can be generated inside the application. You should NOT disable this type of authentication.
 
@@ -70,9 +70,9 @@ quarkus.oidc.client-id=consent-manager
 quarkus.oidc.authentication.scopes=profile,email,roles
 ```
 
-### Datasource configation
+### Datasource configuration
 
-By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported SGBD and specific [configuration options](https://quarkus.io/guides/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification. 
+By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported DBMS and specific [configuration options](https://quarkus.io/guides/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification. 
 
 ```properties
 quarkus.datasource.db-kind=h2
@@ -167,9 +167,9 @@ consent.serial.slot.capacity=100
 consent.serial.slot.initial=0
 ```
 
-### Client access page configuration
+### User page access configuration
 
-A dedicated page can made available to your end customers and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
+A dedicated page can be made available to your end users and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
 
 ```properties
 # ClientConfig
