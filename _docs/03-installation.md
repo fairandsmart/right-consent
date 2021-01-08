@@ -8,9 +8,9 @@ toc: true
 
 ## Docker installation
 
-As mentionned in the quick start guide, the docker installation is based on a docker-compose deployment configuration that does everything for you.
+As mentioned in the quick start guide, the docker installation is based on a docker-compose deployment configuration that does everything for you.
 
-Assuming you have a docker-compose already installed you can start a local instance with the following commands : 
+Assuming you have a docker already installed you can start a local instance with the following commands : 
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consent.git
@@ -18,7 +18,7 @@ $ cd right-consent
 $ docker-compose up
 ```
 
-As soon as the composition is up, you can go to the [web application](http://localhost:4286)
+As soon as the stack is up, you can go to the [web application](http://localhost:4286)
 
 ## Source installation
 
@@ -27,39 +27,34 @@ For development purpose or to have a more configurable installation, you can ins
 ### Requirements
 
 In order to build projects you will need : 
-- JDK 11
-- Maven >= 3.6.3
-- NodeJS >= 12.20.0
-- npm >= 6.14.8
+- JDK 11;
+- Maven >= 3.6.3;
+- NodeJS >= 12.20.0;
+- npm >= 6.14.8;
 
 ### Keycloak
 
-Keycloak is not developped by us and we are using a docker based installation. If you want to use a local instance (wildfly) you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details. 
-
-Starting keycloak in a docker container is better if you use a dedicated volume allowing to preserve data if the container is destroyed and recreated.
+Unless needed, use keycloak in a dedicated container with either a named volume or (as below) a mapped folder to allow data persistence when the container is redeployed.
 
 ```bash
-$ mkdir /var/keycloak
-$ mkdir /var/keycloak/data
-$ mkdir /var/keycloak/import
-$ cd /var/keycloak/import
 $ wget https://raw.githubusercontent.com/fairandsmart/right-consents/main/imports/right-consents.json
-$ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/opt/jboss/keycloak/imports/right-consents.json -v /var/keycloak/data:/opt/jboss/keycloak/standalone/data -v /var/keycloak/imports:/opt/jboss/keycloak/imports jboss/keyloak 
+$ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/tmp/right-consents.json  -v keycloak-data:/opt/jboss/keycloak/standalone/data --mount type=bind,source=$PWD/right-consents.json,target=/tmp/right-consents.json jboss/keycloak:11.0.3
 ```
 
-<i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Be aware that created host folders (/var/keycloak/*) must grant read/write/execute permissions to the user that starts the container.
-{: .notice--warning}
+<i class="fa fa-info-circle"></i> <b>Notice:</b> to delete keycloak data, stop the container then run `docker volume rm keycloak-data`
+{: .notice--info}
+
+If you want to use a local instance (wildfly) you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details. 
 
 ### SMTP server
 
-Outgoing SMTP Service is also an external tool we use to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface allows to consult outgoing emails, if you configure the relay, email will be also routed to any external SMTP relay (you may have to provide credentials for some smtp relay).
+Outgoing SMTP Service is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for some docs) .
 
 ```bash
-$ docker pull djfarrelly/maildev
-$ docker run -p 1080:80 -p 1025:25 djfarrelly/maildev
+$ docker run -p 1080:80 -p 1025:25 maildev/maildev
 ```
 
-<i class="fa fa-info-circle"></i> <b>Info:</b> You can also replace this component by using a postifx local install as an alternative (or any existing outgoing smtp server by changing configuration).
+<i class="fa fa-info-circle"></i> <b>Info:</b> You can also replace this component by any existing outgoing smtp server by changing configuration, or even a postifx local install if you are the kind of person running a local SMTP server on your computer.
 {: .notice--info}
 
 ### Backend
