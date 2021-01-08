@@ -2,7 +2,7 @@
 title: Consent Context Anatomy
 permalink: /docs/context-anatomy/
 excerpt: "Anatomy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
-last_modified_at: 2021-01-07
+last_modified_at: 2021-01-08
 toc: true
 ---
 
@@ -84,7 +84,7 @@ Multiple language support is not available in the community edition.
 
 2 types of layout are supported in the community edition HORIZONTAL and VERTICAL. Using the preview you should be able to have a look at the differences between those 2 layouts.
 
-<i class="fa fa-info-circle"></i> <b>Info:</b> More layouts will be included in the enterprise edition
+<i class="fa fa-info-circle"></i> <b>Info:</b> More layouts are included in the enterprise edition
 {: .notice--info}
 
 ### Theme
