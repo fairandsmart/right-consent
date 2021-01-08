@@ -52,7 +52,7 @@ When the new version is ACTIVE, records are now stored using that version and it
 
 ![Model Lifecycle 5](/right-consents/assets/images/model-lifecycle-5.png)
 
-<i class="fa fa-eye"></i> <b>Info:</b> Considering the illustration, all records with either use the serial 2bc1e or f2dc3. They will be both considered as valid because of the MINOR version type that preserves the validity of records stored with previous versions.
+<i class="fa fa-eye"></i> <b>Info:</b> Considering the illustration, all records will either use the serial 2bc1e or f2dc3. They will be both considered as valid because of the MINOR version type that preserves the validity of records stored with previous versions.
 {: .notice--danger}
 
 ## Perform a major update
