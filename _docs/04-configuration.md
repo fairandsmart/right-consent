@@ -12,11 +12,13 @@ The configuration of the whole composition is not available in a single place. E
 
 The configuration of the IdP is available using the manager interface <http://localhost:4285/auth>.
 
+Use the following credentials to log in : *admin / admin*
+
 You can find the dedicated Keycloak documentation on the [product website](https://www.keycloak.org/docs/latest/server_admin/index.html)
 
 ## SMTP Server
 
-//TODO
+Head to [the upstream doc](https://github.com/maildev/maildev) for additional command line parameters.
 
 ## Backend
 
@@ -26,7 +28,7 @@ Backend configuration is located in a specific file :
 $ consent-manager-back/src/main/resources/application.properties
 ```
 
-All configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/guides/config#overriding-properties-at-runtime) 
+Most of the configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/guides/config#overriding-properties-at-runtime) 
 
 ```bash
 $ java -jar -Dquarkus.http.port=9999 ...
