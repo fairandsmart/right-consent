@@ -2,11 +2,11 @@
 title: Model Store
 permalink: /docs/model-store/
 excerpt: "Model store defines the elements that need end user choice or consent on"
-last_modified_at: 2021-01-07
+last_modified_at: 2021-01-08
 toc: true
 ---
 
-Right Consents has some similarities with Consent Management Systems but with a more specific goal : collecting user consent and preferences.
+Right Consents has some similarities with Content Management Systems (CMS) but with a more specific goal : to collect user consents and preferences.
 
 In order to create end user's consent forms, the organisation has to **define its processes** and/or preferences that need end user consent collection. Right Consents comes with 3 models of elements that can be put together within forms : Processings, Preferences and Terms and Conditions. Moreover, there is also a more generic type of model that includes **common information** needed in forms for collecting consent, such as the link to your privacy notice for example.
 
@@ -14,11 +14,11 @@ Other models exist (themes and emails) but they have another goal than just crea
 
 ## Processings
 
-**Processing** element model allows to define processes as the European GDPR defines it. It is based on the French CNIL recommendations in terms of processings registry. Even if the whole processings registry could be defined with Right Consents, only processings that need end-user consent as a legal basis are concerned here.
+**Processing** element model allows to define processing activities as the European GDPR defines them. All processings relying on consent as a legal basis can be defined.
 
-All processings need to give the end user specific information that will make him confident in giving his consent. For example, it contains the **data concerned by the processing**, the **data retention period** and the most relevant information : **the processing purpose**. 
+Specific information shall be provided to the end-user for each processing to make sure his **consent is informed**. For instance the (type of) **data used, the purpose(s) of the processing, and the data storage period**. 
 
-Some additional information is also available but mainly optional (a specific **data controller**, if the data processed is sensitive or concerns medical data, ...)
+Some additional information can be provided if relevant for your own use-cases (for example a specific **data controller**, if the data processed is sensitive or concerns medical data, ...)
 
 The **possible values** of a processing element are **accepted** or **rejected** and empty values are NOT allowed.
 
@@ -46,7 +46,7 @@ The **possible values** of Terms and Conditions models are accepted or refused o
 
 ## Generic Information
 
-Generic information element model contains the information that is common to any kind of element. It is mainly used to define the header and the footer within forms but also legal information that is mandatory in consent forms regarding the GDPR regulation : data controller and privacy notice url.
+Generic information element model contains the information that is common to several kinds of elements. It is mainly used to define the header and the footer within forms but also to add legal information that can be required (data controller, short privacy notices, link to longer privacy policies...)
 
 Some information is automatically included in the generated forms and in the receipt where some can be configured to appear in the receipt only.
 
