@@ -6,17 +6,20 @@ toc: true
 ---
 
 Right Consents is composed of :  
-a **web application** (Angular),  
-a **java/REST backend** (jboss/Quarkus),  
-an external **Identity Provider** (Redhat/Keycloak/OpenID),  
-a convenient **outgoing SMTP** server.
+* a **web application** (Angular);  
+* a **java/REST backend** (jboss/Quarkus);  
+* an external **Identity Provider** (Redhat/Keycloak/OpenID);  
+* a convenient **outgoing SMTP** server/relay;
 
 ## Installing the software
 
-All required components are available as **docker images** that is the de facto simplest way to start a local instance. 
+All required components are available as **docker images** that is the *de facto* simplest way to start a local instance. 
 
 Right Consents comes with a **ready-to-run docker compose** configuration.
 The first step is to clone the github repository which contains the elements needed to start the docker compose configuration.
+
+<i class="fa fa-exclamation-triangle"></i> please ensure [docker](https://docs.docker.com/get-docker/) is installed before proceeding further.
+{: .notice--warning}
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consent.git
@@ -24,17 +27,16 @@ $ cd right-consent
 $ docker-compose up
 ```
 
-When everything is up (check video) you can access the different components with the following urls : 
-
 {% include video id="1SS-QuplSlwof2igaMz9VxXK1LgnW8WnW" provider="google-drive" %}
 
-**Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286) using <b>Username & password:</b> *demo@demo.com/demo42*
+When everything is up (check video above) you can access the different components with the following urls : 
+
+**Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286) using username & password: *demo@demo.com / demo42*
 
 <b>Other components dedicated interface:</b>  
 <i class="fa fa-users"></i> Identity Provider manager [http://localhost:4285/auth](http://localhost:4285/auth)  
 <i class="fa fa-desktop"></i> Backend API health check url: [http://localhost:4287/health](http://localhost:4287/health)  
 <i class="fa fa-inbox"></i> MailDev Outgoing SMTP interface url: [http://localhost:4288](http://localhost:4288)  
-{: .notice}
 
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> More installation options are available in the [Installation](/docs/installation/) documentation page.
