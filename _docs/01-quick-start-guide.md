@@ -65,13 +65,13 @@ When you are comfortable with the operator interface and the modification of exi
 
 ## Integrate with other apps
 
-Everything we have seen so far is the inside of the application itself and is not dedicated to your end-users directly (except receipts and inmail form links). You probably want to see now how you could **integrate a consent collection form** in an existing application ?
+Everything we have seen so far is inside of the application itself and is not dedicated to your end-users directly (except receipts and inmail form links). You probably want to see now how you could **integrate a consent collection form** in an existing application ?
 
-We have build a dedicated project that includes integration samples. Here is a small demonstration of a consent collect form integration in an external php page using API key and custom form context.
+We have setup a dedicated project that includes integration samples. Here is a small demonstration of a consent collect form integration in an external php page using API key and custom form context.
 
 {% include video id="1uPAli_WPnDKa-qZ4US6M49Lvz-gqjra7" provider="google-drive" %}
 
-<i class="fa fa-info-circle"></i> <b>Info:</b> The material needed for sample integration is located in a [dedicated repository](https://github.com/fairandsmart/consent-manager-samples).
+<i class="fa fa-info-circle"></i> <b>Info:</b> The dedicated project needed for that sample integration is located in a [specific repository](https://github.com/fairandsmart/consent-manager-samples).
 {: .notice--info}
 
 
