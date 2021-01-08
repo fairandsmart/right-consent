@@ -2,7 +2,7 @@
 title: Model Lifecycle
 permalink: /docs/model-lifecycle/
 excerpt: "What is the lifecycle of a model and how is it versioned ?"
-last_modified_at: 2021-01-05
+last_modified_at: 2021-01-08
 toc: true
 ---
 
@@ -52,12 +52,12 @@ When the new version is ACTIVE, records are now stored using that version and it
 
 ![Model Lifecycle 5](/right-consents/assets/images/model-lifecycle-5.png)
 
-<i class="fa fa-eye"></i> <b>Be carefull:</b> All records with either use the serial 2bc1e or f2dc3. They will be both considered as valid because of the MINOR version type that preserves the validity of records stored with previous versions.
+<i class="fa fa-eye"></i> <b>Info:</b> Considering the illustration, all records with either use the serial 2bc1e or f2dc3. They will be both considered as valid because of the MINOR version type that preserves the validity of records stored with previous versions.
 {: .notice--danger}
 
 ## Perform a major update
 
-If the update includes deep content changes you may want that previously collected Records are not considered as valid anymore. In that case you need to use a MAJOR version. 
+If the update includes deep content changes you may want that previously collected Records to be not considered as valid anymore. In that case you need to use a MAJOR version. 
 
 ![Model Lifecycle 7](/right-consents/assets/images/model-lifecycle-7.png)
 
