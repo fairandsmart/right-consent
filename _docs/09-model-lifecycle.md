@@ -17,7 +17,7 @@ A model is made of three parts :
 
 A model version is identified with an **unique serial number** that will be used in forms and records. When a version becomes **ACTIVE**, no more modification can be done on the content without creating a new **DRAFT** version. The previous version content is then duplicated in the new one.
 
-It is possibile to set the type of a version to MINOR or MAJOR. **MINOR versions** should be used for simple modifications and **will not imply invalidation** of the previous records collected whereas **MAJOR versions** should be used in case of big modification and **will imply invalidation** of all previous records collected for all previous versions. 
+It is possible to set the type of version to MINOR or MAJOR. **MINOR versions** should be used for simple modifications and **will not imply invalidation** of the previous records collected whereas **MAJOR versions** should be used in case of big modification and **will imply invalidation** of all previous records collected for all previous versions. 
 
 ## Create a new model
 

@@ -14,7 +14,7 @@ The Consent Context is the entry point of any consent collection process. It can
 
 ### Validity date
 
-Setting the validity date (ISO 8601 duration format) will define how long the Records are valid. After that date, the records will be considered OBSOLETE. This parameter is mandatory but can appear or not within the Receipts sent to the end-user, depending of the operator choice.  
+Setting the validity date (ISO 8601 duration format) will define how long the Records are valid. After that date, the records will be considered OBSOLETE. This parameter is mandatory but can appear or not within the Receipts sent to the end-user, depending on the operator choice.  
 
 ### Elements
 
@@ -56,11 +56,11 @@ If you set a callback url, the end-user will be redirected to that URL after con
 
 ### Receipt Delivery Type
 
-The receipt delivery type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows to control if a receipt is generated and if it is pushed or not to the end-user.
+The receipt delivery type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows checking if a receipt is generated and if it is pushed or not to the end-user.
 
 ### Receipt Display Type
 
-The receipt display type [NONE, HTML, PDF, TXT, XML] allows to choose if the receipt is going to be displayed after the Consent Form submission and using which mime type.
+The receipt display type [NONE, HTML, PDF, TXT, XML] allows choosing if the receipt is going to be displayed after the Consent Form submission and using which mime type.
 
 <i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Setting Receipt Delivery Type to NONE implies a Receipt Display Type of NONE
 {: .notice--warning}
@@ -89,7 +89,7 @@ Multiple language support is not available in the community edition.
 
 ### Theme
 
-It is possible to apply an existing theme model element key to change the appearence of all elements of a consent collection process (form, email, receipt). 
+It is possible to apply an existing theme model element key to change the appearance of all elements of a consent collection process (form, email, receipt). 
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> Themes are mostly composed of css customization elements.
 {: .notice--info}
