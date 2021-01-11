@@ -2,7 +2,7 @@
 title: Records & Receipts
 permalink: /docs/records-receipts/
 excerpt: "What are the characteristics and the differences between Records and Receipts"
-last_modified_at: 2021-01-08
+last_modified_at: 2021-01-11
 toc: true
 ---
 
@@ -33,10 +33,6 @@ Consent Receipts are **unique for a single transaction**. There is a one to many
 Consent Receipts are designed to act more or less **like any classic receipt**. It is a single document that **contains information** on choices made at a particular time and with a specific context and conditions between an end-user and a data controller. That document should be **opposable** to any counterpart in case of conflict or in any need to modify choices.
 
 Consent Receipts have to **be portable** and to allow its holder to use it at any moment to **express any change**. That is why it also contains a link to an online form with a valid context allowing the end user to retrieve his previoulsy given values and to change any of them at any time.
-
-Consent Receipts also have to follow existing and upcoming **standards** : [ISO/IEC 29184:2020](https://www.iso.org/standard/70331.html) [ISO/IEC WD TS 27560](https://www.iso.org/standard/80392.html). 
-
-Consent Receipts should also be **interoperable** by providing an **abstract query system**. We plan to expose all consent receipts as **XACML Policies** allowing XACML Queries to be propagated along Right Consents existing instances in order to provide a **consistent result over multiple actors**.
 
 Consent Receipts use a **XML format** but can also be transformed in a **PDF document** using classic XSL stylesheets. The XML format was choosen for its **portability in machine to machine communications** where the PDF format is interesting for **human to human interactions**. Both formats can be timestamped or signed to **reinforce the intention** of counterparts and to add a real proof level with technologies like [XAdES](https://www.w3.org/TR/XAdES/) and PAdES. 
 
