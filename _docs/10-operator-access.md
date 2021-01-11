@@ -2,7 +2,7 @@
 title: Operator interface
 permalink: /docs/operator-access/
 excerpt: "How an operator is able to manage its customer consents and preferences ?"
-last_modified_at: 2020-12-23
+last_modified_at: 2021-01-11
 toc: true
 gallery:
   - url: /assets/images/operator-access.png
