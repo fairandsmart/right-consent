@@ -13,7 +13,7 @@ gallery:
 
 ## User access
 
-As a first step to the Customer Privacy Portal (as described by Gartner in different reports), we have imagined a dedicated interface for the end-users to be able to access their choices regarding the organization's processings and preferences and to be able to modify their choices at any time. 
+To deliver the best experience to the end-users (through even more transparency and control over their data), a dedicated interface can be made available to the end-users to access their choices regarding the organization's processings and preferences and to be able to modify their choices at any time. 
 
 {% include gallery %}
 
