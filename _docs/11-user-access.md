@@ -2,7 +2,7 @@
 title: User Dedicated Interface
 permalink: /docs/user-access/
 excerpt: "How my customers can access a dedicated interface allowing them to update their consents & preferences ?"
-last_modified_at: 2020-12-23
+last_modified_at: 2021-01-11
 toc: true
 gallery:
   - url: /assets/images/user-access.PNG
@@ -13,7 +13,9 @@ gallery:
 
 ## User access
 
-To deliver the best experience to the end-users (through even more transparency and control over their data), a dedicated interface can be made available to the end-users to access their choices regarding the organization's processings and preferences and to be able to modify their choices at any time. 
+To deliver the best experience to the end-users (through even more transparency and control over their data), a dedicated interface can be made available to the end-users to access their choices regarding the organization's processings and preferences and to be able to modify their choices at any time.
+
+To access this dedicated page, the users will need to be authenticated (cf page "User Authentication"). 
 
 {% include gallery %}
 
