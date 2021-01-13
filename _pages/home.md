@@ -2,51 +2,64 @@
 layout: home
 permalink: /
 hidden: true
-title: "About" #head only
-excerpt: "An Open Source European Universal Consents & Preferences Management Platform"
+title: "Right Consents Community" #head only
+excerpt: "The safe and simple way to manage GDPR consents"
 header:
   actions:
-    label: "Get started"
-    url: "/quick-start/"
-
-last_release :
-   label : "Latest release v1.0.13"
-   link : "#"
-release_note :
-   label :  "Release notes"
-   link : "#"
-excerpt_2_sub : "By using Right Consents Comunity, you agree to its <a hreh='#'>License and privacy statement.</a>"
-features_list:
-  - title: "collect"
-    excerpt: "Integrate consent form in **any existing user experience** like web or mobile application and define **custom processing and preference models** to push fine graine form at the best time."
-  - title: "analyse"
-    excerpt: "Use **dedicated metrics** to ensure processing consent acknowledgment and to compare different **model formulation** in an A/B testing way."
-  - title: "preserve"
-    excerpt: "Preserve your **user's choices** by feeding a central **truth base**, and ensure the best conformity using standardized consent receipts as proof and **long time** and secured conservation."
-enterprise_features:
-  list :
-    - item : "Save time with an easy to implement SaaS solution."
-    - item : "Limit transfers outside the EU by using a 100% European solution."
-    - item : "Reduce your legal costs thanks to the regulation monitoring integrated into the solution..."
-  clicktoaction : "Request a demo of | Right Consents Enterprise"
-  url : "https://www.fairandsmart.com/solution-gestion-consentements-rgpd-cmp/"
+    - label: "Install now"
+      url: "/docs/quick-start-guide/"
+excerpt_2: "Right Consents Community edition is an Open Source Universal Consents & Preferences Management Platform. <br/> It aims to provide any organization with a complete, simple and easy to implement solution for <b>collecting, storing, analysing</b> and <b>using</b> users' consents and preferences."
+feature_row:
+  - image_path: /assets/images/collect.2.png
+    alt: "collect"
+    title: "Collect"
+    excerpt: "Integrate your own customized consent forms to all users journeys (custom messaging – all channels)"
+    url: "/docs/forms/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/analyse.2.png
+    alt: "analyse"
+    title: "Use"
+    excerpt: "Make your consent records database available in real time to all business and marketing applications (Rich API - fine analytics)"
+    url: "/docs//"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/preserve.2.png
+    alt: "preserve"
+    title: "Secure"
+    excerpt: "Demonstrate your compliance and preserve users' choices in in a centralized truth base (standard consent receipts – secured storage)"
+    url: "/docs/records-receipts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
 
 
-fair[&]smart Right Consents community edition is an Open Source European Universal Consents & Preferences Management Plateform. It aims to provide a complete **open source** and **free to use** solution for **collecting**, **operating**, **preserving** and **analysing** all aspects of consent's management and user's preferences in an organisation.
-
 ## **Notable features**
 
-The solution comes with a **full featured backoffice** that allows to define models for many kinds of user's based choices (processings, preferences, terms of service, privacy policy).
+### Administration interface for all stakeholders
+![backoffice](/right-consents/assets/images/screen-1.png)
+**A full featured backoffice** allows multiple stakeholders to create forms for all kinds of situations which require the end-user approval (processings, preferences, terms of service) and access history of those records.
 
-**Defined models** but also general information (privacy policy, PII controller, ...) can be used in various collecting schemes including a **specific operator interface** that allows to setup user preferences and consents in a way that **complies with GDPR**.
+### Self-service interface end-users
+![backoffice](/right-consents/assets/images/screen-7.png)
+All end-users can access their own **Preference Center** : a user dedicated page that allows them to update their consents and preferences when they want. It can be made accessible in multiple ways including through a dedicated link.
 
-Right Consents platform **ensure records** of preferences, consents and terms of use but also **receipts generation** with **certified timestamp** and/or **signature** in order to build a fully operational consent base and a **long term preservation** receipts base compliant with rgpd recommendations.
+### Configurable and granular consent structures
+![backoffice](/right-consents/assets/images/screen-6.png)
+**Customised templates** with generic information (privacy policy, PII controller, …) can be used in various collecting schemes including a **specific operator interface** that allows to setup a user preferences and consents on his behalf (call-centers, physical stores, parents for children…) with further confirmation through email. Fits to all use cases and all channels.
 
-End-users have also access to an optional **user dedicated page** that allows them to update consents and preferences provided by the organisation. User page access links can be given in multiple ways but are, at least, included in the consent receipt for the whole consent validity duration.
+### Strong proof of validity
+![backoffice](/right-consents/assets/images/screen-3.png)
+Right Consents platform **ensure records** of consents, preferences or Terms of services and generates **receipts** in order to build a fully operational consents base and a **long term preservation** receipts base compliant with GDPR recommendations.
 
-Consent receipts are available in **multiple formats** (xml, pdf, html or simple text). That receipt allows users to **keep track** of a given consent but also to **forward or transfer** that consent to any other party or also to modify or withdraw consent or preferences within the included long time preserved update link.
+### High interoperability
+![backoffice](/right-consents/assets/images/screen-4.png)
+Consent receipts are available in multiple formats (xml, pdf, html). Those receipts allow all stakeholders (Data Subjects, Data Controllers, Data Processors, Data Protection Authorities…) to keep track of a given consent but also to forward or transfer that consent to any involved third-party.
 
-All operations are exposed in a fully documented and **dedicated REST API**. Many security components and user **privacy enforcement's technologies** are included or optional such as certified timestamp for **non repudiation** of a given consent or specific **end-to-end ciphering**. Those aspects ensure the best level of **data privacy** and lifecycle tracking management for models combined with hash strategy ensuring a **strong secured approach** to data storage.
+### Easy to use
+![backoffice](/right-consents/assets/images/screen-2.png)
+Create your own processing activities library and drag and drop them into as many collecting forms as you want to. This processing-based approach allows you to easily query the consent records database, no matter how far you went into customizing the collection forms.
 
-Finally, a fully supported enterprise version is available and **hosted by Fair&Smart**. This enterprise version provides specific functionalities adapted to business and **highly available** capabilities. For any kind of specific needs, enterprise version benefits of a premium support allowing specific improvements.
+### Easy to integrate
+![backoffice](/right-consents/assets/images/screen-5.png)
+All operations are exposed in a fully documented and dedicated REST API. Many security components and user privacy enforcement's technologies are included.
