@@ -1,0 +1,171 @@
+/* generic */
+
+
+
+
+header {
+  position: relative;
+}
+
+header > h1 {
+  font-weight: 300;
+}
+
+header > h1 > span {
+  font-weight: 700;
+}
+
+header > h1 > span + span {
+  font-size: .5em;
+  font-weight: 700;
+  display: block;
+  clear: both;
+  margin-left: 190px;
+}
+
+header > h1#product:after {
+  position: absolute;
+  content: $powered;
+}
+
+header.top > p,
+header.subtop > p {
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+#LandingPageRightConsentsCommunity header.top > p.pushline {
+  font-size: 2em;
+  font-weight: 400;
+  max-width: 420px;
+  margin: 2em 0 1em;
+}
+
+#LandingPageRightConsentsCommunity header.top > p.subtitle {
+  font-size: 1em;
+  max-width: 420px;
+}
+
+header > p.pushline {
+  font-weight: 700;
+}
+
+header p.release {
+  font-size: .8em !important;
+}
+
+header p.privacy {
+  font-size: .7em !important;
+}
+
+header p.privacy a,
+header p.release a {
+  text-decoration: underline;
+  color: $grey;
+}
+
+#LandingPageRightConsents h1:before {
+  position: relative;
+  top: -40px;
+  display: block;
+  width: 100%;
+  content: $illusRightConsents-small;
+  text-align: center;
+}
+
+#LandingPageRightConsentsCommunity.home h1:before {
+  position: relative;
+  display: block;
+  float: right;
+  width: 100%;
+  content: $screen;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 1.8em;
+}
+
+header > h1#product:after {
+  position: relative;
+  float: right;
+}
+
+header.top > p,
+header.subtop > p {
+  clear: both;
+  width: 100%;
+}
+
+
+
+/* mobile */
+
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  #LandingPageRightConsents h1:before {
+    position: absolute;
+    top: -70px;
+    left: 110%;
+    width: 420px;
+    content: url('../img/illus-LandingPagerRightConsents.svg');
+  }
+
+  #LandingPageRightConsentsCommunity.home h1:before {
+    position: absolute;
+    top: 110px;
+    left: 80%;
+    width: 420px;
+    content: url('../img/screen.png');
+  }
+
+  header > h1,
+    header p.subtitle,
+    header p.pushline,
+    section#intro article,
+    section#useCases article,
+    section#values article,
+    section#plusValues article {
+    position: relative;
+    max-width: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+  header > h1 {
+    font-size: 2.5em;
+  }
+
+  header > h1#product:after {
+    position: absolute;
+    left: 410px;
+    margin-top: 5px;
+  }
+
+  #LandingPageRightConsents h1:before {
+    position: absolute;
+    top: 100px;
+    left: 285px;
+    width: 420px;
+    content: $illusRightConsents;
+  }
+
+  header > h1,
+    header p.subtitle,
+    header p.pushline,
+    section#intro article {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  header.top > p,
+        header.subtop > p {
+    max-width: 290px;
+    text-align: left;
+  }
+}

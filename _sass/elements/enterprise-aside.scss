@@ -1,0 +1,41 @@
+
+  aside.enterprise {
+    position: absolute;
+    right: -90px;
+    display: block;
+    width: 433px;
+    height: 361px;
+    background: url(../img/encartorange.svg) no-repeat top right;
+  }
+
+  aside.enterprise > ul {
+    width: 433px;
+    padding: 60px 50px 0 30px;
+    color: $white;
+  }
+
+  aside.enterprise > ul > li {
+    list-style: square;
+  }
+
+  aside.enterprise button.enterprise_click {
+    position: relative;
+    top: -15px;
+    left: -14px;
+    width: 365px;
+    height: 103px;
+    border: none;
+    background: url(../img/fondbouton.svg) no-repeat top left;
+  }
+
+  aside.enterprise button.enterprise_click span:after {
+    position: relative;
+    top: -5px;
+    right: -10px;
+    content: url(../img/arrow-right.svg);
+  }
+
+  aside.enterprise button.enterprise_click span {
+    line-height: .9em;
+    display: block;
+  }

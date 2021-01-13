@@ -1,0 +1,131 @@
+/* generic */
+
+#useCases{
+  > h2{
+      position: absolute;
+      left: -105px;
+      display: inline-block;
+      width: 505px;
+      height: 460px;
+      > span{
+          font-size: .5em;
+          line-height: 1.2em;
+          position: relative;
+          top: 260px;
+          left: 110px;
+          display: inline-block;
+          width: 180px;
+          transform: perspective(20em) rotateY(-10deg) rotate(-15deg);
+          color: $white;
+          > strong{
+              font-size: 2.5em;
+              line-height: 1em;
+              display: inline-block;
+          }
+      }
+  }
+  article h3:before{
+      content: counter(artNum) ' - ';
+      counter-increment: artNum;
+  }
+}
+
+
+
+
+#leadAcquisitionCase
+{
+    padding-top: 700px;
+    header:before{
+        position: absolute;
+        top: -200px;
+        left: -10px;
+          content: url('../img/megaphone.svg');
+    }
+}
+
+#thirdPartyCase
+{
+    margin-top: 120px;
+    header:before{
+        position: absolute;
+        top: -150px;
+        right: -30px;
+        content: url('../img/prise.svg');
+    }
+}
+
+/* mobile */
+
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem)
+{
+    #leadAcquisitionCase  {
+          padding-top: 0;
+          header:before{
+             position: absolute;
+             top: -150px;
+             left: -30px;
+             content: url('../img/megaphone.svg');
+         }
+    }
+    #thirdPartyCase{
+          margin-top: -400px;
+          header:before{
+              position: absolute;
+              top: -150px;
+              right: -45px;
+              content: url('../img/prise.svg');
+          }
+    }
+
+}
+/* Larger than tablet screen */
+@media (min-width: 80.0rem)
+{
+    #useCases > h2
+    {
+        position: absolute;
+        left: -165px;
+
+        display: inline-block;
+
+        width: 505px;
+        height: 460px;
+    }
+
+    #leadAcquisitionCase
+    {
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 60px !important;
+        header:before{
+            position: absolute;
+            top: -150px;
+            left: -60px;
+
+            content: url('../img/megaphone.svg');
+        }
+        footer{
+            position: absolute;
+            z-index: 100;
+            right: -140px;
+            margin-top: -60px;
+        }
+    }
+
+    #thirdPartyCase
+    {
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        header:before
+        {
+            position: absolute;
+            top: -150px;
+            right: -45px;
+            content: url('../img/prise.svg');
+        }
+
+    }
+}

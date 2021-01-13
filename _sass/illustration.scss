@@ -1,0 +1,56 @@
+/* illus */
+
+$powered: url('../img/powered.svg');
+$logo: url('../img/fair_smart_logo_w.svg');
+
+$link: url('../img/link.svg');
+$section-1: url('../img/section-1.svg');
+$section-3: url('../img/section-3.svg');
+$section-3-var: url('../img/section-3-var.svg');
+$section-5: url('../img/section-5.svg');
+$section-6: url('../img/section-6.svg');
+$section-9: url('../img/section-9.svg');
+$section-10: url('../img/section-10.svg');
+
+$bgmenu: url('../img/bgmenu.svg');
+$feat-3item: url('../img/feat-3item.svg');
+
+$illusRightConsents-small: url('../img/illus-LandingPagerRightConsents-small.svg');
+$illusRightConsents: url('../img/illus-LandingPagerRightConsents.svg');
+
+
+$screen: url('../img/screen.png');
+
+
+
+
+
+
+/* social */
+@mixin bg-illus($name)
+{
+    .#{$name}
+    {
+        background: url('../img/#{$name}.svg') 0 0 no-repeat;
+    }
+}
+
+/* tablecheck */
+
+@mixin bg-check($name)
+{
+    #compare table tbody td.#{$name}
+    {
+        background-image: url('../img/#{$name}.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+@mixin illus-element($name,$type)
+{
+    #{$type}#{$name}:before
+    {
+        content: url('../img/#{$name}.svg');
+    }
+}

@@ -1,0 +1,118 @@
+/*   general                     */
+
+/*   mobile                      */
+
+
+aside.bandeau-traversant {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  button {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 60px 0;
+    padding: 10px;
+    white-space: normal;
+    text-transform: inherit;
+    border: 1px solid gray;
+    background: none;
+    background: linear-gradient(135deg, #434343 0%,#706f6f 100%);
+    box-shadow: 12px 12px 30px 1px rgba(0, 0, 0, .2);
+    span {
+      display: block;
+    }
+    .texte .productName {
+      font-size: 1.5em;
+      line-height: 1.4em;
+      em {
+        font-style: normal;
+      }
+    }
+  }
+}
+
+
+
+/*   Larger than mobile screen   */
+@media (min-width: 40.0rem)
+{
+  aside.bandeau-traversant {
+    flex-direction: row;
+  }
+
+}
+/*   Larger than tablet screen   */
+@media (min-width: 80.0rem)
+{
+    aside.bandeau-traversant {
+      position: relative;
+      left: -152px;
+      width: 1281px;
+      height: 487px;
+      margin-bottom: -150px;
+      background: url('../img/section-2.svg') 0 0 no-repeat;
+      .community {
+        background: url('../img/bouton-1.svg') 0 0 no-repeat;
+      }
+      .enterprise {
+        background: url('../img/bouton-2.svg') 0 0 no-repeat;
+      }
+      button {
+        font-size: .75em;
+        position: absolute;
+        margin: inherit;
+        vertical-align: top;
+        border: none;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        .texte {
+          font-size: 1em;
+          font-weight: 400;
+          line-height: 1.4em;
+          position: relative;
+          display: inline-block;
+          text-align: left;
+          vertical-align: top;
+          text-transform: none;
+          color: $white;
+          top: -30px;
+          left: -20px;
+          transform: perspective(50em) rotateY(-10deg) rotateX(5deg) rotateZ(16deg);
+          span {
+            display: block;
+          }
+          .productName {
+            font-size: 1.5em;
+            line-height: 1.4em;
+            em {
+              font-style: normal;
+            }
+          }
+
+        &.community {
+          top: 70px;
+          left: 180px;
+            width: 404px;
+            height: 257px;
+        }
+        &.enterprise {
+          top: 200px;
+          left: 700px;
+            width: 416px;
+            height: 226px;
+            .texte {
+              top: -26px;
+              left: -30px;
+              transform: perspective(50em) rotateY(15deg) rotateX(5deg) rotateZ(10deg);
+            }
+        }
+
+
+      }
+    }
+}
+}
