@@ -146,18 +146,6 @@ consent.security.roles.operator=operator
 consent.security.roles.api=api
 ```
 
-### External TSA
-
-A Timestamp authority needs to be declared in order to get a certified timestamp on consent receipt. This is optional.
-
-```properties
-# TsaConfig
-consent.tsa.url=https://freetsa.org/tsr
-consent.tsa.auth=false
-consent.tsa.auth.username=user
-consent.tsa.auth.password=password
-```
-
 ### Serial config
 
 Serial numbers can be customized. Internal serial management is based on a slot reservation in the DB avoiding too many serialized transactions and storage bottlenecks on this critical point. Slot size can be customized in case of very heavy load of the system. Also a specific serial prefix may allow you to distinguish different instances of serials (production or tests).
@@ -175,11 +163,8 @@ A dedicated page can be made available to your end users and the content of this
 
 ```properties
 # ClientConfig
-consent.client.user-page.enabled=true
+consent.client.user-page.enabled=false
 consent.client.user-page.elements=Core.1,Market.1,Channel.1,Frequency.1,Mode.1,Username.1,cgu.1
 consent.client.user-page.public-url=http://localhost:4200/user/me
 ```
 
-## Backoffice web application
-
-//TODO
