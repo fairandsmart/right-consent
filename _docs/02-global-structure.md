@@ -18,7 +18,7 @@ In its minimal form, the Right Consents stack consists of 3 main components :
 
 The provided docker-based example stack purpose is for demonstration or testing purpose and will be used through this documentation to explain Right Consents internals. 
 
-<i class="fa fa-exclamation-triangle"></i>obviously this example stack **should NOT be used in production** regarding the lack of many aspects (SSL termination, HA storage, laod balancing and so on).
+<i class="fa fa-exclamation-triangle"></i> Obviously this example stack **should NOT be used in production** regarding the lack of many aspects (SSL termination, HA storage, laod balancing and so on).
 {: .notice--warning}
 
 ## Default deployment infrastructure
@@ -39,7 +39,7 @@ The storage subsystem is an embedded H2 database for testing purpose and should 
 
 Outgoing SMTP server is set to the provided smtp container.
 
-<i class="fa fa-info-circle"></i>The IdP manager is accessible via the [dedicated web interface](http://localhost:4285/auth) (admin / admin). This url is also used to authenticate user when accessing RightConsents web app, like any SSO solution.
+<i class="fa fa-info-circle"></i> The IdP manager is accessible via the [dedicated web interface](http://localhost:4285/auth) (admin / admin). This url is also used to authenticate user when accessing RightConsents web app, like any SSO solution.
 {: .notice--info}
 
 ### Angular Web Application (localhost:4286)
