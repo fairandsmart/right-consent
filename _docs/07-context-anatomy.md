@@ -2,7 +2,7 @@
 title: Consent Context Anatomy
 permalink: /docs/context-anatomy/
 excerpt: "Anatomy of the Consent Context that will define the content, look'n'feel and behaviour of the Consent Form"
-last_modified_at: 2020-12-21
+last_modified_at: 2021-01-08
 toc: true
 ---
 
@@ -12,9 +12,9 @@ The Consent Context is the entry point of any consent collection process. It can
 
 ## Content
 
-### Validity
+### Validity date
 
-Setting the validity (ISO 8601 duration format) will define how long the Records are valid. After that duration, the records will be considered OBSOLETE. This parameter is mandatory. 
+Setting the validity date (ISO 8601 duration format) will define how long the Records are valid. After that date, the records will be considered OBSOLETE. This parameter is mandatory but can appear or not within the Receipts sent to the end-user, depending on the operator choice.  
 
 ### Elements
 
@@ -25,22 +25,22 @@ It is mandatory to set the model keys of elements that need to be visible in tha
 
 ### Form Type
 
-Form Type can be either FULL or PARTIAL. In a partial form, only elements that do not have a previous Record for that user will be displayed.
+Form Type can be either FULL or PARTIAL. In a partial form, only elements that do not have a previous Record for that end-user will be displayed.
 
 ### Context Attributes
 
-It is possible to set any Context Attributes (key/value). Those attributes will be included in the Records generated while submitting the form and could be used later when querying the record base. 
+It is possible to set any Context Attributes (key/value). Those attributes will be included in the Records generated while submitting the form and could be used later on when querying the record base. 
 
 It is mainly used to split the records for consent collected by a specific zone, or by a specific version of a product...
 
 <i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Using a lot of attributes can generate heavy tokens, use with caution
 {: .notice--warning}
 
-### User Information
+### End-User Information
 
-It is possible to set any User Personal Information in the context. This information will be included in the Receipt only. 
+It is possible to set any End-User Personal Information in the context. This information will be included in the Receipt only. 
 
-The goal is to identify the subject providing specific user information that could enforce the identification of the subject with the Receipt. 
+The goal is to identify the subject providing specific end-user information that could enforce the identification of the subject with the Receipt. 
 
 <i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Using a lot of information can generate heavy tokens, use with caution
 {: .notice--warning}
@@ -49,18 +49,18 @@ The goal is to identify the subject providing specific user information that cou
 
 ### Callback
 
-If you set a callback url, the user will be redirected to that URL after consent submission or receipt display. 
+If you set a callback url, the end-user will be redirected to that URL after consent submission or receipt display. 
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> If the form is displayed in an IFrame, this parameter is not necessary.
 {: .notice--info}
 
 ### Receipt Delivery Type
 
-The receipt delivery type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows to control if a receipt is generated and if it is pushed or not to the user.
+The receipt delivery type [NONE, GENERATE, DISPLAY, STORE, DOWNLOAD] allows checking if a receipt is generated and if it is pushed or not to the end-user.
 
 ### Receipt Display Type
 
-The receipt display type [NONE, HTML, PDF, TXT, XML] allows to choose if the receipt is going to be displayed after the Consent Form submission and using which mime type.
+The receipt display type [NONE, HTML, PDF, TXT, XML] allows choosing if the receipt is going to be displayed after the Consent Form submission and using which mime type.
 
 <i class="fa fa-exclamation-circle"></i> <b>Notice:</b> Setting Receipt Delivery Type to NONE implies a Receipt Display Type of NONE
 {: .notice--warning}
@@ -77,16 +77,19 @@ A Notification Report will also be included in the Record keeping track of the d
 
 Multiple language support is not available in the community edition.
 
+<i class="fa fa-info-circle"></i> <b>Info:</b> If you want to know more about the Enterprise edition, please contact us.
+{: .notice--info}
+
 ### Layout
 
 2 types of layout are supported in the community edition HORIZONTAL and VERTICAL. Using the preview you should be able to have a look at the differences between those 2 layouts.
 
-<i class="fa fa-info-circle"></i> <b>Info:</b> More layouts will be included in the enterprise edition
+<i class="fa fa-info-circle"></i> <b>Info:</b> More layouts are included in the enterprise edition
 {: .notice--info}
 
 ### Theme
 
-It is possible to apply an existing theme model element key to change the appearence of all elements of a consent collection process (form, email, receipt). 
+It is possible to apply an existing theme model element key to change the appearance of all elements of a consent collection process (form, email, receipt). 
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> Themes are mostly composed of css customization elements.
 {: .notice--info}

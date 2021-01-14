@@ -48,8 +48,8 @@ docs:
     children:
       - title: "Themes"
         url: /docs/themes/
-      - title: "Emails"
-        url: /docs/emails/
+      - title: "API"
+        url: /docs/api/
   - title: Meta
     children:
       - title: "Contributing"
@@ -57,4 +57,4 @@ docs:
       - title: "License"
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+        url: /docs/terms/
