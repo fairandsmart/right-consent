@@ -1,11 +1,9 @@
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
-  - title: "API"
-    url: /news/
   - title: "News"
     url: /news/
-  - title: "Ecosystem"
+  - title: "About"
     url: /about/
 
 # documentation links
