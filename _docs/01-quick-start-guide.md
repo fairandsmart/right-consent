@@ -27,7 +27,8 @@ $ cd right-consent
 $ docker-compose up
 ```
 
-{% include video id="1SS-QuplSlwof2igaMz9VxXK1LgnW8WnW" provider="google-drive" %}
+{% include video id="ab9405f9-f3bd-428f-8881-f7a9f9d7c782" provider="fairandsmart" %}
+
 
 When everything is up (check video above) you can access the different components with the following urls : 
 
@@ -48,7 +49,7 @@ As soon as the main components are started, you should be able to **access the p
 
 Backoffice access allows to apply some modifications to any existing or non-existing end-user. In the search field, specify a end-user id to access his dedicated consents & preferences page :
 
-{% include video id="1L5BGNc1JNMxLxLFZyuAleZ2t1r9ZxxWk" provider="google-drive" %}
+{% include video id="70626fef-c03b-4c2c-b32f-674a400e57e5" provider="fairandsmart" %}
 
 By the way, by "end-user" we mean the final user, who can be a citizen, a customer, a member...
 If that end-user has never setup his preferences or consents before, the page is empty but the account has been created and activity date is recorded as the end-user's activity starting point .
