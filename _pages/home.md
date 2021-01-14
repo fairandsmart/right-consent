@@ -37,7 +37,7 @@ feature_row:
 
 {% include feature_row %}
 
-fair[&]smart Right Consents community edition is an Open Source European Universal Consents & Preferences Management Plateform. It aims to provide a complete **open source** and **free to use** solution for **collecting**, **operating**, **preserving** and **analysing** all aspects of consent's management and user's preferences in an organisation.
+fair[&]smart Right Consents community edition is an Open Source European Universal Consents & Preferences Management Platform. It aims to provide a complete **open source** and **free to use** solution for **collecting**, **operating**, **preserving** and **analyzing** all aspects of consent's management and user's preferences in an organization.
 
 ## Notable features
 
