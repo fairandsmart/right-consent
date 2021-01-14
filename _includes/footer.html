@@ -2,15 +2,20 @@
 		<footer class="bottom">
 			<aside>
 				<h2 class="logow">fair&smart - Personal Data Solutions</h2>
-				  {% include social_list.html %}
 			</aside>
 			{% include navfoot.html %}
 
-
+	    {% include social_list.html %}
 	    <aside class="incitive">
-	      <button onclick="window.location.href='{{ page.header.actions.url | relative_url }}'">
-	        <span>{{ page.header.actions.label }}</span>
-	      </button>
+
+				{%- for clicktoaction in page.header.actions -%}
+			<button onclick="window.location.href='{{ clicktoaction.url | relative_url }}'"><span>{{ clicktoaction.label }}</span>
+
+			</button>
+
+
+			{%- endfor -%}
+
 	    </aside>
 
 
@@ -20,7 +25,6 @@
 		</p>
 
 
-
-	<link rel="preload" href="{{site.baseurl}}/assets/css/rightconsents.css" as="style" onload="this.rel='stylesheet'">
-
-	<!--script type="text/javascript" src="assets/js/vendor.js"></script-->
+	<link rel="preload" href="{{site.baseurl}}/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+	<script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/script.js"></script>

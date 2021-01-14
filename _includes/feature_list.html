@@ -1,8 +1,8 @@
-<section class="features nbFeat-{{page.features_list.size}}">
-  {%- for feature in page.features_list -%}
+<section class="features nbFeat-{{page.feature_row.size}} neutral">
+  {%- for feature in page.feature_row -%}
   <article>
     <header class="subtop">
-      <h3>{{feature.title | escape}}</h3>
+      <h3 id="{{feature.title | slugify }}">{{feature.title | escape}}</h3>
         {{feature.excerpt | markdownify}}
     </header>
   </article>
