@@ -27,7 +27,7 @@ $ cd right-consent
 $ docker-compose up
 ```
 
-{% include video id="ab9405f9-f3bd-428f-8881-f7a9f9d7c782" provider="fairandsmart" %}
+{% include video id="feb45b33-8a01-4d1c-990c-c0b4e01c9437" provider="fairandsmart" %}
 
 
 When everything is up (check video above) you can access the different components with the following urls : 
@@ -58,13 +58,13 @@ Now, **perform some modifications** on the available sample consents and/or pref
 
 When everything is done you can **commit changes** and you may choose to **notify the end-user** that something has changed on his consents/preferences by sending him an email. That email will contain an attached receipt but also a link that will allow the end-user to **make his own choices**. There are two types of user access provided by the software : a dedicated web interface similar to the operator one (which requires authentication at user level) and a simple online form (no authentication required). In the quick start instance, you can access the outgoing SMTP server interface to check "send email" without using a real recipient as shown in the screencast.
 
-{% include video id="1XdpCbyZu4itjMqqfWVNhuKeIYWqZ7P7O" provider="google-drive" %}
+{% include video id="39f262ed-fc9b-48ec-b2a2-7fcf2ac05f21" provider="fairandsmart" %}
 
 ## Doing more
 
 When you are comfortable with the operator interface and the modification of existing consents and preferences you can go through the **configuration section** to register new processings and preferences and see how they integrate with the existing ones.
 
-{% include video id="1UEyoy2leJxRCX4cffuMJz1lDd4KquJSM" provider="google-drive" %}
+{% include video id="17c867d3-2c4a-4f9e-9457-3a89da0f174b" provider="fairandsmart" %}
 
 ## Integrate with other apps
 
@@ -72,7 +72,7 @@ Everything we have seen so far is inside of the application itself and is not de
 
 We have setup a dedicated project that includes integration samples. Here is a small demonstration of a consent collect form integration in an external php page using API key and custom form context.
 
-{% include video id="1uPAli_WPnDKa-qZ4US6M49Lvz-gqjra7" provider="google-drive" %}
+{% include video id="1f634d82-ce1a-450d-a8d8-736e09f1b3ed" provider="fairandsmart" %}
 
 <i class="fa fa-info-circle"></i> <b>Info:</b> The dedicated project needed for that sample integration is located in a [specific repository](https://github.com/fairandsmart/consent-manager-samples).
 {: .notice--info}
