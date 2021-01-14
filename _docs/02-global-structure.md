@@ -14,16 +14,16 @@ gallery:
 In its minimal form, the Right Consents stack consists of 3 main components :
 * an authentication server;
 * a web application;
-* and a backend; 
+* and a backend;
 
-The provided docker-based example stack purpose is for demonstration or testing purpose and will be used through this documentation to explain Right Consents internals. 
+The provided docker-based example stack purpose is for demonstration or testing purpose and will be used through this documentation to explain Right Consents internals.
 
-<i class="fa fa-exclamation-triangle"></i>obviously this example stack **should NOT be used in production** regarding the lack of many aspects (SSL termination, HA storage, laod balancing and so on).
+<i class="fa fa-exclamation-triangle"></i> obviously this example stack **should NOT be used in production** regarding the lack of many aspects (SSL termination, HA storage, laod balancing and so on).
 {: .notice--warning}
 
 ## Default deployment infrastructure
 
-The provided docker compose stack deploys a set of components described in the following schema : 
+The provided docker compose stack deploys a set of components described in the following schema :
 
 {% include gallery %}
 
@@ -50,10 +50,10 @@ Form-based consents & preferences collection and receipts consultation URLs are 
 
 ### Quarkus Backend (localhost:4287)
 
-All business logic is included in a single backend application that uses several subcomponents. That application mainly uses the quarkus framework. It also relies on an external Timestamp Authority (TSA) configured to use (freetsa.org). That TSA is free of charge for a very limited traffic and should be replaced or disabled if needed. 
+All business logic is included in a single backend application that uses several subcomponents. That application mainly uses the quarkus framework. It also relies on an external Timestamp Authority (TSA) configured to use (freetsa.org). That TSA is free of charge for a very limited traffic and should be replaced or disabled if needed.
 
 As for the IdP, the backend is configured to use an embedded H2 database and a local (folder based) receipt storage provider, both stored on a named docker volume to ensure persistence across deployments.
- 
+
 Outgoing SMTP server is set to the provided smtp container.
 
 ### Mail Display/Relay (localhost:4288)
