@@ -2,7 +2,7 @@
 /* generic */
 
 #LandingPageRightConsentsCommunity footer.bottom {
-  padding: 0 60px;
+
 
 }
 
@@ -11,24 +11,20 @@ footer.bottom {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 110px -20px -110px;
-  padding: 70px 40px;
+  margin: 110px 0px -110px;
+  padding: 70px 35px;
   color: $white;
   background-color: $orange;
   justify-content: space-between;
   flex-wrap: wrap;
-  &:before {
-    content: $section-10;
-    position: absolute;
-    top: -63px;
-    left: 0;
-  }
+
   a {
     color: inherit;
   }
   .logow {
     overflow: hidden;
     width: 170px;
+    margin-top:35px;
     height: 75px;
     text-indent: -2000px;
   }
@@ -72,7 +68,7 @@ footer.bottom {
   aside.incitive {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 80px;
+    margin: 45px 0 80px;
     button {
       display: block;
       height: auto;
@@ -98,8 +94,8 @@ p.legal {
   left: 0 !important;
   display: block;
   clear: both;
-  margin: 0 !important;
-  text-align: center;
+  margin: 0 30px !important;
+  text-align: right;
   color: $white;
   a {
     color: $white;
@@ -122,7 +118,8 @@ p.legal {
 
 
     footer.bottom {
-      margin: 110px -110px -110px;
+      margin: 110px -80px -110px;
+      padding:0 35px;
       flex-wrap: no-wrap;
       nav > ul {
         padding: 0 20px;

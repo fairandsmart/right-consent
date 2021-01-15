@@ -27,7 +27,7 @@ section {
   }
   &.distri article {
     position: relative;
-    max-width: 420px;
+    max-width: 100%;
     h3 {
       font-size: 1.5em;
       font-weight: 400;
@@ -57,7 +57,7 @@ section {
     p,
     h3{
       position: relative;
-      max-width: 420px;
+      max-width: 100%;
     }
   }
 }
@@ -187,18 +187,34 @@ button.quickstart {
 
 @media (min-width: 40.0rem) {
   .container {
-    background: $white url('../img/bgbeige.gif') center repeat-y;
-    .single  &,.post &,.posts &,.categories &,.tags &{
-      background: $white;
+    background: -webkit-linear-gradient(left, $white 50%, $light 50%);
+    background: -o-linear-gradient(left, $white 50%, $light 50%);
+    background: linear-gradient(to right, $white 50%, $light 50%);
+
+      .single  &,.post &,.posts &,.categories &,.tags &{
+        background: $white;
+
+
+      }
+
     }
 
-  }
+    button.quickstart {
+      position: absolute;
+      right:50%;
 
-
+    }
+    section.distripara{
+      p,
+      h3{
+        position: relative;
+        max-width: 50%;
+      }
+    }
 
 
   section.distri article:nth-child(2n) {
-    margin-left: 50%;
+    margin-left: 60%;
   }
 }
 
@@ -206,14 +222,18 @@ button.quickstart {
 @media (min-width: 80.0rem) {
 
   .container {
-    padding: 110px 70px;
-    background: $white url('../img/bgbeige.gif') left repeat-y;
-  }
+      padding: 110px 70px;
+      max-width: 144.0rem;
+      background: -webkit-linear-gradient(left, $white 50%, $light 50%);
+      background: -o-linear-gradient(left, $white 50%, $light 50%);
+      background: linear-gradient(to right, $white 50%, $light 50%);
+
+    }
 
   .single .container,
     .post .container,
     .posts .container {
-    padding: 110px 70px;
+   padding: 110px 70px;
     background: $white;
   }
 
@@ -224,12 +244,12 @@ button.quickstart {
 
   section.distri article {
     position: relative;
-    max-width: 440px;
+    max-width: 50%;
   }
 
   #award article {
     position: relative;
-    left: 500px;
+    margin-left: 50%;
     max-width: 250px;
     img {
       position: absolute;

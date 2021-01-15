@@ -167,6 +167,10 @@
 /* Larger than tablet screen */
 @media (min-width: 40.0rem) {
 
+
+
+
+
 #main{
   .sidebar.sticky {
        position: sticky !important;
@@ -185,7 +189,6 @@
     #ac-toc, #ac-toc + label {
       display: none;
     }
-
 }
 
 
@@ -218,6 +221,7 @@
 
 
   .sidebar__right {
+    margin: 0 20px 40px 20px;
     float: right;
 
   }

@@ -5,63 +5,70 @@
 
 header {
   position: relative;
-}
+  > h1 {
+    font-weight: 300;
+    text-align: right;
+    font-size: 3em;
+    > span {
+      font-weight: 700;
 
-header > h1 {
-  font-weight: 300;
-}
+    }
+    > span + span {
+      font-size: .5em;
+      display: block;
+      clear: both;
+    }
+    &#product:after {
+      position: absolute;
+      content: $powered;
+    }
+  }
 
-header > h1 > span {
-  font-weight: 700;
-}
+  &.top{
+    >p{
+        font-size: 1.125em;
+        line-height: 1.2em;
+          clear: both;
+          width: 100%;
+        &.pushline {
+          font-weight: 700;
+          font-size: 2em;
+          font-weight: 400;
+          max-width: 100%;
+          margin: 2em 0 1em;
+          padding-right: 1em;
+        }
+        &.subtitle {
+          font-size: 1em;
+          padding-right: 1em;
+          max-width: 100%;
+        }
+        &.release {
+          font-size: .8em !important;
+          a{
+            text-decoration: underline;
+            color: $grey;
+          }
+        }
+        &.privacy {
+          font-size: .7em !important;
+          a{
+            text-decoration: underline;
+            color: $grey;
+          }
+        }
 
-header > h1 > span + span {
-  font-size: .5em;
-  font-weight: 700;
-  display: block;
-  clear: both;
-  margin-left: 190px;
-}
+    }
 
-header > h1#product:after {
-  position: absolute;
-  content: $powered;
-}
-
-header.top > p,
-header.subtop > p {
-  font-size: 1.125em;
-  line-height: 1.2em;
-}
-
-#LandingPageRightConsentsCommunity header.top > p.pushline {
-  font-size: 2em;
-  font-weight: 400;
-  max-width: 420px;
-  margin: 2em 0 1em;
-}
-
-#LandingPageRightConsentsCommunity header.top > p.subtitle {
-  font-size: 1em;
-  max-width: 420px;
-}
-
-header > p.pushline {
-  font-weight: 700;
-}
-
-header p.release {
-  font-size: .8em !important;
-}
-
-header p.privacy {
-  font-size: .7em !important;
-}
-
-header p.privacy a,
-header p.release a {
-  text-decoration: underline;
-  color: $grey;
+  }
+  &.subtop{
+    >p{
+      font-size: 1.125em;
+      line-height: 1.2em;
+        clear: both;
+        width: 100%;
+    }
+  }
 }
 
 #LandingPageRightConsents h1:before {
@@ -82,14 +89,6 @@ header p.release a {
   text-align: center;
 }
 
-header > h1 {
-  font-size: 1.8em;
-}
-
-header > h1#product:after {
-  position: relative;
-  float: right;
-}
 
 header.top > p,
 header.subtop > p {
@@ -104,6 +103,39 @@ header.subtop > p {
 
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
+  header > h1 {
+    font-size: 3em;
+    max-width: 50%;
+    padding-right:20px !important;
+
+  }
+
+  header.top{
+    >p{
+        font-size: 1.125em;
+        line-height: 1.2em;
+        padding-right:20px !important;
+        text-align: right;
+          clear: both;
+          width: 50%;
+        &.pushline {
+          font-weight: 700;
+          font-size: 2em;
+          font-weight: 400;
+          max-width: 50%;
+          margin: 2em 0 1em;
+          padding-right: 1em;
+          text-align: right;
+
+        }
+        &.subtitle {
+          font-size: 1em;
+          padding-right: 1em;
+          max-width: 50%;
+        }
+  }
+}
+
   #LandingPageRightConsents h1:before {
     position: absolute;
     top: -70px;
@@ -114,8 +146,8 @@ header.subtop > p {
 
   #LandingPageRightConsentsCommunity.home h1:before {
     position: absolute;
-    top: 110px;
-    left: 80%;
+    top: 30px;
+    left: 100%;
     width: 420px;
     content: url('../img/screen.png');
   }
@@ -128,7 +160,6 @@ header.subtop > p {
     section#values article,
     section#plusValues article {
     position: relative;
-    max-width: 50%;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -138,12 +169,13 @@ header.subtop > p {
 /* Larger than tablet screen */
 @media (min-width: 80.0rem) {
   header > h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    max-width: 50%;
+
   }
 
   header > h1#product:after {
     position: absolute;
-    left: 410px;
     margin-top: 5px;
   }
 
@@ -159,13 +191,12 @@ header.subtop > p {
     header p.subtitle,
     header p.pushline,
     section#intro article {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right:20px !important;
+    text-align: right;
   }
 
-  header.top > p,
-        header.subtop > p {
-    max-width: 290px;
-    text-align: left;
+  header.top > p {
+    max-width: 50%;
+    margin-right:0;
   }
 }

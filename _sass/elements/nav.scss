@@ -123,77 +123,68 @@ header.top{
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {
 
-  a#community {
-    font-size: 1.2em;
-    line-height: .8em;
-    position: relative;
-    padding: 15px 15px 15px 70px;
-    color: $white;
-    > .subproduct {
-      font-size: .6em;
-      display: block;
-      clear: both;
-      margin-left: 70px;
-    }
-  }
-
-
     header.top{
       > nav.horizontal {
-        background: $bgmenu 0 0 no-repeat;
 
-        position: absolute;
-        width: 105vw;
-        height: 77px;
-        top: -110px;
+              background: -webkit-linear-gradient(left, $darkgrey 30%, $grey 70%);
+              background: -o-linear-gradient(left, $darkgrey 30%, $grey 70%);
+              background: linear-gradient(to right, $darkgrey 30%, $grey 70%);
+              position: absolute;
+              width: auto;
+              top:-110px;
+              left:-10px;
+              right:-10px;
+              height: 70px;
+              #menuToggle > input,#menuToggle > span{
+                display: none;
+              }
+              #menuToggle > #menu {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  > a#community{
+                    display: flexbox;
+                    font-size: 1.3em;
+                    line-height: .8em;
+                    position: relative;
+                    z-index: 1000;
+                    padding: 20px 15px 15px 35px;
+                    color: $white;
+                    > .subproduct {
+                      font-size: .6em;
+                      display: block;
+                      clear: both;
+                      margin-left: 80px;
+                    }
 
-        left:-30px;
-        #menuToggle > input,#menuToggle > span{
-          display: none;
-        }
-        #menuToggle > #menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            > a#community{
-              display: flexbox;
-              font-size: 1.2em;
-              line-height: .8em;
-              position: relative;
-              z-index: 1000;
-              padding: 15px 15px 15px 70px;
-              color: $white;
-              > .subproduct {
-                font-size: .6em;
-                display: block;
-                clear: both;
-                margin-left: 70px;
+                  }
+
+
+
+
+                  > ul#nav_principale {
+                    display: flex;
+                      justify-content: flex-end;
+                    padding: 0.5em 0;
+                    padding-right: 1em;
+                    flex-grow: 4;
+                    align-items: center;
+                    li {
+                       display: flexbox;
+                       padding: 0 1em;
+                       list-style: none;
+                       a {
+                         color: $white;
+
+                       }
+                       &.entity_logo img{
+                         margin-top:8px
+                       }
+                    }
+                }
               }
 
             }
-
-
-
-
-            > ul#nav_principale {
-              display: flex;
-                justify-content: flex-end;
-              padding: 0.5em 1em;
-              padding-right: 4em;
-              flex-grow: 4;
-              align-items: center;
-              li {
-                 display: flexbox;
-                 padding: 0 1em;
-                 list-style: none;
-                 a {
-                   color: $white;
-                 }
-              }
-          }
-        }
-
-      }
       > nav.diagonale {
         top: -110px;
         right: -140px;
@@ -218,11 +209,10 @@ header.top{
 
   header.top{
     > nav.horizontal {
-      width: 1162px;
-      right: -105px;
-      margin-right: auto;
-
-      left: inherit;
+                  right:-75px;
+                  left:-75px;
+                  top:-110px;
+                  height: 70px;
       #menuToggle > #menu > ul#nav_principale {
         justify-content: flex-end;
 

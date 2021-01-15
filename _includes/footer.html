@@ -3,25 +3,22 @@
 			<aside>
 				<h2 class="logow">fair&smart - Personal Data Solutions</h2>
 			</aside>
-			{% include navfoot.html %}
 
 	    {% include social_list.html %}
+
 	    <aside class="incitive">
 
-				{%- for clicktoaction in page.header.actions -%}
-			<button onclick="window.location.href='{{ clicktoaction.url | relative_url }}'"><span>{{ clicktoaction.label }}</span>
+			<button onclick="window.location.href='{{ site.clicktoaction.url | relative_url }}'"><span>{{ site.clicktoaction.label }}</span>
 
 			</button>
 
-
-			{%- endfor -%}
 
 	    </aside>
 
 
 		</footer>
 		<p class="legal">
-					&copy; 2020 Fair[&]Smart. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+					&copy; 2020 Fair&Smart. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>.
 		</p>
 
 
