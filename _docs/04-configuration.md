@@ -103,7 +103,9 @@ quarkus.mailer.mock=false
 
 It is possible to set an instance name. That name allows you to have several instances running on the the same database. All tables will be prefixed using that instance name. Keep it uppercase.
 
-If the data.import option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty.
+The fixed language can be specified here and will be propagated to the frontend as the default model creation language. ONce a language has been set, it is stored in the instance database and connot be updated later without creating a new instance. Available languages are 'en' and 'fr'.
+
+If the import-data option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty. Samples models are imported at first start using the configure language.
 
 The home folder config will host receipts and other files needed by the instance. 
 
@@ -111,8 +113,9 @@ Public URL allows you to ensure that CORS will be correctly setup when backend r
 
 ```properties
 # MainConfig
-consent.instance=DEV
-consent.data.import=true
+consent.instance.name=DEV
+consent.instance.lang=fr
+consent.isntance.import-data=true
 consent.home=~/.consent-manager
 consent.public.url=http://localhost:8087
 consent.processor=https://www.fairandsmart.com
@@ -130,7 +133,7 @@ consent.support.enabled=true
 consent.support.news=true
 consent.support.bugs=true
 consent.support.stats=true
-consent.support.api/mp-rest/url=https://core.dev.env.fairandsmart.tech/api
+consent.support.api/mp-rest/url=https://core.fairandsmart.com/api
 consent.support.api/mp-rest/scope=javax.inject.Singleton
 ```
 
@@ -164,7 +167,7 @@ A dedicated page can be made available to your end users and the content of this
 ```properties
 # ClientConfig
 consent.client.user-page.enabled=false
-consent.client.user-page.elements=Core.1,Market.1,Channel.1,Frequency.1,Mode.1,Username.1,cgu.1
+consent.client.user-page.elements=processing.001,processing.002,processing.003,preference.001,preference.002,preference.003,preference.004
 consent.client.user-page.public-url=http://localhost:4200/user/me
 ```
 
