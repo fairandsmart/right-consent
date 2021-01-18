@@ -71,7 +71,7 @@ $ mvn clean package -DskipTests quarkus:dev
 
 This could take a while as maven is going to download all dependencies but in the end you should see the server running : 
 
-//TODO include a small screen cast of that steps and the final screen state while server running
+{% include video id="85e9e806-c131-4c55-8efb-f6cc67ebab5f" provider="fairandsmart" %}
 
 ### Web Application
 
@@ -83,11 +83,11 @@ In order to run the frontend, you need to clone the github repository and to run
 $ git clone git@github.com:fairandsmart/consent-manager-gui.git
 $ cd consent-manager-gui
 $ npm install
-$ ng serve -c local
+$ ng serve
 ```
 
 This could take a while as maven is going to download all dependencies but in the end you should see the server running : 
 
-//TODO include a small screen cast of that steps and the final screen state while server running
+{% include video id="79478a8e-df07-4860-9d17-7a54dc205987" provider="fairandsmart" %}
 
 

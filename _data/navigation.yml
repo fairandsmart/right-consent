@@ -46,13 +46,10 @@ docs:
     children:
       - title: "Themes"
         url: /docs/themes/
-      - title: "API"
-        url: /docs/api/
-  - title: Meta
-    children:
       - title: "Contributing"
         url: /docs/contributing/
       - title: "License"
         url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /docs/terms/
+      - title: "API"
+        url: /docs/api/
+
