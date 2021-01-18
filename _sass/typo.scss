@@ -22,6 +22,9 @@ display: block;
 flex-direction: row;
 justify-content: space-between;
 min-height:calc( 100vh - 350px );
+  h1{
+    text-align: left;
+  }
   h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
