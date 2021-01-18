@@ -24,7 +24,6 @@ justify-content: space-between;
 min-height:calc( 100vh - 350px );
   h1{
     text-align: left;
-    padding-right: 0px !important;
   }
   h2{
     font-family: 'Open Sans', sans-serif;
@@ -178,7 +177,8 @@ min-height:calc( 100vh - 350px );
 
 
   #main article {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     display: block;
     a {
       color: $orange;
