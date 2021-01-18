@@ -10,7 +10,7 @@ As Right Consents Community is a free and Open Source software you can contribut
 
 ## Follow basic contribution rules 
 
-If you are not familiar with open source project contribution, feel free to visit (https://firstcontributions.github.io/) which is a good start.
+If you are not familiar with open source project contribution, feel free to visit [https://firstcontributions.github.io/] which is a good start.
 
 ## Bug Report & new features
 
