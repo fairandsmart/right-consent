@@ -6,6 +6,8 @@ last_modified_at: 2020-12-15
 toc: true
 ---
 
-Rights Consents allows to creates completely customized consent forms allowing very specific user experience consent collect integration. This is mainly handled by the ConsentContext.
+Rights Consents allows to creates completely customized consent forms.
+
+This ensure very specific user experience consent collect integration. This is mainly handled by the ConsentContext and HTML templates but it can also be fully customized using the JSON API endpoint. 
 
 ## Writing in progress, please come back later...
