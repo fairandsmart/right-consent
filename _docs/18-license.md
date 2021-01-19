@@ -2,7 +2,7 @@
 title: License
 permalink: /docs/license/
 excerpt: "What is the chosen license and how can I use it for my own ?"
-last_modified_at: 2020-12-15
+last_modified_at: 2021-01-19
 toc: true
 ---
 
@@ -640,7 +640,7 @@ END OF TERMS AND CONDITIONS
 ## LICENSE.FAIRANDSMART.txt
 
 ```
-ADDITIONAL TERMS APPLICABLE TO RIGHT REQUEST AND ITS SOURCE CODE (“The 
+ADDITIONAL TERMS APPLICABLE TO RIGHT CONSENTS COMMUNITY EDITION AND ITS SOURCE CODE (“The 
 Program”).
 
 The following additional terms ("Additional Terms") supplement and modify the 
