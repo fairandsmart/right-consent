@@ -6,9 +6,9 @@ last_modified_at: 2020-12-15
 toc: true
 ---
 
-Right Consent is a free and Open Source software, licence is composed of : 
+Right Consents Community Edition is a free and Open Source software, its licence is composed of : 
   - GPL v3 
-  - Fair and smart additions
+  - Additional terms (LICENSE.FAIRANDSMART.TXT)
 
 ## GPL v3
 
