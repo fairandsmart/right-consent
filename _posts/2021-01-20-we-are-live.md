@@ -6,5 +6,6 @@ tags:
   - News
 ---
 
-We are delighted to share that Right Consents Community Edition is now open to the happy few beta-testers!
+We are delighted to share that Right Consents Community Edition is now open!
+Feel free to test it.
 
