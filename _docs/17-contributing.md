@@ -20,7 +20,7 @@ You can also ask for new features on the discussions page but you should be awar
 
 ## Resources
 
-- [Source code](https://github.com/fairandsmart/right-consents)
+- Source code : [Backend](https://github.com/fairandsmart/consent-manager-back), [Frontend](https://github.com/fairandsmart/consent-manager-front)
 - [Issue Tracker](https://github.com/fairandsmart/right-consents/issues)
 - [Discussions](https://github.com/fairandsmart/right-consents/discussions)
 - Mailing List (comming soon...)
