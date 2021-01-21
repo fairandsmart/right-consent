@@ -1,11 +1,11 @@
 ---
-title: "We are live !!"
-categories : 
+title: "We are live!"
+categories:
   - News
-tags : 
+tags:
   - News
 ---
 
-We are proud to annouce that the first beta version of RightConsents Community Edition is out today.
-
+We are delighted to share that Right Consents Community Edition is now open!  
+Feel free to test it.
 
