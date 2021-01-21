@@ -14,6 +14,6 @@ Please visit the [dedicated website](https://fairandsmart.github.io/right-consen
 Main components are availables in fiar&smart repositories on github : 
 
 - [Backend](https://github.com/fairandsmart/consent-manager-back)
-- [Frontend](https://github.com/fairandsmart/consent-manager-front)
+- [GUI](https://github.com/fairandsmart/consent-manager-gui)
 
 Other components (Idp Keycloak and MailDev) are also availables in their own repositories on github 
