@@ -6,11 +6,11 @@ last_modified_at: 2021-01-11
 toc: true
 ---
 
-As Right Consents Community is a free and Open Source software you can contribute to its development by creating tasks and pull requests in github.
+As Right Consents Community is a **free and Open Source** software you can **contribute** to its development by reporting bugs and/or pull requests in github.
 
 ## Follow basic contribution rules 
 
-If you are not familiar with open source project contribution, feel free to visit [https://firstcontributions.github.io/] which is a good start.
+If you are not familiar with open source project contribution, feel free to visit [Github guide firstcontribution](https://firstcontributions.github.io/) which is a good start.
 
 ## Bug Report & new features
 
@@ -20,7 +20,7 @@ You can also ask for new features on the discussions page but you should be awar
 
 ## Resources
 
-- [Source code](https://github.com/fairandsmart/right-consents)
+- Source code : [Backend](https://github.com/fairandsmart/consent-manager-back), [GUI](https://github.com/fairandsmart/consent-manager-gui)
 - [Issue Tracker](https://github.com/fairandsmart/right-consents/issues)
 - [Discussions](https://github.com/fairandsmart/right-consents/discussions)
 - Mailing List (comming soon...)

@@ -67,7 +67,7 @@ HTTP BasicAuth is used for System API access only and uses specific keys that ca
 quarkus.http.auth.basic=true
 
 quarkus.oidc.enabled=true
-quarkus.oidc.auth-server-url=http://localhost:8080/auth/realms/FairAndSmart
+quarkus.oidc.auth-server-url=http://localhost:4285/auth/realms/FairAndSmart
 quarkus.oidc.client-id=consent-manager
 quarkus.oidc.authentication.scopes=profile,email,roles
 ```
@@ -78,7 +78,7 @@ By default, the application stores all its data into an embedded database (H2) f
 
 ```properties
 quarkus.datasource.db-kind=h2
-quarkus.datasource.jdbc.url=jdbc:h2:~/.consent-manager/db
+quarkus.datasource.jdbc.url=jdbc:h2:${consent.home}/db
 quarkus.liquibase.migrate-at-start=false
 quarkus.liquibase.database-change-log-lock-table-name=${consent.instance}_DATABASECHANGELOGLOCK
 quarkus.liquibase.database-change-log-table-name=${consent.instance}_DATABASECHANGELOG
@@ -117,7 +117,7 @@ consent.instance.name=DEV
 consent.instance.lang=fr
 consent.isntance.import-data=true
 consent.home=~/.consent-manager
-consent.public.url=http://localhost:8087
+consent.public.url=http://localhost:4287
 consent.processor=https://www.fairandsmart.com
 consent.secret=ThisIsASuperSecret
 consent.thintoken=true
@@ -133,7 +133,7 @@ consent.support.enabled=true
 consent.support.news=true
 consent.support.bugs=true
 consent.support.stats=true
-consent.support.api/mp-rest/url=https://core.fairandsmart.com/api
+consent.support.api/mp-rest/url=https://hub.fairandsmart.com/
 consent.support.api/mp-rest/scope=javax.inject.Singleton
 ```
 
@@ -168,6 +168,6 @@ A dedicated page can be made available to your end users and the content of this
 # ClientConfig
 consent.client.user-page.enabled=false
 consent.client.user-page.elements=processing.001,processing.002,processing.003,preference.001,preference.002,preference.003,preference.004
-consent.client.user-page.public-url=http://localhost:4200/user/me
+consent.client.user-page.public-url=http://localhost:4286/user/me
 ```
 
