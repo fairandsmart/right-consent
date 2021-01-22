@@ -67,7 +67,7 @@ HTTP BasicAuth is used for System API access only and uses specific keys that ca
 quarkus.http.auth.basic=true
 
 quarkus.oidc.enabled=true
-quarkus.oidc.auth-server-url=http://localhost:8080/auth/realms/FairAndSmart
+quarkus.oidc.auth-server-url=http://localhost:4285/auth/realms/FairAndSmart
 quarkus.oidc.client-id=consent-manager
 quarkus.oidc.authentication.scopes=profile,email,roles
 ```
@@ -117,7 +117,7 @@ consent.instance.name=DEV
 consent.instance.lang=fr
 consent.isntance.import-data=true
 consent.home=~/.consent-manager
-consent.public.url=http://localhost:8087
+consent.public.url=http://localhost:4287
 consent.processor=https://www.fairandsmart.com
 consent.secret=ThisIsASuperSecret
 consent.thintoken=true
@@ -133,7 +133,7 @@ consent.support.enabled=true
 consent.support.news=true
 consent.support.bugs=true
 consent.support.stats=true
-consent.support.api/mp-rest/url=https://core.fairandsmart.com/api
+consent.support.api/mp-rest/url=https://hub.fairandsmart.com/
 consent.support.api/mp-rest/scope=javax.inject.Singleton
 ```
 
