@@ -41,17 +41,12 @@ services:
       - 4287:8087
     environment:
       FS_AUTH_BACK_URL: http://right-consents-auth:8080
-      FS_AUTH_CLIENTID: cmclient
       FS_AUTH_FRONT_URL: http://localhost:4285
-      FS_AUTH_REALM: RightConsents
-      FS_CONSENT_PROCESSOR: https://www.fairandsmart.com
-      FS_CORE_URL: https://core.dev.env.fairandsmart.tech/api
       FS_GUI_URL: http://localhost:4286
-      FS_MAILER_FROM: demo@demo.com
+      FS_INSTANCE_LANG: en
       FS_MAILER_HOST: right-consents-mail
       FS_MAILER_PORT: 1025
       FS_PUBLIC_URL: http://localhost:4287
-      FS_UNAUTHENTICATED: anonymous
     depends_on:
       right-consents-auth:
         condition: service_healthy
@@ -69,8 +64,6 @@ services:
     restart: unless-stopped
     image: fairandsmart/consent-manager-gui
     environment:
-      FS_AUTH_CLIENTID: cmclient
-      FS_AUTH_REALM: RightConsents
       FS_AUTH_URL: http://localhost:4285/auth
       FS_GUI_URL: http://localhost:4286
       FS_MANAGER_URL:  http://localhost:4287
