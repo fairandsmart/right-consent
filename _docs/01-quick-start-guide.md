@@ -23,7 +23,7 @@ The first step is to clone the github repository which contains the elements nee
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consents.git
-$ export FS_INSTANCE_LANG=fr #Only if you want demo content in french instead of english
+$ export FS_INSTANCE_LANG=fr #Facultative, default is: en
 $ cd right-consents
 $ docker-compose up
 ```
