@@ -18,14 +18,13 @@ All required components are available as **docker images** that is the *de facto
 Right Consents comes with a **ready-to-run docker compose** configuration.
 The first step is to clone the github repository which contains the elements needed to start the docker compose configuration.
 
-<i class="fa fa-exclamation-triangle"></i> please ensure [docker](https://docs.docker.com/get-docker/) is installed before proceeding further.
+<i class="fa fa-exclamation-triangle"></i> <b>to check: <b> please ensure [docker](https://docs.docker.com/get-docker/) is installed before proceeding further.
 {: .notice--warning}
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consents.git
-$ export FS_INSTANCE_LANG=fr #Facultative, default is: en
 $ cd right-consents
-$ docker-compose up
+$ docker-compose up #for french use: docker-compose --env-file ./config/fr.env up
 ```
 
 {% include video id="feb45b33-8a01-4d1c-990c-c0b4e01c9437" provider="fairandsmart" %}
