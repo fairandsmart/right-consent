@@ -5,23 +5,16 @@
 <!--[if IE 8]>
 <html class="ie ie8 lt-ie9" lang="{{ page.lang | default: site.lang | default: "en" }}"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 <!--<![endif]-->
 {% include head.html %}
-<body id="LandingPageRightConsentsCommunity"  class="{{page.layout}}">
+
+<body id="LandingPageRightConsentsCommunity" class="{{page.layout}} {{page.categories}} {{page.type}}">
 
 
-  	<div class="container">
-    {% if page.layout == "home" %}
-      {% include header.html %}
-      {% include feature_list.html %}
-    {% else %}
-      {% include header_simple.html %}
-    {% endif %}
-
-    {{content}}
-
-    {% include footer.html %}
+    <div class="container">
+        {% if page.layout == "home" %} {% include header.html %} {% include feature_list.html %} {% else %} {% include header_simple.html %} {% endif %} {{content}} {% include footer.html %}
     </div>
 </body>
+
 </html>

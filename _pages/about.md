@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+type: "page"
 excerpt: "Right Consents is an European Universal Consents & Preferences Open Source Management Plateform."
 last_modified_at: 2020-12-11T16:30:23+01:00
 ---
