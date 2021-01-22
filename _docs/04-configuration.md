@@ -78,7 +78,7 @@ By default, the application stores all its data into an embedded database (H2) f
 
 ```properties
 quarkus.datasource.db-kind=h2
-quarkus.datasource.jdbc.url=jdbc:h2:~/.consent-manager/db
+quarkus.datasource.jdbc.url=jdbc:h2:${consent.home}/db
 quarkus.liquibase.migrate-at-start=false
 quarkus.liquibase.database-change-log-lock-table-name=${consent.instance}_DATABASECHANGELOGLOCK
 quarkus.liquibase.database-change-log-table-name=${consent.instance}_DATABASECHANGELOG
