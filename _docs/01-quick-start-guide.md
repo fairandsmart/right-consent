@@ -27,7 +27,7 @@ $ cd right-consents
 $ docker-compose up #for french use: docker-compose --env-file ./config/fr.env up
 ```
 
-{% include video id="feb45b33-8a01-4d1c-990c-c0b4e01c9437" provider="fairandsmart" %}
+{% include video id="729d1f8c-554c-4f1b-ae1e-df140e53b205" provider="fairandsmart" %}
 
 
 When everything is up (check video above) you can access the different components with the following urls : 
