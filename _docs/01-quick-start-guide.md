@@ -18,7 +18,7 @@ All required components are available as **docker images** that is the *de facto
 Right Consents comes with a **ready-to-run docker compose** configuration.
 The first step is to clone the github repository which contains the elements needed to start the docker compose configuration.
 
-<i class="fa fa-exclamation-triangle"></i> <b>to check: <b> please ensure [docker](https://docs.docker.com/get-docker/) is installed before proceeding further.
+<i class="fa fa-exclamation-triangle"></i> <b>warning: </b> please ensure [docker](https://docs.docker.com/get-docker/) is installed before proceeding further.
 {: .notice--warning}
 
 ```bash
