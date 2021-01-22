@@ -23,7 +23,7 @@ The first step is to clone the github repository which contains the elements nee
 
 ```bash
 $ git clone git@github.com:fairandsmart/right-consents.git
-$ cd right-consent
+$ cd right-consents
 $ docker-compose up
 ```
 
