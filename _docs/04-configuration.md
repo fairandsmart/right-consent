@@ -168,6 +168,6 @@ A dedicated page can be made available to your end users and the content of this
 # ClientConfig
 consent.client.user-page.enabled=false
 consent.client.user-page.elements=processing.001,processing.002,processing.003,preference.001,preference.002,preference.003,preference.004
-consent.client.user-page.public-url=http://localhost:4200/user/me
+consent.client.user-page.public-url=http://localhost:4286/user/me
 ```
 
