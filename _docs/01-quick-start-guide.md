@@ -22,7 +22,7 @@ The first step is to clone the github repository which contains the elements nee
 {: .notice--warning}
 
 ```bash
-$ git clone git@github.com:fairandsmart/right-consent.git
+$ git clone git@github.com:fairandsmart/right-consents.git
 $ cd right-consent
 $ docker-compose up
 ```
