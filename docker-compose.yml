@@ -43,7 +43,7 @@ services:
       FS_AUTH_BACK_URL: http://right-consents-auth:8080
       FS_AUTH_FRONT_URL: http://localhost:4285
       FS_GUI_URL: http://localhost:4286
-      FS_INSTANCE_LANG: en
+      FS_INSTANCE_LANG: ${FS_INSTANCE_LANG:-en}
       FS_MAILER_HOST: right-consents-mail
       FS_MAILER_PORT: 1025
       FS_PUBLIC_URL: http://localhost:4287
