@@ -214,9 +214,14 @@ code {
 }
 
 @media (min-width: 40.0rem) {
-    .single:not(.News, .page) #main article {
+    .single #main article {
         float: right;
         width: calc(100% - 240px);
+    }
+    .single.News #main article,
+    .single.page #main article {
+        float: right;
+        width: 100%;
     }
     .posts #main,
     .News #main,
