@@ -1,4 +1,3 @@
-
 h1,
 h2
 {
@@ -187,12 +186,25 @@ justify-content: space-between;
       }
   }
 
+
 @media (min-width: 40.0rem) {
-  .single #main article {
-    float: right;
-    width: calc(100% - 250px);
-  }
-
-
-
+    .single #main article {
+        float: right;
+        width: calc(100% - 240px);
+    }
+    .single.News #main article,
+    .single.page #main article {
+        float: right;
+        width: 100%;
+    }
+    .posts #main,
+    .News #main,
+    .page #main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
+
+
+
+
