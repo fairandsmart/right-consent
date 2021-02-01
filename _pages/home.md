@@ -27,7 +27,7 @@ feature_row:
   - image_path: /assets/images/preserve.2.png
     alt: "preserve"
     title: "Comply"
-    excerpt: "Demonstrate your compliance and preserve users' choices in a centralized truth base (standard consent receipts – secured storage)"
+    excerpt: "Demonstrate your compliance and preserve users' choices in a single source of truth (consents registry - standard consent receipts)"
     url: "/docs/records-receipts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
