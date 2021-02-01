@@ -3,12 +3,12 @@ layout: home
 permalink: /
 hidden: true
 title: "Right Consents Community" #head only
-excerpt: "The safe and simple way to manage GDPR consents"
+excerpt: "The safe and simple way to manage consents and preferences"
 header:
   actions:
     - label: "Install now"
       url: "/docs/quick-start-guide/"
-excerpt_2: "Right Consents Community edition is an Open Source Universal Consents & Preferences Management Platform. <br/> It aims to provide any organization with a complete, simple and easy to implement solution for <b>collecting, storing, analysing</b> and <b>using</b> users' consents and preferences."
+excerpt_2: "Right Consents Community edition is an open and extensible platform to manage consents and preferences. <br/> It aims to provide any organization with a complete, simple and easy to implement solution for <b>collecting, storing, analysing</b> and <b>using</b> users' consents and preferences."
 feature_row:
   - image_path: /assets/images/collect.2.png
     alt: "collect"
@@ -26,7 +26,7 @@ feature_row:
     btn_label: "Learn more"
   - image_path: /assets/images/preserve.2.png
     alt: "preserve"
-    title: "Secure"
+    title: "Comply"
     excerpt: "Demonstrate your compliance and preserve users' choices in a centralized truth base (standard consent receipts – secured storage)"
     url: "/docs/records-receipts/"
     btn_class: "btn--primary"
