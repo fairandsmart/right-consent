@@ -1,10 +1,12 @@
-
-
-    {%- if site.footer.links -%}
+{%- if site.footer.links -%}
 <ul id="social_secondaire" class="socialList">
 
     {%- for link in site.footer.links -%}
-          <li><a href="{{link.url | escape }}" class="{{ link.label | downcase | escape }}">{{ link.label | escape }}</a></li>
+    <li>
+        <a href="{{link.url | escape }}" class="{{ link.label | downcase | escape }}">
+            {{ link.label | escape }}
+        </a>
+    </li>
     {%- endfor -%}
 
 </ul>
