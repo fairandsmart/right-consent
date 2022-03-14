@@ -1,13 +1,13 @@
 ---
 title: License
-permalink: /community/license/
+permalink: /license/
 toc: false
 todo:
   - relire
 ---
 
-Right Consents Community Edition is a free and Open Source software, its licence is composed of: 
-  - GPL v3 
+Right Consents Community Edition is a free and Open Source software, its licence is composed of:
+  - GPL v3
   - Additional terms (LICENSE.FAIRANDSMART.TXT)
 
 ## GPL v3
@@ -640,119 +640,119 @@ END OF TERMS AND CONDITIONS
 ## LICENSE.FAIRANDSMART.txt
 
 ```
-ADDITIONAL TERMS APPLICABLE TO RIGHT CONSENTS COMMUNITY EDITION AND ITS SOURCE CODE (“The 
+ADDITIONAL TERMS APPLICABLE TO RIGHT CONSENTS COMMUNITY EDITION AND ITS SOURCE CODE (“The
 Program”).
 
-The following additional terms ("Additional Terms") supplement and modify the 
-GNU General Public License, Version 3 ("GPLv3 License") applicable to the 
-Program. In addition to the terms and conditions of the GPLv3, the Program is 
+The following additional terms ("Additional Terms") supplement and modify the
+GNU General Public License, Version 3 ("GPLv3 License") applicable to the
+Program. In addition to the terms and conditions of the GPLv3, the Program is
 subject to the additional terms below:
 
 
 1. Grant of Additional Permission.
 
-FAIR AND SMART grants its customers the following additional permission under 
-Section 7 of the GPLv3 License. FAIR AND SMART grants its customers the 
-additional permission to modify, combine or link the Program with any other 
-program, software, plugin or work conveyed under any other license, including a 
-proprietary license, provided that the resulting work (“Combined Work”) is 
-used by the customer solely for internal purposes, excluding any distribution, 
-propagation or use of the Program or the Combined Work for any commercial 
-purposes, even free of charge. This additional permission shall not be 
-construed, by any means, as a permission to distribute, propagate and/or convey 
-the Program or any program or work resulting, combined, linked or otherwise 
-used with the Program under any other license, including a proprietary license, 
-for any other purposes than those listed above, in particular for commercial 
+FAIR AND SMART grants its customers the following additional permission under
+Section 7 of the GPLv3 License. FAIR AND SMART grants its customers the
+additional permission to modify, combine or link the Program with any other
+program, software, plugin or work conveyed under any other license, including a
+proprietary license, provided that the resulting work (“Combined Work”) is
+used by the customer solely for internal purposes, excluding any distribution,
+propagation or use of the Program or the Combined Work for any commercial
+purposes, even free of charge. This additional permission shall not be
+construed, by any means, as a permission to distribute, propagate and/or convey
+the Program or any program or work resulting, combined, linked or otherwise
+used with the Program under any other license, including a proprietary license,
+for any other purposes than those listed above, in particular for commercial
 purposes.
 
 2. Replacement of Section 15.
 
-Section 15 of the GPLv3 License shall be deleted in its entirety and replaced 
+Section 15 of the GPLv3 License shall be deleted in its entirety and replaced
 with the following:
 
-You accept that the Program was not created with a view to satisfy Your 
-individual requirements. Therefore, you must ensure that the Program comply 
-with Your needs, requirements and constraints. FAIR AND SMART represents and 
-warrants that it holds, without any restriction or reservation, all the legal 
-titles, authorizations and intellectual property rights granted in the context 
-of the GPLv3 License. FAIR AND SMART will defend at its own expense any action 
-brought against You to the extent that said action is based on a claim, suit, 
-proceeding that you infringed such party’s copyright in the context of this 
-license (“the Claim”) and will pay those costs and damages finally awarded 
+You accept that the Program was not created with a view to satisfy Your
+individual requirements. Therefore, you must ensure that the Program comply
+with Your needs, requirements and constraints. FAIR AND SMART represents and
+warrants that it holds, without any restriction or reservation, all the legal
+titles, authorizations and intellectual property rights granted in the context
+of the GPLv3 License. FAIR AND SMART will defend at its own expense any action
+brought against You to the extent that said action is based on a claim, suit,
+proceeding that you infringed such party’s copyright in the context of this
+license (“the Claim”) and will pay those costs and damages finally awarded
 against You, provided that:
-(i) The Claim exclusively concerns the version of the Program created and 
+(i) The Claim exclusively concerns the version of the Program created and
 propagated by FAIR & SMART (<https://www.fairandsmart.com>);
-(ii) The Claim is not the result of your failure to comply with the GPLv3 
+(ii) The Claim is not the result of your failure to comply with the GPLv3
 License;
-(iii) You do not assume any responsibility, or enter into any agreement or 
-compromise concerning the Claim without FAIR AND SMART's prior written 
+(iii) You do not assume any responsibility, or enter into any agreement or
+compromise concerning the Claim without FAIR AND SMART's prior written
 authorization;
-(iv) You allow FAIR AND SMART and its advisers (upon reasonable notice) to 
-access Your premises and to interview Your agents, directors, employees, 
-representatives or advisers, and to consult any related documents and allow 
+(iv) You allow FAIR AND SMART and its advisers (upon reasonable notice) to
+access Your premises and to interview Your agents, directors, employees,
+representatives or advisers, and to consult any related documents and allow
 them to make copies thereof in order to assess the Claim;
-(v) You take all reasonable measures requested by FAIR AND SMART in order to 
+(v) You take all reasonable measures requested by FAIR AND SMART in order to
 avoid, contest, compromise or defend the Claim;
-(vi) You notify the Claim to FAIR AND SMART by registered mail within thirty 
+(vi) You notify the Claim to FAIR AND SMART by registered mail within thirty
 (30) days upon receipt.
 Under no circumstances whatsoever shall this provision apply to:
-(i) any modified version of the Program whether such modification was made by 
+(i) any modified version of the Program whether such modification was made by
 You or a third party;
-(ii) any claim, suit or proceeding related to any software, program, extension, 
+(ii) any claim, suit or proceeding related to any software, program, extension,
 plugin or any other work linked, combined or used with the Program.
 
 
 3. Replacement of Section 16.
 
-Section 16 of the GPLv3 License shall be deleted in its entirety and replaced 
+Section 16 of the GPLv3 License shall be deleted in its entirety and replaced
 with the following:
 
-You may hold FAIR AND SMART liable provided that you have previously notified 
-the alleged breach to FAIR AND SMART by registered mail and that FAIR AND SMART 
-has not replied to this formal notice within thirty (30) days upon receipt. 
-FAIR AND SMART may only be held liable if you demonstrate FAIR AND SMART is at 
+You may hold FAIR AND SMART liable provided that you have previously notified
+the alleged breach to FAIR AND SMART by registered mail and that FAIR AND SMART
+has not replied to this formal notice within thirty (30) days upon receipt.
+FAIR AND SMART may only be held liable if you demonstrate FAIR AND SMART is at
 fault.
-FAIR AND SMART shall be liable for the consequences resulting solely from its 
-own faults, errors or omissions, except in the case of force majeure as defined 
-by French case law. In addition, FAIR AND SMART shall only be liable for direct 
-and foreseeable damages resulting from the use of the Program. Accordingly, 
-FAIR AND SMART shall not be liable under any circumstances for any indirect or 
-unforeseeable loss or damage, including but not limited to any lost profits, 
-loss, inaccuracy or corruption of files or data, commercial prejudice, loss of 
-turnover or profit, loss of customers, loss of opportunity, cost of obtaining a 
-substitute product, service or technology, in connection with or arising from 
+FAIR AND SMART shall be liable for the consequences resulting solely from its
+own faults, errors or omissions, except in the case of force majeure as defined
+by French case law. In addition, FAIR AND SMART shall only be liable for direct
+and foreseeable damages resulting from the use of the Program. Accordingly,
+FAIR AND SMART shall not be liable under any circumstances for any indirect or
+unforeseeable loss or damage, including but not limited to any lost profits,
+loss, inaccuracy or corruption of files or data, commercial prejudice, loss of
+turnover or profit, loss of customers, loss of opportunity, cost of obtaining a
+substitute product, service or technology, in connection with or arising from
 the use of the Program.
-In particular, FAIR AND SMART shall not be liable for any direct or indirect 
+In particular, FAIR AND SMART shall not be liable for any direct or indirect
 damages arising from, out of or in connection with:
-· Any use of the program in relation with any other program, software, 
+· Any use of the program in relation with any other program, software,
 extension, database or any other work;
 · Any abnormal or illicit use of the Program;
 · Computer viruses;
 · Your failure to comply with this license;
-· Any problem or failure to use the Program due to your hardware or computer 
+· Any problem or failure to use the Program due to your hardware or computer
 equipment or Internet connection;
 · The destruction or alteration of data collected by or with the Program.
-Under no circumstances whatsoever shall FAIR AND SMART be held liable for any 
-damage whether in an action of contract, tort or otherwise for any damage or 
-other liability, including any general, direct, indirect, special, incidental, 
-consequential or punitive damages arising from, out of or in connection with 
-any modification made to the Program by you or a third party whether or not 
-FAIR AND SMART receives notice of any such damages and whether or not such 
+Under no circumstances whatsoever shall FAIR AND SMART be held liable for any
+damage whether in an action of contract, tort or otherwise for any damage or
+other liability, including any general, direct, indirect, special, incidental,
+consequential or punitive damages arising from, out of or in connection with
+any modification made to the Program by you or a third party whether or not
+FAIR AND SMART receives notice of any such damages and whether or not such
 damages could have been foreseen.
 
 
 4. Further Restriction.
 
-The Program shall not be used, conveyed or propagated by any company having 
-their head office in Luxembourg or Belgium without FAIR&SMART’s prior written 
+The Program shall not be used, conveyed or propagated by any company having
+their head office in Luxembourg or Belgium without FAIR&SMART’s prior written
 consent.
 
 
 5. Dual Licensing
 
-FAIR AND SMART reserves the right to diverge and/or modify and/or expand the 
-Program and/or to use, propagate or distribute a closed source/proprietary 
-version of the Program or its extensions in whole or in part alongside with the 
+FAIR AND SMART reserves the right to diverge and/or modify and/or expand the
+Program and/or to use, propagate or distribute a closed source/proprietary
+version of the Program or its extensions in whole or in part alongside with the
 open source version of said Program in the future.
 
 
@@ -763,4 +763,3 @@ the English version shall prevail.
 
 END OF ADDITIONAL TERMS
 ```
-

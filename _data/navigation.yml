@@ -63,8 +63,8 @@ community:
   - title: "Community"
     children:
       - title: "News"
-        url: /community/news/
+        url: /news/
       - title: "Contributing"
-        url: /community/contributing/
+        url: /contributing/
       - title: "License"
-        url: /community/license/
+        url: /license/
