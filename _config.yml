@@ -128,3 +128,22 @@ defaults:
       comments: false
       sidebar:
         nav: "guides"
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/fairandsmart"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/company/fair&smart/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube-square"
+      url: "https://www.youtube.com/channel/UC2pRyzmAkPu58hc7c8QSa_g"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fairandsmart"
+    - label: "RSS"
+      icon: "fa fa-fw fa-rss"
+      url: "https://github.com/fairandsmart/right-consents/feed.xml"

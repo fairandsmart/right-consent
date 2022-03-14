@@ -1,0 +1,13 @@
+{%- if site.footer.links -%}
+<ul class="social-list">
+    {%- for link in site.footer.links -%}
+    <li>
+        <a href="{{link.url | escape }}" aria-label="{{link.label}}">
+            <i class="{{ link.icon }}"></i>
+        </a>
+    </li>
+    {%- endfor -%}
+
+</ul>
+
+{%- endif -%}

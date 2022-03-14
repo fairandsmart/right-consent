@@ -6,6 +6,7 @@
 
 // Custom imports
 @import "font.scss";
+@import "social-list.scss";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
