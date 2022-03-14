@@ -1,9 +1,10 @@
 ---
 title: Configuration
-permalink: /docs/configuration/
+permalink: /docs/config-ref/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
 toc: true
 todo:
+  - refaire dans un format unique de tableau (cf quarkus)
   - relire
 ---
 
@@ -23,13 +24,13 @@ Head to [the upstream doc](https://github.com/maildev/maildev) for additional co
 
 ## Backend
 
-Backend configuration is located in a specific file: 
+Backend configuration is located in a specific file:
 
 ```bash
 $ consent-manager-back/src/main/resources/application.properties
 ```
 
-Most of the configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/docs/config#overriding-properties-at-runtime) 
+Most of the configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/docs/config#overriding-properties-at-runtime)
 
 ```bash
 $ java -jar -Dquarkus.http.port=9999 ...
@@ -58,7 +59,7 @@ quarkus.http.access-log.rotate=true
 
 ### Authentication configuration
 
-Authentication is configured with two types: OpenID-Connect and HTTP BasicAuth. 
+Authentication is configured with two types: OpenID-Connect and HTTP BasicAuth.
 
 OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP: Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of other external compliant IdPs (OIDS or SAML) or other sources of accounts (LDAP, Database, etc...).
 
@@ -75,7 +76,7 @@ quarkus.oidc.authentication.scopes=profile,email,roles
 
 ### Datasource configuration
 
-By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported DBMS and specific [configuration options](https://quarkus.io/docs/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification. 
+By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported DBMS and specific [configuration options](https://quarkus.io/docs/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification.
 
 ```properties
 quarkus.datasource.db-kind=h2
@@ -108,7 +109,7 @@ The fixed language can be specified here and will be propagated to the frontend 
 
 If the import-data option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty. Samples models are imported at first start using the configure language.
 
-The home folder config will host receipts and other files needed by the instance. 
+The home folder config will host receipts and other files needed by the instance.
 
 Public URL allows you to ensure that CORS will be correctly setup when backend runs behind a proxy.
 
@@ -171,4 +172,3 @@ consent.client.user-page.enabled=false
 consent.client.user-page.elements=processing.001,processing.002,processing.003,preference.001,preference.002,preference.003,preference.004
 consent.client.user-page.public-url=http://localhost:4286/user/me
 ```
-

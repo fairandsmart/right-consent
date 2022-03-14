@@ -1,6 +1,6 @@
 ---
 title: Integrate Consent in Existing Form
-permalink: /about/usecase-1/
+permalink: /about/uc1-html-form/
 toc: true
 ---
 

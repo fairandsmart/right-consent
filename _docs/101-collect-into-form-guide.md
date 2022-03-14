@@ -1,8 +1,9 @@
 ---
 title: Collecting consent without tech skills
-permalink: /docs/collect-no-code/
+permalink: /docs/collect-into-form-guide/
 toc: true
 todo:
+  - refaire au format guide
   - relire
 ---
 

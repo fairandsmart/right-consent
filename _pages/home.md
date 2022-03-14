@@ -7,7 +7,7 @@ excerpt: "The safe and simple way to manage consents and preferences"
 header:
   actions:
     - label: "Install now"
-      url: "/docs/quick-start-guide/"
+      url: "/docs/start-server-guide/"
 excerpt_2: "Right Consents Community edition is an open and extensible platform to manage consents and preferences. <br/> It aims to provide any organization with a complete, simple and easy to implement solution for <b>collecting, storing, analysing</b> and <b>using</b> users' consents and preferences."
 
 ---
