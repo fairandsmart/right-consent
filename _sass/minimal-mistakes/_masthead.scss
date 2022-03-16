@@ -123,7 +123,7 @@ ul.visible-links {
     margin: 0;
     padding: 8px 0;
 
-    & > * {
+    li a {
       font-family: $secondary-font-family;
       font-weight: normal !important;
     }

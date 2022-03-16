@@ -20,6 +20,14 @@ layout: default
                     {% if page.excerpt_2 %}
                     <p>{{ page.excerpt_2 }}</p>
                     {% endif %}
+                    {% if page.header.actions %}
+                    {%- for clicktoaction in page.header.actions -%}
+                    <button class="btn btn--x-large btn--fs-black" onclick="window.location.href='{{ clicktoaction.url | relative_url }}'">
+                        <span>{{ clicktoaction.label }}</span>
+                    </button>
+                    {%- endfor -%}
+                    {% endif $}
+
                     {% include page__meta.html %}
                 </div>
                 <div class="img-container">
