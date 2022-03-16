@@ -16,6 +16,27 @@ layout: default
 
 <div id="main" role="main">
 
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+    <div class="header-container">
+        <header>
+            {% if page.title %}
+            <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify
+                    | remove: "<p>" | remove: "</p>" }}</a>
+            </h1>
+            {% endif %}
+            {% if page.subtitle %}
+            <p>{{page.subtitle}}</p>
+            {% endif %}
+            {% include page__meta.html %}
+        </header>
+    </div>
+    {% endunless %}
+
+    {% if page.sidebar %}
+    {% include sidebar.html %}
+    {% endif %}
+
     <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
         {% if page.title %}
         <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -32,29 +53,12 @@ layout: default
         {% endif %}
 
         <div class="page__inner-wrap">
-            {% unless page.header.overlay_color or page.header.overlay_image %}
-            <div class="header-container">
-                <header>
-                    {% if page.title %}
-                    <h1 id="page-title" class="page__title p-name" itemprop="headline">
-                        <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify
-                            | remove: "<p>" | remove: "</p>" }}</a>
-                    </h1>
-                    {% endif %}
-                    {% if page.subtitle %}
-                    <p>{{page.subtitle}}</p>
-                    {% endif %}
-                    {% include page__meta.html %}
-                </header>
-            </div>
-            {% endunless %}
 
             <section class="page__content e-content" itemprop="text">
                 {% if page.toc %}
                 <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
                     <nav class="toc">
                         <header><h4 class="nav__title">
-                            <!--                            <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i>-->
                             {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this
                             page" }}</h4></header>
                         {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu"
