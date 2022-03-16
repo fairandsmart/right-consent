@@ -23,10 +23,11 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $primary-font-family-narrow;
-    align-items: center;
-    
+
     @include breakpoint($x-large) {
       max-width: $max-width;
+      padding-left: 80px;
+      padding-right: 80px;
     }
 
     nav {
