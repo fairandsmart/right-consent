@@ -3,17 +3,17 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  z-index: 20;
+  z-index: 1000;
   background-color: $fs-white;
-  position: fixed;
+  position: sticky;
+  padding: 24px 0;
   width: 100%;
 
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5em 1em;
+    padding: 0em 1em;
     max-width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38,7 +38,7 @@
 }
 
 .site-logo img {
-  max-height: 2rem;
+  //max-height: 2rem;
 }
 
 .site-title {

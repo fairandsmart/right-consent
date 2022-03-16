@@ -1,6 +1,6 @@
 ---
-title: Integrate Consent in Existing Form
-permalink: /about/uc1-html-form/
+title: Collect Consent in Existing Form
+permalink: /about/integrate-html-form/
 toc: true
 ---
 

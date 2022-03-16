@@ -7,8 +7,8 @@ main:
         url: /about/overview/
       - title: "Features"
         url: /about/features/
-      - title: "Use case 1"
-        url: /about/uc1-html-form/
+      - title: "Use Cases"
+        url: /about/integrate-html-form/
   - title: "Documentation"
     children:
       - title: "Quick Start"
@@ -20,11 +20,11 @@ main:
   - title: "Community"
     children:
       - title: "News"
-        url: /community/news/
+        url: /news/
       - title: "Contributing"
-        url: /community/contributing/
+        url: /contributing/
       - title: "License"
-        url: /community/license/
+        url: /license/
 
 # about links
 about:
@@ -34,8 +34,14 @@ about:
         url: /about/overview/
       - title: "Features"
         url: /about/features/
-      - title: "Use case 1"
-        url: /about/uc1-html-form/
+  - title: "Common Use Cases"
+    children:
+      - title: "Consent in existing form"
+        url: /about/integrate-html-form/
+      - title: "CGU in mobile app"
+        url: /about/mobile-app-cgu/
+      - title: "Customers Privacy Center"
+        url: /about/customer-privacy-center/
 
 # documentation links
 docs:
@@ -47,7 +53,7 @@ docs:
         url: /docs/full-install-guide/
   - title: "Guides"
     children:
-      - title: "Collecte into form"
+      - title: "Collect Consent in existing form"
         url: /docs/collect-into-form-guide/
   - title: "Technical documentation"
     children:
