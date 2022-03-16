@@ -7,14 +7,38 @@ todo:
   - compléter
 ---
 
-Right Consents Community offers many features, Right Consents Enterprise offers even more.
+Right Consents offers features about user consent and preferences **collect**, **proof** storage and valuation, audit **conformity**, **integration** tools, dedicated operator and cutomer **user interfaces**.
 
-//TODO List de feature mais regroupées par domaines :
 
-## Consent modelisation
+# User Consent & Preferences collect
 
-- Backoffice to manage consent elements Models into specific libraries
-  - well defined elements models (information, processings, preferences, )
+Processing and Preferences Modelisation Backoffice
+Embeddable HTML forms
+Rich API
+Consent Transaction
+
+# Audit conformity
+
+User record history
+Standard Consent Receipt
+Versioning of models
+Certified Timestamp (enterprise edition)
+
+# Integration tools
+
+Email or SMS user notifications
+SDK
+Pluggable identification
+Webhook registration
+
+# Dedicated Operator and Customer Interfaces
+
+Customer specific page
+Operator interface
+
+
+
+
 
 Community :
 

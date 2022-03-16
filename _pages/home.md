@@ -12,19 +12,16 @@ header:
 excerpt_2: "Right Consents Community edition is an open and extensible platform to manage consents and preferences. <br/> It aims to provide any organization with a complete, simple and easy to implement solution for <b>collecting, storing, analysing</b> and <b>using</b> users' consents and preferences."
 ---
 
-# Key features of Right Consent :
+# Collect consent in an existing HTML form
 
-Manage privacy policy, processing and preferences models in a dedicated backoffice  
-Generate consent collect forms on the fly using API  
-Records user choices and produce standard Consent Receipt  
-Offer an Operator GUI for offline modification (call center, CRM, ...)
+Integrating Right Consent collect to an existing HTML web form is as simple as adding 5 lines of javascript into your existing web page.
 
+{% include figure image_path="/assets/images/collect-existing-form.png" alt="Collect Consent in Existing Form Process" caption="The Consent Collect Integration Simplicity" %}
 
-# Most relevant use case : Integrate a consent collect into existing Html form
+That will integrate a compliant consent form before your form data submission. And now the collected personal data can be processed in an full RGPD compliant way, with proof !
 
-Just a drawing explaining the use case with a link to the About > UseCase 1 page
+Discover other features of Right Consents  -  Follow the integration guide to make
 
-## Two other use cases :
+# Manage your mobile application CGU and preferences with Right Consent
 
-- Manage CGU and consent into mobile application
-- Ready to use Privacy Center for users to manage their preferences and consents.
+# Propose a dedicated Privacy Center to your customers for centralizing all personal data management.
