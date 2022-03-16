@@ -5,7 +5,7 @@
 .masthead {
   z-index: 1000;
   background-color: $fs-white;
-  position: sticky;
+  position: fixed;
   padding: 24px 0;
   width: 100%;
 
@@ -15,6 +15,7 @@
     margin-right: auto;
     padding: 0em 1em;
     max-width: 90%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,7 +23,8 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $primary-font-family-narrow;
-
+    align-items: center;
+    
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
@@ -100,7 +102,7 @@ ul.visible-links {
   a {
     color: $fs-black-text-color;
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.9375em;
   }
 
   .dropdown {
