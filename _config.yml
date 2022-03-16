@@ -47,6 +47,7 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 # exclude:
+#    - .idea/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -57,8 +58,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
 
 # collections
 collections:

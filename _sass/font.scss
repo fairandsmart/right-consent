@@ -10,3 +10,32 @@
   url('https://assets.fairandsmart.com/fonts/Comfortaa/Comfortaa-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: normal;
 }
+
+
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'),
+  url('../fonts/Quicksand/Quicksand-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand/Quicksand-Bold.woff2') format('woff2'),
+  url('../fonts/Quicksand/Quicksand-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2'),
+  url('../fonts/Inter/Inter-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2'),
+  url('../fonts/Inter/Inter-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+}

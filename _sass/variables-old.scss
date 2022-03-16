@@ -49,16 +49,16 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$open-sans: 'Open Sans', sans-serif !important;
-$comfortaa: 'Comfortaa', sans-serif !important;
+$primary-font-family: 'Open Sans', sans-serif !important;
+$secondary-font-family: 'Comfortaa', sans-serif !important;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
-$open-sans-narrow: $open-sans !default;
+$primary-font-family-narrow: $primary-font-family !default;
 
-$global-font-family: $open-sans !default;
-$header-font-family: $comfortaa !default;
-$caption-font-family: $comfortaa !default;
+$global-font-family: $primary-font-family !default;
+$header-font-family: $secondary-font-family !default;
+$caption-font-family: $secondary-font-family !default;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px

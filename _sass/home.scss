@@ -1,0 +1,27 @@
+.home-wrapper {
+  margin: auto;
+
+  .content-container {
+    max-width: 90%;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+
+  div {
+    flex: 1 1 auto;
+    max-width: 50%;
+
+    img {
+      height: auto
+    }
+  }
+
+  .img-container {
+    text-align: end;
+  }
+}

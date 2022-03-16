@@ -21,7 +21,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $open-sans-narrow;
+    font-family: $primary-font-family-narrow;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -117,7 +117,7 @@ ul.visible-links {
     z-index: 1;
     cursor: pointer;
     margin: 0;
-    padding: 8px 16px;
+    padding: 8px 0;
   }
 
   .dropdown:hover .dropdown-content, .dropdown-content:hover {

@@ -1,4 +1,35 @@
 ---
 layout: default
 ---
-{{ content }}
+
+<div class="page home-wrapper">
+
+    <div class="page__inner-wrap">
+        <div class="header-container">
+            <header class="header-wrapper">
+                <div>
+                    {% if page.title %}
+                    <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                        <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify
+                            | remove: "<p>" | remove: "</p>" }}</a>
+                    </h1>
+                    {% endif %}
+                    {% if page.excerpt %}
+                    <h2>{{ page.excerpt }}</h2>
+                    {% endif %}
+                    {% if page.excerpt_2 %}
+                    <p>{{ page.excerpt_2 }}</p>
+                    {% endif %}
+                    {% include page__meta.html %}
+                </div>
+                <div class="img-container">
+                    <img class="header-img" src="../assets/images/header-picture.jpg" alt="header image">
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="content-container">
+        {{ content }}
+    </div>
+</div>
