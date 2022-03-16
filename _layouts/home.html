@@ -31,7 +31,7 @@ layout: default
                     {% include page__meta.html %}
                 </div>
                 <div class="img-container">
-                    <img class="header-img" src="../assets/images/header-picture.jpg" alt="header image">
+                    <img class="header-img" src="{{ page.img | relative_url }}" alt="header image">
                 </div>
             </header>
         </div>
