@@ -1,6 +1,7 @@
 ---
-image: 
+title: Backoffice Application
+image: /assets/images/overview_backoffice.jpg
 position: left
 ---
 
-A backoffice allows to define models for collected elements like processings, preferences or conditions of usage...
+Using the dedicated backoffice, you first define your models according to your processings, preferences or usage conditions.

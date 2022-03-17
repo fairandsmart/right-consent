@@ -1,6 +1,7 @@
 ---
-image: 
+title: Easy Integration
+image: /assets/images/overview_sdk-form.jpg
 position: right
 ---
 
-A javscript SDK allows to integrate consent or preference collect in any existing website or mobile application by simply defining which elements has to be collected in that place for the connected subject.
+In order to collect consent in your existing websites or mobile apps you just have to use the SDK and fex lines of javascript.
