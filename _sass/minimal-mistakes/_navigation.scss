@@ -416,10 +416,12 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: $type-size-3;
 
   a {
     color: inherit;
+    font-size: $type-size-3;
+    font-family: $primary-font-family;
   }
 
   .active {
@@ -461,7 +463,7 @@
   margin: 0;
   padding: 0.5rem 0.75rem;
   font-family: $primary-font-family-narrow;
-  font-size: $type-size-5;
+  font-size: $type-size-3;
   font-weight: bold;
 }
 
@@ -470,7 +472,7 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $secondary-font-family;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
   color: $fs-orange;
   font-weight: bold;
   text-transform: uppercase;
@@ -484,7 +486,7 @@
   font-family: $primary-font-family-narrow;
 
   .nav__title {
-    font-size: $type-size-4;
+    font-size: $type-size-3;
     color: $fs-orange;
     font-family: $header-font-family;
   }
@@ -503,7 +505,7 @@
   font-size: $type-size-4;
 
   @include breakpoint($large) {
-    font-size: $type-size-5;
+    font-size: $type-size-4;
   }
 
   a {
@@ -513,6 +515,7 @@
     font-weight: bold;
     line-height: 1.5;
     text-decoration: none;
+    font-size: $type-size-4;
 
     &:hover {
       color: $fs-blue;
