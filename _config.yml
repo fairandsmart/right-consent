@@ -141,6 +141,14 @@ collections:
     permalink: /:collection/:path/
   overview:
     output: false
+  features:
+    output: false
+  usecase1:
+    output: false
+  usecase2:
+    output: false
+  usecase3:
+    output: false
 
 # Sass/SCSS
 sass:
