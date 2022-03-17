@@ -22,7 +22,8 @@ layout: default
                     {% endif %}
                     {% if page.header.actions %}
                     {%- for clicktoaction in page.header.actions -%}
-                    <button class="btn btn--x-large btn--fs-black" onclick="window.location.href='{{ clicktoaction.url | relative_url }}'">
+                    <button class="btn btn--x-large btn--fs-black"
+                            onclick="window.location.href='{{ clicktoaction.url | relative_url }}'">
                         <span>{{ clicktoaction.label }}</span>
                     </button>
                     {%- endfor -%}

@@ -1,0 +1,26 @@
+.feature-list {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2n+1) {
+    flex-direction: row-reverse;
+
+    .text-container {
+      margin-right: 12px;
+    }
+  }
+
+  &:nth-child(2n) {
+    .text-container {
+      margin-left: 12px;
+    }
+  }
+
+  img {
+    max-width: 40%;
+  }
+
+  .text-container {
+    max-width: 60%;
+  }
+}

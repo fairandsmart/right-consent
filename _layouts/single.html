@@ -34,7 +34,7 @@ layout: default
     {% endunless %}
 
     {% if page.sidebar %}
-        {% include sidebar.html %}
+    {% include sidebar.html %}
     {% endif %}
 
     <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
@@ -67,6 +67,9 @@ layout: default
                 </aside>
                 {% endif %}
                 {{ content }}
+                {% if page.features %}
+                {% include feature-list.html %}
+                {% endif %}
                 {% if page.link %}
                 <div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label
                     | default: "Direct Link" }}</a></div>

@@ -7,6 +7,14 @@ gallery:
   image_path: /assets/images/collect-process.png
   alt: "Collect Process Schema"
   title: "Collect Process Schema"
+features:
+- img: '../assets/images/fair_and_smart_logo.png'
+  title: "Consent Models"
+  text: "Right Consents consent forms are designed to be **modular**, which means that collector entities can create and manage models of various **types**: information, processings, preferences, terms and conditions, emails, and themes. Each model has **its own lifecycle** with drafts and versions archiving for better traceability."
+- img: '../assets/images/fair_and_smart_logo.png'
+  title: "Consent Models"
+  text: "Right Consents consent forms are designed to be **modular**, which means that collector entities can create and manage models of various **types**: information, processings, preferences, terms and conditions, emails, and themes. Each model has **its own lifecycle** with drafts and versions archiving for better traceability."
+  
 todo:
   - relire
 ---
