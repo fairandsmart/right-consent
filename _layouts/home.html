@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page home-wrapper">
+<div class="home-wrapper">
 
     <div class="page__inner-wrap">
         <div class="header-container">
@@ -10,7 +10,8 @@ layout: default
                 <div>
                     {% if page.title %}
                     <h1 id="page-title" class="page__title p-name" itemprop="headline">
-                        <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify
+                        <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title |
+                            markdownify
                             | remove: "<p>" | remove: "</p>" }}</a>
                     </h1>
                     {% endif %}
@@ -39,6 +40,7 @@ layout: default
     </div>
 
     <div class="content-container">
+        {% include feature_row %}
         {{ content }}
     </div>
 </div>

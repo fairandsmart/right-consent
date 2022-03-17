@@ -27,7 +27,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .initial-content,
@@ -38,12 +38,20 @@ body {
 
 .page-container {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .page-basic {
   width: 90%;
   margin: auto
+}
+
+.home-wrapper {
+  max-width: 100%;
+
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+  }
 }
 
 .page {
@@ -102,22 +110,22 @@ body {
     padding-bottom: 0.5em;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h1, h2, h3, h4, h5, h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
+    &:hover .header-link {
+      opacity: 1;
+    }
+  }
 
   p,
   li,

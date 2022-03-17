@@ -9,7 +9,20 @@ img: "../assets/images/home-product.jpg"
 header:
   actions:
     - label: "Quick tour"
-      url: "/about/overview/" 
+      url: "/about/overview/"
+feature_row:
+- image_path: /assets/images/header-picture.jpg
+  alt: "placeholder image 1"
+  title: "Placeholder 1"
+  excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  url: '/about/overview/'
+  btn_class: 'btn btn--large btn--fs-black'
+- image_path: /assets/images/home-product.jpg
+  alt: "placeholder image 2"
+  title: "Placeholder 2"
+  excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  url: '/about/overview/'
+  btn_class: 'btn btn--large btn--fs-black'
 ---
 
 

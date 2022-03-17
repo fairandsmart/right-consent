@@ -45,7 +45,7 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $primary-font-family-narrow;
+  font-family: $secondary-font-family;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -74,7 +74,8 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
+  font-family: $primary-font-family;
 
   & + p {
     text-indent: 0;
@@ -241,7 +242,6 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
 
   .archive__item-title {
     margin-bottom: 0;
@@ -251,7 +251,10 @@
 .feature__item {
   position: relative;
   margin-bottom: 2em;
+  padding: 12px;
   font-size: 1.125em;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 
   @include breakpoint($small) {
     float: left;
