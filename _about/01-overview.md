@@ -1,8 +1,8 @@
 ---
 title: Overview
 permalink: /about/overview/
-layout: collection
-collection: overview
+menu: true
 ---
 
-plop
+{% include collection-list.html collection="overview" %}
+

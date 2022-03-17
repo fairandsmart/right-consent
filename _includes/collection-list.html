@@ -1,0 +1,13 @@
+{% assign collection = site[include.collection] %}
+
+<div class="collection-list-container">
+    {%- for element in collection -%}
+    <div class="collection-element">
+        <img src="{{element.img | relative_url}}">
+        <div class="text-container">
+            <h3>{{ element.title }}</h3>
+            <p>{{ element.content }}</p>
+        </div>
+    </div>
+    {%- endfor -%}
+</div>
