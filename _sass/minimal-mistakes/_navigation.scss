@@ -469,11 +469,11 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
-  font-family: $primary-font-family-narrow;
-  font-size: $type-size-6;
+  font-family: $secondary-font-family;
+  font-size: $type-size-5;
+  color: $fs-orange;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
 }
 
 /*
