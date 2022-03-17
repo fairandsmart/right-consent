@@ -1,6 +1,12 @@
+.feature-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .feature-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &:nth-child(2n+1) {
     flex-direction: row-reverse;

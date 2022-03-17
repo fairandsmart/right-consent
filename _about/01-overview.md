@@ -1,7 +1,8 @@
 ---
 title: Overview
 permalink: /about/overview/
-toc: true
+toc: false
+menu: false
 gallery:
 - url: /assets/images/collect-process.png
   image_path: /assets/images/collect-process.png
