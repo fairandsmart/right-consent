@@ -6,7 +6,7 @@
         <img src="{{element.img | relative_url}}">
         <div class="text-container">
             <h3>{{ element.title }}</h3>
-            <p>{{ element.content }}</p>
+            <p>{{ element.content | markdownify }}</p>
         </div>
     </div>
     {%- endfor -%}
