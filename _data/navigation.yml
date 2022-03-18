@@ -53,7 +53,7 @@ docs:
         url: /docs/full-install-guide/
   - title: "Guides"
     children:
-      - title: "Collect Consent in existing form"
+      - title: "Integrate in existing form"
         url: /docs/collect-into-form-guide/
   - title: "Technical documentation"
     children:

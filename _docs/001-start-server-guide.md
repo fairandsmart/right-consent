@@ -2,6 +2,7 @@
 title: Start server guide
 permalink: /docs/start-server-guide/
 toc: true
+menu: true
 ---
 
 Learn how to start your own Right Consent server locally. This guide covers :

@@ -2,6 +2,7 @@
 title: Collecting consent without tech skills
 permalink: /docs/collect-into-form-guide/
 toc: true
+menu: true
 todo:
   - refaire au format guide
   - relire

@@ -3,6 +3,7 @@ title: Configuration
 permalink: /docs/config-ref/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
 toc: true
+menu: true
 todo:
   - refaire dans un format unique de tableau (cf quarkus)
   - relire

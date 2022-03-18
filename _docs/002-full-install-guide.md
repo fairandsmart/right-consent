@@ -1,25 +1,34 @@
 ---
-title: Installation
-permalink: /docs/installation/
+title: Install from Sources guide
+permalink: /docs/full-install-guide/
 excerpt: "Instructions for building and installing right consents in a local environment."
 toc: true
-todo:
-  - relire
+menu: true
 ---
 
-## Docker installation
+Learn how to build sources to start your own Right Consent server locally. This guide covers :
 
-As mentioned in the quick start guide, the docker installation is based on a docker-compose deployment configuration that does everything for you.
+- Start needed docker components (auth)
+- Getting the latest sources
+- Building components from source
+- Start built components
+- Access backoffice
 
-Assuming you have a docker already installed you can start a local instance with the following commands: 
+## Prerequisites
 
-```bash
-$ git clone git@github.com:fairandsmart/right-consent.git
-$ cd right-consent
-$ docker-compose up
-```
+To complete this guide you need :
 
-As soon as the stack is up, you can go to the [web application](http://localhost:4286)
+- Roughly 20 minutes
+- Git
+- Java 11
+- Maven 3.8.4
+- Docker compose
+
+
+## Overview
+
+In this guide you will learn 
+
 
 ## Source installation
 
