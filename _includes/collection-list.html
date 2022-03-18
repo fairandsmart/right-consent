@@ -4,7 +4,7 @@
     {%- for element in collection -%}
     <div class="collection-element">
         {% if element.image %}
-        <img src="{{ element.image | relative_url }}">
+        <img src="{{ element.image | relative_url }}" alt="Element image">
         {% endif %}
         <div class="text-container">
             <h3>{{ element.title }}</h3>
