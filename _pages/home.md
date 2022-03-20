@@ -11,19 +11,19 @@ header:
     - label: "Quick tour"
       url: "/about/overview/"
 feature_row:
-- image_path: /assets/images/header-picture.jpg
+- image_path: /assets/images/home-onlineform.jpg
   alt: "collect consent in existing online html forms"
   title: "Collect Consent in online forms"
   excerpt: "Easily integrate your consent collect in an existing HTML Form with a few lines of javascript"
   url: '/about/integrate-html-form/'
   btn_class: 'btn btn--large btn--fs-black'
-- image_path: /assets/images/home-product.jpg
+- image_path: /assets/images/home-cgumobile.jpg
   alt: "manage CGU in an existing Mobile APP"
   title: "Manage CGU in Mobile apps"
   excerpt: "Integrate a standard CGU manager in any existing Mobile App using our API or the dedicated SDK"
   url: '/about/mobile-app-cgu/'
   btn_class: 'btn btn--large btn--fs-black'
-- image_path: /assets/images/home-product.jpg
+- image_path: /assets/images/home-privacycenter.jpg
   alt: "Propose a Customer Privacy Center to your users"
   title: "Customer Privacy Center"
   excerpt: "Offer a unique and centralized interface dedicated to preferences & consents to your users."
