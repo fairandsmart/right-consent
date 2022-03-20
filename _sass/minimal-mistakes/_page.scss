@@ -116,6 +116,7 @@ body {
       left: 0.5em;
       opacity: 0;
       font-size: 0.8em;
+      color: $fs-blue;
       -webkit-transition: opacity 0.2s ease-in-out 0.1s;
       -moz-transition: opacity 0.2s ease-in-out 0.1s;
       -o-transition: opacity 0.2s ease-in-out 0.1s;
@@ -578,10 +579,4 @@ body {
       padding-right: 0;
     }
   }
-}
-
-// F&S
-.header-container {
-  background-color: $fs-lightblue;
-  padding: 80px 70px;
 }

@@ -3,10 +3,12 @@
 <div class="collection-list-container">
     {%- for element in collection -%}
     <div class="collection-element">
-        <img src="{{element.img | relative_url}}">
+        {% if element.image %}
+        <img src="{{ element.image | relative_url }}" alt="Element image">
+        {% endif %}
         <div class="text-container">
             <h3>{{ element.title }}</h3>
-            <p>{{ element.content }}</p>
+            <p>{{ element.content | markdownify }}</p>
         </div>
     </div>
     {%- endfor -%}
