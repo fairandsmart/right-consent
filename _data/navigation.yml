@@ -48,7 +48,7 @@ docs:
   - title: "Getting started"
     children:
       - title: "Quick-start guide"
-        url: /docs/quick-start-guide/
+        url: /docs/start-server-guide/
       - title: "Full installation guide"
         url: /docs/full-install-guide/
   - title: "Guides"

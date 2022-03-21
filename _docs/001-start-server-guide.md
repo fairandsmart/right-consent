@@ -1,11 +1,12 @@
 ---
-title: Start server guide
+title: Quick Start guide
 permalink: /docs/start-server-guide/
 toc: true
 menu: true
 ---
 
-Learn how to start your own Right Consent server locally. This guide covers :
+Learn how to start your own Right Consent server locally in 5 minutes.  
+This guide covers :
 
 - Getting the latest docker compose script
 - Starting the docker compose elements
@@ -27,7 +28,7 @@ To complete this guide you need :
 
 In this guide you will learn how to run an already configured stack of all components needed to run a local instance of Right Consents based on docker compose
 
-//TODO Insert image that shows a docker compose script -> then a start of some components -> then a view of the backoffice app
+{% include figure image_path="/assets/images/startserverguide-overview.jpg" alt="Start Server Guide - Overview" %}
 
 This guide also covers a guided tour of the authentication process and the deployed backoffice.
 
@@ -50,16 +51,18 @@ Wait as long as everything is started up...
 
 When everything is up (check video above) you can access the different components with the following urls:
 
-**Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286) using username & password: *demo@demo.com / demo42*
+**Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286)  
+**username & password:** *demo@demo.com / demo42*
 
 //TODO Screen shot of Backoffice
 
 ## Discover the app
 
 
+
 ## What's next ?
 
-This guide cover the startup of a local instance of Right Consents to discover the solution.
+In this guide we have seen how to start a local instance of Right Consents to discover the solution. 
 
 In addition you could now check other guides like :
 
