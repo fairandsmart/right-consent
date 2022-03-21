@@ -4,4 +4,7 @@ image: /assets/images/overview_sdk-form.jpg
 position: right
 ---
 
-In order to collect consent in your existing websites or mobile apps you just have to use the SDK and few lines of javascript.
+When some models of processing or preferences are defined, you are able to start collecting.  
+
+Then, in order to collect consent in your existing websites or mobile apps you just have to use the provided SDK and few lines of javascript to assemble what you need in a Consent Context.   
+

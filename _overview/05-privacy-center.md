@@ -4,4 +4,6 @@ image: /assets/images/overview_cpp.jpg
 position: left
 ---
 
-A configurable Privacy center dedicated interface allows to consult all consent and preferences given by a single user. It can be accessed by an operator or by the enduser itself.
+A configurable Privacy Center dedicated interface allows to consult all consents and preferences given, to extract past receipt and to change choices.  
+
+It can also be accessed by an operator or by the end-user itself.

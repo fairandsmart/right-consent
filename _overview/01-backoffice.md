@@ -4,4 +4,7 @@ image: /assets/images/overview_backoffice.jpg
 position: left
 ---
 
-Using the dedicated backoffice, you first define your models according to your processings, preferences or usage conditions.
+A **dedicated backoffice** allows you to define elements that require consent collect from end users. 
+We are currently handling element like **processing**, **preferences** and **usage conditions** with specific business rules.   
+
+Once defined and published, models are then available for collecting in any specific context.  
