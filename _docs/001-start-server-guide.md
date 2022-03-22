@@ -87,24 +87,24 @@ When everything is up (check video above) you can access the different component
 **Backoffice web application** is visible at url [http://localhost:4286](http://localhost:4286)  
 **username & password:** *demo@demo.com / demo42*
 
-{% include gallery caption="Backoffice screenshots" %}
-
 ## Discover the app
+
+{% include gallery caption="Backoffice screenshots" %}
 
 The principal GUI is the **backoffice**, it ensures administration of many aspects of **consent & preferences management** including :
 
-- A dashboard for displaying some basic but usefull metrics about consent API usage,
-- Some dedicated libraries to define as much as needed models, 
-- Specific content and lifecycle (with conservation) for each library (processing, preference, usage conditions, notification email, themes) and integrated mecanisms to proove existence of elements,
-- A graphical editor to assemble library models in a specific collect context that will be embedded in any existing application,
-- A collect URL generator for each collect transaction with a secured token that avoid any element to be changed by end user,
-- A standard consent collect receipt format that summarize all required information elements and that is preserved,
-- A customer dedicated page to have an overview of all collected elements regarding defined models and access to preserved proof,
-- An export module that allows to extract a group of customers that are eligible for a specific processing
+- A **dashboard** for displaying some basic but usefull metrics about consent API usage,
+- Some **dedicated libraries** to define as much as needed models, 
+- Specific **content lifecycle** for each library (processing, preference, usage conditions, notification email, themes) and integrated mecanism to ensure **legal compliance**,
+- A **graphical editor** to assemble library models in a **specific collect context** that will be embedded in any existing application,
+- A collect **URL generator** for each collect transaction with a **secured token** that avoid any element to be changed by end user,
+- A **standard consent collect receipt** format that summarize all required information elements and that is preserved as long as needed,
+- A **customer dedicated page** to have an overview of all collected elements regarding defined models and access to preserved proof,
+- An **export module** that allows to extract a group of customers that are eligible for a specific processing
 
 The solution is also offering an **API** that can be directly accessed by **client applications** or systems that need consent confirmation for actions.
 
-If the predefined HTML forms are not enough, a Typescript SDK is the ready to use option for integrating Right Consent in a more fashion controlled way.     
+If the predefined HTML forms are not enough, a **typescript SDK** is the ready to use option for integrating Right Consent in a more **fashion controlled way**.     
 
 ## What's next ?
 
