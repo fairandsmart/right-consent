@@ -7,7 +7,7 @@
    ========================================================================== */
 
 .sidebar {
-  margin-right: 8px;
+  margin: 0 8px;
   @include clearfix();
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */

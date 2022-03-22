@@ -24,6 +24,7 @@
   a {
     position: relative;
     z-index: 10;
+    text-decoration: none;
   }
 
   a[rel="permalink"] {
@@ -31,16 +32,27 @@
   }
 }
 
+article.archive__item h2.archive__item-title.no_toc a {
+    color: $fs-dark-grey;
+}
+
+.posts__item {
+  color: $fs-orange;
+}
+
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  margin: 1.414em 0 0;
+  font-size: $type-size-3;
   color: $fs-dark-grey;
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
+}
+
+.posts__subtitle {
+  color: $fs-orange;
 }
 
 .archive__item-title {
@@ -445,7 +457,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -460,7 +472,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
