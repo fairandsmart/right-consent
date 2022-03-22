@@ -61,7 +61,7 @@ To complete this guide you need :
 
 In this guide you will learn how to run an already configured stack of all components needed to run a local instance of Right Consents based on docker compose
 
-{% include figure image_path="/assets/images/startserverguide-overview.png" alt="Start Server Guide - Overview" %}
+{% include figure image_path="/assets/images/startserverguide-overview.jpg" alt="Start Server Guide - Overview" %}
 
 This guide also covers a guided tour of the authentication process and the deployed backoffice.
 
