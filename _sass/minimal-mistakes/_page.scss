@@ -96,7 +96,7 @@ body {
   }
 
   & + .page__meta {
-    margin-top: -0.5em;
+    margin-top: 0.5em;
   }
 }
 
@@ -303,7 +303,7 @@ body {
 
 .page__meta {
   margin-top: 2em;
-  color: $muted-text-color;
+  color: $fs-dark-text-color;
   font-family: $primary-font-family;
   font-size: $type-size-6;
 
@@ -533,15 +533,16 @@ body {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
+  width: 100%;
 
-  @include breakpoint($large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-  }
+  //@include breakpoint($large) {
+  //  float: right;
+  //  width: calc(100% - #{$right-sidebar-width-narrow});
+  //}
+  //
+  //@include breakpoint($x-large) {
+  //  width: calc(100% - #{$right-sidebar-width});
+  //}
 
   a {
     color: inherit;
