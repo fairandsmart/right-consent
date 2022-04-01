@@ -322,6 +322,15 @@ body {
   text-transform: uppercase;
 }
 
+.page-article-footer {
+  display: flex;
+  align-items: baseline;
+
+  & > p {
+    margin: 0 12px;
+  }
+}
+
 .page__meta-sep::before {
   content: "\2022";
   padding-left: 0.5em;
