@@ -1,6 +1,6 @@
 ---
-title: Mobile Application CGU
-permalink: /about/mobile-app-cgu/
+title: Mobile Application TOS
+permalink: /about/mobile-app-tos/
 toc: false
 menu: true
 ---

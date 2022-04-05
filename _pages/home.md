@@ -18,10 +18,10 @@ feature_row:
   url: '/about/integrate-html-form/'
   btn_class: 'btn btn--large btn--fs-black'
 - image_path: /assets/images/home-cgumobile.jpg
-  alt: "manage CGU in an existing Mobile APP"
-  title: "Manage CGU in Mobile apps"
-  excerpt: "Integrate a standard CGU manager in any existing Mobile App using our API or the dedicated SDK"
-  url: '/about/mobile-app-cgu/'
+  alt: "manage TOS in an existing Mobile APP"
+  title: "Manage TOS in Mobile apps"
+  excerpt: "Integrate a standard TOS manager in any existing Mobile App using our API or the dedicated SDK"
+  url: '/about/mobile-app-tos/'
   btn_class: 'btn btn--large btn--fs-black'
 - image_path: /assets/images/home-privacycenter.jpg
   alt: "Propose a Customer Privacy Center to your users"

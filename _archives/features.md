@@ -14,6 +14,7 @@ User record history
 Standard Consent Receipt
 Versioning of models
 Certified Timestamp (enterprise edition)
+Pluggable Confirmation process
 
 # Integration tools
 

@@ -38,8 +38,8 @@ about:
     children:
       - title: "Consent in existing form"
         url: /about/integrate-html-form/
-      - title: "CGU in mobile app"
-        url: /about/mobile-app-cgu/
+      - title: "TOS in mobile app"
+        url: /about/mobile-app-tos/
       - title: "Customers Privacy Center"
         url: /about/customer-privacy-center/
 
