@@ -16,3 +16,5 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
 end
 
+gem "rake"
+#ruby "2.4.2"
