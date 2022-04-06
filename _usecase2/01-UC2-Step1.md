@@ -4,6 +4,6 @@ image: /assets/images/uc2-step1.jpg
 position: left
 ---
 
-Focusing on the application itself I need to manager some legal aspects of publishing an application and need to 
-ensure that users have accepted Terms Of Service. 
-Those Terms Of Service are subject to evolution, I need an API 
+I've spent some time to develop my application and now it's finished I realize that I need to manage some **legal aspects** of publishing an application. 
+I'm not an expert but I understand that I need to ensure that users have accepted some **Terms Of Services** before using my application. 
+
