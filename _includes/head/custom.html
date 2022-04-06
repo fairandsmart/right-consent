@@ -1,7 +1,9 @@
 <!-- start custom head snippets -->
 
-<link rel="icon" href="/assets/images/favicon.webp" sizes="32x32" />
-<link rel="icon" href="/assets/images/favicon.webp" sizes="192x192" />
-<link rel="apple-touch-icon" href="/assets/images/favicon.webp" />
+{% if site.favicon %}
+<link rel="icon" href="{{ site.favicon }}" sizes="32x32" />
+<link rel="icon" href="{{ site.favicon }}" sizes="192x192" />
+<link rel="apple-touch-icon" href="{{ site.favicon }}" />
+{% endif %}
 
 <!-- end custom head snippets -->
