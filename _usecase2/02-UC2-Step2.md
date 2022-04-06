@@ -1,5 +1,5 @@
 ---
-title: I need to manage Terms Of Service and its evolution
+title: I need to manage Terms Of Service and their evolution
 image: /assets/images/uc2-step2.jpg
 position: left
 ---

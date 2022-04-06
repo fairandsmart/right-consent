@@ -1,5 +1,5 @@
 ---
-title: Centralising privacy aspects, preferences and TOS is a strong added value for my customers
+title: Centralising privacy aspects, preferences and TOS will become a strong added value for my customers
 image: /assets/images/uc2-step4.jpg
 position: left
 ---
