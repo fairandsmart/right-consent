@@ -1,10 +1,9 @@
 ---
-title: Conformity
+title: Conformity and Auditability
 image: /assets/images/features_conformity.jpg
 position: left
 ---
 
-Audit and conformity solution :
   - Models content preservation and historisation
   - Scripts integrity support
   - Query or dump of user records history

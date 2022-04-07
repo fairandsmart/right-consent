@@ -4,7 +4,6 @@ image: /assets/images/features_integration.jpg
 position: left
 ---
 
-Easy integration capabilities :
   - Embeddable HTML Forms (redirection or IFrame)
   - Rich API, JSON objects and typescript SDK
   - Consent transaction with predefined workflow
