@@ -1,0 +1,14 @@
+Fair And Smart:
+  name        : "Fair&Smart"
+  bio         : "Privacy compliance that generates trust"
+  avatar      : "/assets/images/fair_and_smart_symbol_1600_1600.png"
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fairandsmart"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.fairandsmart.com/en/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/company/fair&smart"
