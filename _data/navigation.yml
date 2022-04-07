@@ -23,8 +23,6 @@ main:
         url: /news/
       - title: "Contributing"
         url: /contributing/
-      - title: "License"
-        url: /license/
 
 # about links
 about:
@@ -72,5 +70,3 @@ community:
         url: /news/
       - title: "Contributing"
         url: /contributing/
-      - title: "License"
-        url: /license/
