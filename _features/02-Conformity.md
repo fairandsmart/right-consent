@@ -1,6 +1,6 @@
 ---
 title: Conformity and Auditability
-image: /assets/images/features_conformity.jpg
+image: /assets/images/features-conformity.jpg
 position: left
 ---
 

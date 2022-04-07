@@ -1,6 +1,6 @@
 ---
 title: Consent & Preferences Form
-image: /assets/images/overview_consent.jpg
+image: /assets/images/overview-consent.jpg
 position: left
 ---
 

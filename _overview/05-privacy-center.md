@@ -1,6 +1,6 @@
 ---
 title: Privacy Center
-image: /assets/images/overview_cpp.jpg
+image: /assets/images/overview-cpp.jpg
 position: left
 ---
 

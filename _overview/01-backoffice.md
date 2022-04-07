@@ -1,6 +1,6 @@
 ---
 title: Backoffice Application
-image: /assets/images/overview_backoffice.jpg
+image: /assets/images/overview-backoffice.jpg
 position: left
 ---
 

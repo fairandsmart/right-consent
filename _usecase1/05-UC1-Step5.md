@@ -1,6 +1,6 @@
 ---
 title: I will be able to refresh consent once expired  
-image: /assets/images/uc1-step1.jpg
+image: /assets/images/uc1-step5.jpg
 position: left
 ---
 

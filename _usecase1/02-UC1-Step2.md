@@ -1,6 +1,6 @@
 ---
 title: I want to increase transparency about data protection with my customers 
-image: /assets/images/uc1-step1.jpg
+image: /assets/images/uc1-step2.jpg
 position: left
 ---
 

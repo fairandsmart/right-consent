@@ -1,6 +1,6 @@
 ---
 title: My digital graphical identity is very important  
-image: /assets/images/uc1-step1.jpg
+image: /assets/images/uc1-step3.jpg
 position: left
 ---
 

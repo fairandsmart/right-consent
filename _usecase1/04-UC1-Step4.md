@@ -1,6 +1,6 @@
 ---
 title: My customers must keep control on their consent  
-image: /assets/images/uc1-step1.jpg
+image: /assets/images/uc1-step4.jpg
 position: left
 ---
 

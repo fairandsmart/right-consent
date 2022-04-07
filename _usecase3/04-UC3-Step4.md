@@ -1,6 +1,6 @@
 ---
 title: I need my internal marketing and GDPR tools to be synchronized
-image: /assets/images/uc3-step1.jpg
+image: /assets/images/uc3-step4.jpg
 position: left
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Availability and Customization
-image: /assets/images/features_availability.jpg
+image: /assets/images/features-availability.jpg
 position: left
 ---
 

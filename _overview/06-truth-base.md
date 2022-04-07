@@ -1,6 +1,6 @@
 ---
 title: Records Database
-image: /assets/images/overview_records.jpg
+image: /assets/images/overview-records.jpg
 position: left
 ---
 

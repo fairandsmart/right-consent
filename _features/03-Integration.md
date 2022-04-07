@@ -1,6 +1,6 @@
 ---
 title: Integration
-image: /assets/images/features_integration.jpg
+image: /assets/images/features-integration.jpg
 position: left
 ---
 

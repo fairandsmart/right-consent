@@ -1,6 +1,6 @@
 ---
 title: I want a unified privacy user experience for my customers
-image: /assets/images/uc3-step1.jpg
+image: /assets/images/uc3-step3.jpg
 position: left
 ---
 

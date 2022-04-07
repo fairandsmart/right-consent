@@ -1,6 +1,6 @@
 ---
 title: I have a multi channel based customer relationship
-image: /assets/images/uc3-step1.jpg
+image: /assets/images/uc3-step2.jpg
 position: left
 ---
 
