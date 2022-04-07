@@ -1,7 +1,8 @@
 ---
 title: Contributing
 permalink: /contributing/
-toc: false
+menu: true
+author: Fair And Smart
 todo:
   - relire
 ---
@@ -24,6 +25,12 @@ You can also ask for new features on the discussions page but you should be awar
 - [Issue Tracker](https://github.com/fairandsmart/right-consents/issues)
 - [Discussions](https://github.com/fairandsmart/right-consents/discussions)
 - Mailing List (comming soon...)
+
+## License
+
+Right Consents Community Edition is a free and Open Source software, its licence is composed of:
+- GPL v3: [GitHub](https://github.com/fairandsmart/consent-manager-back/blob/master/LICENSE.txt)
+- Additional terms: [GitHub](https://github.com/fairandsmart/consent-manager-back/blob/master/LICENSE.FAIRANDSMART.txt)
 
 ## Thanks
 
