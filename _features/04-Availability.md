@@ -1,5 +1,5 @@
 ---
-title: Available and Customizable
+title: Availability and Customization
 image: /assets/images/features_availability.jpg
 position: left
 ---
