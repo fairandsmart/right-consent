@@ -1,0 +1,192 @@
+#swagger-ui {
+  box-sizing: border-box;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+
+  --fs-primary: #e85624;
+
+  --fs-secondary: #42bdd8;
+  --fs-secondary-light: #cbeef5;
+
+  --fs-black: #282829;
+  --fs-white: #ffffff;
+
+  --fs-title-font-family: Quicksand, sans-serif;
+  --fs-text-font-family: Inter, sans-serif;
+
+  --fs-text-primary: #e85624;
+  --fs-text-secondary: #42bdd8;
+  --fs-text-light: #ffffff;
+  --fs-text-dark: #282829;
+
+  font-family: var(--fs-text-font-family) !important;
+}
+
+*,
+*:before,
+*:after
+{
+  box-sizing: inherit;
+}
+
+body{
+  margin:0;
+  background: white;
+}
+
+#footer {
+  margin-top: 20px;
+  padding: 20px 0px 50px 0px;
+  background-color: #282829;
+  color: white;
+  font-size:100%;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--fs-title-font-family) !important;
+}
+
+.btn {
+  font-family: var(--fs-text-font-family) !important;
+}
+
+/*
+*
+* Toolbar style
+*
+*
+*/
+
+.swagger-ui .topbar {
+  background-color: var(--fs-white);
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  z-index: 999;
+}
+
+.download-url-button {
+  background-color: var(--fs-black) !important;
+  color: var(--fs-text-light) !important;
+  font-weight: 500 !important;
+}
+
+/*
+*
+*   Header style
+*
+*
+*/
+
+section.swagger-ui .swagger-ui {
+}
+
+.swagger-ui .btn.authorize {
+  border-color: var(--fs-secondary) !important;
+  color: var(--fs-text-secondary) !important;
+}
+
+.swagger-ui .btn.authorize svg {
+  fill: var(--fs-secondary) !important;
+}
+
+.information-container {
+  margin: 0 24px;
+  background-color: var(--fs-secondary-light);
+}
+
+.swagger-ui .info {
+  padding: 70px 50px;
+}
+
+.swagger-ui .info > * {
+  font-family: var(--fs-text-font-family) !important;
+}
+
+/*
+*
+*   Request style
+*
+*
+*/
+.opblock-tag a span {
+  font-family: var(--fs-title-font-family);
+}
+
+.swagger-ui .opblock {
+  box-shadow: none !important;
+  border-radius: $border-radius !important;
+  border: 1px solid #f2f3f3 !important;
+}
+
+.swagger-ui .opblock .opblock-summary {
+  border: none;
+}
+
+
+.swagger-ui .opblock,
+.swagger-ui .opblock > *  {
+  background-color: transparent !important;
+}
+
+/*
+ POST
+ */
+
+.opblock.opblock-post.is-open h4.opblock-title span::after,
+div.opblock-summary.opblock-summary-post span.opblock-summary-method {
+  background: var(--fs-primary) !important;
+}
+.opblock.opblock-post.is-open .response-control-media-type--accept-controller select {
+  border-color: var(--fs-primary) !important;
+}
+
+.opblock.opblock-post.is-open .response-control-media-type__accept-message {
+  color: var(--fs-text-primary) !important;
+}
+
+/*
+ GET
+ */
+.opblock.opblock-get.is-open h4.opblock-title span::after,
+div.opblock-summary.opblock-summary-get span.opblock-summary-method  {
+  background: var(--fs-secondary) !important;
+}
+.opblock.opblock-get.is-open .response-control-media-type--accept-controller select {
+  border-color: var(--fs-secondary) !important;
+}
+
+.opblock.opblock-get.is-open .response-control-media-type__accept-message {
+  color: var(--fs-text-secondary) !important;
+}
+
+/*
+ PUT
+ */
+.opblock.opblock-put.is-open h4.opblock-title span::after,
+div.opblock-summary.opblock-summary-put span.opblock-summary-method  {
+
+}
+.opblock.opblock-put.is-open .response-control-media-type--accept-controller select {
+}
+
+.opblock.opblock-put.is-open .response-control-media-type__accept-message {
+}
+
+
+/*
+ DELETE
+ */
+.opblock.opblock-delete.is-open h4.opblock-title span::after,
+div.opblock-summary.opblock-summary-delete span.opblock-summary-method  {
+
+}
+.opblock.opblock-delete.is-open .response-control-media-type--accept-controller select {
+}
+
+.opblock.opblock-delete.is-open .response-control-media-type__accept-message {
+}
