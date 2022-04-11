@@ -1,7 +1,7 @@
 Fair And Smart:
   name        : "Fair&Smart"
   bio         : "Privacy compliance that generates trust"
-  avatar      : "/assets/images/fair_and_smart_symbol_1600_1600.png"
+  avatar      : "/assets/images/fair_and_smart_avatar.svg"
   links:
     - label: "Github"
       icon: "fab fa-fw fa-github"
