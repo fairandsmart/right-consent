@@ -6,4 +6,8 @@
 <link rel="apple-touch-icon" href="{{ site.favicon }}" />
 {% endif %}
 
+{% if page.layout == 'swagger' %}
+{% include swagger.html %}
+{% endif %}
+
 <!-- end custom head snippets -->
