@@ -4,9 +4,6 @@ permalink: /docs/config-ref/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
 toc: true
 menu: true
-todo:
-  - refaire dans un format unique de tableau (cf quarkus)
-  - relire
 ---
 
 Backend configuration is located in a specific file:
@@ -15,15 +12,17 @@ Backend configuration is located in a specific file:
 $ consent-manager-back/src/main/resources/application.properties
 ```
 
-Most of the configuration elements can be override at the start by providing a command line alternative avoiding the need to recompile the component. More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/docs/config#overriding-properties-at-runtime)
+Most of the configuration elements can be override at startup by providing a command line alternative avoiding the need to recompile the component. 
 
 ```bash
 $ java -jar -Dquarkus.http.port=9999 ...
 ```
 
-## HTTP & Common config options
+More tips and tricks about configuration can be found in the [quarkus documentation](https://quarkus.io/docs/config#overriding-properties-at-runtime)
 
-The first part of the file allows you to set specific HTTP server configuration options such as ports, CORS, proxy header management, and logs.
+## HTTP config options
+
+The first part of the file allows you to set specific HTTP server configuration options such as ports, CORS, proxy header management.
 
 ```properties
 quarkus.http.port=8087
@@ -35,7 +34,13 @@ quarkus.http.cors.exposed-headers=Content-Disposition
 quarkus.http.cors.access-control-max-age=24H
 
 quarkus.http.proxy.proxy-address-forwarding=true
+```
 
+## Logging config options
+
+Access logs can be generated to log all incoming REST requests on the API:
+
+```properties
 quarkus.http.access-log.enabled=true
 quarkus.http.access-log.pattern=combined
 quarkus.http.access-log.log-to-file=true
@@ -90,9 +95,9 @@ quarkus.mailer.mock=false
 
 It is possible to set an instance name. That name allows you to have several instances running on the the same database. All tables will be prefixed using that instance name. Keep it uppercase.
 
-The fixed language can be specified here and will be propagated to the frontend as the default model creation language. ONce a language has been set, it is stored in the instance database and connot be updated later without creating a new instance. Available languages are 'en' and 'fr'.
+The fixed language can be specified here and will be propagated to the frontend as the default model creation language. Once a language has been set, it is stored in the instance database and cannot be updated later without creating a new instance. Available languages are 'en' and 'fr'.
 
-If the import-data option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty. Samples models are imported at first start using the configure language.
+If the import-data option is set to true, some model samples will be imported at the start. Otherwise, the database will be kept empty. Samples models are imported at first start using the configured language.
 
 The home folder config will host receipts and other files needed by the instance.
 
@@ -123,8 +128,8 @@ consent.support.enabled=true
 consent.support.news=true
 consent.support.bugs=true
 consent.support.stats=true
-consent.support.api/mp-rest/url=https://hub.fairandsmart.com/
-consent.support.api/mp-rest/scope=javax.inject.Singleton
+quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".url=https://hub.fairandsmart.com/ 
+quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".scope=javax.inject.Singleton
 ```
 
 ## Security
