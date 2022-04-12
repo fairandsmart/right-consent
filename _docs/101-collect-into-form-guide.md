@@ -1,12 +1,38 @@
 ---
 title: Collecting consent without tech skills
 permalink: /docs/collect-into-form-guide/
+excerpt: "Instructions for integrating a consent collect in a existing HTML Form without any specific technical skill."
 toc: true
 menu: true
-todo:
-  - refaire au format guide
-  - relire
 ---
+
+Learn how to integrate a consent form in an existing HTML Form that  sources to start your own Right Consent server locally. This guide covers :
+
+- Start needed docker components (auth, smtp)
+- Getting the latest sources
+- Building components from source
+- Start built components
+- Access backoffice
+
+## Prerequisites
+
+To complete this guide you need :
+
+- Roughly 20 minutes
+- Git
+- Java 11
+- Docker
+- Maven >= 3.8.4;
+- NodeJS >= 12.20.0;
+- npm >= 6.14.8;
+
+## Overview
+
+In this guide you will learn how to install needed external components (Keycloak, MailDev) and to compile and run Right Consents backend and frontend.
+
+
+This guide also covers some basic aspects of configuration for the backend.
+
 
 ## Can I collect consents without writing a single line of code?
 

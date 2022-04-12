@@ -1,6 +1,7 @@
 ---
 title: Quick Start guide
 permalink: /docs/start-server-guide/
+excerpt: "Instructions for starting a ready to run version of Right Consents in 5 minutes."
 toc: true
 menu: true
 gallery:
@@ -112,6 +113,6 @@ In this guide we have seen how to start a local instance of Right Consents to di
 
 In addition you could now check other guides like :
 
-- Define my own processing Models
-- Insert consent collect into existing HTML Form
-- Deploy Right Consent from source
+- Define my own processing Models (coming soon)
+- Insert consent collect into existing HTML Form (coming soon)
+- [Deploy Right Consent from source](/docs/full-install-guide/)
