@@ -1,12 +1,12 @@
 ---
-title: Collecting consent without tech skills
+title: Collecting consent without technical skills guide
 permalink: /docs/collect-into-form-guide/
-excerpt: "Instructions for integrating a consent collect in an existing HTML Form without any specific technical skill."
+excerpt: "Instructions for integrating Right Consents collect in an existing HTML Form without any specific technical skill."
 toc: true
 menu: true
 ---
 
-Learn how to integrate a consent form in an existing HTML Form that  sources to start your own Right Consent server locally. This guide covers :
+Learn how to integrate a **Right Consents Collect Form** in an existing HTML Form that handle personal information.
 
 - Start a local docker image to host an HTML Form for collecting personal information
 - Define specific processing and preferences for the collected data in the Right Consent Backoffice
