@@ -1,7 +1,5 @@
 #swagger-ui {
   box-sizing: border-box;
-  overflow: -moz-scrollbars-vertical;
-  overflow-y: scroll;
 
   --fs-primary: #e85624;
 
@@ -20,7 +18,12 @@
   --fs-text-dark: #282829;
 
   font-family: var(--fs-text-font-family) !important;
+  overflow-y: hidden;
 }
+
+.topbar { display: none }
+.information-container  { display: none }
+.scheme-container {display: none}
 
 *,
 *:before,
