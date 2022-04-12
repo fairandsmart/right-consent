@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site settings
 locale                   : "fr-FR"
-title                    : ""
+title                    : "Fair&Smart"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name Fair[&]Smart
 description              : &description "An European Universal Consents & Preferences Open Source Management Platform"
