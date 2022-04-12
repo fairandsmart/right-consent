@@ -28,14 +28,15 @@ To complete this guide you need :
 
 ## Overview
 
-In this guide you will learn how to install needed external components (Keycloak, MailDev) and to compile and run Right Consents backend and frontend.
+In this guide you will learn how to **install** needed external components (Keycloak, MailDev) and to **compile** and run Right Consents backend and frontend.
 
+//TODO Add visual
 
 This guide also covers some basic aspects of configuration for the backend.
 
 ## Keycloak
 
-Keycloak is a ready to run Identification Provider (IdP) compatible with OIDC protocol and wel integrated in Quarkus (Backend Framework).  
+Keycloak is a ready to run **Identification Provider (IdP)** compatible with OIDC protocol and wel integrated in Quarkus (Backend Framework).  
 Unless needed, use keycloak in a dedicated container with either a named volume or (as below) a mapped folder to allow data persistence when the container is redeployed.
 
 ```bash
@@ -50,7 +51,7 @@ If you want to use a local instance instead of the docker one you can visit [key
 
 ## Mail Dev
 
-Outgoing SMTP Service is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for some docs) .
+Outgoing **SMTP Service** is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for some docs) .
 
 ```bash
 $ docker run -p 1080:80 -p 1025:25 maildev/maildev
@@ -63,7 +64,7 @@ $ docker run -p 1080:80 -p 1025:25 maildev/maildev
 
 Backend service is developed in Java using [Quarkus](https://quarkus.io). It exposes a REST API that is accessed from other services. It also integrates configuration elements for working with keycloak.
 
-In order to run the backend, you need to clone the github repository and to run a local instance using Java and Maven:
+In order to run the backend, you need to **clone** the github repository and to **compile** and **run** a local instance using Java and Maven:
 
 ```bash
 $ git clone git@github.com:fairandsmart/consent-manager-back.git
@@ -106,6 +107,7 @@ In the backend, all the configuration is located in a dedicated file
 $ nano src/main/resources/application.properties 
 ```
 
+You can change some configuration aspects like port or public url if needed. A restart is sometimes needed for some configuration parameters where some of them apply directly if started in dev mode.    
 More information on the configuration options can be found in the [configuraton reference](/docs/config-ref/)     
 
 ## What's next ?
