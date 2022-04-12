@@ -1,12 +1,9 @@
 ---
-title: I want a unified privacy user experience for my customers
+title: I want a unified Privacy UX for my customers
 image: /assets/images/uc3-step3.jpg
 position: left
 ---
 
-Using Right Consents I can collect only needed elements of user preferences and consent in each of my digital channels. The collect is made with  
-a unified graphical approach leaving my customer to progressively reinforce confidence with my usage of their personal information by knowing how to change their mind.  
-With the specific consent communication feedback emails, my customers are always informed of their choices. They also have access 
-to the dedicated Privacy Center application to manage all their channel choices in a centralized way and to keep a trace of their choice's history. 
+By using Right Consents, I can collect necessary elements only of user preferences and consents on each of my digital channels. The collection is done with a unified graphical approach, allowing my clients to gradually build trust in the use of their personal information by knowing how to change their mind.
 
-
+With specific consent communication feedback emails, my customers are always informed of their choices. They also have access to the dedicated Privacy Center app to centrally manage all their channel choices and keep track of their choice history.

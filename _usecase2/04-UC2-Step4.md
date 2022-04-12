@@ -1,12 +1,9 @@
 ---
-title: Centralising privacy aspects, preferences and TOS will become a strong added value for my customers
+title: Centralising privacy aspects, preferences and ToS will become a strong added value for my users
 image: /assets/images/uc2-step4.jpg
 position: left
 ---
 
-Having integrated **Right Consents**, I can also manage other aspects of user privacy like preferences or consents (GDPR) in a single 
-and centralized system. I will then be able to use the record database in all my customer relationship management tools to follow  
-their choices and increase my marketing strategy transparency.
-My customers are also able to manage all their personal information privacy aspects in a unified interface event if collected 
-by all my disseminated tools. 
- 
+Having integrated **Right Consents**, I can also manage other aspects of users’ privacy like preferences or consents (GDPR) in a single, centralised system. I will then be able to use the record database in all my CRM tools to keep track of their choices and increase the transparency of my marketing strategy.
+
+My users are also able to manage all privacy aspects of their personal information in a unified event-driven interface if collected by all my disseminated tools.

@@ -1,11 +1,11 @@
 ---
-title: I need to manage Terms Of Service and their evolution
+title: I need to manage Terms and Conditions and their evolution
 image: /assets/images/uc2-step2.jpg
 position: left
 ---
 
-I want to keep trace and a proof that TOS have been accepted and when.   
-In the futur of my application, Terms Of Service may be subject of **evolution**, and I will also need to 
-managing the segmentation between application version, accepted TOS version and many aspects of my user's privacy experience.  
-This could become quickly a pain point and going to a dedicated solution may help me in that task.
- 
+I want to keep track and prove that ToS/ToU were accepted and when.
+
+In the future of my app, the terms of service may be subject to **change**, and I will also need to manage the segmentation between app version, accepted ToS version, and many aspects of my user’s privacy experience.
+
+This could quickly become a pain point and using a dedicated solution can help me with this task.

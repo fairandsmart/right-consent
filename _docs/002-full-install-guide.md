@@ -6,17 +6,17 @@ toc: true
 menu: true
 ---
 
-Learn how to build sources to start your own Right Consent server locally. This guide covers :
+Learn how to build sources to start your own Right Consent server locally. This guide covers:
 
-- Start needed docker components (auth, smtp)
+- Starting needed docker components (auth, smtp)
 - Getting the latest sources
 - Building components from source
-- Start built components
-- Access backoffice
+- Starting built components
+- Accessing the back office
 
 ## Prerequisites
 
-To complete this guide you need :
+To complete this guide you need:
 
 - Roughly 20 minutes
 - Git

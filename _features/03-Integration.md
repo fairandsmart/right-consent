@@ -4,12 +4,11 @@ image: /assets/images/features-integration.jpg
 position: left
 ---
 
-  - **Embeddable** HTML Forms (redirection or IFrame)
-  - Rich **API**, JSON objects and typescript SDK
+  - **Embeddable** HTML forms (redirection or IFrame)
+  - Rich **API**, JSON objects and Typescript SDK
   - Consent **transaction** with predefined workflow
-  - **Email** user notifications
+  - Notifications to users via **email**
   - **Webhook** support
   - Pluggable authentication (OAuth, OIDC, SAML, HTTP Basic, LDAP, ...)
-  - SMS User notification (enterprise edition)
-  - Custom roles with fine grain permissions (enterprise edition)
-
+  - Notifications to users via **SMS** (Enterprise Edition)
+  - Custom roles with granular permissions (Enterprise Edition)

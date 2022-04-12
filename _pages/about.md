@@ -20,8 +20,4 @@ We are deeply convinced that this **balanced and transparent approach**, both pr
  
 Thank you for your feedback, and enjoy!
 
-Xavier Lefevre
-CEO
-
-
-
+Xavier Lefevre, CEO

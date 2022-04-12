@@ -1,9 +1,9 @@
 ---
-title: Privacy Center
+title: Privacy Center / Preference Center
 image: /assets/images/overview-cpp.jpg
 position: left
 ---
 
-A configurable **Privacy Center** dedicated interface allows to consult all consents and preferences given, to **extract past receipts** and to **change choices**.  
+A dedicated configurable **Privacy Center** allows viewing all consents and preferences given, **retrieving past receipts** and **modifying choices**.
 
-It can also be accessed by an **operator** or by the end-user itself.
+It can also be accessed by an **operator** or by the end user itself.

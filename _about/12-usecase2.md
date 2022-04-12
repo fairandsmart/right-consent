@@ -1,5 +1,5 @@
 ---
-title: Mobile Application TOS
+title: Mobile application Terms of Service
 permalink: /about/mobile-app-tos/
 toc: false
 menu: true

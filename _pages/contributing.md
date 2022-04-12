@@ -3,8 +3,6 @@ title: Contributing
 permalink: /contributing/
 menu: true
 author: Fair And Smart
-todo:
-  - relire
 ---
 
 As Right Consents Community is a **free and Open Source** software you can **contribute** to its development by reporting bugs and/or pull requests in github.

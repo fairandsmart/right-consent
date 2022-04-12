@@ -23,7 +23,7 @@ To complete this guide you need :
 - Docker
 - Right Consents running
 
-Right Consents Community is designed to be integrated in digital solutions, but if you are **not a developer**, you can still use the backoffice to collect consents manually.
+Right Consents Community is designed to be integrated in digital solutions, but if you are **not a developer**, you can still use the back office to collect consents manually.
 
 ## Overview
 
@@ -72,4 +72,4 @@ Finally, click on the **"Get API call URL"** button, and simply send the generat
 
 If you found the previous process cumbersome, and/or if you really have few data elements, you may prefer to collect consent **without even generating any form**.
 
-To do this, enter your **end-user's subject ID** in the search bar at the top of the backoffice. This will create a specific [operator page](/docs/operator-access) where you can manually enter the user's consent on their behalf. You have the possibility to have the system send them a **notification email**, but it is again optional.
+To do this, enter your **end-user's subject ID** in the search bar at the top of the back office. This will create a specific [operator page](/docs/operator-access) where you can manually enter the user's consent on their behalf. You have the possibility to have the system send them a **notification email**, but it is again optional.
