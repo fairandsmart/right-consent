@@ -1,42 +1,44 @@
 ---
 title: Collecting consent without tech skills
 permalink: /docs/collect-into-form-guide/
-excerpt: "Instructions for integrating a consent collect in a existing HTML Form without any specific technical skill."
+excerpt: "Instructions for integrating a consent collect in an existing HTML Form without any specific technical skill."
 toc: true
 menu: true
 ---
 
 Learn how to integrate a consent form in an existing HTML Form that  sources to start your own Right Consent server locally. This guide covers :
 
-- Start needed docker components (auth, smtp)
-- Getting the latest sources
-- Building components from source
-- Start built components
-- Access backoffice
+- Start a local docker image to host an HTML Form for collecting personal information
+- Define specific processing and preferences for the collected data in the Right Consent Backoffice
+- Test the consent form generated until desired result
+- Integrate Javascript SDK in the HTML Form
+- Consult and export collected consents
 
 ## Prerequisites
 
 To complete this guide you need :
 
-- Roughly 20 minutes
+- Roughly 30 minutes
 - Git
-- Java 11
 - Docker
-- Maven >= 3.8.4;
-- NodeJS >= 12.20.0;
-- npm >= 6.14.8;
+- Right Consents running
+
+Right Consents Community is designed to be integrated in digital solutions, but if you are **not a developer**, you can still use the backoffice to collect consents manually.
 
 ## Overview
 
-In this guide you will learn how to install needed external components (Keycloak, MailDev) and to compile and run Right Consents backend and frontend.
+In this guide you will learn how to use the SDK to integrate Consent Collect in an existing online HTML Form.
+
+//TODO Add an illustration for the global process
+
+This guide also covers some basic aspects of consent form building for some desired processing and preferences.
 
 
-This guide also covers some basic aspects of configuration for the backend.
+## Start a local online HTML form 
 
 
-## Can I collect consents without writing a single line of code?
+//TODO after here we need to write everything !!
 
-Right Consents Community is designed to be integrated in digital solutions, but if you are **not a developer**, you can still use the backoffice to collect consents manually.
 
 ### Create the models
 

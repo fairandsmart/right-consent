@@ -1,5 +1,5 @@
 ---
-title: Configuration
+title: Configuration Reference
 permalink: /docs/config-ref/
 excerpt: "Detailed elements of configuration to consider when installing Right Consents"
 toc: true
@@ -8,22 +8,6 @@ todo:
   - refaire dans un format unique de tableau (cf quarkus)
   - relire
 ---
-
-The configuration of the whole composition is not available in a single place. Each component of the system holds a part of the configuration. Nevertheless, the backend configuration is probably the most important as it concerns directly the behaviour and functional aspects of the main part of the software.
-
-## IdP (keycloak) configuration
-
-The configuration of the IdP is available using the manager interface <http://localhost:4285/auth>.
-
-Use the following credentials to log in: *admin / admin*
-
-You can find the dedicated Keycloak documentation on the [product website](https://www.keycloak.org/docs/latest/server_admin/index.html)
-
-## SMTP Server
-
-Head to [the upstream doc](https://github.com/maildev/maildev) for additional command line parameters.
-
-## Backend
 
 Backend configuration is located in a specific file:
 
@@ -37,7 +21,7 @@ Most of the configuration elements can be override at the start by providing a c
 $ java -jar -Dquarkus.http.port=9999 ...
 ```
 
-### HTTP & Common config options
+## HTTP & Common config options
 
 The first part of the file allows you to set specific HTTP server configuration options such as ports, CORS, proxy header management, and logs.
 
@@ -58,7 +42,7 @@ quarkus.http.access-log.log-to-file=true
 quarkus.http.access-log.rotate=true
 ```
 
-### Authentication configuration
+## Authentication configuration
 
 Authentication is configured with two types: OpenID-Connect and HTTP BasicAuth.
 
@@ -75,7 +59,7 @@ quarkus.oidc.client-id=consent-manager
 quarkus.oidc.authentication.scopes=profile,email,roles
 ```
 
-### Datasource configuration
+## Datasource configuration
 
 By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported DBMS and specific [configuration options](https://quarkus.io/docs/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification.
 
@@ -88,7 +72,7 @@ quarkus.liquibase.database-change-log-table-name=${consent.instance}_DATABASECHA
 quarkus.hibernate-orm.physical-naming-strategy=com.fairandsmart.consent.common.orm.PrefixPhysicalNamingStrategy
 ```
 
-### Outgoing SMTP Server
+## Outgoing SMTP Server
 
 An outgoing SMTP can be configured easily by overriding some of the following options:
 
@@ -102,7 +86,7 @@ quarkus.mailer.ssl=false
 quarkus.mailer.mock=false
 ```
 
-### Main config options
+## Main config options
 
 It is possible to set an instance name. That name allows you to have several instances running on the the same database. All tables will be prefixed using that instance name. Keep it uppercase.
 
@@ -117,16 +101,19 @@ Public URL allows you to ensure that CORS will be correctly setup when backend r
 ```properties
 # MainConfig
 consent.instance.name=DEV
+consent.instance.owner=dev
 consent.instance.lang=fr
-consent.isntance.import-data=true
-consent.home=~/.consent-manager
-consent.public.url=http://localhost:4287
-consent.processor=https://www.fairandsmart.com
-consent.secret=ThisIsASuperSecret
-consent.thintoken=true
+consent.instance.import-data=true
+consent.instance.home=~/.consent-manager
+consent.instance.public.url=http://localhost:4287
+consent.instance.private-url=http://localhost:8087
+consent.instance.processor=https://www.fairandsmart.com
+consent.instance.secret=ThisIsASuperSecret
+consent.instance.thintoken=true
+consent.instance.transaction-validity=PT6H
 ```
 
-### Support options
+## Support options
 
 A support service is available online and allows the backend to check for the newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any communication with the central service.
 
@@ -140,7 +127,7 @@ consent.support.api/mp-rest/url=https://hub.fairandsmart.com/
 consent.support.api/mp-rest/scope=javax.inject.Singleton
 ```
 
-### Security
+## Security
 
 Security roles can be override using those options but in most cases, it won't be needed at all.
 
@@ -152,7 +139,7 @@ consent.security.roles.operator=operator
 consent.security.roles.api=api
 ```
 
-### Serial config
+## Serial config
 
 Serial numbers can be customized. Internal serial management is based on a slot reservation in the DB avoiding too many serialized transactions and storage bottlenecks on this critical point. Slot size can be customized in case of very heavy load of the system. Also a specific serial prefix may allow you to distinguish different instances of serials (production or tests).
 
@@ -163,7 +150,7 @@ consent.serial.slot.capacity=100
 consent.serial.slot.initial=0
 ```
 
-### User page access configuration
+## User page access configuration
 
 A dedicated page can be made available to your end users and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
 

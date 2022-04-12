@@ -48,7 +48,7 @@ $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e K
 
 If you want to use a local instance instead of the docker one you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details. 
 
-## SMTP server
+## Mail Dev
 
 Outgoing SMTP Service is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for some docs) .
 
@@ -73,8 +73,8 @@ $ mvn clean package -DskipTests quarkus:dev
 
 This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like: 
 
-```bash
-$ 
+```
+[io.quarkus] (Quarkus Main Thread) consent-manager-back 1.1.0-SNAPSHOT on JVM (powered by Quarkus 2.6.2.Final) started in 5.476s. Listening on: http://127.0.0.1:8087
 ```
 
 ## Web Application
@@ -92,16 +92,21 @@ $ ng serve
 
 This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like: 
 
-```bash
-
+```
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 ```
 
 Now you can use the backoffice by visiting [http://localhost:4200](http://localhost:4200)
 
 ## Configuration
 
-In the backend, all the configuration is located in a dedicated file (src/main/resources/application.propoerties).
-More information on the configuration options can be found in the    
+In the backend, all the configuration is located in a dedicated file
+
+```bash
+$ nano src/main/resources/application.properties 
+```
+
+More information on the configuration options can be found in the [configuraton reference](/docs/config-ref/)     
 
 ## What's next ?
 
