@@ -1,5 +1,5 @@
 ---
-title: Collect Consent in Existing Form
+title: Consent collection with forms
 permalink: /about/integrate-html-form/
 toc: false
 menu: true

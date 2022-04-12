@@ -1,9 +1,7 @@
 ---
-title: I want to increase transparency about data protection with my customers 
+title: I want to increase data protection transparency with my end-users
 image: /assets/images/uc1-step2.jpg
 position: left
 ---
 
-With Right Consents I can describe all my processing in a way that will enforce confidence with my customers
-ensuring an innovative transparency and privacy experience. All elements defined are compliant with GDPR and
-will be preserved to ensure digital forensic compliance.
+With Right Consents, I can describe all of my processings in a way that builds trust with my  end-users by ensuring an innovative experience of transparency and privacy. All defined  elements are GDPR compliant and will be retained to ensure compliance with digital forensics.

@@ -7,13 +7,13 @@ main:
         url: /about/overview/
       - title: "Features"
         url: /about/features/
-      - title: "Use Cases"
+      - title: "Use cases"
         url: /about/integrate-html-form/
   - title: "Documentation"
     children:
-      - title: "Quick Start"
+      - title: "Quick start"
         url: /docs/start-server-guide/
-      - title: "All Guides"
+      - title: "All guides"
         url: /docs/collect-into-form-guide/
       - title: "Technical docs"
         url: /docs/config-ref/
@@ -32,20 +32,20 @@ about:
         url: /about/overview/
       - title: "Features"
         url: /about/features/
-  - title: "Common Use Cases"
+  - title: "Common use cases"
     children:
-      - title: "Consent in existing form"
+      - title: "Consent collection with forms"
         url: /about/integrate-html-form/
-      - title: "TOS in mobile app"
+      - title: "Mobile application terms of service"
         url: /about/mobile-app-tos/
-      - title: "Customers Privacy Center"
+      - title: "Customer privacy center"
         url: /about/customer-privacy-center/
 
 # documentation links
 docs:
   - title: "Getting started"
     children:
-      - title: "Quick-start guide"
+      - title: "Quick start guide"
         url: /docs/start-server-guide/
       - title: "Full installation guide"
         url: /docs/full-install-guide/
@@ -55,7 +55,7 @@ docs:
         url: /docs/collect-into-form-guide/
   - title: "Technical documentation"
     children:
-      - title: "Config Ref"
+      - title: "Backend config ref"
         url: /docs/config-ref/
       - title: "API"
         url: /docs/api/

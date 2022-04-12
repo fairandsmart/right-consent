@@ -4,10 +4,8 @@ image: /assets/images/features-availability.jpg
 position: left
 ---
 
-  - Configurable Customer Page for Preference and Consent management
-  - Dedicated operator interface
+Fully available GUI and source code:
   - Open source code for backend and GUI
-  - Community support (forum, mailing list)
-  - Highly available and scalable SaaS hosting (enterprise edition)
-  - Specific support (enterprise edition)
-
+  - Dedicated operator interface
+  - Configurable customer page for Consent and Preference Management
+  - Highly available and scalable SaaS hosting (Enterprise Edition)
