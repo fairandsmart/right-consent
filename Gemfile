@@ -14,7 +14,11 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 gem "rake"
+gem "webrick"
 #ruby "2.4.2"
+  
