@@ -1,5 +1,5 @@
 ---
-title: Collecting consent without technical skills guide
+title: Collecting consent from an existing HTML form
 permalink: /docs/collect-into-form-guide/
 excerpt: "Instructions for integrating Right Consents collect in an existing HTML Form without any specific technical skill."
 toc: true
@@ -29,14 +29,14 @@ Right Consents Community is designed to be integrated in digital solutions, but 
 
 In this guide you will learn how to **use the SDK** to integrate Consent Collect in an existing online HTML Form.
 
-//TODO Add an illustration for the global process
+{% include figure image_path="/assets/images/integratehtml-overview.jpg" alt="Full Install Guide - Overview" %}
 
 This guide also covers some basic aspects of consent form building for some desired processing and preferences.
 
 
-## Start a local online HTML form 
+## SDK integration guide
 
-TODO little introduction
+ // TODO little introduction
 
 ### Create the models
 
@@ -62,11 +62,7 @@ Don't forget to [activate](/docs/model-lifecycle) each model!
 
 - show how to get the sdk via a script tag
 - show how to configure it (via redirect links)
-
-### Connect the SDK to the HTML form
-
 - show how to make a link from a button to the consent-collector
-- 
 
 ### Test, validate and generate a consent
 - Use case A to Z, from html form to consent response generation
