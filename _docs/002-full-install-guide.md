@@ -30,7 +30,7 @@ To complete this guide you need:
 
 In this guide you will learn how to **install** needed external components (Keycloak, MailDev) and to **compile** and run Right Consents backend and frontend.
 
-//TODO Add visual
+{% include figure image_path="/assets/images/fullinstallguide-overview.jpg" alt="Full Install Guide - Overview" %}
 
 This guide also covers some basic aspects of configuration for the backend.
 

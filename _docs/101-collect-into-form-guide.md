@@ -29,7 +29,7 @@ Right Consents Community is designed to be integrated in digital solutions, but 
 
 In this guide you will learn how to **use the SDK** to integrate Consent Collect in an existing online HTML Form.
 
-//TODO Add an illustration for the global process
+{% include figure image_path="/assets/images/integratehtml-overview.jpg" alt="Full Install Guide - Overview" %}
 
 This guide also covers some basic aspects of consent form building for some desired processing and preferences.
 
