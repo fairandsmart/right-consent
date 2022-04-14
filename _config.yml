@@ -24,8 +24,8 @@ url                      : https://fairandsmart.github.io/ # the base hostname &
 baseurl                  : "right-consents" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/{{ site.baseurl}}/assets/images/fair_and_smart_logo.svg"
-favicon                  : "/{{ site.baseurl}}/assets/images/favicon.webp"
+logo                     : "/assets/images/fair_and_smart_logo.svg"
+favicon                  : "/assets/images/favicon.webp"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 og_image                 : "/assets/images/home-product.jpg"
