@@ -109,5 +109,5 @@ In this guide, we saw how to start a local instance of Right Consents to discove
 
 Additionally, you can now check out other guides such as:
   - Define my own processing models (coming soon)
-  - Insert consent collect into existing HTML form (coming soon)
+  - [Insert consent collect into existing HTML form](/docs/collect-into-form-guide/)
   - [Deploy Right Consent from source](/docs/full-install-guide/)
