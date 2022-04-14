@@ -1,5 +1,5 @@
 ---
-title: Back Office Application
+title: Back Office Application (CMP)
 image: /assets/images/overview-backoffice.jpg
 position: left
 ---

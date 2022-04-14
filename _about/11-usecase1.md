@@ -1,6 +1,7 @@
 ---
 title: Consent collection with forms
 title_seo: Consent Management Platform - Open Source - Right Consents - Collect consent from existing form
+description: plop
 header:
   og_image: /assets/images/uc1-step1.jpg
 permalink: /about/integrate-html-form/
