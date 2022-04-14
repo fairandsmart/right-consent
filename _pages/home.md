@@ -5,7 +5,7 @@ hidden: true
 title: "Right Consents Community Edition" #head only
 excerpt: "A safe and simple way to Consents and Preferences Management"
 excerpt_2: "Right Consents Community Edition is an open and extensible platform to manage consents and preferences.<br/> It aims to provide any organisation with a complete yet simple easy-to-implement solution for <b>collecting</b>, <b>storing</b>, <b>analysing</b> and <b>using</b> users' consents and preferences."
-img: "/{{ site.baseurl}}/assets/images/home-product.jpg"
+img: "/assets/images/home-product.jpg"
 header:
   actions:
     - label: "Quick tour"
