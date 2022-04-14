@@ -1,0 +1,14 @@
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+
+  & > li {
+    margin-right: 8px;
+  }
+}

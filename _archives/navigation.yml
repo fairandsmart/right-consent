@@ -1,0 +1,188 @@
+# Be careful: specific menus like "about" or "guides" should be duplicated inside "main" menu to create dropdowns
+
+main:
+  - title: "About"
+    children:
+      - title: "Overview"
+        url: /about/overview/
+      - title: "Features"
+        url: /about/features/
+      - title: "Use case 1"
+        url: /about/uc1-html-form/
+  - title: "Documentation"
+    children:
+      #- title: "Getting started"
+      #  children:
+      #    - title: "First steps"
+      #      children:
+      - title: "Start server guide"
+        url: /docs/start-server-guide/
+      - title: "Full installation guide"
+        url: /docs/full-install-guide/
+      - title: "Configuration"
+        url: /docs/collect-into-form-guide/
+      #- title: "Guides"
+      #  children:
+      #    - title: "Collect"
+      #      children:
+      - title: "Creating a form"
+        url: /docs/create-form/
+      - title: "Styling forms, receipts and emails"
+        url: /docs/themes/
+      - title: "Integrating a form to a website"
+        url: /docs/integration/
+      - title: "Confirming a user's consent"
+        url: /docs/confirmation/
+      - title: "Changing a user's consent on their behalf"
+        url: /docs/operator-access/
+      - title: "Allowing users to change their mind"
+        url: /docs/user-access/
+      - title: "Collecting consent without tech skills"
+        url: /docs/collect-no-code/
+      #    - title: "Process"
+      #      children:
+      - title: "Viewing a user's consents"
+        url: /docs/user-queries/
+      - title: "Viewing the answers to a model"
+        url: /docs/model-queries/
+      - title: "Monitoring forms answers"
+        url: /docs/monitor-answers/
+      - title: "Helping a user find their lost receipt"
+        url: /docs/find-receipt/
+      #- title: "Concepts"
+      #  children:
+      #    - title: "Overview"
+      #      children:
+      - title: "Global structure"
+        url: /docs/global-structure/
+      - title: "Roles"
+        url: /docs/roles/
+      - title: "API keys"
+        url: /docs/api-keys/
+      #    - title: "Inputs"
+      #      children:
+      - title: "Models types"
+        url: /docs/model-types/
+      - title: "Models lifecycle"
+        url: /docs/model-lifecycle/
+      - title: "Consent context"
+        url: /docs/consent-context/
+      #    - title: "Outputs"
+      #      children:
+      - title: "Transactions"
+        url: /docs/transactions/
+      - title: "Records & receipts"
+        url: /docs/records-receipts/
+      #- title: "Technical documentation"
+      #  children:
+      #    - title: "Technical documentation"
+      #      children:
+      - title: "API"
+        url: /docs/api/
+      - title: "SDK"
+        url: /docs/sdk/
+  - title: "Community"
+    children:
+      - title: "News"
+        url: /community/news/
+      - title: "Contributing"
+        url: /community/contributing/
+      - title: "License"
+        url: /community/license/
+
+# about links
+about:
+  - title: "About"
+    children:
+      - title: "Overview"
+        url: /about/overview/
+      - title: "Features"
+        url: /about/features/
+      - title: "Use case 1"
+        url: /about/usecase-1/
+      - title: "Use case 2"
+        url: /about/usecase-2/
+
+# documentation links
+docs:
+  - title: "Getting started"
+    children:
+      #- title: "First steps"
+      #  children:
+      - title: "Quick-start guide"
+        url: /docs/quick-start-guide/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Configuration"
+        url: /docs/configuration/
+  - title: "Guides"
+    children:
+      #- title: "Collect"
+      #  children:
+      - title: "Creating a form"
+        url: /docs/create-form/
+      - title: "Styling forms, receipts and emails"
+        url: /docs/themes/
+      - title: "Integrating a form to a website"
+        url: /docs/integration/
+      - title: "Confirming a user's consent"
+        url: /docs/confirmation/
+      - title: "Changing a user's consent on their behalf"
+        url: /docs/operator-access/
+      - title: "Allowing users to change their mind"
+        url: /docs/user-access/
+      - title: "Collecting consent without tech skills"
+        url: /docs/collect-no-code/
+      #- title: "Process"
+      #  children:
+      - title: "View a user's consents"
+        url: /docs/user-queries/
+      - title: "View the answers to a model"
+        url: /docs/model-queries/
+      - title: "Monitoring forms answers"
+        url: /docs/monitor-answers/
+      - title: "Helping a user find their lost receipt"
+        url: /docs/find-receipt/
+  - title: "Glossary"
+    children:
+      #- title: "Overview"
+      #  children:
+      - title: "Global structure"
+        url: /docs/global-structure/
+      - title: "Roles"
+        url: /docs/roles/
+      - title: "API keys"
+        url: /docs/api-keys/
+      #- title: "Inputs"
+      #  children:
+      - title: "Models types"
+        url: /docs/model-types/
+      - title: "Models lifecycle"
+        url: /docs/model-lifecycle/
+      - title: "Consent context"
+        url: /docs/consent-context/
+      #- title: "Outputs"
+      #  children:
+      - title: "Transactions"
+        url: /docs/transactions/
+      - title: "Records & receipts"
+        url: /docs/records-receipts/
+  - title: "Technical documentation"
+    children:
+      #- title: "Technical documentation"
+      #  children:
+      - title: "API"
+        url: /docs/api/
+      - title: "SDK"
+        url: /docs/sdk/
+
+# community links
+community:
+  - title: "Community"
+    children:
+      - title: "News"
+        url: /community/news/
+      - title: "Contributing"
+        url: /community/contributing/
+      - title: "License"
+        url: /community/license/

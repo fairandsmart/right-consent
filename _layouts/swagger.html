@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div id="main" role="main">
+
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+    <div class="header-container flex justify-between flex-align-center">
+        <header>
+            {% if page.title %}
+            <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify
+                    | remove: "<p>" | remove: "</p>" }}</a>
+            </h1>
+            {% endif %}
+            {% if page.subtitle %}
+            <p>{{page.subtitle}}</p>
+            {% endif %}
+            {% include page__meta.html %}
+        </header>
+        <div class="visible-links">
+            {% include swagger-version-dropdown.html collection="swagger" %}
+        </div>
+    </div>
+    {% endunless %}
+
+    <div class="page-container flex-wrap">
+        {% if page.menu %}
+        <div>
+            {% include sidebar.html %}
+        </div>
+        {% endif %}
+
+        {% if page.swagger-api %}
+        <div class="swagger-section">
+            <div id="swagger-ui" class="swagger-ui-wrap"></div>
+            <script>$(function () {
+                loadSwaggerUi('{{ page.swagger-api }}', "swagger-api");
+            });</script>
+            <script>
+                window.onload = function () {
+                    const url = new URL(window.location);
+                    const version = url.searchParams.get("version") || 'swagger-current.json';
+
+                    window.ui = SwaggerUIBundle({
+                        url: '/assets/swagger-docs/' + version,
+                        dom_id: '#swagger-ui',
+                        deepLinking: true,
+                        presets: [
+                            SwaggerUIBundle.presets.apis,
+                            SwaggerUIStandalonePreset
+                        ],
+                        plugins: [
+                            SwaggerUIBundle.plugins.DownloadUrl
+                        ],
+                        layout: "StandaloneLayout"
+                    });
+                };
+            </script>
+        </div>
+        {% endif %}
+    </div>
+</div>

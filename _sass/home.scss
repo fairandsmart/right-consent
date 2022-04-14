@@ -1,0 +1,43 @@
+.home-wrapper {
+  margin: auto;
+
+  .content-container {
+    max-width: 95%;
+    margin: auto;
+  }
+}
+
+.header-container {
+  margin-bottom: 40px;
+  background-color: rgb(203, 238, 245);
+  padding: 50px 63px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+
+  h2 {
+    margin-top: .3em !important;
+  }
+
+  div {
+    flex: 1 1 auto;
+    max-width: 50%;
+    min-width: 500px;
+
+    img {
+      height: auto
+    }
+  }
+
+  .img-container {
+    text-align: end;
+  }
+}

@@ -1,55 +1,72 @@
+# Be careful: specific menus like "about" or "guides" should be duplicated inside "main" menu to create dropdowns
+
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "News"
-    url: /news/
   - title: "About"
-    url: /about/
+    children:
+      - title: "Overview"
+        url: /about/overview/
+      - title: "Features"
+        url: /about/features/
+      - title: "Use cases"
+        url: /about/integrate-html-form/
+  - title: "Documentation"
+    children:
+      - title: "Quick start"
+        url: /docs/start-server-guide/
+      - title: "All guides"
+        url: /docs/collect-into-form-guide/
+      - title: "Technical docs"
+        url: /docs/config-ref/
+  - title: "Community"
+    children:
+      - title: "News"
+        url: /news/
+      - title: "Contributing"
+        url: /contributing/
+
+# about links
+about:
+  - title: "About"
+    children:
+      - title: "Overview"
+        url: /about/overview/
+      - title: "Features"
+        url: /about/features/
+  - title: "Common use cases"
+    children:
+      - title: "Consent collection with forms"
+        url: /about/integrate-html-form/
+      - title: "Mobile application terms of service"
+        url: /about/mobile-app-tos/
+      - title: "Customer privacy center"
+        url: /about/customer-privacy-center/
 
 # documentation links
 docs:
-  - title: Getting Started
+  - title: "Getting started"
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Global Structure"
-        url: /docs/global-structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Configuration"
-        url: /docs/configuration/
-  - title: Collecting consent
+      - title: "Quick start guide"
+        url: /docs/start-server-guide/
+      - title: "Full installation guide"
+        url: /docs/full-install-guide/
+  - title: "Guides"
     children:
-      - title: "Overview"
-        url: /docs/overview/
-      - title: "Model Store"
-        url: /docs/model-store/
-      - title: "Context Anatomy"
-        url: /docs/context-anatomy/
-      - title: "Records & Receipts"
-        url: /docs/records-receipts/
-      - title: "Model lifecycle"
-        url: /docs/model-lifecycle/
-      - title: "Operator interface"
-        url: /docs/operator-access/
-      - title: "User interface"
-        url: /docs/user-access/
-  - title: UX Integration
+      - title: "Integrate in existing form"
+        url: /docs/collect-into-form-guide/
+  - title: "Technical documentation"
     children:
-      - title: "User Authentication"
-        url: /docs/user-auth/
-      - title: "Querying consents"
-        url: /docs/queries/
-      - title: "Generating forms"
-        url: /docs/forms/
-  - title: Extras
-    children:
-      - title: "Themes"
-        url: /docs/themes/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "License"
-        url: /docs/license/
+      - title: "Backend config ref"
+        url: /docs/config-ref/
       - title: "API"
         url: /docs/api/
+      - title: "SDK"
+        url: /docs/sdk/
 
+# community links
+community:
+  - title: "Community"
+    children:
+      - title: "News"
+        url: /news/
+      - title: "Contributing"
+        url: /contributing/

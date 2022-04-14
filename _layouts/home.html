@@ -1,25 +1,46 @@
 ---
 layout: default
 ---
-<section id="secondaire_features" class="distripara">
 
-  <!--aside class="enterprise">
-    {%- assign items = page.enterprise_features.list -%}
-    <ul>
-      {%- for i in items -%}
-      <li> {{ i.item | escape }}
-        </li>
-      {%- endfor -%}
-    </ul>
+<div class="home-wrapper">
 
-    <button class="enterprise_click" type="button" onclick="window.location.href='{{ page.enterprise_features.url }}'">
-        <span>
-          {{ page.enterprise_features.clicktoaction | replace_first: "|", "<br/>" }}
+    <div class="page__inner-wrap">
+        <div class="header-container">
+            <header class="header-wrapper">
+                <div>
+                    {% if page.title %}
+                    <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                        <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title |
+                            markdownify
+                            | remove: "<p>" | remove: "</p>" }}</a>
+                    </h1>
+                    {% endif %}
+                    {% if page.excerpt %}
+                    <h2>{{ page.excerpt }}</h2>
+                    {% endif %}
+                    {% if page.excerpt_2 %}
+                    <p>{{ page.excerpt_2 }}</p>
+                    {% endif %}
+                    {% if page.header.actions %}
+                    {%- for clicktoaction in page.header.actions -%}
+                    <button class="btn btn--x-large btn--fs-black"
+                            onclick="window.location.href='{{ clicktoaction.url | relative_url }}'">
+                        <span>{{ clicktoaction.label }}</span>
+                    </button>
+                    {%- endfor -%}
+                    {% endif $}
 
-        </span>
+                    {% include page__meta.html %}
+                </div>
+                <div class="img-container">
+                    <img class="header-img" src="{{ page.img | relative_url }}" alt="header image">
+                </div>
+            </header>
+        </div>
+    </div>
 
-    </button>
-
-  </aside-->
-    {{ content }}
-</section>
+    <div class="content-container">
+        {% include feature_row %}
+        {{ content }}
+    </div>
+</div>

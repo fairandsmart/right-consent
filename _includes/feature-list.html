@@ -1,0 +1,11 @@
+<div class="collection-list-container">
+    {%- for element in page.features -%}
+    <div class="collection-list">
+        <img src="{{feature.img | relative_url}}">
+        <div class="text-container">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.text | markdownify }}</p>
+        </div>
+    </div>
+    {%- endfor -%}
+</div>

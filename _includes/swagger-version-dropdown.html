@@ -1,0 +1,19 @@
+{% assign collection = site[include.collection] %}
+
+<div class="dropdown">
+    <a class="btn btn--large btn--fs-black page-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+       aria-expanded="false">
+        Version
+        <i class="fa fa-caret-down fa-sm" aria-hidden="true"></i>
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-content">
+        {%- for element in collection reversed -%}
+        <li>
+            <a class="page-link active" href="?version={{element.file}}">
+                {{ element.title }}
+            </a>
+        </li>
+        {%- endfor -%}
+    </ul>
+</div>

@@ -1,0 +1,46 @@
+.collection-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collection-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    .text-container {
+      margin-right: 12px;
+      //
+      //h3 {
+      //  text-align: end;
+      //}
+    }
+  }
+
+  &:nth-child(2n+1) {
+    .text-container {
+      margin-left: 12px;
+    }
+    //
+    //h3 {
+    //  text-align: start;
+    //}
+  }
+
+  img {
+    flex: 1;
+  }
+
+  .text-container {
+    flex: 3;
+
+    h3 {
+      margin: 0 !important;
+    }
+  }
+}

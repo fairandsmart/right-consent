@@ -4,33 +4,18 @@
 
 @charset "utf-8";
 
-// vendor
-@import "vendor/normalize/normalize.scss";
-@import "vendor/milligram/milligram.scss";
-@import "vendor/fontawesome/fontawesome.scss";
-@import "vendor/fontawesome/solid.scss";
-@import "vendor/fontawesome/regular.scss";
-@import "vendor/fontawesome/brands.scss";
+// Custom imports
+@import "font.scss";
+@import "home.scss";
+@import "social-list.scss";
+@import "collection-list.scss";
+@import "scrollbar.scss";
+@import "swagger-ui.scss";
+@import "globals.scss";
 
-// var
-@import "illustration.scss";                   // illustration et mixin of this elements
-@import "color.scss";                          // color schemes
-@import "font.scss";                           // font csss
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
-
-// structure
-@import "elements/nav.scss" ;                  // nav
-@import "elements/header.scss" ;               // header
-@import "elements/features.scss" ;             // features
-@import "elements/usecases.scss" ;             // useCases
-@import "elements/values.scss" ;               // values
-@import "elements/compare-table.scss" ;        // table
-@import "elements/sidebar_right.scss" ;        // sidebar sticky
-@import "elements/enterprise-aside.scss" ;     // sidebar entreprise
-@import "elements/form.scss";                  // structural elements
-@import "elements/footer.scss";                // footer
-@import "elements/sociallist.scss";            // socialList
-
-
-@import "typo.scss";                           // basique typo elements
-@import "gen.scss";                            // structural elements
+body > * {
+  font-size: 16px !important;
+}

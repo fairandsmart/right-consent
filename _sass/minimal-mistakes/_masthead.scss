@@ -1,0 +1,141 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  z-index: 1000;
+  background-color: $fs-white;
+  position: fixed;
+  padding: 24px 0;
+  width: 100%;
+
+  &__inner-wrap {
+    @include clearfix;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 1em;
+    max-width: 90%;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: $primary-font-family-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $max-width;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    nav {
+      z-index: 10;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.site-logo img {
+  //max-height: 2rem;
+}
+
+.site-title {
+  display: none !important;
+}
+
+.site-subtitle {
+  display: block;
+  font-size: $type-size-4;
+}
+
+.masthead__menu {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+
+  .site-nav {
+    margin-left: 0;
+
+    @include breakpoint($small) {
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style-type: none;
+  }
+}
+
+.masthead__menu-item {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}
+
+.visible-links {
+  li {
+    list-style: none;
+    margin: 16px 0;
+    font-family: $secondary-font-family;
+    font-weight: bold;
+  }
+
+  a {
+    color: $fs-black-text-color;
+    font-weight: bold;
+    font-size: 0.9375em;
+  }
+  //
+  //.dropdown {
+  //  float: left;
+  //  width: auto;
+  //  cursor: pointer;
+  //}
+  //
+  //.dropdown-content {
+  //  display: none;
+  //  position: absolute;
+  //  background-color: $fs-white;
+  //  min-width: 90px;
+  //  z-index: 1;
+  //  cursor: pointer;
+  //  margin: 0;
+  //  padding: 8px 0;
+  //
+  //  li a {
+  //    font-family: $secondary-font-family;
+  //    font-weight: normal !important;
+  //  }
+  //}
+  //
+  //.dropdown:hover .dropdown-content, .dropdown-content:hover {
+  //  display: block;
+  //}
+  //
+  //.dropdown-content li:first-child {
+  //  margin-top: 1.0rem;
+  //}
+  //
+  //.dropdown a:hover {
+  //  color: $fs-blue;
+  //}
+  //
+  //.active {
+  //  font-weight: bolder;
+  //}
+}
