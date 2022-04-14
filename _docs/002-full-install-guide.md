@@ -108,7 +108,7 @@ $ nano src/main/resources/application.properties
 ```
 
 You can change some configuration aspects like port or public url if needed. A restart is sometimes needed for some configuration parameters where some of them apply directly if started in dev mode.    
-More information on the configuration options can be found in the [configuraton reference](/docs/config-ref/)     
+More information on the configuration options can be found in the [configuraton reference]({{ site.baseurl }}/docs/config-ref/)     
 
 ## What's next ?
 
