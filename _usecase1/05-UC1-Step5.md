@@ -4,4 +4,4 @@ image: /assets/images/uc1-step5.jpg
 position: left
 ---
 
-Using the consent record history, I will be able to retrieve the users whose consent has expired in order to start a consent renewal campaign. This will create a privileged link with my end-users around the confidentiality of data and its use by promoting my strategy of transparency in the digital economy.
+Using the consent record history, I will be able to retrieve the users whose consent has expired in order to start a **consent renewal campaign**. This will create a privileged link with my end-users around the confidentiality of data and its use by promoting my **strategy of transparency** in the digital economy.
