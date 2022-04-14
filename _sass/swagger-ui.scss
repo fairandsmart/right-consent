@@ -37,15 +37,6 @@ body{
   background: white;
 }
 
-#footer {
-  margin-top: 20px;
-  padding: 20px 0px 50px 0px;
-  background-color: #282829;
-  color: white;
-  font-size:100%;
-  text-align: center;
-}
-
 .title {
   font-family: var(--fs-title-font-family) !important;
 }
@@ -120,6 +111,12 @@ section.swagger-ui .swagger-ui {
   font-family: var(--fs-title-font-family);
 }
 
+
+.opblock-tag small {
+  width: 100%;
+  flex: none !important;
+}
+
 .swagger-ui .opblock {
   box-shadow: none !important;
   border-radius: $border-radius !important;
@@ -128,12 +125,29 @@ section.swagger-ui .swagger-ui {
 
 .swagger-ui .opblock .opblock-summary {
   border-color: #f2f3f3 !important;
+
+  & > button {
+    flex: none;
+    width: 100%;
+    position: relative;
+  }
 }
 
 
 .swagger-ui .opblock,
 .swagger-ui .opblock > *  {
   background-color: transparent !important;
+}
+.opblock-summary-control {
+  display: block;
+
+  svg {
+    right: 0;
+  }
+}
+
+.swagger-ui .opblock .opblock-summary-description {
+  flex: none;
 }
 
 /*

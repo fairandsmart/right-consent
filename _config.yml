@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site settings
 locale                   : "fr-FR"
-title                    : "Fair&Smart"
+title                    : "Fair&Smart Right Consents"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name Fair[&]Smart
 description              : &description "An European Universal Consents & Preferences Open Source Management Platform"
@@ -28,6 +28,7 @@ logo                     : "/assets/images/fair_and_smart_logo.svg"
 favicon                  : "/assets/images/favicon.webp"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
+og_image                 : "/assets/images/home-product.jpg"
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -36,21 +37,21 @@ masthead_title           : # overrides the website title displayed in the masthe
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
