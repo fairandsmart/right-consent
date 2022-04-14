@@ -29,6 +29,7 @@ favicon                  : "/assets/images/favicon.webp"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 og_image                 : "/assets/images/home-product.jpg"
+google_site_verification : G_CJ9KSHzbLi-thnXafK6AxPk2guqF0iMjL1aChmn-0
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
