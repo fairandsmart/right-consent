@@ -7,7 +7,7 @@ excerpt: "A safe and simple way to Consents and Preferences Management"
 excerpt_2: "Right Consents Community Edition is an open and extensible platform to manage consents and preferences.<br/> It aims to provide any organisation with a complete yet simple easy-to-implement solution for <b>collecting</b>, <b>storing</b>, <b>analysing</b> and <b>using</b> users' consents and preferences."
 img: "/assets/images/home-product.jpg"
 header:
-  og_image: /assets/images/home-product.jpg
+  og_image: /assets/images/home-product-white.jpg
 header:
   actions:
     - label: "Quick tour"
