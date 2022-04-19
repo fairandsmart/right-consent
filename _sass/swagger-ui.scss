@@ -1,3 +1,7 @@
+.swagger-section {
+  flex: 1;
+}
+
 #swagger-ui {
   box-sizing: border-box;
 
@@ -201,11 +205,15 @@ div.opblock-summary.opblock-summary-delete span.opblock-summary-method  {
  MISC
 */
 
-.visible-links {
+#swagger-version-dropdown {
   a.btn {
     color: #fff !important;
   }
   li {
     margin: 8px !important;
   }
+}
+
+#mobile-warning {
+  width: 100%;
 }

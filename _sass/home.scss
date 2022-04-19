@@ -10,7 +10,7 @@
 .header-container {
   margin-bottom: 40px;
   background-color: rgb(203, 238, 245);
-  padding: 50px 63px;
+  padding: 50px 30px;
 
   h1 {
     margin: 0;
@@ -28,10 +28,6 @@
   }
 
   div {
-    flex: 1 1 auto;
-    max-width: 50%;
-    min-width: 500px;
-
     img {
       height: auto
     }
