@@ -28,7 +28,7 @@ logo                     : "/assets/images/fair_and_smart_logo.svg"
 favicon                  : "/right-consents/assets/images/favicon.webp"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-og_image                 : "/assets/images/home-product.jpg"
+og_image                 : "/assets/images/home-product-white.jpg"
 google_site_verification : G_CJ9KSHzbLi-thnXafK6AxPk2guqF0iMjL1aChmn-0
 bing_site_verification   : 006E8EB5BF51DB5C515513673AE8B7CE
 
