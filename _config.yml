@@ -30,6 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 og_image                 : "/assets/images/home-product.jpg"
 google_site_verification : G_CJ9KSHzbLi-thnXafK6AxPk2guqF0iMjL1aChmn-0
+bing_site_verification   : 006E8EB5BF51DB5C515513673AE8B7CE
 
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
