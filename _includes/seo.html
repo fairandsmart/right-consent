@@ -28,7 +28,7 @@
 {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
 
-{%- assign og_description = header.og_description | default: page.seo_description | default: site.description -%}
+{%- assign og_description = page.header.og_description | default: page.seo_description | default: site.description -%}
 {%- if og_description -%}
 {%- assign og_description = og_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
