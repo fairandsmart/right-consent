@@ -84,6 +84,7 @@ exclude:
   - .idea/
   - Gemfile
   - Rakefile
+  - images-source
 keep_files:
   - .git
   - .svn

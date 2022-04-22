@@ -8,7 +8,7 @@ excerpt_2: "Right Consents Community Edition is an open and extensible platform 
 img: "/assets/images/home-product.jpg"
 header:
   og_image: /assets/images/home-product-white.jpg
-header:
+  og_description: "A safe and simple way to Consents and Preferences Management"
   actions:
     - label: "Quick tour"
       url: "/about/overview/"
