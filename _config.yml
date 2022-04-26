@@ -20,17 +20,17 @@ title                    : "Fair&Smart Right Consents"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name Fair[&]Smart
 description              : &description "An European Universal Consents & Preferences Open Source Management Platform"
-url                      : "https://right-consents.fairandsmart.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/right-consents" # the subpath of your site, e.g. "/blog"
+url                      : "http://right-consents.fairandsmart.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/fair_and_smart_logo.svg"
-favicon                  : "/right-consents/assets/images/favicon.webp"
+favicon                  : "/assets/images/favicon.webp"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 og_image                 : "/assets/images/home-product-white.jpg"
-#google_site_verification : Cx_NRdyUX7U0K0lgLluuwmxRLixR26_VF5ZP5xhFrgU
-google_site_verification : G_CJ9KSHzbLi-thnXafK6AxPk2guqF0iMjL1aChmn-0
+google_site_verification : Cx_NRdyUX7U0K0lgLluuwmxRLixR26_VF5ZP5xhFrgU
+#google_site_verification : G_CJ9KSHzbLi-thnXafK6AxPk2guqF0iMjL1aChmn-0
 bing_site_verification   : 006E8EB5BF51DB5C515513673AE8B7CE
 
 # These are used to personalize your new site. If you look in the HTML files,
