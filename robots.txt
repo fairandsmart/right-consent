@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: 
-Sitemap: http://right-consents.fairandsmart.io/sitemap.xml
+Sitemap: https://fairandsmart.github.io/right-consents/sitemap.xml
