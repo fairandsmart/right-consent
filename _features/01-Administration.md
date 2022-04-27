@@ -1,6 +1,7 @@
 ---
 title: Administration
 image: /assets/images/features-admin.jpg
+image_alt: Admin Features
 position: left
 ---
 

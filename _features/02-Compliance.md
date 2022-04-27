@@ -1,6 +1,7 @@
 ---
 title: Compliance
 image: /assets/images/features-compliance.jpg
+image_alt: Compliance
 position: left
 ---
 

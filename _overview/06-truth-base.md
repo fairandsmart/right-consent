@@ -1,6 +1,7 @@
 ---
 title: Records Database
 image: /assets/images/overview-records.jpg
+image_alt: Records Base Illustration
 position: left
 ---
 

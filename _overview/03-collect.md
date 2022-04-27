@@ -1,6 +1,7 @@
 ---
 title: Consent & Preference Form
 image: /assets/images/overview-consent.jpg
+image_alt: Consent Collect
 position: left
 ---
 

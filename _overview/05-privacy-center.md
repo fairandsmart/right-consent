@@ -1,6 +1,7 @@
 ---
 title: Privacy Center / Preference Center
 image: /assets/images/overview-cpp.jpg
+image_alt: Customer Privacy Center
 position: left
 ---
 

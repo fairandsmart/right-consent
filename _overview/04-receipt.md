@@ -1,6 +1,7 @@
 ---
 title: Consent Receipt
 image: /assets/images/overview-receipt.jpg
+image_alt: Consent Receipt
 position: right
 ---
 

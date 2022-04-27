@@ -1,6 +1,7 @@
 ---
 title: Easy Integration
 image: /assets/images/overview-sdk-form.jpg
+image_alt: SDK
 position: right
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Integration
 image: /assets/images/features-integration.jpg
+image_alt: Integration Schema
 position: left
 ---
 

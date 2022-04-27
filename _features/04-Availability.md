@@ -1,6 +1,7 @@
 ---
 title: Availability and Customization
 image: /assets/images/features-availability.jpg
+image_alt: Availability Schema
 position: left
 ---
 
