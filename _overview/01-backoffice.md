@@ -1,6 +1,7 @@
 ---
 title: Back Office Application (CMP)
 image: /assets/images/overview-backoffice.jpg
+image_alt: Backoffice Web Interface
 position: left
 ---
 
