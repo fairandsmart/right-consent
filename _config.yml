@@ -20,7 +20,7 @@ title                    : "Fair&Smart Right Consents"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : &name Fair[&]Smart
 description              : &description "An European Universal Consents & Preferences Open Source Management Platform"
-url                      : "http://right-consents.fairandsmart.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://right-consents.fairandsmart.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
