@@ -34,8 +34,7 @@ layout: default
     {% endunless %}
 
     <div class="page-container">
-
-        {% if page.menu %}
+        {% if page.menu or page.author %}
         <div>
             {% include sidebar.html %}
         </div>

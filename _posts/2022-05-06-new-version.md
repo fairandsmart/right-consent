@@ -1,5 +1,6 @@
 ---
 title: "Version 1.1.0"
+author: Fair And Smart
 categories:
   - News
 tags:

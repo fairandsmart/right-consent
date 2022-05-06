@@ -1,5 +1,6 @@
 ---
 title: "We are live!"
+author: Fair And Smart
 categories:
   - News
 tags:
