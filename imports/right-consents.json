@@ -239,7 +239,7 @@
       "security-admin-console" : [ ],
       "admin-cli" : [ ],
       "account-console" : [ ],
-      "consent-manager-gui" : [ ],
+      "cmclient" : [ ],
       "broker" : [ {
         "id" : "286be0eb-e031-4c09-9d94-427762341130",
         "name" : "read-token",
@@ -499,9 +499,9 @@
     "optionalClientScopes" : [ "address", "phone", "offline_access", "microprofile-jwt" ]
   }, {
     "id" : "3ac58eef-97f0-4865-b5cb-41630a4f1bd0",
-    "clientId" : "consent-manager-gui",
+    "clientId" : "cmclient",
     "adminUrl" : "",
-    "baseUrl" : "http://localhost:4200/",
+    "baseUrl" : "",
     "surrogateAuthRequired" : false,
     "enabled" : true,
     "alwaysDisplayInConsole" : false,
