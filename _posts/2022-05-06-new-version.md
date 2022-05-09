@@ -1,6 +1,8 @@
 ---
 title: "Right Consents 1.1.0"
 author: Fair And Smart
+header: 
+  og_description: New version of Right Consents (1.1.0)
 categories:
   - News
 tags:
