@@ -7,7 +7,7 @@ It aims to provide any organization with a complete, simple and easy to implemen
 
 ## Presentation & Documentation
 
-Please visit the [dedicated website](https://fairandsmart.github.io/right-consents/)
+Please visit the [dedicated website](https://right-consents.fairandsmart.io)
 
 ## Source code
 
