@@ -23,6 +23,8 @@ main:
         url: /news/
       - title: "Contributing"
         url: /contributing/
+      - title: "Edito"
+        url: /edito/  
 
 # about links
 about:
@@ -65,8 +67,11 @@ docs:
 # community links
 community:
   - title: "Community"
-    children:
+    children: 
       - title: "News"
         url: /news/
       - title: "Contributing"
         url: /contributing/
+      - title: "Edito"
+        url: /edito/
+      
