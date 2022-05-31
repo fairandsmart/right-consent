@@ -8,7 +8,7 @@ toc: true
 menu: true
 ---
 
-Learn how to integrate a **Right Consents Collect Form** in an existing HTML Form that handle personal information.
+Learn how to integrate a **[Right Consents Collect Form](https://right-consents.fairandsmart.io/about/integrate-html-form/)** in an existing HTML Form that handle personal information.
 
 - Start a local docker image to host an HTML Form for collecting personal information
 - Define specific processing and preferences for the collected data in the Right Consent Backoffice
