@@ -11,6 +11,8 @@ We also provide an enterprise edition of Right Consent that leverage community f
 
 ### Business features
 
+| Business Features |
+| --- |
 | Feature | Community | Enterprise |
 | --- |:---:|:---:|
 | Consent and Preference Management | X | X |
