@@ -9,6 +9,8 @@ main:
         url: /about/features/
       - title: "Use cases"
         url: /about/integrate-html-form/
+      - title: "Enterprise"
+        url: /about/enterprise/
   - title: "Documentation"
     children:
       - title: "Quick start"
@@ -34,6 +36,8 @@ about:
         url: /about/overview/
       - title: "Features"
         url: /about/features/
+      - title: "Enterprise version"
+        url: /about/enterprise/
   - title: "Common use cases"
     children:
       - title: "Consent collection with forms"
