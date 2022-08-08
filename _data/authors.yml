@@ -12,3 +12,15 @@ Fair And Smart:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/company/fair&smart"
+jayblanc:
+  name        : "Jérôme Blanchard"
+  bio         : ""
+  avatar      : ""
+  links       :
+    - label   : "Github"
+      icon    : "fab fa-fw fa-link"
+      url     : "https://github.com/jayblanc"
+    - label   : "LinkedIn"
+      icon    : "fab fa-fw fa-linkedin"
+      url     : "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-blanchard-9564734/"
+ 
