@@ -4,7 +4,7 @@ permalink: /docs/collect-into-form-guide/
 excerpt: "Instructions for integrating Right Consents collect in an existing HTML Form without any specific technical skill."
 header:
   og_image: /assets/images/integratehtml-overview.jpg
-toc: false 
+toc: true 
 menu: true
 ---
 
