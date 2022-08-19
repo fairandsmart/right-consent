@@ -4,11 +4,11 @@ permalink: /docs/getting-started-guide/
 excerpt: "Instructions for starting using and integrating Right Consents in existing applications"
 header:
   og_image: /assets/images/gettingstarted-overview.jpg
-toc: true
+toc: false
 menu: true
 ---
 
-Learn how to start using **[Right Consents](https://right-consents.fairandsmart.io/)** **backoffice** and **API** to define, collect and query consents using a simple HTTP Client : curl
+Learn how to start using Right Consents **backoffice** and **API** to define, collect and query consents using the API via curl
 
 - Understand the different **stages** of consent collect in Right Consents
 - Discover the backoffice and define some **consent model elements**
@@ -89,7 +89,7 @@ Then you can **populate** the model **data content**. One single model can have 
   - Phone Number: 18664582951
 - Privacy Policy URL: https://www.thecheesecakefactory.com/corporate-information/privacy-policy
 
-<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide: [Consent Elements Guide](https://right-consents.fairandsmart.io/docs/consent-elements-guide)
+<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide: {% link _docs/200-consent-elements-doc.md %}
 {: .notice--info}
 
 Now you are ready for **publishing** that version of the information model by clicking on **'Save Draft'** button and then on the **'Activate'** button.
@@ -115,7 +115,7 @@ Then you can populate the data content:
 - Purpose: We will contact you according to your favorite channel (email, sms or phonecall) to propose discount regarding new products arrival.
 - Data retention period: We are keeping your contact information during 2 years
 
-<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide: [Consent Elements Guide](https://right-consents.fairandsmart.io/docs/consent-elements-guide)
+<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide:  {% link _docs/200-consent-elements-doc.md %}
 {: .notice--info}
 
 Now you are ready for publishing that version of the information model by clicking on 'Save Draft' button and then on the 'Activate' button.
@@ -135,7 +135,7 @@ The 'Next' step will give you access to Consent Context data allowing you to tes
 - Validity: 6 Months
 - Confirmation Method: None
 
-<i class="fa fa-info-circle"></i> For specific documentation about Content Context please refere to the dedicated guide: [Consent Context Guide](https://right-consents.fairandsmart.io/docs/consent-context-guide)
+<i class="fa fa-info-circle"></i> For specific documentation about Content Context please refere to the dedicated guide: {% link _docs/201-consent-context-doc.md %}
 {: .notice--info}
 
 Now you can click on the 'Get API Call Url' to test an HTML version of the form for the provided enduser and follow the consent collect workflow according to the configured design.
@@ -146,33 +146,19 @@ By clicking on the 'Get API Call Url' you have generate a Consent Transaction th
 
 This operation can also be done by calling the API providing a specific consent collect JSON. If you are admin or operator you can create transactions for another endusers but as a simple user, you can ony generate transaction for yourself.
 
-The generated context JSON can then serve as a basis for integration in existing target applications. Some parts of that context could be made variables depending on the integration needs. Here is a minimal
+The generated context JSON can then serve as a basis for integration in existing target applications. Some parts of that context could be made variables depending on the integration needs. Here is a minimal version of a context:
 
 {% highlight json %}
 {
   "subject":"testuser",
-  "updatable":true,
-  "validity":"P6M",
-  "language":"en",
-  "origin":"WEBFORM",
-  "confirmation":"NONE",
   "layoutData":{
     "type":"layout",
-    "existingElementsVisible":true,
-    "acceptAllVisible":false,
-    "footerOnTop":false,
-    "cancelVisible":false,
-    "validityVisible":true,
     "elements":["processing.001"],
     "orientation":"VERTICAL",
-    "info":"information.001",
-    "includeIFrameResizer":false
+    "info":"information.001"
   }
 }
 {% endhighlight %}
-
-//TODO Add a function to display the consent context in json
-
 
 ## Integrate a simple consent collect scenario with curl
 
@@ -183,17 +169,110 @@ According to the modelised elements and the predefined consent collect transacti
 Use the testuser credentials in curl over the Identity Provider to retrieve an access token allowing authenticated calls on the API:
 
 {% highlight bash %}
-ACCESS_TOKEN=`curl -d "client_id=cmclient" \
-    -d "username=usertest" \
-    -d "password=test" \
-    -d "grant_type=password" \
-    http://localhost:4285/auth/realms/RightConsents/protocol/openid-connect/token \
-    | jq -r '.access_token'`
+RESPONSE=`curl -v -d "client_id=cmclient" \
+                  -d "username=usertest" \
+                  -d "password=test" \
+                  -d "grant_type=password" \
+                  http://localhost:4285/auth/realms/RightConsents/protocol/openid-connect/token`
+ACCESS_TOKEN=`echo ${RESPONSE} | jq -r '.access_token'`
+REFRESH_TOKEN=`echo ${RESPONSE} | jq -r '.refresh_token'`
 {% endhighlight %}
 
-<i class="fa fa-info-circle"></i> You can also create a new user directly from the login screen of the GUI http://localhost:4286 or via the IdP admin console available at http://localhost:4285/auth/admin (admin/admin)
+The refresh token can be used later avoiding reusing password:
+
+{% highlight bash %}
+RESPONSE=`curl -v -d "client_id=cmclient" \
+                  -d "refresh_token=${REFRESH_TOKEN}" \
+                  -d "grant_type=refresh_token" \
+                  http://localhost:4285/auth/realms/RightConsents/protocol/openid-connect/token`
+ACCESS_TOKEN=`echo ${RESPONSE} | jq -r '.access_token'`
+REFRESH_TOKEN=`echo ${RESPONSE} | jq -r '.refresh_token'`
+{% endhighlight %}
+
+<i class="fa fa-info-circle"></i> You can also create new user directly from the login screen of the GUI http://localhost:4286 or via the IdP admin console available at http://localhost:4285/auth/admin (admin/admin)
 {: .notice--info}
+
+The access token have a short time validity and yo umay have to renew it during the guide, just replay those requests when needed.
 
 ### Create a consent transaction
 
 Using the generated context, call the API to start a consent transaction:
+
+{% highlight bash %}
+TXID=`curl -v --header "Content-Type: application/json" \
+              --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+              --request POST \
+              --data '{"subject":"usertest","layoutData":{"type":"layout","elements":["processing.001"],"orientation":"VERTICAL","info":"information.001"}}' \
+              http://localhost:4287/consents`
+echo ${TXID}
+{% endhighlight %}
+
+The result is a transaction creation attached to a unique ID that will be used to access transaction. The response contains the transacton ID in its body but also a complete link to the created transaction inthea Location header.
+
+<i class="fa fa-info-circle"></i> If you don't want to use the same IdP for your users than for the consent API, you'll have to insert a kind of Proxy (server side) to ensure Consent API authentication process (as admin or operator) and generates transactions for the enduser without its own authentication. More informations about authentication solutions are describes in the {% link _docs/104-authentication-guide.md %}
+{: .notice--info}
+
+
+### Get the transaction
+
+Transaction API supports 2 mimetypes : html or json. In HTML, client is supposed to be a browser and getting the transaction resource will send a redirection to the next human action needed for that transaction (submit consent, confirm consent, show receipt, restart a new transaction).
+
+{% highlight bash %}
+TX_HTML=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+                 --header "Accept: text/html" \
+                 http://localhost:4287/consents/${TXID}`
+echo ${TX_HTML}
+{% endhighlight %}
+
+In JSON, only a representation of the transaction is send including the link to the next action.
+
+{% highlight bash %}
+TX_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+                 --header "Accept: application/json" \
+                 http://localhost:4287/consents/${TXID}`
+echo ${TX_JSON}
+FORM_URL=`echo ${TX_JSON} | jq -r '.task'`
+echo ${FORM_URL}
+{% endhighlight %}
+
+In both case, an authentication token is included avoiding to use the OIDC Bearer token for the transaction process, making it easyer to integrate in a popup or an IFrame. The token can be joined to all action as a query param (/submit?t=$token).
+
+A short version of the transaction just after creation is:
+
+{% highlight json %}
+{
+   "id":"P6f1JU6LjKoUwR5QBEYPgf",
+   "subject":"usertest",
+   "state":"CREATED",
+   "token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJQNmYxSlU2TGpLb1V3UjVRQkVZUGdmIiwiZXhwIjoxNjYwOTMwMzMyfQ.0pGomVcjvGGWshhovRpCKjP6BVOt2K6-W6QXLCVlwsA",
+   "task":"http://localhost:4287/consents/P6f1JU6LjKoUwR5QBEYPgf/submit",
+   "breed":"http://localhost:4287/consents/P6f1JU6LjKoUwR5QBEYPgf/child"
+}
+{% endhighlight %}
+
+### Get consent form and submit values
+
+When the transaction is in the state CREATED, the next step is submission of consent, calling the url of the task field will produce the form needed for consent submission.
+
+{% highlight bash %}
+FORM_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+                   --header "Accept: application/json" \
+                   ${FORM_URL}`
+echo ${FORM_JSON}
+{% endhighlight %}
+
+Many informations are included in the JSON representation of the form mainly for disaplying legal information to the enduser. The Html version is fully operationnal without any interpretation. Important parts are the serial numebrs of elements. Only few informations need to be submitted or consent:
+
+{% highlight bash %}
+FORM_INFO_KEY=`echo ${FORM_JSON} | jq -r '.info.entry.key'`
+FORM_INFO_SERIAL=`echo ${FORM_JSON} | jq -r '.info.serial'`
+FORM_PROC_KEY=`echo ${FORM_JSON} | jq -r '.elements[0].entry.key'`
+FORM_PROC_SERIAL=`echo ${FORM_JSON} | jq -r '.elements[0].serial'`
+FORM_VALUES="\"{'info':['element/information/${FORM_INFO_KEY}/${FORM_INFO_SERIAL}'],'element/processing/${FORM_PROC_KEY}/${FORM_PROC_SERIAL}':['accepted']}\""
+SUBMIT_JSON=`curl -v --header "Content-Type: application/json" \
+                     --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+                     --header "Accept: application/json" \
+                     --request POST \
+                     --data ${FORM_VALUES} \
+                     ${FORM_URL}`
+{% endhighlight %}
