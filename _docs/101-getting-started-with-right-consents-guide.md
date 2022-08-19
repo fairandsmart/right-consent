@@ -40,166 +40,160 @@ Consent collection is a more or less complex operation in the fact that it is ei
 
 ### Stage One : define
 
-The **first stage** is mainly handled by the data controller itself or the data protection officer (dpo) and is mainly an **administrative task**. That stage aims to **define** all the elements that takes part in the consent collection. Those elements are purely declarative but have a specific structure and will be stored with the consent itself for a long time. Right Consents helps to **define, manage and preserve** processings declaration but also of other informations like terms of service, preferences, legal information. Like a CMS, Right Consents will handle consent elements **lifecycle** to ensure the **legal validity** by assuming **auditing** and **versionning** but also by generating some **digital proofs** of any produced content. Then, elements will be accessible throught the API for next stage or for other dissemination goals (processing registry).
+The **first stage** is mainly handled by the data controller itself or the data protection officer (dpo) and is mainly an **administrative task**.
+
+That stage aims to **define** all the elements that takes part in the consent collection. Those elements are purely declarative but have a specific structure and will be stored with the consent itself for a long time.
+
+Right Consents helps to **define, manage and preserve** processings declaration but also of other informations like terms of service, preferences, legal information. Like a CMS, Right Consents will handle consent elements **lifecycle** to ensure the **legal validity** by assuming **auditing** and **versionning** but also by generating some **digital proofs** of any produced content.
+
+Then, elements will be accessible throught the API for next stage or for other dissemination goals (processing registry).
 
 ### Stage two : design
 
-The **second stage** is to assemble declared elements into specific layout that fits with the final integration goal. For exemple, Terms of Service will be collected at startup of an application or at signup whereas some processing consent could be collected only when a specific service is requested. Some processings could be collected in the website where some other in a mobile application only. Right Consents defines the notion of **Consent Context** that will holds all aspects of an application's pointcut that handles user consent need. Right Consents backoffice propose a **graphical tool** to design Consent Context. At the end you can extract the generated JSON configuration for **integration** in any **external application**.
+The **second stage** is to assemble declared elements into specific layout that fits with the final integration goal.
+
+For exemple, Terms of Service will be collected at startup of an application or at signup whereas some processing consent could be collected only when a specific service is requested. Some processings could be collected in the website where some other in a mobile application only.
+
+Right Consents defines the notion of **Consent Context** that will holds all aspects of an application's pointcut that handles user consent need. Right Consents **backoffice** propose a **graphical tool** to design Consent Context.
+
+At the end you can extract the generated JSON configuration for **integration** in any **external application**.
 
 ### Stage three : integrate
 
-The **third stage** is handled by a developer and consist in using predefined Consent Context base configuration for integraton into the target application. As Consent Context contains also specific runtime information like the subject id, integration needs to be dynamic according to the target context. The Consent Context will then be pushed to the API to declare a new **Consent Transaction** that will act as a consent collection workflow. The Consent Transaction will be aslo an entry point that will live during all the consent preservation time, allowing users to retrieve information about consent maybe years after. Integration may also require to query end user choices at some points of an user experience. Once the transaction is committed, specific pieces of informations are generated : some **Consent Records** and a **Consent Receipt**.
+The **third stage** is handled by a **developer** and consist in using predefined Consent Context base configuration for integration into the target application.
+
+As Consent Context contains also specific runtime information like the subject id, integration needs to be dynamic according to the target context. The Consent Context will then be pushed to the API to declare a new **Consent Transaction** that will act as a consent collection workflow.
+
+The Consent Transaction will be aslo an **unique entry point** that will live during all the consent preservation time, allowing users to retrieve information about consent maybe years after. Integration may also require to query end user choices at some points of an user experience.
+
+Once the transaction is committed, specific pieces of informations are generated : some **Consent Records** and a **Consent Receipt**.
 
 
-## Define consent collection elements
+## Define consent collect elements
 
+### Create the information element
 
-//TODO FROM HERE
+Go to the bacokffice application : http://localhost:4286 (login using user/pass: demo@demo.com/demo42) and **create an information model** by going into the dedicated section : Menu > Configuration > Information  
+Choose a relevant name and description for that model (only for internal management):  
+- Name: Legal information
+- Description : My legal information description
 
+Then you can **populate** the model **data content**. One single model can have multiple version of data content :
+- Title: Legal Information
+- Header Content : The Cheesecake Factory Incorporated and its parents, subsidiaries, and affiliated entities (“The Cheesecake Factory,” “the Company,” “we”, “us” or “our”) respects your privacy and we are committed to protecting it through our compliance with our privacy policy (“Privacy Policy”).
+- Footer Content: Thanks for your confidence
+- Data controller
+  - Company: The CheeseCake Factory
+  - Address: 26901 Malibu Hills Road, Calabasas Hills, CA 91301
+  - Email: privacyofficer@thecheesecakefactory.com
+  - Phone Number: 18664582951
+- Privacy Policy URL: https://www.thecheesecakefactory.com/corporate-information/privacy-policy
 
-
-
-First, define the **processings, preferences or terms and conditions** you want to use. The terms and
-conditions body supports HTML, but plain text will work just fine.
-
-You will also need to create an **information** model, especially if you intend to use processings.
-
-You can create an **email** model if you want to send a **consent receipt**  to your users. This is
-not mandatory. Again, some fields support HTML as well as plain text.
-
-If you are well-versed in CSS, you can play with a **theme** model to customize your form's look'n'feel, otherwise the
-default theme will be applied. Even if CSS is a mystery for you, don't hesitate to create a theme simply to register
-your own **logo** which will appear in your forms, receipts and emails.
-
-Don't forget to **activate** each model!
-
-### Create an HTML From
-
-The basic use case here, is collecting the consent from users before collecting their data.
-
-We need an HTML form to plug the SDK to it, either you take an existing one from your personal project, or you follow
-along with a basic HTML form.
-
-[comment]: <> (TODO link to html form example)
-
-[comment]: <> (- wget on html file located in github => use it throughout the example or)
-
-This HTML form can be served using docker or docker-compose
-
-```bash
-$ docker run --name apache -v /path/to/consent-example:/app bitnami/apache:latest -p 1180:1180
-```
-
-or
-
-```bash
-$ docker-compose up -d
-```
-
-Once the docker container up and running, go to this [page](http://localhost:1180/index.html)
-
-### Integrate Javascript SDK in the HTML Form
-
-At this point you have a simple HTML form, with some input elements that can be filled with personal data, for example.
-
-The next step is to connect this form to the SDK and the `ConsentCollector`. It will create a consent
-form based on a **subject ID** (basically a phone number, an email address ...), and a **consent context**.
-
-You will need, first, to import the script file in your HTML file like so :
-
-```html
-<!-- With consent.js stored locally -->
-<script src="/path/to/consent.js"></script>
-
-<!-- With consent.js from Fair&Smart CDN -->
-<script src="https://assets.fairandsmart.tech/consent.js"></script>
-```
-
-
-<i class="fa fa-info-circle"></i> More on the SDK configuration and integration [here](/docs/sdk/#balise-script)
+<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide: [Consent Elements Guide](https://right-consents.fairandsmart.io/docs/consent-elements-guide)
 {: .notice--info}
 
-Then, write a function that calls the Consent Collector. This function has to declare a
-new `FairAndSmart.ConsentCollector` instance and call the collect()
-method from the `ConsentCollector` object :
+Now you are ready for **publishing** that version of the information model by clicking on **'Save Draft'** button and then on the **'Activate'** button.
 
-```javascript
- function collect() {
+By activating the version you will be able to use it for collecting consent. As soon as a consent is collected using that version of the information model, you will no longer be able to delete it.
 
-    /** Page is awaiting the response from the consent window: disabling submit button **/
-    const submitBtnElement = document.getElementById('submit');
-    const formElement = document.getElementById('demo-form');
-    const message = document.getElementById('message');
-    const subject = document.getElementById('input-email').value;
+Information about model lifecycle is visible in the top of the right panel. You may notice that version 1.0 is active and that a unique serial number has been allocated to that particular version.
 
-    submitBtnElement.setAttribute('disabled', 'true');
+If you perform modification on that model you will have to activate the next version and a popup will ask you for a **Major** or **Minor** release evolution. A Major one will result in considering already collected consent with that information to be stalled whereas a Minor one will be compatible with already collected consent but will replace previous one in the next generated consent transaction.
 
-    /** Collect objet creation */
-    const consentCollector = new FairAndSmart.ConsentCollector({
-        tokenBrokerEndpoint: 'http://localhost:3001/profile/form',
-        consentContext: {
-            subject: subject,
-            author: subject,
-            origin: "WEBFORM",
-            confirmation: "NONE",
-            language: "en",
-            userinfos: {},
-            validity: "P6M",
-            layout: "layout.001"
-        },
-        mode: 'window'
-    });
+### Create one processing element
 
-    /** Consent collection can begin **/
-    consentCollector.collect()
-        .then(() => {
-            /** Sucess callback : collect is done */
-            submitBtnElement.classList.add('hidden');
-            formElement.classList.add('hidden');
-            message.classList.remove('hidden');
-            /** We can check the collect reponse here */
+All model types are following the same lifecycle management and only the model data content is changing. Then we need also to create a model for processing description.
 
-        })
-        .catch((err) => {
-            /** Error callback, something went wrong. Reset button to retry the consent collect */
-            console.error(err);
-            submitBtnElement.setAttribute('disabled', 'false');
-        })
+Go to bacokffice application : http://localhost:4286 (login using user/pass: demo@demo.com/demo42) and create a processing model by going into the dedicated section : Menu > Configuration > Processing  
+Choose a relevant name and description for the processing :
+- Name: Marketing Communications
+- Description: My Marketting Communications
+
+Then you can populate the data content:
+- Title: Contact Marketing
+- Processed data: Your contact information (name, surname, email and phone number)
+- Purpose: We will contact you according to your favorite channel (email, sms or phonecall) to propose discount regarding new products arrival.
+- Data retention period: We are keeping your contact information during 2 years
+
+<i class="fa fa-info-circle"></i> For specific documentation about Information Content please refere to the dedicated guide: [Consent Elements Guide](https://right-consents.fairandsmart.io/docs/consent-elements-guide)
+{: .notice--info}
+
+Now you are ready for publishing that version of the information model by clicking on 'Save Draft' button and then on the 'Activate' button.
+
+## Design a collection form
+
+### Use the backoffice to assemble defined elements
+
+Go to bacokffice application : http://localhost:4286 (login using user/pass: demo@demo.com/demo42) and create a consent form design by going into the dedicated section : Menu > Integration > Collect  
+
+The created elements are visible in the right panel and can be drag'n drop in the central design zone to assemble elements in the desired order.
+
+By clicking on 'Next' you will access to the layout design of the choosen elements like a vertical or horizontal layout but also you can specify labels and some action availability. It is also possible to specify a "Theme" element that will apply a specific look'n feel if desired.
+
+The 'Next' step will give you access to Consent Context data allowing you to test your layout for a particular end user (a test one).
+- CustomerId: testuser
+- Validity: 6 Months
+- Confirmation Method: None
+
+<i class="fa fa-info-circle"></i> For specific documentation about Content Context please refere to the dedicated guide: [Consent Context Guide](https://right-consents.fairandsmart.io/docs/consent-context-guide)
+{: .notice--info}
+
+Now you can click on the 'Get API Call Url' to test an HTML version of the form for the provided enduser and follow the consent collect workflow according to the configured design.
+
+### Export the generated context
+
+By clicking on the 'Get API Call Url' you have generate a Consent Transaction that holds all designed information for the specified enduser. A full JSON representation of all the configured elements and context has been provided to the API and stored in a unique transaction accessible with its id. A token has also be generated allowing to send the generated URL by email for exemple.
+
+This operation can also be done by calling the API providing a specific consent collect JSON. If you are admin or operator you can create transactions for another endusers but as a simple user, you can ony generate transaction for yourself.
+
+The generated context JSON can then serve as a basis for integration in existing target applications. Some parts of that context could be made variables depending on the integration needs. Here is a minimal
+
+{% highlight json %}
+{
+  "subject":"testuser",
+  "updatable":true,
+  "validity":"P6M",
+  "language":"en",
+  "origin":"WEBFORM",
+  "confirmation":"NONE",
+  "layoutData":{
+    "type":"layout",
+    "existingElementsVisible":true,
+    "acceptAllVisible":false,
+    "footerOnTop":false,
+    "cancelVisible":false,
+    "validityVisible":true,
+    "elements":["processing.001"],
+    "orientation":"VERTICAL",
+    "info":"information.001",
+    "includeIFrameResizer":false
+  }
 }
-```
+{% endhighlight %}
 
-<i class="fa fa-info-circle"></i> <b>Notice:</b> The **subject ID** here is retrieved from the email input, it can be another identifier such as a phone number, a unique ID from your platform ...
+//TODO Add a function to display the consent context in json
+
+
+## Integrate a simple consent collect scenario with curl
+
+According to the modelised elements and the predefined consent collect transaction skeleton we can perform direct API calls.
+
+### Authenticate test user
+
+Use the testuser credentials in curl over the Identity Provider to retrieve an access token allowing authenticated calls on the API:
+
+{% highlight bash %}
+ACCESS_TOKEN=`curl -d "client_id=cmclient" \
+    -d "username=usertest" \
+    -d "password=test" \
+    -d "grant_type=password" \
+    http://localhost:4285/auth/realms/RightConsents/protocol/openid-connect/token \
+    | jq -r '.access_token'`
+{% endhighlight %}
+
+<i class="fa fa-info-circle"></i> You can also create a new user directly from the login screen of the GUI http://localhost:4286 or via the IdP admin console available at http://localhost:4285/auth/admin (admin/admin)
 {: .notice--info}
 
+### Create a consent transaction
 
-Finally, create a button in your HTML Form that will call the function ```collect()``` :
-
-```html
-<button id="submit" class="submit-btn" onclick="collect()">Send</button>
-```
-
-### Test, validate and generate a consent
-
-Once everything is set up, you are ready to test the consent collection.
-
-Go to the following [web page](http://localhost:1180/index.html), fill the form and click on the submit button at the bottom of the page.
-
-A **popup window** will appear with the desired consent form. Submit your preferences, processings and/or terms and conditions of your choice by clicking on the submit button.
-
-Done, you have attached a consent collector to an existing HTML form. Moreover, you have created a consent record that can be accessible from the backoffice.
-
-### Consult collected consents via the back-office
-
-The final step, in order to access consents records created using the form, go to the [GUI / Back Office](http://localhost:4200) under the page **Integration > Search**
-
-Here, you can access the consent records generated by users and filter them by entry and value entry like so :
-
-{% include figure image_path="/assets/images/existing-form-records-search.png" alt="Search consent records - Back office" %}
-
-Then click on search, a list of consent will be displayed on a table.
-
-From here you can export all the consent records generated by clicking on the **export** button :
-
-{% include figure image_path="/assets/images/existing-form-records-export.png" alt="Export consent records - Back office" %}
-
-A .CSV file will be created, containing all the information linked to the user consent record (Record key, Record value, Email Address, ...).
+Using the generated context, call the API to start a consent transaction:
