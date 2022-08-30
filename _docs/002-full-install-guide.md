@@ -4,7 +4,7 @@ permalink: /docs/full-install-guide/
 excerpt: "Instructions for building and installing right consents in a local environment."
 header:
   og_image: /assets/images/fullinstallguide-overview.jpg
-toc: true
+toc: false
 menu: true
 ---
 

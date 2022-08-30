@@ -4,7 +4,7 @@ permalink: /docs/start-server-guide/
 excerpt: "Instructions for starting a ready to run version of Right Consents in 5 minutes."
 header:
   og_image: /assets/images/startserverguide-overview.jpg
-toc: true
+toc: false
 menu: true
 gallery:
 - url: /assets/images/startserverguide-sc-01.png

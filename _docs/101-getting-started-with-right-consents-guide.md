@@ -4,7 +4,7 @@ permalink: /docs/getting-started-guide/
 excerpt: "Instructions for starting using and integrating Right Consents in existing applications"
 header:
   og_image: /assets/images/gettingstarted-overview.jpg
-toc: true
+toc: false
 menu: true
 ---
 
