@@ -53,7 +53,7 @@ If you want to use a local instance instead of the docker one you can visit [key
 
 ## Mail Dev
 
-Outgoing **SMTP Service** is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for some docs) .
+Outgoing **SMTP Service** is also an external tool used to avoid any SMTP configuration, it is based on [MailDev](http://maildev.github.io/maildev/). A dedicated web interface that allows to consult outgoing emails, and email will be also routed to any external SMTP relay if you configure the relay (check [upstream](https://hub.docker.com/r/maildev/maildev)) for documentation).
 
 ```bash
 $ docker run -p 1080:80 -p 1025:25 maildev/maildev
@@ -74,7 +74,7 @@ $ cd consent-manager-back
 $ mvn clean package -DskipTests quarkus:dev
 ```
 
-This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like: 
+This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like:
 
 ```
 [io.quarkus] (Quarkus Main Thread) consent-manager-back 1.1.0-SNAPSHOT on JVM (powered by Quarkus 2.6.2.Final) started in 5.476s. Listening on: http://127.0.0.1:8087
@@ -84,7 +84,7 @@ This could take a while as maven is going to download all dependencies but in th
 
 Front Web Application is developed using [Angular](https://angular.io). It is also built to work with keycloak by default.
 
-In order to run the frontend, you need to clone the github repository and to run a local instance using NodeJS, npm and angular cli: 
+In order to run the frontend, you need to clone the github repository and to run a local instance using NodeJS, npm and angular cli:
 
 ```bash
 $ git clone git@github.com:fairandsmart/consent-manager-gui.git
@@ -93,31 +93,31 @@ $ npm install
 $ ng serve
 ```
 
-This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like: 
+This could take a while as maven is going to download all dependencies but in the end you should see the server running with a message like:
 
 ```
 ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 ```
 
-Now you can use the backoffice by visiting [http://localhost:4200](http://localhost:4200)
+Now you can use the backoffice by visiting [http://localhost:4200](http://localhost:4200).
 
 ## Configuration
 
-In the backend, all the configuration is located in a dedicated file
+In the backend, all the configuration is located in a dedicated file:
 
 ```bash
-$ nano src/main/resources/application.properties 
+$ nano src/main/resources/application.properties
 ```
 
 You can change some configuration aspects like port or public url if needed. A restart is sometimes needed for some configuration parameters where some of them apply directly if started in dev mode.    
-More information on the configuration options can be found in the [configuraton reference]({{ site.baseurl }}/docs/config-ref/)     
+More information on the configuration options can be found in the [configuration reference]({{ site.baseurl }}/docs/config-ref/).
 
-## What's next ?
+## What's next?
 
 In this guide we have seen how to build and start a local instance of Right Consents to gain more control about source code and maybe 
 contribute by developing functionalities.
 
-In addition you could now check other guides like :
+In addition you could now check other guides like:
 
 - Understand the concepts of Right Consents (coming soon)
 - Use the API for a deep integration (coming soon)
