@@ -71,5 +71,5 @@ In this guide we have seen an overview of the consent collection process and its
 
 In addition you could now check other guides like:
 
-- [First Models Guide]({% link _docs/102-first-models-guide.md %})
+- [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
 - [Discover the API Guide]({% link _docs/103-discover-api-guide.md %})

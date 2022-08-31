@@ -120,5 +120,5 @@ contribute by developing functionalities.
 In addition you could now check other guides like:
 
 - [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
-- [Define my own processing models]({% link _docs/102-first-models-guide.md %})
+- [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
 - [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})

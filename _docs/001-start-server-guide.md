@@ -111,5 +111,5 @@ In this guide, we saw how to start a local instance of Right Consents to discove
 
 Additionally, you can now check out other guides such as:
   - [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
-  - [Define my own processing models]({% link _docs/102-first-models-guide.md %})
+  - [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
   - [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})

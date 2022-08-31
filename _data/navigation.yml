@@ -59,22 +59,24 @@ docs:
     children:
       - title: "Overview"
         url: /docs/overview-guide/
-      - title: "First models"
-        url: /docs/first-models-guide/
+      - title: "First consent form"
+        url: /docs/first-consent-form-guide/
       - title: "API Discovery"
         url: /docs/discover-api-guide/
       - title: "Existing forms integration"
         url: /docs/collect-into-form-guide/
       - title: "Mobile App TOS Management"
-      - title: "Understanding Authentication"
         url: /docs/manage-tos-mobile-app-guide/
+      - title: "Understanding Authentication"
         url: /docs/authentication-guide/
   - title: "Technical documentation"
     children:
       - title: "Config Reference"
         url: /docs/config-ref/
       - title: "API"
-        url: /docs/api/
+        url: /docs/api-doc/
+      - title: "Swagger"
+        url: /docs/swagger/
       - title: "SDK"
         url: /docs/sdk/
 
