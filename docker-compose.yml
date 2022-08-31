@@ -36,7 +36,7 @@ services:
   right-consents-back:
     container_name: right-consents-back
     restart: unless-stopped
-    image: fairandsmart/consent-manager-back:1.1.0
+    image: fairandsmart/consent-manager-back:2.2.0
     ports:
       - 4287:8087
     environment:
@@ -53,7 +53,7 @@ services:
       right-consents-mail:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/health", "-o", "/dev/null"]
+      test: ["CMD", "/usr/bin/curl", "-q", "-s", "http://127.0.0.1:8087/q/health", "-o", "/dev/null"]
       interval: 5s
       retries: 200
       timeout: 5s
@@ -62,7 +62,7 @@ services:
   right-consents-gui:
     container_name: right-consents-gui
     restart: unless-stopped
-    image: fairandsmart/consent-manager-gui:1.1.0
+    image: fairandsmart/consent-manager-gui:2.2.0
     environment:
       FS_AUTH_URL: http://localhost:4285/auth
       FS_GUI_URL: http://localhost:4286
