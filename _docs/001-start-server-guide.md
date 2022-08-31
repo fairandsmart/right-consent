@@ -4,7 +4,7 @@ permalink: /docs/start-server-guide/
 excerpt: "Instructions for starting a ready to run version of Right Consents in 5 minutes."
 header:
   og_image: /assets/images/startserverguide-overview.jpg
-toc: true
+toc: false
 menu: true
 gallery:
 - url: /assets/images/startserverguide-sc-01.png
@@ -110,6 +110,6 @@ If pre-built HTML forms aren't enough, a **typescript SDK** is the out-of-the-bo
 In this guide, we saw how to start a local instance of Right Consents to discover the solution.
 
 Additionally, you can now check out other guides such as:
-  - Define my own processing models (coming soon)
-  - [Insert consent collect into existing HTML form]({{ site.baseurl }}/docs/collect-into-form-guide/)
-  - [Deploy Right Consent from source]({{ site.baseurl }}/docs/full-install-guide/)
+  - [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
+  - [Define my own processing models]({% link _docs/102-first-models-guide.md %})
+  - [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})

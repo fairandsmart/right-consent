@@ -26,7 +26,7 @@ main:
       - title: "Contributing"
         url: /contributing/
       - title: "Edito"
-        url: /edito/  
+        url: /edito/
 
 # about links
 about:
@@ -57,11 +57,21 @@ docs:
         url: /docs/full-install-guide/
   - title: "Guides"
     children:
-      - title: "Integrate in existing form"
+      - title: "Overview"
+        url: /docs/overview-guide/
+      - title: "First models"
+        url: /docs/first-models-guide/
+      - title: "API Discovery"
+        url: /docs/discover-api-guide/
+      - title: "Existing forms integration"
         url: /docs/collect-into-form-guide/
+      - title: "Mobile App TOS Management"
+      - title: "Understanding Authentication"
+        url: /docs/manage-tos-mobile-app-guide/
+        url: /docs/authentication-guide/
   - title: "Technical documentation"
     children:
-      - title: "Backend config ref"
+      - title: "Config Reference"
         url: /docs/config-ref/
       - title: "API"
         url: /docs/api/
@@ -71,11 +81,10 @@ docs:
 # community links
 community:
   - title: "Community"
-    children: 
+    children:
       - title: "News"
         url: /news/
       - title: "Contributing"
         url: /contributing/
       - title: "Edito"
         url: /edito/
-      

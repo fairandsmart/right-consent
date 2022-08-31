@@ -4,7 +4,7 @@ permalink: /docs/full-install-guide/
 excerpt: "Instructions for building and installing right consents in a local environment."
 header:
   og_image: /assets/images/fullinstallguide-overview.jpg
-toc: true
+toc: false
 menu: true
 ---
 
@@ -49,7 +49,7 @@ $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e K
 <i class="fa fa-info-circle"></i> <b>Notice:</b> to delete keycloak data, stop the container then run `docker volume rm keycloak-data`
 {: .notice--info}
 
-If you want to use a local instance instead of the docker one you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details. 
+If you want to use a local instance instead of the docker one you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details.
 
 ## Mail Dev
 
@@ -114,14 +114,11 @@ More information on the configuration options can be found in the [configuration
 
 ## What's next?
 
-In this guide we have seen how to build and start a local instance of Right Consents to gain more control about source code and maybe 
+In this guide we have seen how to build and start a local instance of Right Consents to gain more control about source code and maybe
 contribute by developing functionalities.
 
 In addition you could now check other guides like:
 
-- Understand the concepts of Right Consents (coming soon)
-- Use the API for a deep integration (coming soon)
-- Develop a webhook to synchronize consent records (coming soon)
-
-
-
+- [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
+- [Define my own processing models]({% link _docs/102-first-models-guide.md %})
+- [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})
