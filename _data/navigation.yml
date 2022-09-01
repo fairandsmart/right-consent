@@ -65,8 +65,6 @@ docs:
         url: /docs/discover-api-guide/
       - title: "Existing forms integration"
         url: /docs/collect-into-form-guide/
-      - title: "Mobile App TOS Management"
-        url: /docs/manage-tos-mobile-app-guide/
       - title: "Understanding Authentication"
         url: /docs/authentication-guide/
   - title: "Technical documentation"

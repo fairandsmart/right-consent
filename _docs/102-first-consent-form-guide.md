@@ -8,21 +8,25 @@ toc: false
 menu: true
 gallery:
   - url: /assets/images/backoffice-designer-step1.png
-    image_path: /assets/images/backoffice-designer-step1.jpg
+    image_path: /assets/images/backoffice-designer-step1.png
     alt: "Form Designer Step 1"
     title: "Form Designer - Elements"
   - url: /assets/images/backoffice-designer-step2.png
-    image_path: /assets/images/backoffice-designer-step2.jpg
+    image_path: /assets/images/backoffice-designer-step2.png
     alt: "Form Designer Step 2"
     title: "Form Designer - Configuration"
   - url: /assets/images/backoffice-designer-step3.png
-    image_path: /assets/images/backoffice-designer-step3.jpg
+    image_path: /assets/images/backoffice-designer-step3.png
     alt: "Form Designer Step 3"
     title: "Form Designer - Context"
   - url: /assets/images/backoffice-designer-step4.png
-    image_path: /assets/images/backoffice-designer-step4.jpg
+    image_path: /assets/images/backoffice-designer-step4.png
     alt: "Form Designer Step 4"
     title: "Form Designer - Transaction"
+  - url: /assets/images/backoffice-designer-step5.png
+    image_path: /assets/images/backoffice-designer-step5.png
+    alt: "Form Designer Step 5"
+    title: "Form Designer - Export"  
 ---
 
 Learn how to design your first **consent form** by defining element models using Right Consents **backoffice** and form layout with the graphical designer.

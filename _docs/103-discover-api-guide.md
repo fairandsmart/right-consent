@@ -20,25 +20,27 @@ Learn how to use Right Consents **API** for basic operations:
 To complete this guide you need :
 
 - Roughly 45 minutes
-- Git
-- Docker
-- Right Consents running
+- Right Consents running with existing models
 - Curl
-- Some elements already created in the backoffice
 
 ## Overview
 
-In this guide you will discover the basic concepts and resources of the API and the operations that are necessary in order to integrate Right Consents in existing applications and start collecting consent.
+In this guide you will discover the basic concepts and resources of the API. We will use some existing consent elements models to build a transaction and follow the transaction workflow using only API calls.
 
 {% include figure image_path="/assets/images/discover-api-overview.jpg" alt="Discover RIght Consents API" %}
 
-## Perform a Consent Collect over the API using curl
+## Authentication
 
-According to the modelised elements and the predefined consent collect transaction skeleton we can perform direct API calls.
+Right Consents define 5 application roles: admin, operator, user, transaction or anonymous. In order to gain a role, calls to the API need to be authentified. Right Consents supports 3 different authentication scheme: OIDC/OAuth, API KEY and embedded token.
 
-### Authenticate test user
+In this guide we will perform all the operations as a single user authentified using OIDC over kecloak. First thing is to create a user in the IdP by visiting http://localhost:4285/auth/realms/RightConsents/account and follow the 'Register' link. You just have to create an account for the test user.
 
-Use the testuser credentials in curl over the Identity Provider to retrieve an access token allowing authenticated calls on the API:
+<i class="fa fa-info-circle"></i> You can access the IdP admin console available at http://localhost:4285/auth/admin (admin/admin)
+{: .notice--info}
+
+### Retreive OIDC token
+
+Use the created user credentials in curl over the Identity Provider (IdP) to retrieve an access token that you will use later for calling API:
 
 {% highlight bash %}
 RESPONSE=`curl -v -d "client_id=cmclient" \
@@ -50,7 +52,7 @@ ACCESS_TOKEN=`echo ${RESPONSE} | jq -r '.access_token'`
 REFRESH_TOKEN=`echo ${RESPONSE} | jq -r '.refresh_token'`
 {% endhighlight %}
 
-The refresh token can be used later avoiding reusing password:
+The refresh token can also be used later avoiding reusing password and consuming algorithm:
 
 {% highlight bash %}
 RESPONSE=`curl -v -d "client_id=cmclient" \
@@ -61,33 +63,52 @@ ACCESS_TOKEN=`echo ${RESPONSE} | jq -r '.access_token'`
 REFRESH_TOKEN=`echo ${RESPONSE} | jq -r '.refresh_token'`
 {% endhighlight %}
 
-<i class="fa fa-info-circle"></i> You can also create new user directly from the login screen of the GUI http://localhost:4286 or via the IdP admin console available at http://localhost:4285/auth/admin (admin/admin)
-{: .notice--info}
+The access token have a short time validity and you may have to renew it during the guide, just replay those requests when needed.
 
-The access token have a short time validity and yo umay have to renew it during the guide, just replay those requests when needed.
+### Define a consent context
 
-### Create a consent transaction
+In order to create a consent transaction, we have to send a **Consent Context** to the API that will define the transaction layout and configuration. The context can be generated using the **backoffice form designer** but if you are familiar with its format, you can also generate one from scratch.
 
-Using the generated context, call the API to start a consent transaction:
+Here is the simpliest Consent Context possible with a full default configuration. This context uses elements already created in the [First Consent Form Guide]({% link _docs/102-first-consent-form-guide.md %}): information.001, processing.001, preference.001, processing.002
+
+{% highlight json %}
+{
+  "layoutData": {
+    "type":"layout",
+    "elements":["processing.001"],
+    "orientation":"VERTICAL",
+    "info":"information.001"}
+}
+{% endhighlight %}
+
+### Create a transaction
+
+In order to create a transaction for that context, you juste have to post the context payload to the consents resource on the API using the Access Token retreived before.
+
+Transaction API generate 2 mimetypes representation: HTML or JSON. In HTML, client is supposed to be a browser and getting the transaction resource will send a redirection to the next human action needed for that transaction.
 
 {% highlight bash %}
 TXID=`curl -v --header "Content-Type: application/json" \
+              --header "Accept: application/json" \
               --header "Authorization: Bearer ${ACCESS_TOKEN}" \
               --request POST \
-              --data '{"subject":"usertest","layoutData":{"type":"layout","elements":["processing.001"],"orientation":"VERTICAL","info":"information.001"}}' \
+              --data '{"layoutData":{"type":"layout","elements":["processing.001"],"orientation":"VERTICAL","info":"information.001"}}' \
               http://localhost:4287/consents`
 echo ${TXID}
 {% endhighlight %}
 
-The result is a transaction creation attached to a unique ID that will be used to access transaction. The response contains the transacton ID in its body but also a complete link to the created transaction inthea Location header.
+The response will contains the transacton ID in its body but also a complete link to the created transaction in the Location header. The complete link embed a transaction access token that will prevent the use of a Bearer Token by giving access to that transaction only. This is usefull if you generate the transaction as an admin for another subject to push the link by email or in anonymous environment.
 
-<i class="fa fa-info-circle"></i> If you don't want to use the same IdP for your users than for the consent API, you'll have to insert a kind of Proxy (server side) to ensure Consent API authentication process (as admin or operator) and generates transactions for the enduser without its own authentication. More informations about authentication solutions are describes in the {% link _docs/106-authentication-guide.md %}
+As explained before, depending on the Accept header you provided (text/html or application/json) you'll received either 201 (created) code or a 301 (redirect) code for HTML automatic redirection to next human task.
+
+<i class="fa fa-info-circle"></i> If you try to create the same transaction again the API will find the existing one and return the same id again avoiding performance issues and orphean transactions.
 {: .notice--info}
 
+The transaction workflow lifecycle follow 6 states : CREATED, SUBMITTED, COMMITTED, CANCELLED, TIMEOUT, ROLLBACK. After creation, the transaction is now in state CREATED.
 
 ### Get the transaction
 
-Transaction API supports 2 mimetypes : html or json. In HTML, client is supposed to be a browser and getting the transaction resource will send a redirection to the next human action needed for that transaction (submit consent, confirm consent, show receipt, restart a new transaction).
+To retreive the transaction representation, you just have to perform a GET on the transaction resource.
 
 {% highlight bash %}
 TX_HTML=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
@@ -96,7 +117,7 @@ TX_HTML=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
 echo ${TX_HTML}
 {% endhighlight %}
 
-In JSON, only a representation of the transaction is send including the link to the next action.
+In HTML, a redirect (201) code is sent back including the location of the next human task to perform on the transaction according to its state.
 
 {% highlight bash %}
 TX_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
@@ -107,7 +128,9 @@ FORM_URL=`echo ${TX_JSON} | jq -r '.task'`
 echo ${FORM_URL}
 {% endhighlight %}
 
-In both case, an authentication token is included avoiding to use the OIDC Bearer token for the transaction process, making it easyer to integrate in a popup or an IFrame. The token can be joined to all action as a query param (/submit?t=$token).
+In JSON, only a representation of the transaction is send including the link to the next action.
+
+In both case, an authentication token is included avoiding to use the OIDC Bearer token for the transaction process, making it easyer to integrate in a popup or an IFrame. The token can be joined to all action as a query param (?t=$token) or in a header (CM_TOKEN: $token)
 
 A short version of the transaction just after creation is:
 
@@ -122,9 +145,9 @@ A short version of the transaction just after creation is:
 }
 {% endhighlight %}
 
-### Get consent form and submit values
+### Get the consent form and submit values
 
-When the transaction is in the state CREATED, the next step is submission of consent, calling the url of the task field will produce the form needed for consent submission.
+When the transaction is in the state CREATED, the next step is *submit*: the submission of consent. Calling the url of the task field will produce the form needed for consent submission and will include a submission link with a fresh token if needed.
 
 {% highlight bash %}
 FORM_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
@@ -133,7 +156,8 @@ FORM_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
 echo ${FORM_JSON}
 {% endhighlight %}
 
-Many informations are included in the JSON representation of the form mainly for disaplying legal information to the enduser. The Html version is fully operationnal without any interpretation. Important parts are the serial numebrs of elements. Only few informations need to be submitted or consent:
+By default, transaction API is supposed to be accessed in HTML making the workflow evolution smooth and easy. Thus, representation of form contains many informations that will be processed by a template in order to produce a beautifull and embeddable HTML code. By the way, it is also possible to use it in JSON,
+many informations are then included in the representation of the form. Important parts are the serial numebrs of elements. Only few informations need to be submitted for consent:
 
 {% highlight bash %}
 FORM_INFO_KEY=`echo ${FORM_JSON} | jq -r '.info.entry.key'`
