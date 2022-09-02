@@ -36,7 +36,7 @@ services:
   right-consents-back:
     container_name: right-consents-back
     restart: unless-stopped
-    image: fairandsmart/consent-manager-back:2.2.0
+    image: fairandsmart/consent-manager-back:2.3.0
     ports:
       - 4287:8087
     environment:
@@ -62,7 +62,7 @@ services:
   right-consents-gui:
     container_name: right-consents-gui
     restart: unless-stopped
-    image: fairandsmart/consent-manager-gui:2.2.0
+    image: fairandsmart/consent-manager-gui:2.3.0
     environment:
       FS_AUTH_URL: http://localhost:4285/auth
       FS_GUI_URL: http://localhost:4286
