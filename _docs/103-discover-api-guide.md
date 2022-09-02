@@ -141,28 +141,13 @@ The API is driven by browser to follow the workflow steps. At the final state an
 To retreive the transaction representation, you just have to perform a GET on the transaction resource.
 
 {% highlight bash %}
-TX_HTML=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
-                 --header "Accept: text/html" \
-                 http://localhost:4287/consents/${TXID}`
-echo ${TX_HTML}
+TX=`curl -v --header "CM_KEY: ${KEY}" \
+            --header "Authorization: ${TOKEN}" \
+            --header "Accept: application/json" \
+            http://localhost:4287/consents/${TX_ID}`
 {% endhighlight %}
 
-In HTML, a redirect (201) code is sent back including the location of the next human task to perform on the transaction according to its state.
-
-{% highlight bash %}
-TX_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
-                 --header "Accept: application/json" \
-                 http://localhost:4287/consents/${TXID}`
-echo ${TX_JSON}
-FORM_URL=`echo ${TX_JSON} | jq -r '.task'`
-echo ${FORM_URL}
-{% endhighlight %}
-
-In JSON, only a representation of the transaction is send including the link to the next action.
-
-In both case, an authentication token is included avoiding to use the OIDC Bearer token for the transaction process, making it easyer to integrate in a popup or an IFrame. The token can be joined to all action as a query param (?t=$token) or in a header (CM_TOKEN: $token)
-
-A short version of the transaction just after creation is:
+A short version of the transaction just after creation is like this:
 
 {% highlight json %}
 {
@@ -177,28 +162,56 @@ A short version of the transaction just after creation is:
 
 ### Get the consent form and submit values
 
-When the transaction is in the state CREATED, the next step is *submit*: the submission of consent. Calling the url of the task field will produce the form needed for consent submission and will include a submission link with a fresh token if needed.
+When the transaction is in the state CREATED, the next step is *submit*: the submission of consent. Calling the url of the 'task' field will produce the form needed for consent submission and will include a submission link with a fresh token if needed.
+
+You can build the next human task URI by getting the task field and the transaction token:
 
 {% highlight bash %}
-FORM_JSON=`curl -v --header "Authorization: Bearer ${ACCESS_TOKEN}" \
-                   --header "Accept: application/json" \
-                   ${FORM_URL}`
-echo ${FORM_JSON}
+TX_TASK=`echo $TX | jq -r .task` && TX_TOKEN=`echo $TX | jq -r .token`
 {% endhighlight %}
 
-By default, transaction API is supposed to be accessed in HTML making the workflow evolution smooth and easy. Thus, representation of form contains many informations that will be processed by a template in order to produce a beautifull and embeddable HTML code. By the way, it is also possible to use it in JSON,
-many informations are then included in the representation of the form. Important parts are the serial numebrs of elements. Only few informations need to be submitted for consent:
+Now you can call the submit task representation which will return the Consent Form Representation:
 
 {% highlight bash %}
-FORM_INFO_KEY=`echo ${FORM_JSON} | jq -r '.info.entry.key'`
-FORM_INFO_SERIAL=`echo ${FORM_JSON} | jq -r '.info.serial'`
-FORM_PROC_KEY=`echo ${FORM_JSON} | jq -r '.elements[0].entry.key'`
-FORM_PROC_SERIAL=`echo ${FORM_JSON} | jq -r '.elements[0].serial'`
-FORM_VALUES="\"{'info':['element/information/${FORM_INFO_KEY}/${FORM_INFO_SERIAL}'],'element/processing/${FORM_PROC_KEY}/${FORM_PROC_SERIAL}':['accepted']}\""
-SUBMIT_JSON=`curl -v --header "Content-Type: application/json" \
-                     --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+TX_FORM=`curl -v --header "CM_KEY: ${KEY}" \
+                 --header "Authorization: ${TOKEN}" \
+                 --header "Accept: application/json" \
+                 ${TX_TASK}?t=${TX_TOKEN}`
+{% endhighlight %}
+
+The Consent Form contains many information that is used in the HTML rendering. In JSON you have to do all the stuff by yourself for displaying form info and options. You also have to build the consent choices in a format that is suitable for the API, a Map of elements identifiers and choices answer:
+
+{% highlight bash %}
+FORM_VALUES='{"info":["element/information/'`echo ${TX_FORM} | jq -r '.info.entry.key'`/`echo ${TX_FORM} | jq -r '.info.serial'`'"],"element/processing/'`echo ${TX_FORM} | jq -r '.elements[0].entry.key'`/`echo ${TX_FORM} | jq -r '.elements[0].serial'`'":["accepted"]}' &&
+SUBMIT_JSON=`curl -v --header "CM_KEY: ${KEY}" \
+                     --header "Authorization: Bearer ${TOKEN}" \
+                     --header "Content-Type: application/json" \
                      --header "Accept: application/json" \
                      --request POST \
                      --data ${FORM_VALUES} \
-                     ${FORM_URL}`
+                     ${TX_TASK}?t=${TX_TOKEN}`
 {% endhighlight %}
+
+### Get the transaction representation again
+
+{% highlight bash %}
+TX=`curl -v --header "CM_KEY: ${KEY}" \
+            --header "Authorization: ${TOKEN}" \
+            --header "Accept: application/json" \
+            http://localhost:4287/consents/${TX_ID}` &&
+echo ${TX}
+{% endhighlight %}
+
+Notice that now the transaction is in state COMMITTED.
+
+Depending on the context configuration, a validation step can also be necessary by sending a code via email or sms to the subject in order to double check identity.
+
+## What's next?
+
+In this guide we have seen how to use the API to create and complete a simple consent transaction in both mode HTML or JSON.
+
+In addition you could now check other guides like:
+
+- [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})
+- [Manage TOS in Mobile App]({% link _docs/105-manage-tos-mobile-app-guide.md %})
+- [Detailed API Guide (upcoming...)]()
