@@ -16,7 +16,7 @@ main:
       - title: "Quick start"
         url: /docs/start-server-guide/
       - title: "All guides"
-        url: /docs/collect-into-form-guide/
+        url: /docs/overview-guide/
       - title: "Technical docs"
         url: /docs/config-ref/
   - title: "Community"
