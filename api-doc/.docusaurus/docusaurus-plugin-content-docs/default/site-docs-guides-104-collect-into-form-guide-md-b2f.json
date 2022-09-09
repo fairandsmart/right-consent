@@ -1,0 +1,25 @@
+{
+  "unversionedId": "guides/collect-into-form-guide",
+  "id": "guides/collect-into-form-guide",
+  "title": "Collecting consent from an existing HTML form",
+  "description": "Learn how to integrate a Right Consents Collect Form in an existing HTML Form that handle personal information.",
+  "source": "@site/docs/guides/104-collect-into-form-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/collect-into-form-guide",
+  "permalink": "/docs/guides/collect-into-form-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/104-collect-into-form-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 104,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Discover API guide",
+    "permalink": "/docs/guides/discover-api-guide"
+  },
+  "next": {
+    "title": "Understand authentication schemes in Right Consents",
+    "permalink": "/docs/guides/authentication-guide"
+  }
+}

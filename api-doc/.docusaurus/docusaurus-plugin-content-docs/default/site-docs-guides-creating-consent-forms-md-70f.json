@@ -1,0 +1,15 @@
+{
+  "unversionedId": "Guides/Creating consent forms",
+  "id": "Guides/Creating consent forms",
+  "title": "Creating consent forms",
+  "description": "",
+  "source": "@site/docs/Guides/Creating consent forms.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/Creating consent forms",
+  "permalink": "/docs/Guides/Creating consent forms",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/Creating consent forms.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

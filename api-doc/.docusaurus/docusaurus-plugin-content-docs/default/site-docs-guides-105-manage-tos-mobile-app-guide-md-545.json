@@ -1,0 +1,16 @@
+{
+  "unversionedId": "guides/manage-tos-mobile-app-guide",
+  "id": "guides/manage-tos-mobile-app-guide",
+  "title": "Manage Terms Of Services in mobile app using Right Consents",
+  "description": "",
+  "source": "@site/docs/guides/105-manage-tos-mobile-app-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/manage-tos-mobile-app-guide",
+  "permalink": "/docs/guides/manage-tos-mobile-app-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/105-manage-tos-mobile-app-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 105,
+  "frontMatter": {}
+}

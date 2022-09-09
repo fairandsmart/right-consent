@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Terminology/model-lifecycle",
+  "id": "Terminology/model-lifecycle",
+  "title": "Model Lifecycle",
+  "description": "Models are designed to ensure content preservation. More or less like existing versioning systems, models are versioned and some specific business rules define their lifecycles mostly to ensure that previous versions will not be modified.",
+  "source": "@site/docs/Terminology/model-lifecycle.md",
+  "sourceDirName": "Terminology",
+  "slug": "/Terminology/model-lifecycle",
+  "permalink": "/docs/Terminology/model-lifecycle",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Terminology/model-lifecycle.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Model Types",
+    "permalink": "/docs/Terminology/model-types"
+  },
+  "next": {
+    "title": "Consent Context",
+    "permalink": "/docs/Terminology/context-anatomy"
+  }
+}

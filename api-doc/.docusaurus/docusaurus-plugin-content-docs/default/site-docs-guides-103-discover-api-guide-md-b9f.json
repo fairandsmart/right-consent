@@ -1,0 +1,25 @@
+{
+  "unversionedId": "guides/discover-api-guide",
+  "id": "guides/discover-api-guide",
+  "title": "Discover API guide",
+  "description": "Learn how to use Right Consents API for basic operations:",
+  "source": "@site/docs/guides/103-discover-api-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/discover-api-guide",
+  "permalink": "/docs/guides/discover-api-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/103-discover-api-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 103,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Design of a Consent Form with Right Consents",
+    "permalink": "/docs/guides/first-consent-form-guide"
+  },
+  "next": {
+    "title": "Collecting consent from an existing HTML form",
+    "permalink": "/docs/guides/collect-into-form-guide"
+  }
+}

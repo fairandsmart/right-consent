@@ -1,0 +1,25 @@
+{
+  "unversionedId": "guides/overview-guide",
+  "id": "guides/overview-guide",
+  "title": "Right Consents Overview",
+  "description": "Learn the main concepts of consent collect in Right Consents and how to start using it.",
+  "source": "@site/docs/guides/101-overview-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/overview-guide",
+  "permalink": "/docs/guides/overview-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/101-overview-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 101,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Models",
+    "permalink": "/docs/concepts/example"
+  },
+  "next": {
+    "title": "First Design of a Consent Form with Right Consents",
+    "permalink": "/docs/guides/first-consent-form-guide"
+  }
+}

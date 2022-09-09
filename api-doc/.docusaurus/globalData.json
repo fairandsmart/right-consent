@@ -1,0 +1,100 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "getting-started/start-server-guide",
+          "docs": [
+            {
+              "id": "concepts/example",
+              "path": "/docs/concepts/example",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/full-install-guide",
+              "path": "/docs/getting-started/full-install-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/start-server-guide",
+              "path": "/docs/getting-started/start-server-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/authentication-guide",
+              "path": "/docs/guides/authentication-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/collect-into-form-guide",
+              "path": "/docs/guides/collect-into-form-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/discover-api-guide",
+              "path": "/docs/guides/discover-api-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/first-consent-form-guide",
+              "path": "/docs/guides/first-consent-form-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/manage-tos-mobile-app-guide",
+              "path": "/docs/guides/manage-tos-mobile-app-guide"
+            },
+            {
+              "id": "guides/overview-guide",
+              "path": "/docs/guides/overview-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techdoc/api-doc",
+              "path": "/docs/techdoc/api-doc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techdoc/config-ref",
+              "path": "/docs/techdoc/config-ref",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techdoc/consent-context-doc",
+              "path": "/docs/techdoc/consent-context-doc"
+            },
+            {
+              "id": "techdoc/consent-elements-doc",
+              "path": "/docs/techdoc/consent-elements-doc"
+            },
+            {
+              "id": "techdoc/sdk",
+              "path": "/docs/techdoc/sdk",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "techdoc/swagger",
+              "path": "/docs/techdoc/swagger",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/getting-started/start-server-guide",
+                "label": "getting-started/start-server-guide"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

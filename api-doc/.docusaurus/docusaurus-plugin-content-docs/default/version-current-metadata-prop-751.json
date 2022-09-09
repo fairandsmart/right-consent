@@ -1,0 +1,207 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Getting started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Quick Start",
+            "href": "/docs/getting-started/start-server-guide",
+            "docId": "getting-started/start-server-guide"
+          },
+          {
+            "type": "link",
+            "label": "Install from Sources",
+            "href": "/docs/getting-started/full-install-guide",
+            "docId": "getting-started/full-install-guide"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Concepts & Terminology",
+        "items": [
+          {
+            "type": "link",
+            "label": "Models",
+            "href": "/docs/concepts/example",
+            "docId": "concepts/example"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Guides",
+        "items": [
+          {
+            "type": "link",
+            "label": "Right Consents Overview",
+            "href": "/docs/guides/overview-guide",
+            "docId": "guides/overview-guide"
+          },
+          {
+            "type": "link",
+            "label": "First Design of a Consent Form with Right Consents",
+            "href": "/docs/guides/first-consent-form-guide",
+            "docId": "guides/first-consent-form-guide"
+          },
+          {
+            "type": "link",
+            "label": "Discover API guide",
+            "href": "/docs/guides/discover-api-guide",
+            "docId": "guides/discover-api-guide"
+          },
+          {
+            "type": "link",
+            "label": "Collecting consent from an existing HTML form",
+            "href": "/docs/guides/collect-into-form-guide",
+            "docId": "guides/collect-into-form-guide"
+          },
+          {
+            "type": "link",
+            "label": "Understand authentication schemes in Right Consents",
+            "href": "/docs/guides/authentication-guide",
+            "docId": "guides/authentication-guide"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Technical Documentation",
+        "items": [
+          {
+            "type": "link",
+            "label": "Configuration Reference",
+            "href": "/docs/techdoc/config-ref",
+            "docId": "techdoc/config-ref"
+          },
+          {
+            "type": "link",
+            "label": "API Documentation",
+            "href": "/docs/techdoc/api-doc",
+            "docId": "techdoc/api-doc"
+          },
+          {
+            "type": "link",
+            "label": "Swagger",
+            "href": "/docs/techdoc/swagger",
+            "docId": "techdoc/swagger"
+          },
+          {
+            "type": "link",
+            "label": "Consent.js",
+            "href": "/docs/techdoc/sdk",
+            "docId": "techdoc/sdk"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "concepts/example": {
+      "id": "concepts/example",
+      "title": "Models",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "getting-started/full-install-guide": {
+      "id": "getting-started/full-install-guide",
+      "title": "Install from Sources",
+      "description": "Learn how to build sources to start your own Right Consent server locally. This guide covers:",
+      "sidebar": "tutorialSidebar"
+    },
+    "getting-started/start-server-guide": {
+      "id": "getting-started/start-server-guide",
+      "title": "Quick Start",
+      "description": "Preconditions",
+      "sidebar": "tutorialSidebar"
+    },
+    "guides/authentication-guide": {
+      "id": "guides/authentication-guide",
+      "title": "Understand authentication schemes in Right Consents",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "guides/collect-into-form-guide": {
+      "id": "guides/collect-into-form-guide",
+      "title": "Collecting consent from an existing HTML form",
+      "description": "Learn how to integrate a Right Consents Collect Form in an existing HTML Form that handle personal information.",
+      "sidebar": "tutorialSidebar"
+    },
+    "guides/discover-api-guide": {
+      "id": "guides/discover-api-guide",
+      "title": "Discover API guide",
+      "description": "Learn how to use Right Consents API for basic operations:",
+      "sidebar": "tutorialSidebar"
+    },
+    "guides/first-consent-form-guide": {
+      "id": "guides/first-consent-form-guide",
+      "title": "First Design of a Consent Form with Right Consents",
+      "description": "Learn how to design your first consent form by defining element models using Right Consents backoffice and form layout with the graphical designer.",
+      "sidebar": "tutorialSidebar"
+    },
+    "guides/manage-tos-mobile-app-guide": {
+      "id": "guides/manage-tos-mobile-app-guide",
+      "title": "Manage Terms Of Services in mobile app using Right Consents",
+      "description": ""
+    },
+    "guides/overview-guide": {
+      "id": "guides/overview-guide",
+      "title": "Right Consents Overview",
+      "description": "Learn the main concepts of consent collect in Right Consents and how to start using it.",
+      "sidebar": "tutorialSidebar"
+    },
+    "techdoc/api-doc": {
+      "id": "techdoc/api-doc",
+      "title": "API Documentation",
+      "description": "Work in progress",
+      "sidebar": "tutorialSidebar"
+    },
+    "techdoc/config-ref": {
+      "id": "techdoc/config-ref",
+      "title": "Configuration Reference",
+      "description": "Backend configuration is located in a specific file:",
+      "sidebar": "tutorialSidebar"
+    },
+    "techdoc/consent-context-doc": {
+      "id": "techdoc/consent-context-doc",
+      "title": "Consent Context Documentation",
+      "description": ""
+    },
+    "techdoc/consent-elements-doc": {
+      "id": "techdoc/consent-elements-doc",
+      "title": "Consent Elements Documentation",
+      "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms."
+    },
+    "techdoc/sdk": {
+      "id": "techdoc/sdk",
+      "title": "Consent.js",
+      "description": "This documentation covers all the features provided in the consent.js file. If you want to learn more about our Right Consents solution, please refer to the appropriate documentation.",
+      "sidebar": "tutorialSidebar"
+    },
+    "techdoc/swagger": {
+      "id": "techdoc/swagger",
+      "title": "Swagger",
+      "description": "Right Consents backend is available as a REST API. The complete API documentation is generated by the backend itself using swagger and open api standards. API is served by the backend itselft and is always sync with the running version.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

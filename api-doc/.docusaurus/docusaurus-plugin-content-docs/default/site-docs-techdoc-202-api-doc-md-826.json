@@ -1,0 +1,25 @@
+{
+  "unversionedId": "techdoc/api-doc",
+  "id": "techdoc/api-doc",
+  "title": "API Documentation",
+  "description": "Work in progress",
+  "source": "@site/docs/techdoc/202-api-doc.md",
+  "sourceDirName": "techdoc",
+  "slug": "/techdoc/api-doc",
+  "permalink": "/docs/techdoc/api-doc",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/202-api-doc.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 202,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configuration Reference",
+    "permalink": "/docs/techdoc/config-ref"
+  },
+  "next": {
+    "title": "Swagger",
+    "permalink": "/docs/techdoc/swagger"
+  }
+}

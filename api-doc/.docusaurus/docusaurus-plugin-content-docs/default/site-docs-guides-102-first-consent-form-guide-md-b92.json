@@ -1,0 +1,25 @@
+{
+  "unversionedId": "guides/first-consent-form-guide",
+  "id": "guides/first-consent-form-guide",
+  "title": "First Design of a Consent Form with Right Consents",
+  "description": "Learn how to design your first consent form by defining element models using Right Consents backoffice and form layout with the graphical designer.",
+  "source": "@site/docs/guides/102-first-consent-form-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/first-consent-form-guide",
+  "permalink": "/docs/guides/first-consent-form-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/102-first-consent-form-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 102,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Right Consents Overview",
+    "permalink": "/docs/guides/overview-guide"
+  },
+  "next": {
+    "title": "Discover API guide",
+    "permalink": "/docs/guides/discover-api-guide"
+  }
+}

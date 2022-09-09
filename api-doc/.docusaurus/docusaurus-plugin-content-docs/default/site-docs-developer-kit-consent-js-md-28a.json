@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Developer Kit/Consent.js",
+  "id": "Developer Kit/Consent.js",
+  "title": "Consent.js",
+  "description": "",
+  "source": "@site/docs/Developer Kit/Consent.js.md",
+  "sourceDirName": "Developer Kit",
+  "slug": "/Developer Kit/Consent.js",
+  "permalink": "/docs/Developer Kit/Consent.js",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Developer Kit/Consent.js.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Model-centered querying",
+    "permalink": "/docs/Guides/model-queries"
+  },
+  "next": {
+    "title": "Integration-examples",
+    "permalink": "/docs/Developer Kit/Integration-examples"
+  }
+}

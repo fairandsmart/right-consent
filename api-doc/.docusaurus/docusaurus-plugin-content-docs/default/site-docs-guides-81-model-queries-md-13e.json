@@ -1,0 +1,30 @@
+{
+  "unversionedId": "Guides/model-queries",
+  "id": "Guides/model-queries",
+  "title": "Model-centered querying",
+  "description": "How can I query consents related to one of my models?",
+  "source": "@site/docs/Guides/81-model-queries.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/model-queries",
+  "permalink": "/docs/Guides/model-queries",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/81-model-queries.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 81,
+  "frontMatter": {
+    "title": "Model-centered querying",
+    "permalink": "/guides/model-queries/",
+    "excerpt": "How to query consents related to models",
+    "toc": false
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Operator interface",
+    "permalink": "/docs/Guides/operator-access"
+  },
+  "next": {
+    "title": "Consent.js",
+    "permalink": "/docs/Developer Kit/Consent.js"
+  }
+}
