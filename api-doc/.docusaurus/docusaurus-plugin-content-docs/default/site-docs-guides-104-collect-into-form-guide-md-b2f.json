@@ -15,11 +15,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Discover API guide",
+    "title": "API Discovery",
     "permalink": "/docs/guides/discover-api-guide"
   },
   "next": {
-    "title": "Understand authentication schemes in Right Consents",
-    "permalink": "/docs/guides/authentication-guide"
+    "title": "API Documentation",
+    "permalink": "/docs/techdoc/api-doc"
   }
 }

@@ -1,7 +1,7 @@
 {
   "unversionedId": "guides/discover-api-guide",
   "id": "guides/discover-api-guide",
-  "title": "Discover API guide",
+  "title": "API Discovery",
   "description": "Learn how to use Right Consents API for basic operations:",
   "source": "@site/docs/guides/103-discover-api-guide.md",
   "sourceDirName": "guides",
@@ -15,7 +15,7 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "First Design of a Consent Form with Right Consents",
+    "title": "Creating a Consent Form",
     "permalink": "/docs/guides/first-consent-form-guide"
   },
   "next": {

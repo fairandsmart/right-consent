@@ -1,0 +1,25 @@
+{
+  "unversionedId": "getting-started/config-ref",
+  "id": "getting-started/config-ref",
+  "title": "Configuration",
+  "description": "Backend configuration is located in a specific file:",
+  "source": "@site/docs/getting-started/212-config-ref.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/config-ref",
+  "permalink": "/docs/getting-started/config-ref",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/212-config-ref.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 212,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Install from Sources",
+    "permalink": "/docs/getting-started/full-install-guide"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/docs/getting-started/authentication-guide"
+  }
+}

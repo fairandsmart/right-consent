@@ -1,4 +1,4 @@
-# Discover API guide
+# API Discovery
 
 Learn how to use Right Consents **API** for basic operations:
 
@@ -21,7 +21,7 @@ In this guide you will discover the basic concepts and resources of the API. We 
 
 Consent API is more or less like a Online Paiment one, an privileged user create the transaction and forward it to the customer. It is not mandatory to have an authentified customer to fulfill the transaction.
 
-{% include figure image_path="/assets/images/discover-api-overview.jpg" alt="Discover Right Consents API" %}
+<!-- ![Discover Right Consents API](/img/discover-api-overview.jpg) -->
 
 ## Authentication
 
@@ -82,7 +82,7 @@ Here is the simpliest Consent Context possible with a full default configuration
 ```
 
 :::info
- This context uses elements already created in the [First Consent Form Guide]({% link _docs/102-first-consent-form-guide.md %}): information.001, processing.001
+ This context uses elements already created in the [First Consent Form Guide](first-consent-form-guide): information.001, processing.001
 :::
 
 ### Create the transaction
@@ -202,11 +202,3 @@ Notice that now the transaction is in state COMMITTED.
 
 Depending on the context configuration, a validation step can also be necessary by sending a code via email or sms to the subject in order to double check identity.
 
-## What's next?
-
-In this guide we have seen how to use the API to create and complete a simple consent transaction in both mode HTML or JSON.
-
-In addition you could now check other guides like:
-
-- [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})
-- [Manage TOS in Mobile App]({% link _docs/105-manage-tos-mobile-app-guide.md %})

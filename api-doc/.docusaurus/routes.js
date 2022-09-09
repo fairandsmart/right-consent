@@ -99,11 +99,29 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '408'),
+    component: ComponentCreator('/docs', '49d'),
     routes: [
       {
-        path: '/docs/concepts/example',
-        component: ComponentCreator('/docs/concepts/example', '215'),
+        path: '/docs/concepts/consent-context-doc',
+        component: ComponentCreator('/docs/concepts/consent-context-doc', '5b0'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/concepts/consent-elements-doc',
+        component: ComponentCreator('/docs/concepts/consent-elements-doc', '3b3'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/getting-started/authentication-guide',
+        component: ComponentCreator('/docs/getting-started/authentication-guide', 'fb4'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/getting-started/config-ref',
+        component: ComponentCreator('/docs/getting-started/config-ref', '5b4'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -116,12 +134,6 @@ export default [
       {
         path: '/docs/getting-started/start-server-guide',
         component: ComponentCreator('/docs/getting-started/start-server-guide', '207'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/guides/authentication-guide',
-        component: ComponentCreator('/docs/guides/authentication-guide', '083'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -157,12 +169,6 @@ export default [
       {
         path: '/docs/techdoc/api-doc',
         component: ComponentCreator('/docs/techdoc/api-doc', '3b1'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/techdoc/config-ref',
-        component: ComponentCreator('/docs/techdoc/config-ref', 'a97'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

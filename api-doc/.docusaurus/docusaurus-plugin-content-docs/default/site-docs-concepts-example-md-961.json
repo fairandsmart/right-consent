@@ -14,8 +14,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Install from Sources",
-    "permalink": "/docs/getting-started/full-install-guide"
+    "title": "Configuration",
+    "permalink": "/docs/getting-started/config-ref"
   },
   "next": {
     "title": "Right Consents Overview",

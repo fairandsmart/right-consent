@@ -15,11 +15,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Models",
-    "permalink": "/docs/concepts/example"
+    "title": "Consent Context",
+    "permalink": "/docs/concepts/consent-context-doc"
   },
   "next": {
-    "title": "First Design of a Consent Form with Right Consents",
+    "title": "Creating a Consent Form",
     "permalink": "/docs/guides/first-consent-form-guide"
   }
 }

@@ -186,16 +186,28 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-408": {
+  "/docs-49d": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docscf-4-741"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/concepts/example-215": {
+  "/docs/concepts/consent-context-doc-5b0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-example-961-a6b"
+    "content": "content---docs-concepts-consent-context-doc-581-d5a"
+  },
+  "/docs/concepts/consent-elements-doc-3b3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-concepts-consent-elements-doc-028-085"
+  },
+  "/docs/getting-started/authentication-guide-fb4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-authentication-guide-6-bf-d61"
+  },
+  "/docs/getting-started/config-ref-5b4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-config-ref-074-869"
   },
   "/docs/getting-started/full-install-guide-644": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -204,10 +216,6 @@
   "/docs/getting-started/start-server-guide-207": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-getting-started-start-server-guide-78-b-b0c"
-  },
-  "/docs/guides/authentication-guide-083": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-authentication-guidef-9-a-07f"
   },
   "/docs/guides/collect-into-form-guide-019": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -232,10 +240,6 @@
   "/docs/techdoc/api-doc-3b1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-techdoc-api-doc-826-dea"
-  },
-  "/docs/techdoc/config-ref-a97": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-techdoc-config-refc-21-a2b"
   },
   "/docs/techdoc/consent-context-doc-418": {
     "__comp": "__comp---theme-doc-item-178-a40",

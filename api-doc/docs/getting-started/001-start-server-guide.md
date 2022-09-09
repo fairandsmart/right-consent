@@ -37,7 +37,7 @@ Wait for everything to start...
 
 When everything is set up (check the video above), you can access the different components with the following URL:
   - **Back office web application** is visible at url [http://localhost:4286](http://localhost:4286)
-    - **Username & password**: *demo@demo.com / demo42*
+  - **Username & password**: *demo@demo.com / demo42*
 
 ## Discover the app
 
@@ -58,11 +58,4 @@ The solution also offers an **API** directly accessible by **client applications
 
 If pre-built HTML forms aren't enough, a **typescript SDK** is the out-of-the-box option to integrate Right Consent in a more **controlled way**.
 
-## What’s next?
 
-In this guide, we saw how to start a local instance of Right Consents to discover the solution.
-
-Additionally, you can now check out other guides such as:
-  - [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
-  - [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
-  - [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})

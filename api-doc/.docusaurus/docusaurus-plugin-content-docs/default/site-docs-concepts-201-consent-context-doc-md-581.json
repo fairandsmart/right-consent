@@ -1,0 +1,25 @@
+{
+  "unversionedId": "concepts/consent-context-doc",
+  "id": "concepts/consent-context-doc",
+  "title": "Consent Context",
+  "description": "Work in progress",
+  "source": "@site/docs/concepts/201-consent-context-doc.md",
+  "sourceDirName": "concepts",
+  "slug": "/concepts/consent-context-doc",
+  "permalink": "/docs/concepts/consent-context-doc",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/201-consent-context-doc.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 201,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Consent Elements",
+    "permalink": "/docs/concepts/consent-elements-doc"
+  },
+  "next": {
+    "title": "Right Consents Overview",
+    "permalink": "/docs/guides/overview-guide"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "unversionedId": "guides/first-consent-form-guide",
   "id": "guides/first-consent-form-guide",
-  "title": "First Design of a Consent Form with Right Consents",
-  "description": "Learn how to design your first consent form by defining element models using Right Consents backoffice and form layout with the graphical designer.",
+  "title": "Creating a Consent Form",
+  "description": "First Design of a Consent Form with Right Consents",
   "source": "@site/docs/guides/102-first-consent-form-guide.md",
   "sourceDirName": "guides",
   "slug": "/guides/first-consent-form-guide",
@@ -19,7 +19,7 @@
     "permalink": "/docs/guides/overview-guide"
   },
   "next": {
-    "title": "Discover API guide",
+    "title": "API Discovery",
     "permalink": "/docs/guides/discover-api-guide"
   }
 }

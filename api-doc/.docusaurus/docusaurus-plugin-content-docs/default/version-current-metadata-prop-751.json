@@ -24,6 +24,18 @@
             "label": "Install from Sources",
             "href": "/docs/getting-started/full-install-guide",
             "docId": "getting-started/full-install-guide"
+          },
+          {
+            "type": "link",
+            "label": "Configuration",
+            "href": "/docs/getting-started/config-ref",
+            "docId": "getting-started/config-ref"
+          },
+          {
+            "type": "link",
+            "label": "Authentication",
+            "href": "/docs/getting-started/authentication-guide",
+            "docId": "getting-started/authentication-guide"
           }
         ],
         "collapsed": true,
@@ -35,9 +47,15 @@
         "items": [
           {
             "type": "link",
-            "label": "Models",
-            "href": "/docs/concepts/example",
-            "docId": "concepts/example"
+            "label": "Consent Elements",
+            "href": "/docs/concepts/consent-elements-doc",
+            "docId": "concepts/consent-elements-doc"
+          },
+          {
+            "type": "link",
+            "label": "Consent Context",
+            "href": "/docs/concepts/consent-context-doc",
+            "docId": "concepts/consent-context-doc"
           }
         ],
         "collapsed": true,
@@ -55,13 +73,13 @@
           },
           {
             "type": "link",
-            "label": "First Design of a Consent Form with Right Consents",
+            "label": "Creating a Consent Form",
             "href": "/docs/guides/first-consent-form-guide",
             "docId": "guides/first-consent-form-guide"
           },
           {
             "type": "link",
-            "label": "Discover API guide",
+            "label": "API Discovery",
             "href": "/docs/guides/discover-api-guide",
             "docId": "guides/discover-api-guide"
           },
@@ -70,12 +88,6 @@
             "label": "Collecting consent from an existing HTML form",
             "href": "/docs/guides/collect-into-form-guide",
             "docId": "guides/collect-into-form-guide"
-          },
-          {
-            "type": "link",
-            "label": "Understand authentication schemes in Right Consents",
-            "href": "/docs/guides/authentication-guide",
-            "docId": "guides/authentication-guide"
           }
         ],
         "collapsed": true,
@@ -85,12 +97,6 @@
         "type": "category",
         "label": "Technical Documentation",
         "items": [
-          {
-            "type": "link",
-            "label": "Configuration Reference",
-            "href": "/docs/techdoc/config-ref",
-            "docId": "techdoc/config-ref"
-          },
           {
             "type": "link",
             "label": "API Documentation",
@@ -116,10 +122,28 @@
     ]
   },
   "docs": {
-    "concepts/example": {
-      "id": "concepts/example",
-      "title": "Models",
+    "concepts/consent-context-doc": {
+      "id": "concepts/consent-context-doc",
+      "title": "Consent Context",
+      "description": "Work in progress",
+      "sidebar": "tutorialSidebar"
+    },
+    "concepts/consent-elements-doc": {
+      "id": "concepts/consent-elements-doc",
+      "title": "Consent Elements",
+      "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+      "sidebar": "tutorialSidebar"
+    },
+    "getting-started/authentication-guide": {
+      "id": "getting-started/authentication-guide",
+      "title": "Authentication",
       "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "getting-started/config-ref": {
+      "id": "getting-started/config-ref",
+      "title": "Configuration",
+      "description": "Backend configuration is located in a specific file:",
       "sidebar": "tutorialSidebar"
     },
     "getting-started/full-install-guide": {
@@ -134,12 +158,6 @@
       "description": "Preconditions",
       "sidebar": "tutorialSidebar"
     },
-    "guides/authentication-guide": {
-      "id": "guides/authentication-guide",
-      "title": "Understand authentication schemes in Right Consents",
-      "description": "",
-      "sidebar": "tutorialSidebar"
-    },
     "guides/collect-into-form-guide": {
       "id": "guides/collect-into-form-guide",
       "title": "Collecting consent from an existing HTML form",
@@ -148,14 +166,14 @@
     },
     "guides/discover-api-guide": {
       "id": "guides/discover-api-guide",
-      "title": "Discover API guide",
+      "title": "API Discovery",
       "description": "Learn how to use Right Consents API for basic operations:",
       "sidebar": "tutorialSidebar"
     },
     "guides/first-consent-form-guide": {
       "id": "guides/first-consent-form-guide",
-      "title": "First Design of a Consent Form with Right Consents",
-      "description": "Learn how to design your first consent form by defining element models using Right Consents backoffice and form layout with the graphical designer.",
+      "title": "Creating a Consent Form",
+      "description": "First Design of a Consent Form with Right Consents",
       "sidebar": "tutorialSidebar"
     },
     "guides/manage-tos-mobile-app-guide": {
@@ -173,12 +191,6 @@
       "id": "techdoc/api-doc",
       "title": "API Documentation",
       "description": "Work in progress",
-      "sidebar": "tutorialSidebar"
-    },
-    "techdoc/config-ref": {
-      "id": "techdoc/config-ref",
-      "title": "Configuration Reference",
-      "description": "Backend configuration is located in a specific file:",
       "sidebar": "tutorialSidebar"
     },
     "techdoc/consent-context-doc": {

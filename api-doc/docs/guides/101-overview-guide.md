@@ -15,7 +15,7 @@ To complete this guide you need :
 
 In this guide you will discover the concept of a **consent model** and its components. You will use the backoffice application to start defining your **consent elements library**.
 
-{% include figure image_path="/assets/images/first-models-guide-overview.jpg" alt="First models with Right Consents - Overview" %}
+<!-- ![First models with Right Consents - Overview](/img/first-models-guide-overview.jpg) -->
 
 This guide also covers some basic aspects of designing consent form layout by assembling your consent library elements in various way.
 
@@ -57,11 +57,3 @@ The Consent Transaction will be aslo an **unique entry point** that will live du
 
 Once the transaction is committed, specific pieces of informations are generated : some **Consent Records** and a **Consent Receipt**.
 
-## What's next?
-
-In this guide we have seen an overview of the consent collection process and its different stages in Right Consents.
-
-In addition you could now check other guides like:
-
-- [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
-- [Discover the API Guide]({% link _docs/103-discover-api-guide.md %})

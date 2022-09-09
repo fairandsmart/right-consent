@@ -1,4 +1,4 @@
-# Configuration Reference
+# Configuration
 
 Backend configuration is located in a specific file:
 
@@ -18,7 +18,7 @@ More tips and tricks about configuration can be found in the [quarkus documentat
 
 The first part of the file allows you to set specific HTTP server configuration options such as ports, CORS, proxy header management.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 quarkus.http.port=8087
 quarkus.http.test-port=8083
 
@@ -34,7 +34,7 @@ quarkus.http.proxy.proxy-address-forwarding=true
 
 Access logs can be generated to log all incoming REST requests on the API:
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 quarkus.http.access-log.enabled=true
 quarkus.http.access-log.pattern=combined
 quarkus.http.access-log.log-to-file=true
@@ -49,7 +49,7 @@ OIDC is used for human access and delegates all account management (creation, pa
 
 HTTP BasicAuth is used for System API access only and uses specific keys that can be generated inside the application. You should NOT disable this type of authentication.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 quarkus.http.auth.basic=true
 
 quarkus.oidc.enabled=true
@@ -62,7 +62,7 @@ quarkus.oidc.authentication.scopes=profile,email,roles
 
 By default, the application stores all its data into an embedded database (H2) for convenience. If necessary, it is possible to change the database type. Quarkus documentation describes supported DBMS and specific [configuration options](https://quarkus.io/docs/datasource). You should have to add some maven dependency in order to have the driver included in the application for such modification.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 quarkus.datasource.db-kind=h2
 quarkus.datasource.jdbc.url=jdbc:h2:${consent.home}/db
 quarkus.liquibase.migrate-at-start=false
@@ -75,7 +75,7 @@ quarkus.hibernate-orm.physical-naming-strategy=com.fairandsmart.consent.common.o
 
 An outgoing SMTP can be configured easily by overriding some of the following options:
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 quarkus.mailer.from=consent-manager@fairandsmart.io
 quarkus.mailer.host=localhost
 quarkus.mailer.port=25
@@ -97,7 +97,7 @@ The home folder config will host receipts and other files needed by the instance
 
 Public URL allows you to ensure that CORS will be correctly setup when backend runs behind a proxy.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 # MainConfig
 consent.instance.name=DEV
 consent.instance.owner=dev
@@ -116,7 +116,7 @@ consent.instance.transaction-validity=PT6H
 
 A support service is available online and allows the backend to check for the newest version periodically. For now, no data is sent to the support and only the latest version is checked. It is also possible to disable the support avoiding any communication with the central service.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 # SupportServiceConfig
 consent.support.enabled=true
 consent.support.news=true
@@ -130,7 +130,7 @@ quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".scop
 
 Security roles can be override using those options but in most cases, it won't be needed at all.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 # SecurityConfig
 consent.security.auth.unauthenticated=anonymous
 consent.security.roles.admin=admin
@@ -142,7 +142,7 @@ consent.security.roles.api=api
 
 Serial numbers can be customized. Internal serial management is based on a slot reservation in the DB avoiding too many serialized transactions and storage bottlenecks on this critical point. Slot size can be customized in case of very heavy load of the system. Also a specific serial prefix may allow you to distinguish different instances of serials (production or tests).
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 # SerialConfig
 consent.serial.prefix=U
 consent.serial.slot.capacity=100
@@ -153,7 +153,7 @@ consent.serial.slot.initial=0
 
 A dedicated page can be made available to your end users and the content of this page can be restricted to some models only avoiding customers to be able to see everything. The public url to access this web page can also be customized if this page is deported to another application.
 
-```properties
+```properties title="consent-manager-back/src/main/resources/application.properties"
 # ClientConfig
 consent.client.user-page.enabled=false
 consent.client.user-page.elements=processing.001,processing.002,processing.003,preference.001,preference.002,preference.003,preference.004

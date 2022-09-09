@@ -19,7 +19,7 @@
     "permalink": "/docs/getting-started/start-server-guide"
   },
   "next": {
-    "title": "Models",
-    "permalink": "/docs/concepts/example"
+    "title": "Configuration",
+    "permalink": "/docs/getting-started/config-ref"
   }
 }

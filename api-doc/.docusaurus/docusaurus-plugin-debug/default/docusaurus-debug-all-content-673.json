@@ -20,18 +20,94 @@
           "contentPathLocalized": "D:\\Work\\right-consents\\api-doc\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
-              "unversionedId": "concepts/example",
-              "id": "concepts/example",
-              "title": "Models",
-              "description": "",
-              "source": "@site/docs/concepts/example.md",
+              "unversionedId": "concepts/consent-context-doc",
+              "id": "concepts/consent-context-doc",
+              "title": "Consent Context",
+              "description": "Work in progress",
+              "source": "@site/docs/concepts/201-consent-context-doc.md",
               "sourceDirName": "concepts",
-              "slug": "/concepts/example",
-              "permalink": "/docs/concepts/example",
+              "slug": "/concepts/consent-context-doc",
+              "permalink": "/docs/concepts/consent-context-doc",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/example.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/201-consent-context-doc.md",
               "tags": [],
               "version": "current",
+              "sidebarPosition": 201,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Consent Elements",
+                "permalink": "/docs/concepts/consent-elements-doc"
+              },
+              "next": {
+                "title": "Right Consents Overview",
+                "permalink": "/docs/guides/overview-guide"
+              }
+            },
+            {
+              "unversionedId": "concepts/consent-elements-doc",
+              "id": "concepts/consent-elements-doc",
+              "title": "Consent Elements",
+              "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+              "source": "@site/docs/concepts/200-consent-elements-doc.md",
+              "sourceDirName": "concepts",
+              "slug": "/concepts/consent-elements-doc",
+              "permalink": "/docs/concepts/consent-elements-doc",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/200-consent-elements-doc.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 200,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Authentication",
+                "permalink": "/docs/getting-started/authentication-guide"
+              },
+              "next": {
+                "title": "Consent Context",
+                "permalink": "/docs/concepts/consent-context-doc"
+              }
+            },
+            {
+              "unversionedId": "getting-started/authentication-guide",
+              "id": "getting-started/authentication-guide",
+              "title": "Authentication",
+              "description": "",
+              "source": "@site/docs/getting-started/106-authentication-guide.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/authentication-guide",
+              "permalink": "/docs/getting-started/authentication-guide",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/106-authentication-guide.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 106,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Configuration",
+                "permalink": "/docs/getting-started/config-ref"
+              },
+              "next": {
+                "title": "Consent Elements",
+                "permalink": "/docs/concepts/consent-elements-doc"
+              }
+            },
+            {
+              "unversionedId": "getting-started/config-ref",
+              "id": "getting-started/config-ref",
+              "title": "Configuration",
+              "description": "Backend configuration is located in a specific file:",
+              "source": "@site/docs/getting-started/212-config-ref.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/config-ref",
+              "permalink": "/docs/getting-started/config-ref",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/212-config-ref.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 212,
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -39,8 +115,8 @@
                 "permalink": "/docs/getting-started/full-install-guide"
               },
               "next": {
-                "title": "Right Consents Overview",
-                "permalink": "/docs/guides/overview-guide"
+                "title": "Authentication",
+                "permalink": "/docs/getting-started/authentication-guide"
               }
             },
             {
@@ -64,8 +140,8 @@
                 "permalink": "/docs/getting-started/start-server-guide"
               },
               "next": {
-                "title": "Models",
-                "permalink": "/docs/concepts/example"
+                "title": "Configuration",
+                "permalink": "/docs/getting-started/config-ref"
               }
             },
             {
@@ -90,31 +166,6 @@
               }
             },
             {
-              "unversionedId": "guides/authentication-guide",
-              "id": "guides/authentication-guide",
-              "title": "Understand authentication schemes in Right Consents",
-              "description": "",
-              "source": "@site/docs/guides/106-authentication-guide.md",
-              "sourceDirName": "guides",
-              "slug": "/guides/authentication-guide",
-              "permalink": "/docs/guides/authentication-guide",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/106-authentication-guide.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 106,
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Collecting consent from an existing HTML form",
-                "permalink": "/docs/guides/collect-into-form-guide"
-              },
-              "next": {
-                "title": "Configuration Reference",
-                "permalink": "/docs/techdoc/config-ref"
-              }
-            },
-            {
               "unversionedId": "guides/collect-into-form-guide",
               "id": "guides/collect-into-form-guide",
               "title": "Collecting consent from an existing HTML form",
@@ -131,18 +182,18 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Discover API guide",
+                "title": "API Discovery",
                 "permalink": "/docs/guides/discover-api-guide"
               },
               "next": {
-                "title": "Understand authentication schemes in Right Consents",
-                "permalink": "/docs/guides/authentication-guide"
+                "title": "API Documentation",
+                "permalink": "/docs/techdoc/api-doc"
               }
             },
             {
               "unversionedId": "guides/discover-api-guide",
               "id": "guides/discover-api-guide",
-              "title": "Discover API guide",
+              "title": "API Discovery",
               "description": "Learn how to use Right Consents API for basic operations:",
               "source": "@site/docs/guides/103-discover-api-guide.md",
               "sourceDirName": "guides",
@@ -156,7 +207,7 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "First Design of a Consent Form with Right Consents",
+                "title": "Creating a Consent Form",
                 "permalink": "/docs/guides/first-consent-form-guide"
               },
               "next": {
@@ -167,8 +218,8 @@
             {
               "unversionedId": "guides/first-consent-form-guide",
               "id": "guides/first-consent-form-guide",
-              "title": "First Design of a Consent Form with Right Consents",
-              "description": "Learn how to design your first consent form by defining element models using Right Consents backoffice and form layout with the graphical designer.",
+              "title": "Creating a Consent Form",
+              "description": "First Design of a Consent Form with Right Consents",
               "source": "@site/docs/guides/102-first-consent-form-guide.md",
               "sourceDirName": "guides",
               "slug": "/guides/first-consent-form-guide",
@@ -185,7 +236,7 @@
                 "permalink": "/docs/guides/overview-guide"
               },
               "next": {
-                "title": "Discover API guide",
+                "title": "API Discovery",
                 "permalink": "/docs/guides/discover-api-guide"
               }
             },
@@ -222,11 +273,11 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Models",
-                "permalink": "/docs/concepts/example"
+                "title": "Consent Context",
+                "permalink": "/docs/concepts/consent-context-doc"
               },
               "next": {
-                "title": "First Design of a Consent Form with Right Consents",
+                "title": "Creating a Consent Form",
                 "permalink": "/docs/guides/first-consent-form-guide"
               }
             },
@@ -247,37 +298,12 @@
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Configuration Reference",
-                "permalink": "/docs/techdoc/config-ref"
+                "title": "Collecting consent from an existing HTML form",
+                "permalink": "/docs/guides/collect-into-form-guide"
               },
               "next": {
                 "title": "Swagger",
                 "permalink": "/docs/techdoc/swagger"
-              }
-            },
-            {
-              "unversionedId": "techdoc/config-ref",
-              "id": "techdoc/config-ref",
-              "title": "Configuration Reference",
-              "description": "Backend configuration is located in a specific file:",
-              "source": "@site/docs/techdoc/212-config-ref.md",
-              "sourceDirName": "techdoc",
-              "slug": "/techdoc/config-ref",
-              "permalink": "/docs/techdoc/config-ref",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/212-config-ref.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 212,
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Understand authentication schemes in Right Consents",
-                "permalink": "/docs/guides/authentication-guide"
-              },
-              "next": {
-                "title": "API Documentation",
-                "permalink": "/docs/techdoc/api-doc"
               }
             },
             {
@@ -373,6 +399,14 @@
                   {
                     "type": "doc",
                     "id": "getting-started/full-install-guide"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/config-ref"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/authentication-guide"
                   }
                 ],
                 "collapsed": true,
@@ -384,7 +418,11 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "concepts/example"
+                    "id": "concepts/consent-elements-doc"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "concepts/consent-context-doc"
                   }
                 ],
                 "collapsed": true,
@@ -409,10 +447,6 @@
                   {
                     "type": "doc",
                     "id": "guides/collect-into-form-guide"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "guides/authentication-guide"
                   }
                 ],
                 "collapsed": true,
@@ -422,10 +456,6 @@
                 "type": "category",
                 "label": "Technical Documentation",
                 "items": [
-                  {
-                    "type": "doc",
-                    "id": "techdoc/config-ref"
-                  },
                   {
                     "type": "doc",
                     "id": "techdoc/api-doc"

@@ -20,13 +20,16 @@ const sidebars = {
       items: [
         'getting-started/start-server-guide',
         'getting-started/full-install-guide',
+        'getting-started/config-ref',
+        'getting-started/authentication-guide'
       ],
     },
     {
       type: 'category',
       label: 'Concepts & Terminology',
       items: [
-          'concepts/example'
+          'concepts/consent-elements-doc',
+          'concepts/consent-context-doc',
       ],
     },
     {
@@ -37,14 +40,12 @@ const sidebars = {
         'guides/first-consent-form-guide',
         'guides/discover-api-guide',
         'guides/collect-into-form-guide',
-        'guides/authentication-guide'
       ],
     },
     {
       type: 'category',
       label: 'Technical Documentation',
       items: [
-        'techdoc/config-ref',
         'techdoc/api-doc',
         'techdoc/swagger',
         'techdoc/sdk'

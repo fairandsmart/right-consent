@@ -11,8 +11,23 @@
           "mainDocId": "getting-started/start-server-guide",
           "docs": [
             {
-              "id": "concepts/example",
-              "path": "/docs/concepts/example",
+              "id": "concepts/consent-context-doc",
+              "path": "/docs/concepts/consent-context-doc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "concepts/consent-elements-doc",
+              "path": "/docs/concepts/consent-elements-doc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/authentication-guide",
+              "path": "/docs/getting-started/authentication-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/config-ref",
+              "path": "/docs/getting-started/config-ref",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -23,11 +38,6 @@
             {
               "id": "getting-started/start-server-guide",
               "path": "/docs/getting-started/start-server-guide",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "guides/authentication-guide",
-              "path": "/docs/guides/authentication-guide",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -57,11 +67,6 @@
             {
               "id": "techdoc/api-doc",
               "path": "/docs/techdoc/api-doc",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "techdoc/config-ref",
-              "path": "/docs/techdoc/config-ref",
               "sidebar": "tutorialSidebar"
             },
             {

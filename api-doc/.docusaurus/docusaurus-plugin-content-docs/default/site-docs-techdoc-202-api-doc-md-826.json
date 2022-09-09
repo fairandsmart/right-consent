@@ -15,8 +15,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Configuration Reference",
-    "permalink": "/docs/techdoc/config-ref"
+    "title": "Collecting consent from an existing HTML form",
+    "permalink": "/docs/guides/collect-into-form-guide"
   },
   "next": {
     "title": "Swagger",

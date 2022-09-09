@@ -1,7 +1,7 @@
 {
   "unversionedId": "guides/authentication-guide",
   "id": "guides/authentication-guide",
-  "title": "Understand authentication schemes in Right Consents",
+  "title": "Authentication",
   "description": "",
   "source": "@site/docs/guides/106-authentication-guide.md",
   "sourceDirName": "guides",
@@ -19,7 +19,7 @@
     "permalink": "/docs/guides/collect-into-form-guide"
   },
   "next": {
-    "title": "Configuration Reference",
-    "permalink": "/docs/techdoc/config-ref"
+    "title": "API Documentation",
+    "permalink": "/docs/techdoc/api-doc"
   }
 }

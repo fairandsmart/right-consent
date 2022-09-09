@@ -24,7 +24,7 @@ To complete this guide you need:
 
 In this guide you will learn how to **install** needed external components (Keycloak, MailDev) and to **compile** and run Right Consents backend and frontend.
 
-{% include figure image_path="/assets/images/fullinstallguide-overview.jpg" alt="Full Install Guide - Overview" %}
+![Full Install Guide - Overview](/img/fullinstallguide-overview.jpg)
 
 This guide also covers some basic aspects of configuration for the backend.
 
@@ -38,8 +38,8 @@ $ wget https://raw.githubusercontent.com/fairandsmart/right-consents/main/import
 $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e KEYCLOAK_IMPORT=/tmp/right-consents.json  -v keycloak-data:/opt/jboss/keycloak/standalone/data --mount type=bind,source=$PWD/right-consents.json,target=/tmp/right-consents.json jboss/keycloak:11.0.3
 ```
 
-:::info
- <b>Notice:</b> to delete keycloak data, stop the container then run `docker volume rm keycloak-data`
+:::tip
+To delete keycloak data, stop the container then run `docker volume rm keycloak-data`
 :::
 
 If you want to use a local instance instead of the docker one you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details.
@@ -53,7 +53,7 @@ $ docker run -p 1080:80 -p 1025:25 maildev/maildev
 ```
 
 :::info
- <b>Info:</b> You can also replace this component by any existing outgoing smtp server by changing configuration, or even a postifx local install if you are the kind of person running a local SMTP server on your computer.
+You can also replace this component by any existing outgoing smtp server by changing configuration, or even a postifx local install if you are the kind of person running a local SMTP server on your computer.
 :::
 
 ## Backend
@@ -104,15 +104,5 @@ $ nano src/main/resources/application.properties
 ```
 
 You can change some configuration aspects like port or public url if needed. A restart is sometimes needed for some configuration parameters where some of them apply directly if started in dev mode.    
-More information on the configuration options can be found in the [configuration reference]({{ site.baseurl }}/docs/config-ref/).
+More information on the configuration options can be found in the [configuration reference](../getting-started/config-ref).
 
-## What's next?
-
-In this guide we have seen how to build and start a local instance of Right Consents to gain more control about source code and maybe
-contribute by developing functionalities.
-
-In addition you could now check other guides like:
-
-- [Collecting Consent Overview]({% link _docs/101-overview-guide.md %})
-- [Design a Consent Form]({% link _docs/102-first-consent-form-guide.md %})
-- [Insert consent collect into existing HTML form]({% link _docs/104-collect-into-form-guide.md %})
