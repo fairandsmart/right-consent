@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/consents",
+  "id": "api/endpoints/consents",
+  "title": "Consents",
+  "description": "Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a ConsentContext.",
+  "source": "@site/docs/api/endpoints/consents.md",
+  "sourceDirName": "api/endpoints",
+  "slug": "/api/endpoints/consents",
+  "permalink": "/docs/api/endpoints/consents",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "consent-object",
+    "permalink": "/docs/api/endpoints/consents/consent-object"
+  },
+  "next": {
+    "title": "forms",
+    "permalink": "/docs/api/endpoints/forms"
+  }
+}

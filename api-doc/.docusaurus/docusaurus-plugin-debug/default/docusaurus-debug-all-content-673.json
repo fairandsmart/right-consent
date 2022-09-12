@@ -11,14 +11,326 @@
           "className": "docs-version-current",
           "path": "/docs",
           "tagsPath": "/docs/tags",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
-          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "D:\\Work\\right-consents\\api-doc\\sidebars.js",
           "contentPath": "D:\\Work\\right-consents\\api-doc\\docs",
           "contentPathLocalized": "D:\\Work\\right-consents\\api-doc\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
+            {
+              "unversionedId": "api/connecting",
+              "id": "api/connecting",
+              "title": "Connecting to the API",
+              "description": "For requests that require authentication, you will need to have your users authenticate via our OAuth mechanisms handled with Keycloak.",
+              "source": "@site/docs/api/connecting.md",
+              "sourceDirName": "api",
+              "slug": "/api/connecting",
+              "permalink": "/docs/api/connecting",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "next": {
+                "title": "Consents",
+                "permalink": "/docs/api/endpoints/consents/"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/consents/consent-object",
+              "id": "api/endpoints/consents/consent-object",
+              "title": "consent-object",
+              "description": "",
+              "source": "@site/docs/api/endpoints/consents/consent-object.md",
+              "sourceDirName": "api/endpoints/consents",
+              "slug": "/api/endpoints/consents/consent-object",
+              "permalink": "/docs/api/endpoints/consents/consent-object",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "Consents",
+                "permalink": "/docs/api/endpoints/consents/"
+              },
+              "next": {
+                "title": "forms",
+                "permalink": "/docs/api/endpoints/forms"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/consents/consents",
+              "id": "api/endpoints/consents/consents",
+              "title": "Consents",
+              "description": "Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a ConsentContext.",
+              "source": "@site/docs/api/endpoints/consents/consents.md",
+              "sourceDirName": "api/endpoints/consents",
+              "slug": "/api/endpoints/consents/",
+              "permalink": "/docs/api/endpoints/consents/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "Connecting to the API",
+                "permalink": "/docs/api/connecting"
+              },
+              "next": {
+                "title": "consent-object",
+                "permalink": "/docs/api/endpoints/consents/consent-object"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/forms",
+              "id": "api/endpoints/forms",
+              "title": "forms",
+              "description": "",
+              "source": "@site/docs/api/endpoints/forms.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/forms",
+              "permalink": "/docs/api/endpoints/forms",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "consent-object",
+                "permalink": "/docs/api/endpoints/consents/consent-object"
+              },
+              "next": {
+                "title": "keys",
+                "permalink": "/docs/api/endpoints/keys"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/keys",
+              "id": "api/endpoints/keys",
+              "title": "keys",
+              "description": "",
+              "source": "@site/docs/api/endpoints/keys.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/keys",
+              "permalink": "/docs/api/endpoints/keys",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "forms",
+                "permalink": "/docs/api/endpoints/forms"
+              },
+              "next": {
+                "title": "models",
+                "permalink": "/docs/api/endpoints/models"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/models",
+              "id": "api/endpoints/models",
+              "title": "models",
+              "description": "",
+              "source": "@site/docs/api/endpoints/models.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/models",
+              "permalink": "/docs/api/endpoints/models",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "keys",
+                "permalink": "/docs/api/endpoints/keys"
+              },
+              "next": {
+                "title": "peers",
+                "permalink": "/docs/api/endpoints/peers"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/peers",
+              "id": "api/endpoints/peers",
+              "title": "peers",
+              "description": "",
+              "source": "@site/docs/api/endpoints/peers.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/peers",
+              "permalink": "/docs/api/endpoints/peers",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "models",
+                "permalink": "/docs/api/endpoints/models"
+              },
+              "next": {
+                "title": "receipts",
+                "permalink": "/docs/api/endpoints/receipts"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/receipts",
+              "id": "api/endpoints/receipts",
+              "title": "receipts",
+              "description": "",
+              "source": "@site/docs/api/endpoints/receipts.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/receipts",
+              "permalink": "/docs/api/endpoints/receipts",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "peers",
+                "permalink": "/docs/api/endpoints/peers"
+              },
+              "next": {
+                "title": "records",
+                "permalink": "/docs/api/endpoints/records"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/records",
+              "id": "api/endpoints/records",
+              "title": "records",
+              "description": "",
+              "source": "@site/docs/api/endpoints/records.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/records",
+              "permalink": "/docs/api/endpoints/records",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "receipts",
+                "permalink": "/docs/api/endpoints/receipts"
+              },
+              "next": {
+                "title": "statistics",
+                "permalink": "/docs/api/endpoints/statistics"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/statistics",
+              "id": "api/endpoints/statistics",
+              "title": "statistics",
+              "description": "",
+              "source": "@site/docs/api/endpoints/statistics.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/statistics",
+              "permalink": "/docs/api/endpoints/statistics",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "records",
+                "permalink": "/docs/api/endpoints/records"
+              },
+              "next": {
+                "title": "subjects",
+                "permalink": "/docs/api/endpoints/subjects"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/subjects",
+              "id": "api/endpoints/subjects",
+              "title": "subjects",
+              "description": "",
+              "source": "@site/docs/api/endpoints/subjects.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/subjects",
+              "permalink": "/docs/api/endpoints/subjects",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "statistics",
+                "permalink": "/docs/api/endpoints/statistics"
+              },
+              "next": {
+                "title": "system",
+                "permalink": "/docs/api/endpoints/system"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/system",
+              "id": "api/endpoints/system",
+              "title": "system",
+              "description": "",
+              "source": "@site/docs/api/endpoints/system.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/system",
+              "permalink": "/docs/api/endpoints/system",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "subjects",
+                "permalink": "/docs/api/endpoints/subjects"
+              },
+              "next": {
+                "title": "tokens",
+                "permalink": "/docs/api/endpoints/tokens"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/tokens",
+              "id": "api/endpoints/tokens",
+              "title": "tokens",
+              "description": "",
+              "source": "@site/docs/api/endpoints/tokens.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/tokens",
+              "permalink": "/docs/api/endpoints/tokens",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "system",
+                "permalink": "/docs/api/endpoints/system"
+              },
+              "next": {
+                "title": "users",
+                "permalink": "/docs/api/endpoints/users"
+              }
+            },
+            {
+              "unversionedId": "api/endpoints/users",
+              "id": "api/endpoints/users",
+              "title": "users",
+              "description": "",
+              "source": "@site/docs/api/endpoints/users.md",
+              "sourceDirName": "api/endpoints",
+              "slug": "/api/endpoints/users",
+              "permalink": "/docs/api/endpoints/users",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "apiSidebar",
+              "previous": {
+                "title": "tokens",
+                "permalink": "/docs/api/endpoints/tokens"
+              }
+            },
             {
               "unversionedId": "concepts/consent-context-doc",
               "id": "concepts/consent-context-doc",
@@ -29,12 +341,11 @@
               "slug": "/concepts/consent-context-doc",
               "permalink": "/docs/concepts/consent-context-doc",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/201-consent-context-doc.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 201,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Consent Elements",
                 "permalink": "/docs/concepts/consent-elements-doc"
@@ -54,12 +365,11 @@
               "slug": "/concepts/consent-elements-doc",
               "permalink": "/docs/concepts/consent-elements-doc",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/200-consent-elements-doc.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 200,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Authentication",
                 "permalink": "/docs/getting-started/authentication-guide"
@@ -79,12 +389,11 @@
               "slug": "/getting-started/authentication-guide",
               "permalink": "/docs/getting-started/authentication-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/106-authentication-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 106,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Configuration",
                 "permalink": "/docs/getting-started/config-ref"
@@ -104,12 +413,11 @@
               "slug": "/getting-started/config-ref",
               "permalink": "/docs/getting-started/config-ref",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/212-config-ref.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 212,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Install from Sources",
                 "permalink": "/docs/getting-started/full-install-guide"
@@ -129,12 +437,11 @@
               "slug": "/getting-started/full-install-guide",
               "permalink": "/docs/getting-started/full-install-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/002-full-install-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Quick Start",
                 "permalink": "/docs/getting-started/start-server-guide"
@@ -154,12 +461,11 @@
               "slug": "/getting-started/start-server-guide",
               "permalink": "/docs/getting-started/start-server-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/001-start-server-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "next": {
                 "title": "Install from Sources",
                 "permalink": "/docs/getting-started/full-install-guide"
@@ -175,19 +481,18 @@
               "slug": "/guides/collect-into-form-guide",
               "permalink": "/docs/guides/collect-into-form-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/104-collect-into-form-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 104,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "API Discovery",
                 "permalink": "/docs/guides/discover-api-guide"
               },
               "next": {
-                "title": "API Documentation",
-                "permalink": "/docs/techdoc/api-doc"
+                "title": "Swagger",
+                "permalink": "/docs/techdoc/swagger"
               }
             },
             {
@@ -200,12 +505,11 @@
               "slug": "/guides/discover-api-guide",
               "permalink": "/docs/guides/discover-api-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/103-discover-api-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 103,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Creating a Consent Form",
                 "permalink": "/docs/guides/first-consent-form-guide"
@@ -225,12 +529,11 @@
               "slug": "/guides/first-consent-form-guide",
               "permalink": "/docs/guides/first-consent-form-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/102-first-consent-form-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 102,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Right Consents Overview",
                 "permalink": "/docs/guides/overview-guide"
@@ -250,7 +553,6 @@
               "slug": "/guides/manage-tos-mobile-app-guide",
               "permalink": "/docs/guides/manage-tos-mobile-app-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/105-manage-tos-mobile-app-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 105,
@@ -266,12 +568,11 @@
               "slug": "/guides/overview-guide",
               "permalink": "/docs/guides/overview-guide",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/guides/101-overview-guide.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 101,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Consent Context",
                 "permalink": "/docs/concepts/consent-context-doc"
@@ -279,31 +580,6 @@
               "next": {
                 "title": "Creating a Consent Form",
                 "permalink": "/docs/guides/first-consent-form-guide"
-              }
-            },
-            {
-              "unversionedId": "techdoc/api-doc",
-              "id": "techdoc/api-doc",
-              "title": "API Documentation",
-              "description": "Work in progress",
-              "source": "@site/docs/techdoc/202-api-doc.md",
-              "sourceDirName": "techdoc",
-              "slug": "/techdoc/api-doc",
-              "permalink": "/docs/techdoc/api-doc",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/202-api-doc.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 202,
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Collecting consent from an existing HTML form",
-                "permalink": "/docs/guides/collect-into-form-guide"
-              },
-              "next": {
-                "title": "Swagger",
-                "permalink": "/docs/techdoc/swagger"
               }
             },
             {
@@ -316,7 +592,6 @@
               "slug": "/techdoc/consent-context-doc",
               "permalink": "/docs/techdoc/consent-context-doc",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/201-consent-context-doc.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 201,
@@ -332,7 +607,6 @@
               "slug": "/techdoc/consent-elements-doc",
               "permalink": "/docs/techdoc/consent-elements-doc",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/200-consent-elements-doc.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 200,
@@ -348,12 +622,11 @@
               "slug": "/techdoc/sdk",
               "permalink": "/docs/techdoc/sdk",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/211-sdk.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 211,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
                 "title": "Swagger",
                 "permalink": "/docs/techdoc/swagger"
@@ -369,15 +642,14 @@
               "slug": "/techdoc/swagger",
               "permalink": "/docs/techdoc/swagger",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/210-swagger.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 210,
               "frontMatter": {},
-              "sidebar": "tutorialSidebar",
+              "sidebar": "docSidebar",
               "previous": {
-                "title": "API Documentation",
-                "permalink": "/docs/techdoc/api-doc"
+                "title": "Collecting consent from an existing HTML form",
+                "permalink": "/docs/guides/collect-into-form-guide"
               },
               "next": {
                 "title": "Consent.js",
@@ -387,7 +659,7 @@
           ],
           "drafts": [],
           "sidebars": {
-            "tutorialSidebar": [
+            "docSidebar": [
               {
                 "type": "category",
                 "label": "Getting started",
@@ -458,10 +730,6 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "techdoc/api-doc"
-                  },
-                  {
-                    "type": "doc",
                     "id": "techdoc/swagger"
                   },
                   {
@@ -471,6 +739,72 @@
                 ],
                 "collapsed": true,
                 "collapsible": true
+              }
+            ],
+            "apiSidebar": [
+              {
+                "type": "doc",
+                "id": "api/connecting"
+              },
+              {
+                "type": "category",
+                "label": "Consents",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/endpoints/consents/consent-object"
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "api/endpoints/consents/consents"
+                }
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/forms"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/keys"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/models"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/peers"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/receipts"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/records"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/statistics"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/subjects"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/system"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/tokens"
+              },
+              {
+                "type": "doc",
+                "id": "api/endpoints/users"
               }
             ]
           }
@@ -486,7 +820,6 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
             "source": "@site/blog/2021-08-26-welcome/index.md",
             "title": "Welcome",
             "description": "Docusaurus blogging features are powered by the blog plugin.",
@@ -548,7 +881,6 @@
           "id": "mdx-blog-post",
           "metadata": {
             "permalink": "/blog/mdx-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
             "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
             "title": "MDX Blog Post",
             "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
@@ -596,7 +928,6 @@
           "id": "long-blog-post",
           "metadata": {
             "permalink": "/blog/long-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
             "source": "@site/blog/2019-05-29-long-blog-post.md",
             "title": "Long Blog Post",
             "description": "This is the summary of a very long blog post,",
@@ -647,7 +978,6 @@
           "id": "first-blog-post",
           "metadata": {
             "permalink": "/blog/first-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
             "source": "@site/blog/2019-05-28-first-blog-post.md",
             "title": "First Blog Post",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
@@ -823,6 +1153,11 @@
   },
   "docusaurus-plugin-content-pages": {
     "default": [
+      {
+        "type": "jsx",
+        "permalink": "/ApiReference",
+        "source": "@site/src/pages/ApiReference.tsx"
+      },
       {
         "type": "jsx",
         "permalink": "/",

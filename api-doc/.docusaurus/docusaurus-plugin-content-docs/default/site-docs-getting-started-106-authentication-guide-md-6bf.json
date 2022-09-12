@@ -8,12 +8,11 @@
   "slug": "/getting-started/authentication-guide",
   "permalink": "/docs/getting-started/authentication-guide",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/106-authentication-guide.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 106,
   "frontMatter": {},
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docSidebar",
   "previous": {
     "title": "Configuration",
     "permalink": "/docs/getting-started/config-ref"

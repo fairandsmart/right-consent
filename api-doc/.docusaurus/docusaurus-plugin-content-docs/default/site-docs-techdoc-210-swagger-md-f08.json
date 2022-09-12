@@ -8,15 +8,14 @@
   "slug": "/techdoc/swagger",
   "permalink": "/docs/techdoc/swagger",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/techdoc/210-swagger.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 210,
   "frontMatter": {},
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docSidebar",
   "previous": {
-    "title": "API Documentation",
-    "permalink": "/docs/techdoc/api-doc"
+    "title": "Collecting consent from an existing HTML form",
+    "permalink": "/docs/guides/collect-into-form-guide"
   },
   "next": {
     "title": "Consent.js",

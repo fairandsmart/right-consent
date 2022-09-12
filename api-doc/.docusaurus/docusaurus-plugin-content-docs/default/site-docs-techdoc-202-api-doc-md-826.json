@@ -12,14 +12,5 @@
   "tags": [],
   "version": "current",
   "sidebarPosition": 202,
-  "frontMatter": {},
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Collecting consent from an existing HTML form",
-    "permalink": "/docs/guides/collect-into-form-guide"
-  },
-  "next": {
-    "title": "Swagger",
-    "permalink": "/docs/techdoc/swagger"
-  }
+  "frontMatter": {}
 }

@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/consents/consent-object",
+  "id": "api/endpoints/consents/consent-object",
+  "title": "consent-object",
+  "description": "",
+  "source": "@site/docs/api/endpoints/consents/consent-object.md",
+  "sourceDirName": "api/endpoints/consents",
+  "slug": "/api/endpoints/consents/consent-object",
+  "permalink": "/docs/api/endpoints/consents/consent-object",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "Consents",
+    "permalink": "/docs/api/endpoints/consents/"
+  },
+  "next": {
+    "title": "forms",
+    "permalink": "/docs/api/endpoints/forms"
+  }
+}

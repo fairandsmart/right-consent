@@ -27,6 +27,10 @@ const config = {
     locales: ['en', 'fr'],
   },
 
+  customFields: {
+    apiSpec: 'openapi.json',
+  },
+
   presets: [
     [
       'classic',
@@ -34,17 +38,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -69,7 +62,11 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: '/apiReference',
+            position: 'left',
+            label: 'API Reference',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -123,7 +120,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: ['properties'],
+        additionalLanguages: ['properties', 'uri'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },

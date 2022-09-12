@@ -8,12 +8,11 @@
   "slug": "/concepts/consent-context-doc",
   "permalink": "/docs/concepts/consent-context-doc",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/concepts/201-consent-context-doc.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 201,
   "frontMatter": {},
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docSidebar",
   "previous": {
     "title": "Consent Elements",
     "permalink": "/docs/concepts/consent-elements-doc"

@@ -22,17 +22,15 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "customFields": {
+    "apiSpec": "openapi.json"
+  },
   "presets": [
     [
       "classic",
       {
         "docs": {
-          "sidebarPath": "D:\\Work\\right-consents\\api-doc\\sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
-        },
-        "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "D:\\Work\\right-consents\\api-doc\\sidebars.js"
         },
         "theme": {
           "customCss": "D:\\Work\\right-consents\\api-doc\\src\\css\\custom.css"
@@ -55,9 +53,9 @@ export default {
           "label": "Docs"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
+          "href": "/apiReference",
+          "position": "left",
+          "label": "API Reference"
         },
         {
           "href": "https://github.com/facebook/docusaurus",
@@ -114,7 +112,8 @@ export default {
     },
     "prism": {
       "additionalLanguages": [
-        "properties"
+        "properties",
+        "uri"
       ],
       "theme": {
         "plain": {
@@ -341,7 +340,6 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
   "plugins": [],
   "themes": [],
   "scripts": [],

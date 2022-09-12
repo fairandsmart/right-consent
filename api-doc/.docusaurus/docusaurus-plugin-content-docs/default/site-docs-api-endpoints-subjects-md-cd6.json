@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/subjects",
+  "id": "api/endpoints/subjects",
+  "title": "subjects",
+  "description": "",
+  "source": "@site/docs/api/endpoints/subjects.md",
+  "sourceDirName": "api/endpoints",
+  "slug": "/api/endpoints/subjects",
+  "permalink": "/docs/api/endpoints/subjects",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "statistics",
+    "permalink": "/docs/api/endpoints/statistics"
+  },
+  "next": {
+    "title": "system",
+    "permalink": "/docs/api/endpoints/system"
+  }
+}

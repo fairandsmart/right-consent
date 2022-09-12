@@ -11,49 +11,119 @@
           "mainDocId": "getting-started/start-server-guide",
           "docs": [
             {
+              "id": "api/connecting",
+              "path": "/docs/api/connecting",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/consents/consent-object",
+              "path": "/docs/api/endpoints/consents/consent-object",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/consents/consents",
+              "path": "/docs/api/endpoints/consents/",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/forms",
+              "path": "/docs/api/endpoints/forms",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/keys",
+              "path": "/docs/api/endpoints/keys",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/models",
+              "path": "/docs/api/endpoints/models",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/peers",
+              "path": "/docs/api/endpoints/peers",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/receipts",
+              "path": "/docs/api/endpoints/receipts",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/records",
+              "path": "/docs/api/endpoints/records",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/statistics",
+              "path": "/docs/api/endpoints/statistics",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/subjects",
+              "path": "/docs/api/endpoints/subjects",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/system",
+              "path": "/docs/api/endpoints/system",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/tokens",
+              "path": "/docs/api/endpoints/tokens",
+              "sidebar": "apiSidebar"
+            },
+            {
+              "id": "api/endpoints/users",
+              "path": "/docs/api/endpoints/users",
+              "sidebar": "apiSidebar"
+            },
+            {
               "id": "concepts/consent-context-doc",
               "path": "/docs/concepts/consent-context-doc",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "concepts/consent-elements-doc",
               "path": "/docs/concepts/consent-elements-doc",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "getting-started/authentication-guide",
               "path": "/docs/getting-started/authentication-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "getting-started/config-ref",
               "path": "/docs/getting-started/config-ref",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "getting-started/full-install-guide",
               "path": "/docs/getting-started/full-install-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "getting-started/start-server-guide",
               "path": "/docs/getting-started/start-server-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "guides/collect-into-form-guide",
               "path": "/docs/guides/collect-into-form-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "guides/discover-api-guide",
               "path": "/docs/guides/discover-api-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "guides/first-consent-form-guide",
               "path": "/docs/guides/first-consent-form-guide",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "guides/manage-tos-mobile-app-guide",
@@ -62,12 +132,7 @@
             {
               "id": "guides/overview-guide",
               "path": "/docs/guides/overview-guide",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "techdoc/api-doc",
-              "path": "/docs/techdoc/api-doc",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "techdoc/consent-context-doc",
@@ -80,20 +145,26 @@
             {
               "id": "techdoc/sdk",
               "path": "/docs/techdoc/sdk",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             },
             {
               "id": "techdoc/swagger",
               "path": "/docs/techdoc/swagger",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docSidebar"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "docSidebar": {
               "link": {
                 "path": "/docs/getting-started/start-server-guide",
                 "label": "getting-started/start-server-guide"
+              }
+            },
+            "apiSidebar": {
+              "link": {
+                "path": "/docs/api/connecting",
+                "label": "api/connecting"
               }
             }
           }

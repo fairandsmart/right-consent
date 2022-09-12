@@ -38,6 +38,11 @@ export default [
     exact: true
   },
   {
+    path: '/ApiReference',
+    component: ComponentCreator('/ApiReference', 'ca7'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', '79b'),
     exact: true
@@ -99,61 +104,145 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '49d'),
+    component: ComponentCreator('/docs', '090'),
     routes: [
       {
-        path: '/docs/concepts/consent-context-doc',
-        component: ComponentCreator('/docs/concepts/consent-context-doc', '5b0'),
+        path: '/docs/api/connecting',
+        component: ComponentCreator('/docs/api/connecting', '3d8'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/consents/',
+        component: ComponentCreator('/docs/api/endpoints/consents/', '321'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/consents/consent-object',
+        component: ComponentCreator('/docs/api/endpoints/consents/consent-object', 'b82'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/forms',
+        component: ComponentCreator('/docs/api/endpoints/forms', 'b25'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/keys',
+        component: ComponentCreator('/docs/api/endpoints/keys', '486'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/models',
+        component: ComponentCreator('/docs/api/endpoints/models', 'd9b'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/peers',
+        component: ComponentCreator('/docs/api/endpoints/peers', '324'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/receipts',
+        component: ComponentCreator('/docs/api/endpoints/receipts', '9e1'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/records',
+        component: ComponentCreator('/docs/api/endpoints/records', '580'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/statistics',
+        component: ComponentCreator('/docs/api/endpoints/statistics', 'e03'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/subjects',
+        component: ComponentCreator('/docs/api/endpoints/subjects', '3f1'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/system',
+        component: ComponentCreator('/docs/api/endpoints/system', '92c'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/tokens',
+        component: ComponentCreator('/docs/api/endpoints/tokens', '011'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/api/endpoints/users',
+        component: ComponentCreator('/docs/api/endpoints/users', 'ebd'),
+        exact: true,
+        sidebar: "apiSidebar"
+      },
+      {
+        path: '/docs/concepts/consent-context-doc',
+        component: ComponentCreator('/docs/concepts/consent-context-doc', 'e1f'),
+        exact: true,
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/concepts/consent-elements-doc',
-        component: ComponentCreator('/docs/concepts/consent-elements-doc', '3b3'),
+        component: ComponentCreator('/docs/concepts/consent-elements-doc', '4a3'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/getting-started/authentication-guide',
-        component: ComponentCreator('/docs/getting-started/authentication-guide', 'fb4'),
+        component: ComponentCreator('/docs/getting-started/authentication-guide', 'b70'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/getting-started/config-ref',
-        component: ComponentCreator('/docs/getting-started/config-ref', '5b4'),
+        component: ComponentCreator('/docs/getting-started/config-ref', '83c'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/getting-started/full-install-guide',
-        component: ComponentCreator('/docs/getting-started/full-install-guide', '644'),
+        component: ComponentCreator('/docs/getting-started/full-install-guide', '012'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/getting-started/start-server-guide',
-        component: ComponentCreator('/docs/getting-started/start-server-guide', '207'),
+        component: ComponentCreator('/docs/getting-started/start-server-guide', '93f'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/guides/collect-into-form-guide',
-        component: ComponentCreator('/docs/guides/collect-into-form-guide', '019'),
+        component: ComponentCreator('/docs/guides/collect-into-form-guide', '369'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/guides/discover-api-guide',
-        component: ComponentCreator('/docs/guides/discover-api-guide', 'ff1'),
+        component: ComponentCreator('/docs/guides/discover-api-guide', '0b5'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/guides/first-consent-form-guide',
-        component: ComponentCreator('/docs/guides/first-consent-form-guide', 'f26'),
+        component: ComponentCreator('/docs/guides/first-consent-form-guide', 'fee'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/guides/manage-tos-mobile-app-guide',
@@ -162,15 +251,9 @@ export default [
       },
       {
         path: '/docs/guides/overview-guide',
-        component: ComponentCreator('/docs/guides/overview-guide', '24b'),
+        component: ComponentCreator('/docs/guides/overview-guide', '79c'),
         exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/techdoc/api-doc',
-        component: ComponentCreator('/docs/techdoc/api-doc', '3b1'),
-        exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/techdoc/consent-context-doc',
@@ -184,15 +267,15 @@ export default [
       },
       {
         path: '/docs/techdoc/sdk',
-        component: ComponentCreator('/docs/techdoc/sdk', '1e0'),
+        component: ComponentCreator('/docs/techdoc/sdk', '506'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       },
       {
         path: '/docs/techdoc/swagger',
-        component: ComponentCreator('/docs/techdoc/swagger', '6f5'),
+        component: ComponentCreator('/docs/techdoc/swagger', '282'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docSidebar"
       }
     ]
   },
