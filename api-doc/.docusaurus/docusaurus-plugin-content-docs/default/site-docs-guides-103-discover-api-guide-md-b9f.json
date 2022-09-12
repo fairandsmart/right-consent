@@ -1,0 +1,24 @@
+{
+  "unversionedId": "guides/discover-api-guide",
+  "id": "guides/discover-api-guide",
+  "title": "API Discovery",
+  "description": "Learn how to use Right Consents API for basic operations:",
+  "source": "@site/docs/guides/103-discover-api-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/discover-api-guide",
+  "permalink": "/docs/guides/discover-api-guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 103,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Creating a Consent Form",
+    "permalink": "/docs/guides/first-consent-form-guide"
+  },
+  "next": {
+    "title": "Collecting consent from an existing HTML form",
+    "permalink": "/docs/guides/collect-into-form-guide"
+  }
+}

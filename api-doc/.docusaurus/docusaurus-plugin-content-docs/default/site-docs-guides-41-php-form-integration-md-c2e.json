@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Guides/php-form-integration",
+  "id": "Guides/php-form-integration",
+  "title": "Integrating to PHP forms",
+  "description": "TODO",
+  "source": "@site/docs/Guides/41-php-form-integration.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/php-form-integration",
+  "permalink": "/docs/Guides/php-form-integration",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/41-php-form-integration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 41,
+  "frontMatter": {
+    "title": "Integrating to PHP forms",
+    "permalink": "/guides/php-form-integration/",
+    "toc": false
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Integrating to HTML forms",
+    "permalink": "/docs/Guides/html-form-integration"
+  },
+  "next": {
+    "title": "User-centered querying",
+    "permalink": "/docs/Guides/user-queries"
+  }
+}

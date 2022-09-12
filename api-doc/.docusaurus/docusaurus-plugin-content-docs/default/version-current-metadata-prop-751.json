@@ -1,0 +1,380 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "docSidebar": [
+      {
+        "type": "category",
+        "label": "Getting started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Quick Start",
+            "href": "/docs/getting-started/start-server-guide",
+            "docId": "getting-started/start-server-guide"
+          },
+          {
+            "type": "link",
+            "label": "Install from Sources",
+            "href": "/docs/getting-started/full-install-guide",
+            "docId": "getting-started/full-install-guide"
+          },
+          {
+            "type": "link",
+            "label": "Configuration",
+            "href": "/docs/getting-started/config-ref",
+            "docId": "getting-started/config-ref"
+          },
+          {
+            "type": "link",
+            "label": "Authentication",
+            "href": "/docs/getting-started/authentication-guide",
+            "docId": "getting-started/authentication-guide"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Concepts & Terminology",
+        "items": [
+          {
+            "type": "link",
+            "label": "Consent Elements",
+            "href": "/docs/concepts/consent-elements-doc",
+            "docId": "concepts/consent-elements-doc"
+          },
+          {
+            "type": "link",
+            "label": "Consent Context",
+            "href": "/docs/concepts/consent-context-doc",
+            "docId": "concepts/consent-context-doc"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Guides",
+        "items": [
+          {
+            "type": "link",
+            "label": "Right Consents Overview",
+            "href": "/docs/guides/overview-guide",
+            "docId": "guides/overview-guide"
+          },
+          {
+            "type": "link",
+            "label": "Creating a Consent Form",
+            "href": "/docs/guides/first-consent-form-guide",
+            "docId": "guides/first-consent-form-guide"
+          },
+          {
+            "type": "link",
+            "label": "API Discovery",
+            "href": "/docs/guides/discover-api-guide",
+            "docId": "guides/discover-api-guide"
+          },
+          {
+            "type": "link",
+            "label": "Collecting consent from an existing HTML form",
+            "href": "/docs/guides/collect-into-form-guide",
+            "docId": "guides/collect-into-form-guide"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Technical Documentation",
+        "items": [
+          {
+            "type": "link",
+            "label": "Swagger",
+            "href": "/docs/techdoc/swagger",
+            "docId": "techdoc/swagger"
+          },
+          {
+            "type": "link",
+            "label": "Consent.js",
+            "href": "/docs/techdoc/sdk",
+            "docId": "techdoc/sdk"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ],
+    "apiSidebar": [
+      {
+        "type": "link",
+        "label": "Connecting to the API",
+        "href": "/docs/api/connecting",
+        "docId": "api/connecting"
+      },
+      {
+        "type": "category",
+        "label": "Consents",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "consent-object",
+            "href": "/docs/api/endpoints/consents/consent-object",
+            "docId": "api/endpoints/consents/consent-object"
+          }
+        ],
+        "href": "/docs/api/endpoints/consents/"
+      },
+      {
+        "type": "link",
+        "label": "forms",
+        "href": "/docs/api/endpoints/forms",
+        "docId": "api/endpoints/forms"
+      },
+      {
+        "type": "link",
+        "label": "keys",
+        "href": "/docs/api/endpoints/keys",
+        "docId": "api/endpoints/keys"
+      },
+      {
+        "type": "link",
+        "label": "models",
+        "href": "/docs/api/endpoints/models",
+        "docId": "api/endpoints/models"
+      },
+      {
+        "type": "link",
+        "label": "peers",
+        "href": "/docs/api/endpoints/peers",
+        "docId": "api/endpoints/peers"
+      },
+      {
+        "type": "link",
+        "label": "receipts",
+        "href": "/docs/api/endpoints/receipts",
+        "docId": "api/endpoints/receipts"
+      },
+      {
+        "type": "link",
+        "label": "records",
+        "href": "/docs/api/endpoints/records",
+        "docId": "api/endpoints/records"
+      },
+      {
+        "type": "link",
+        "label": "statistics",
+        "href": "/docs/api/endpoints/statistics",
+        "docId": "api/endpoints/statistics"
+      },
+      {
+        "type": "link",
+        "label": "subjects",
+        "href": "/docs/api/endpoints/subjects",
+        "docId": "api/endpoints/subjects"
+      },
+      {
+        "type": "link",
+        "label": "system",
+        "href": "/docs/api/endpoints/system",
+        "docId": "api/endpoints/system"
+      },
+      {
+        "type": "link",
+        "label": "tokens",
+        "href": "/docs/api/endpoints/tokens",
+        "docId": "api/endpoints/tokens"
+      },
+      {
+        "type": "link",
+        "label": "users",
+        "href": "/docs/api/endpoints/users",
+        "docId": "api/endpoints/users"
+      }
+    ]
+  },
+  "docs": {
+    "api/connecting": {
+      "id": "api/connecting",
+      "title": "Connecting to the API",
+      "description": "For requests that require authentication, you will need to have your users authenticate via our OAuth mechanisms handled with Keycloak.",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/consents/consent-object": {
+      "id": "api/endpoints/consents/consent-object",
+      "title": "consent-object",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/consents/consents": {
+      "id": "api/endpoints/consents/consents",
+      "title": "Consents",
+      "description": "Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a ConsentContext.",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/forms": {
+      "id": "api/endpoints/forms",
+      "title": "forms",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/keys": {
+      "id": "api/endpoints/keys",
+      "title": "keys",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/models": {
+      "id": "api/endpoints/models",
+      "title": "models",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/peers": {
+      "id": "api/endpoints/peers",
+      "title": "peers",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/receipts": {
+      "id": "api/endpoints/receipts",
+      "title": "receipts",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/records": {
+      "id": "api/endpoints/records",
+      "title": "records",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/statistics": {
+      "id": "api/endpoints/statistics",
+      "title": "statistics",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/subjects": {
+      "id": "api/endpoints/subjects",
+      "title": "subjects",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/system": {
+      "id": "api/endpoints/system",
+      "title": "system",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/tokens": {
+      "id": "api/endpoints/tokens",
+      "title": "tokens",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/endpoints/users": {
+      "id": "api/endpoints/users",
+      "title": "users",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "concepts/consent-context-doc": {
+      "id": "concepts/consent-context-doc",
+      "title": "Consent Context",
+      "description": "Work in progress",
+      "sidebar": "docSidebar"
+    },
+    "concepts/consent-elements-doc": {
+      "id": "concepts/consent-elements-doc",
+      "title": "Consent Elements",
+      "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+      "sidebar": "docSidebar"
+    },
+    "getting-started/authentication-guide": {
+      "id": "getting-started/authentication-guide",
+      "title": "Authentication",
+      "description": "",
+      "sidebar": "docSidebar"
+    },
+    "getting-started/config-ref": {
+      "id": "getting-started/config-ref",
+      "title": "Configuration",
+      "description": "Backend configuration is located in a specific file:",
+      "sidebar": "docSidebar"
+    },
+    "getting-started/full-install-guide": {
+      "id": "getting-started/full-install-guide",
+      "title": "Install from Sources",
+      "description": "Learn how to build sources to start your own Right Consent server locally. This guide covers:",
+      "sidebar": "docSidebar"
+    },
+    "getting-started/start-server-guide": {
+      "id": "getting-started/start-server-guide",
+      "title": "Quick Start",
+      "description": "Preconditions",
+      "sidebar": "docSidebar"
+    },
+    "guides/collect-into-form-guide": {
+      "id": "guides/collect-into-form-guide",
+      "title": "Collecting consent from an existing HTML form",
+      "description": "Learn how to integrate a Right Consents Collect Form in an existing HTML Form that handle personal information.",
+      "sidebar": "docSidebar"
+    },
+    "guides/discover-api-guide": {
+      "id": "guides/discover-api-guide",
+      "title": "API Discovery",
+      "description": "Learn how to use Right Consents API for basic operations:",
+      "sidebar": "docSidebar"
+    },
+    "guides/first-consent-form-guide": {
+      "id": "guides/first-consent-form-guide",
+      "title": "Creating a Consent Form",
+      "description": "First Design of a Consent Form with Right Consents",
+      "sidebar": "docSidebar"
+    },
+    "guides/manage-tos-mobile-app-guide": {
+      "id": "guides/manage-tos-mobile-app-guide",
+      "title": "Manage Terms Of Services in mobile app using Right Consents",
+      "description": ""
+    },
+    "guides/overview-guide": {
+      "id": "guides/overview-guide",
+      "title": "Right Consents Overview",
+      "description": "Learn the main concepts of consent collect in Right Consents and how to start using it.",
+      "sidebar": "docSidebar"
+    },
+    "techdoc/consent-context-doc": {
+      "id": "techdoc/consent-context-doc",
+      "title": "Consent Context Documentation",
+      "description": ""
+    },
+    "techdoc/consent-elements-doc": {
+      "id": "techdoc/consent-elements-doc",
+      "title": "Consent Elements Documentation",
+      "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms."
+    },
+    "techdoc/sdk": {
+      "id": "techdoc/sdk",
+      "title": "Consent.js",
+      "description": "This documentation covers all the features provided in the consent.js file. If you want to learn more about our Right Consents solution, please refer to the appropriate documentation.",
+      "sidebar": "docSidebar"
+    },
+    "techdoc/swagger": {
+      "id": "techdoc/swagger",
+      "title": "Swagger",
+      "description": "Right Consents backend is available as a REST API. The complete API documentation is generated by the backend itself using swagger and open api standards. API is served by the backend itselft and is always sync with the running version.",
+      "sidebar": "docSidebar"
+    }
+  }
+}

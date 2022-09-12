@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/peers",
+  "id": "api/endpoints/peers",
+  "title": "peers",
+  "description": "",
+  "source": "@site/docs/api/endpoints/peers.md",
+  "sourceDirName": "api/endpoints",
+  "slug": "/api/endpoints/peers",
+  "permalink": "/docs/api/endpoints/peers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "models",
+    "permalink": "/docs/api/endpoints/models"
+  },
+  "next": {
+    "title": "receipts",
+    "permalink": "/docs/api/endpoints/receipts"
+  }
+}

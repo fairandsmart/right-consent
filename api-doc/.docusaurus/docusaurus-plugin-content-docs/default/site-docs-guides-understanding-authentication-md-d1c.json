@@ -1,0 +1,15 @@
+{
+  "unversionedId": "Guides/understanding-authentication",
+  "id": "Guides/understanding-authentication",
+  "title": "understanding-authentication",
+  "description": "",
+  "source": "@site/docs/Guides/understanding-authentication.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/understanding-authentication",
+  "permalink": "/docs/Guides/understanding-authentication",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/understanding-authentication.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "Guides/user-queries",
+  "id": "Guides/user-queries",
+  "title": "User-centered querying",
+  "description": "How can I query consents related to a user?",
+  "source": "@site/docs/Guides/80-user-queries.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/user-queries",
+  "permalink": "/docs/Guides/user-queries",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/80-user-queries.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 80,
+  "frontMatter": {
+    "title": "User-centered querying",
+    "permalink": "/guides/user-queries/",
+    "excerpt": "How to query consents related to a user",
+    "toc": false
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Integrating to PHP forms",
+    "permalink": "/docs/Guides/php-form-integration"
+  },
+  "next": {
+    "title": "Theming your forms",
+    "permalink": "/docs/Guides/themes"
+  }
+}

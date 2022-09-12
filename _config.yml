@@ -64,18 +64,6 @@ whitelist:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#    - .idea/
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 # Reading Files
 include:
@@ -86,6 +74,7 @@ exclude:
   - Gemfile
   - Rakefile
   - images-source
+  - api-doc/
 keep_files:
   - .git
   - .svn

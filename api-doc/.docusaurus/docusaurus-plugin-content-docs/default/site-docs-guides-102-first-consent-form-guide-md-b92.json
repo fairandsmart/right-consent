@@ -1,0 +1,24 @@
+{
+  "unversionedId": "guides/first-consent-form-guide",
+  "id": "guides/first-consent-form-guide",
+  "title": "Creating a Consent Form",
+  "description": "First Design of a Consent Form with Right Consents",
+  "source": "@site/docs/guides/102-first-consent-form-guide.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/first-consent-form-guide",
+  "permalink": "/docs/guides/first-consent-form-guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 102,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Right Consents Overview",
+    "permalink": "/docs/guides/overview-guide"
+  },
+  "next": {
+    "title": "API Discovery",
+    "permalink": "/docs/guides/discover-api-guide"
+  }
+}

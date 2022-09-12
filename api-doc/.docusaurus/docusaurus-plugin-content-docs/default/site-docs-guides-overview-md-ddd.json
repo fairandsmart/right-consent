@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Guides/overview",
+  "id": "Guides/overview",
+  "title": "Model Types Overview",
+  "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+  "source": "@site/docs/Guides/overview.md",
+  "sourceDirName": "Guides",
+  "slug": "/Guides/overview",
+  "permalink": "/docs/Guides/overview",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Guides/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Authentication",
+    "permalink": "/docs/Quick-Start/authentication"
+  },
+  "next": {
+    "title": "creating-consent-forms",
+    "permalink": "/docs/Guides/creating-consent-forms"
+  }
+}

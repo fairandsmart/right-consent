@@ -1,0 +1,15 @@
+{
+  "unversionedId": "techdoc/consent-context-doc",
+  "id": "techdoc/consent-context-doc",
+  "title": "Consent Context Documentation",
+  "description": "",
+  "source": "@site/docs/techdoc/201-consent-context-doc.md",
+  "sourceDirName": "techdoc",
+  "slug": "/techdoc/consent-context-doc",
+  "permalink": "/docs/techdoc/consent-context-doc",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 201,
+  "frontMatter": {}
+}

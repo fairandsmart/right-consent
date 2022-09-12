@@ -18,3 +18,5 @@ end
 gem "rake"
 gem "webrick"
 #ruby "2.4.2"
+
+gem "faraday-retry", "~> 2.0"

@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/models",
+  "id": "api/endpoints/models",
+  "title": "models",
+  "description": "",
+  "source": "@site/docs/api/endpoints/models.md",
+  "sourceDirName": "api/endpoints",
+  "slug": "/api/endpoints/models",
+  "permalink": "/docs/api/endpoints/models",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "keys",
+    "permalink": "/docs/api/endpoints/keys"
+  },
+  "next": {
+    "title": "peers",
+    "permalink": "/docs/api/endpoints/peers"
+  }
+}

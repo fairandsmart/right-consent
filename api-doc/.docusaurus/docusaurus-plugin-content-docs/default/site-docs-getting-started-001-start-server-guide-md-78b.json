@@ -1,0 +1,20 @@
+{
+  "unversionedId": "getting-started/start-server-guide",
+  "id": "getting-started/start-server-guide",
+  "title": "Quick Start",
+  "description": "Preconditions",
+  "source": "@site/docs/getting-started/001-start-server-guide.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/start-server-guide",
+  "permalink": "/docs/getting-started/start-server-guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "next": {
+    "title": "Install from Sources",
+    "permalink": "/docs/getting-started/full-install-guide"
+  }
+}

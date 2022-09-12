@@ -1,0 +1,15 @@
+{
+  "unversionedId": "techdoc/consent-elements-doc",
+  "id": "techdoc/consent-elements-doc",
+  "title": "Consent Elements Documentation",
+  "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+  "source": "@site/docs/techdoc/200-consent-elements-doc.md",
+  "sourceDirName": "techdoc",
+  "slug": "/techdoc/consent-elements-doc",
+  "permalink": "/docs/techdoc/consent-elements-doc",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 200,
+  "frontMatter": {}
+}

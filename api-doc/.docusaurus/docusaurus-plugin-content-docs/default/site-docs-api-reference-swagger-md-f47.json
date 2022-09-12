@@ -1,0 +1,20 @@
+{
+  "unversionedId": "API-Reference/swagger",
+  "id": "API-Reference/swagger",
+  "title": "swagger",
+  "description": "",
+  "source": "@site/docs/API-Reference/swagger.md",
+  "sourceDirName": "API-Reference",
+  "slug": "/API-Reference/swagger",
+  "permalink": "/docs/API-Reference/swagger",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/API-Reference/swagger.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Integration-examples",
+    "permalink": "/docs/Developer Kit/Integration-examples"
+  }
+}

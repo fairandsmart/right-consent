@@ -1,0 +1,24 @@
+{
+  "unversionedId": "getting-started/authentication-guide",
+  "id": "getting-started/authentication-guide",
+  "title": "Authentication",
+  "description": "",
+  "source": "@site/docs/getting-started/106-authentication-guide.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/authentication-guide",
+  "permalink": "/docs/getting-started/authentication-guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 106,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/getting-started/config-ref"
+  },
+  "next": {
+    "title": "Consent Elements",
+    "permalink": "/docs/concepts/consent-elements-doc"
+  }
+}

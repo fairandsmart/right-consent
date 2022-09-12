@@ -1,0 +1,23 @@
+{
+  "unversionedId": "api/endpoints/records",
+  "id": "api/endpoints/records",
+  "title": "records",
+  "description": "",
+  "source": "@site/docs/api/endpoints/records.md",
+  "sourceDirName": "api/endpoints",
+  "slug": "/api/endpoints/records",
+  "permalink": "/docs/api/endpoints/records",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "receipts",
+    "permalink": "/docs/api/endpoints/receipts"
+  },
+  "next": {
+    "title": "statistics",
+    "permalink": "/docs/api/endpoints/statistics"
+  }
+}
