@@ -1,0 +1,20 @@
+{
+  "unversionedId": "concepts/consent-elements-doc",
+  "id": "concepts/consent-elements-doc",
+  "title": "Consent Elements",
+  "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
+  "source": "@site/docs/02-concepts/200-consent-elements-doc.md",
+  "sourceDirName": "02-concepts",
+  "slug": "/concepts/consent-elements-doc",
+  "permalink": "/docs/concepts/consent-elements-doc",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 200,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "next": {
+    "title": "Consent Context",
+    "permalink": "/docs/concepts/consent-context-doc"
+  }
+}

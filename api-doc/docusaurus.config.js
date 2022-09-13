@@ -58,7 +58,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'getting-started/start-server-guide',
+            docId: 'getting-started/quick-start-guide',
             position: 'left',
             label: 'Docs',
           },
@@ -82,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Quick Start',
-                to: '/docs/Quick-Start/right-consents',
+                to: '/docs/getting-started/quick-start-guide',
               },
             ],
           },

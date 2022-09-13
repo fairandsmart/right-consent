@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/statistics",
+  "id": "api/endpoints/statistics",
+  "title": "statistics",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/statistics.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/statistics",
+  "permalink": "/docs/api/endpoints/statistics",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

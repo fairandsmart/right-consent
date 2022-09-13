@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/system",
+  "id": "api/endpoints/system",
+  "title": "system",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/system.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/system",
+  "permalink": "/docs/api/endpoints/system",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

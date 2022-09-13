@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/forms",
+  "id": "api/endpoints/forms",
+  "title": "forms",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/forms.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/forms",
+  "permalink": "/docs/api/endpoints/forms",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

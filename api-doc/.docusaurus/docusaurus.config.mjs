@@ -30,10 +30,10 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "D:\\Work\\right-consents\\api-doc\\sidebars.js"
+          "sidebarPath": "/home/jerome/Work/cm/right-consents-gh-pages/api-doc/sidebars.js"
         },
         "theme": {
-          "customCss": "D:\\Work\\right-consents\\api-doc\\src\\css\\custom.css"
+          "customCss": "/home/jerome/Work/cm/right-consents-gh-pages/api-doc/src/css/custom.css"
         }
       }
     ]
@@ -48,7 +48,7 @@ export default {
       "items": [
         {
           "type": "doc",
-          "docId": "getting-started/start-server-guide",
+          "docId": "getting-started/quick-start-guide",
           "position": "left",
           "label": "Docs"
         },
@@ -73,7 +73,7 @@ export default {
           "items": [
             {
               "label": "Quick Start",
-              "to": "/docs/Quick-Start/right-consents"
+              "to": "/docs/getting-started/quick-start-guide"
             }
           ]
         },

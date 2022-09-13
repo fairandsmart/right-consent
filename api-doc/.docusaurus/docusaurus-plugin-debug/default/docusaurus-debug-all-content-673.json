@@ -13,331 +13,214 @@
           "tagsPath": "/docs/tags",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "D:\\Work\\right-consents\\api-doc\\sidebars.js",
-          "contentPath": "D:\\Work\\right-consents\\api-doc\\docs",
-          "contentPathLocalized": "D:\\Work\\right-consents\\api-doc\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "/home/jerome/Work/cm/right-consents-gh-pages/api-doc/sidebars.js",
+          "contentPath": "/home/jerome/Work/cm/right-consents-gh-pages/api-doc/docs",
+          "contentPathLocalized": "/home/jerome/Work/cm/right-consents-gh-pages/api-doc/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "api/connecting",
               "id": "api/connecting",
               "title": "Connecting to the API",
               "description": "For requests that require authentication, you will need to have your users authenticate via our OAuth mechanisms handled with Keycloak.",
-              "source": "@site/docs/api/connecting.md",
-              "sourceDirName": "api",
+              "source": "@site/docs/05-api/connecting.md",
+              "sourceDirName": "05-api",
               "slug": "/api/connecting",
               "permalink": "/docs/api/connecting",
               "draft": false,
               "tags": [],
               "version": "current",
               "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "next": {
-                "title": "Consents",
-                "permalink": "/docs/api/endpoints/consents/"
-              }
+              "sidebar": "apiSidebar"
             },
             {
               "unversionedId": "api/endpoints/consents/consent-object",
               "id": "api/endpoints/consents/consent-object",
               "title": "consent-object",
               "description": "",
-              "source": "@site/docs/api/endpoints/consents/consent-object.md",
-              "sourceDirName": "api/endpoints/consents",
+              "source": "@site/docs/05-api/endpoints/consents/consent-object.md",
+              "sourceDirName": "05-api/endpoints/consents",
               "slug": "/api/endpoints/consents/consent-object",
               "permalink": "/docs/api/endpoints/consents/consent-object",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "Consents",
-                "permalink": "/docs/api/endpoints/consents/"
-              },
-              "next": {
-                "title": "forms",
-                "permalink": "/docs/api/endpoints/forms"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/consents/consents",
               "id": "api/endpoints/consents/consents",
               "title": "Consents",
               "description": "Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a ConsentContext.",
-              "source": "@site/docs/api/endpoints/consents/consents.md",
-              "sourceDirName": "api/endpoints/consents",
+              "source": "@site/docs/05-api/endpoints/consents/consents.md",
+              "sourceDirName": "05-api/endpoints/consents",
               "slug": "/api/endpoints/consents/",
               "permalink": "/docs/api/endpoints/consents/",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "Connecting to the API",
-                "permalink": "/docs/api/connecting"
-              },
-              "next": {
-                "title": "consent-object",
-                "permalink": "/docs/api/endpoints/consents/consent-object"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/forms",
               "id": "api/endpoints/forms",
               "title": "forms",
               "description": "",
-              "source": "@site/docs/api/endpoints/forms.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/forms.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/forms",
               "permalink": "/docs/api/endpoints/forms",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "consent-object",
-                "permalink": "/docs/api/endpoints/consents/consent-object"
-              },
-              "next": {
-                "title": "keys",
-                "permalink": "/docs/api/endpoints/keys"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/keys",
               "id": "api/endpoints/keys",
               "title": "keys",
               "description": "",
-              "source": "@site/docs/api/endpoints/keys.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/keys.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/keys",
               "permalink": "/docs/api/endpoints/keys",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "forms",
-                "permalink": "/docs/api/endpoints/forms"
-              },
-              "next": {
-                "title": "models",
-                "permalink": "/docs/api/endpoints/models"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/models",
               "id": "api/endpoints/models",
               "title": "models",
               "description": "",
-              "source": "@site/docs/api/endpoints/models.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/models.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/models",
               "permalink": "/docs/api/endpoints/models",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "keys",
-                "permalink": "/docs/api/endpoints/keys"
-              },
-              "next": {
-                "title": "peers",
-                "permalink": "/docs/api/endpoints/peers"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/peers",
               "id": "api/endpoints/peers",
               "title": "peers",
               "description": "",
-              "source": "@site/docs/api/endpoints/peers.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/peers.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/peers",
               "permalink": "/docs/api/endpoints/peers",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "models",
-                "permalink": "/docs/api/endpoints/models"
-              },
-              "next": {
-                "title": "receipts",
-                "permalink": "/docs/api/endpoints/receipts"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/receipts",
               "id": "api/endpoints/receipts",
               "title": "receipts",
               "description": "",
-              "source": "@site/docs/api/endpoints/receipts.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/receipts.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/receipts",
               "permalink": "/docs/api/endpoints/receipts",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "peers",
-                "permalink": "/docs/api/endpoints/peers"
-              },
-              "next": {
-                "title": "records",
-                "permalink": "/docs/api/endpoints/records"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/records",
               "id": "api/endpoints/records",
               "title": "records",
               "description": "",
-              "source": "@site/docs/api/endpoints/records.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/records.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/records",
               "permalink": "/docs/api/endpoints/records",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "receipts",
-                "permalink": "/docs/api/endpoints/receipts"
-              },
-              "next": {
-                "title": "statistics",
-                "permalink": "/docs/api/endpoints/statistics"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/statistics",
               "id": "api/endpoints/statistics",
               "title": "statistics",
               "description": "",
-              "source": "@site/docs/api/endpoints/statistics.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/statistics.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/statistics",
               "permalink": "/docs/api/endpoints/statistics",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "records",
-                "permalink": "/docs/api/endpoints/records"
-              },
-              "next": {
-                "title": "subjects",
-                "permalink": "/docs/api/endpoints/subjects"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/subjects",
               "id": "api/endpoints/subjects",
               "title": "subjects",
               "description": "",
-              "source": "@site/docs/api/endpoints/subjects.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/subjects.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/subjects",
               "permalink": "/docs/api/endpoints/subjects",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "statistics",
-                "permalink": "/docs/api/endpoints/statistics"
-              },
-              "next": {
-                "title": "system",
-                "permalink": "/docs/api/endpoints/system"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/system",
               "id": "api/endpoints/system",
               "title": "system",
               "description": "",
-              "source": "@site/docs/api/endpoints/system.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/system.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/system",
               "permalink": "/docs/api/endpoints/system",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "subjects",
-                "permalink": "/docs/api/endpoints/subjects"
-              },
-              "next": {
-                "title": "tokens",
-                "permalink": "/docs/api/endpoints/tokens"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/tokens",
               "id": "api/endpoints/tokens",
               "title": "tokens",
               "description": "",
-              "source": "@site/docs/api/endpoints/tokens.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/tokens.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/tokens",
               "permalink": "/docs/api/endpoints/tokens",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "system",
-                "permalink": "/docs/api/endpoints/system"
-              },
-              "next": {
-                "title": "users",
-                "permalink": "/docs/api/endpoints/users"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "api/endpoints/users",
               "id": "api/endpoints/users",
               "title": "users",
               "description": "",
-              "source": "@site/docs/api/endpoints/users.md",
-              "sourceDirName": "api/endpoints",
+              "source": "@site/docs/05-api/endpoints/users.md",
+              "sourceDirName": "05-api/endpoints",
               "slug": "/api/endpoints/users",
               "permalink": "/docs/api/endpoints/users",
               "draft": false,
               "tags": [],
               "version": "current",
-              "frontMatter": {},
-              "sidebar": "apiSidebar",
-              "previous": {
-                "title": "tokens",
-                "permalink": "/docs/api/endpoints/tokens"
-              }
+              "frontMatter": {}
             },
             {
               "unversionedId": "concepts/consent-context-doc",
               "id": "concepts/consent-context-doc",
               "title": "Consent Context",
               "description": "Work in progress",
-              "source": "@site/docs/concepts/201-consent-context-doc.md",
-              "sourceDirName": "concepts",
+              "source": "@site/docs/02-concepts/201-consent-context-doc.md",
+              "sourceDirName": "02-concepts",
               "slug": "/concepts/consent-context-doc",
               "permalink": "/docs/concepts/consent-context-doc",
               "draft": false,
@@ -360,8 +243,8 @@
               "id": "concepts/consent-elements-doc",
               "title": "Consent Elements",
               "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
-              "source": "@site/docs/concepts/200-consent-elements-doc.md",
-              "sourceDirName": "concepts",
+              "source": "@site/docs/02-concepts/200-consent-elements-doc.md",
+              "sourceDirName": "02-concepts",
               "slug": "/concepts/consent-elements-doc",
               "permalink": "/docs/concepts/consent-elements-doc",
               "draft": false,
@@ -370,120 +253,39 @@
               "sidebarPosition": 200,
               "frontMatter": {},
               "sidebar": "docSidebar",
-              "previous": {
-                "title": "Authentication",
-                "permalink": "/docs/getting-started/authentication-guide"
-              },
               "next": {
                 "title": "Consent Context",
                 "permalink": "/docs/concepts/consent-context-doc"
               }
             },
             {
-              "unversionedId": "getting-started/authentication-guide",
-              "id": "getting-started/authentication-guide",
-              "title": "Authentication",
-              "description": "",
-              "source": "@site/docs/getting-started/106-authentication-guide.md",
-              "sourceDirName": "getting-started",
-              "slug": "/getting-started/authentication-guide",
-              "permalink": "/docs/getting-started/authentication-guide",
-              "draft": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 106,
-              "frontMatter": {},
-              "sidebar": "docSidebar",
-              "previous": {
-                "title": "Configuration",
-                "permalink": "/docs/getting-started/config-ref"
-              },
-              "next": {
-                "title": "Consent Elements",
-                "permalink": "/docs/concepts/consent-elements-doc"
-              }
-            },
-            {
-              "unversionedId": "getting-started/config-ref",
-              "id": "getting-started/config-ref",
-              "title": "Configuration",
-              "description": "Backend configuration is located in a specific file:",
-              "source": "@site/docs/getting-started/212-config-ref.md",
-              "sourceDirName": "getting-started",
-              "slug": "/getting-started/config-ref",
-              "permalink": "/docs/getting-started/config-ref",
-              "draft": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 212,
-              "frontMatter": {},
-              "sidebar": "docSidebar",
-              "previous": {
-                "title": "Install from Sources",
-                "permalink": "/docs/getting-started/full-install-guide"
-              },
-              "next": {
-                "title": "Authentication",
-                "permalink": "/docs/getting-started/authentication-guide"
-              }
-            },
-            {
-              "unversionedId": "getting-started/full-install-guide",
-              "id": "getting-started/full-install-guide",
-              "title": "Install from Sources",
-              "description": "Learn how to build sources to start your own Right Consent server locally. This guide covers:",
-              "source": "@site/docs/getting-started/002-full-install-guide.md",
-              "sourceDirName": "getting-started",
-              "slug": "/getting-started/full-install-guide",
-              "permalink": "/docs/getting-started/full-install-guide",
-              "draft": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {},
-              "sidebar": "docSidebar",
-              "previous": {
-                "title": "Quick Start",
-                "permalink": "/docs/getting-started/start-server-guide"
-              },
-              "next": {
-                "title": "Configuration",
-                "permalink": "/docs/getting-started/config-ref"
-              }
-            },
-            {
-              "unversionedId": "getting-started/start-server-guide",
-              "id": "getting-started/start-server-guide",
+              "unversionedId": "getting-started/quick-start-guide",
+              "id": "getting-started/quick-start-guide",
               "title": "Quick Start",
               "description": "Preconditions",
-              "source": "@site/docs/getting-started/001-start-server-guide.md",
-              "sourceDirName": "getting-started",
-              "slug": "/getting-started/start-server-guide",
-              "permalink": "/docs/getting-started/start-server-guide",
+              "source": "@site/docs/01-getting-started/101-quick-start-guide.md",
+              "sourceDirName": "01-getting-started",
+              "slug": "/getting-started/quick-start-guide",
+              "permalink": "/docs/getting-started/quick-start-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {},
-              "sidebar": "docSidebar",
-              "next": {
-                "title": "Install from Sources",
-                "permalink": "/docs/getting-started/full-install-guide"
-              }
+              "sidebarPosition": 101,
+              "frontMatter": {}
             },
             {
               "unversionedId": "guides/collect-into-form-guide",
               "id": "guides/collect-into-form-guide",
               "title": "Collecting consent from an existing HTML form",
               "description": "Learn how to integrate a Right Consents Collect Form in an existing HTML Form that handle personal information.",
-              "source": "@site/docs/guides/104-collect-into-form-guide.md",
-              "sourceDirName": "guides",
+              "source": "@site/docs/03-guides/304-collect-into-form-guide.md",
+              "sourceDirName": "03-guides",
               "slug": "/guides/collect-into-form-guide",
               "permalink": "/docs/guides/collect-into-form-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 104,
+              "sidebarPosition": 304,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
@@ -491,8 +293,8 @@
                 "permalink": "/docs/guides/discover-api-guide"
               },
               "next": {
-                "title": "Swagger",
-                "permalink": "/docs/techdoc/swagger"
+                "title": "Install from Sources",
+                "permalink": "/docs/techdoc/full-install-guide"
               }
             },
             {
@@ -500,14 +302,14 @@
               "id": "guides/discover-api-guide",
               "title": "API Discovery",
               "description": "Learn how to use Right Consents API for basic operations:",
-              "source": "@site/docs/guides/103-discover-api-guide.md",
-              "sourceDirName": "guides",
+              "source": "@site/docs/03-guides/303-discover-api-guide.md",
+              "sourceDirName": "03-guides",
               "slug": "/guides/discover-api-guide",
               "permalink": "/docs/guides/discover-api-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 103,
+              "sidebarPosition": 303,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
@@ -524,14 +326,14 @@
               "id": "guides/first-consent-form-guide",
               "title": "Creating a Consent Form",
               "description": "First Design of a Consent Form with Right Consents",
-              "source": "@site/docs/guides/102-first-consent-form-guide.md",
-              "sourceDirName": "guides",
+              "source": "@site/docs/03-guides/302-first-consent-form-guide.md",
+              "sourceDirName": "03-guides",
               "slug": "/guides/first-consent-form-guide",
               "permalink": "/docs/guides/first-consent-form-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 102,
+              "sidebarPosition": 302,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
@@ -548,8 +350,8 @@
               "id": "guides/manage-tos-mobile-app-guide",
               "title": "Manage Terms Of Services in mobile app using Right Consents",
               "description": "",
-              "source": "@site/docs/guides/105-manage-tos-mobile-app-guide.md",
-              "sourceDirName": "guides",
+              "source": "@site/docs/03-guides/105-manage-tos-mobile-app-guide.md",
+              "sourceDirName": "03-guides",
               "slug": "/guides/manage-tos-mobile-app-guide",
               "permalink": "/docs/guides/manage-tos-mobile-app-guide",
               "draft": false,
@@ -563,14 +365,14 @@
               "id": "guides/overview-guide",
               "title": "Right Consents Overview",
               "description": "Learn the main concepts of consent collect in Right Consents and how to start using it.",
-              "source": "@site/docs/guides/101-overview-guide.md",
-              "sourceDirName": "guides",
+              "source": "@site/docs/03-guides/301-overview-guide.md",
+              "sourceDirName": "03-guides",
               "slug": "/guides/overview-guide",
               "permalink": "/docs/guides/overview-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 101,
+              "sidebarPosition": 301,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
@@ -583,48 +385,96 @@
               }
             },
             {
-              "unversionedId": "techdoc/consent-context-doc",
-              "id": "techdoc/consent-context-doc",
-              "title": "Consent Context Documentation",
+              "unversionedId": "techdoc/authentication-guide",
+              "id": "techdoc/authentication-guide",
+              "title": "Authentication",
               "description": "",
-              "source": "@site/docs/techdoc/201-consent-context-doc.md",
-              "sourceDirName": "techdoc",
-              "slug": "/techdoc/consent-context-doc",
-              "permalink": "/docs/techdoc/consent-context-doc",
+              "source": "@site/docs/04-techdoc/401-authentication-guide.md",
+              "sourceDirName": "04-techdoc",
+              "slug": "/techdoc/authentication-guide",
+              "permalink": "/docs/techdoc/authentication-guide",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 201,
+              "sidebarPosition": 401,
               "frontMatter": {}
+            },
+            {
+              "unversionedId": "techdoc/config-ref",
+              "id": "techdoc/config-ref",
+              "title": "Configuration",
+              "description": "Backend configuration is located in a specific file:",
+              "source": "@site/docs/04-techdoc/403-config-ref.md",
+              "sourceDirName": "04-techdoc",
+              "slug": "/techdoc/config-ref",
+              "permalink": "/docs/techdoc/config-ref",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 403,
+              "frontMatter": {},
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Install from Sources",
+                "permalink": "/docs/techdoc/full-install-guide"
+              },
+              "next": {
+                "title": "Swagger",
+                "permalink": "/docs/techdoc/swagger"
+              }
             },
             {
               "unversionedId": "techdoc/consent-elements-doc",
               "id": "techdoc/consent-elements-doc",
               "title": "Consent Elements Documentation",
               "description": "This guide is an introduction to the six types of models used by Right Consents to build consent forms.",
-              "source": "@site/docs/techdoc/200-consent-elements-doc.md",
-              "sourceDirName": "techdoc",
+              "source": "@site/docs/04-techdoc/404-consent-elements-doc.md",
+              "sourceDirName": "04-techdoc",
               "slug": "/techdoc/consent-elements-doc",
               "permalink": "/docs/techdoc/consent-elements-doc",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 200,
+              "sidebarPosition": 404,
               "frontMatter": {}
+            },
+            {
+              "unversionedId": "techdoc/full-install-guide",
+              "id": "techdoc/full-install-guide",
+              "title": "Install from Sources",
+              "description": "Learn how to build sources to start your own Right Consent server locally. This guide covers:",
+              "source": "@site/docs/04-techdoc/402-full-install-guide.md",
+              "sourceDirName": "04-techdoc",
+              "slug": "/techdoc/full-install-guide",
+              "permalink": "/docs/techdoc/full-install-guide",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 402,
+              "frontMatter": {},
+              "sidebar": "docSidebar",
+              "previous": {
+                "title": "Collecting consent from an existing HTML form",
+                "permalink": "/docs/guides/collect-into-form-guide"
+              },
+              "next": {
+                "title": "Configuration",
+                "permalink": "/docs/techdoc/config-ref"
+              }
             },
             {
               "unversionedId": "techdoc/sdk",
               "id": "techdoc/sdk",
               "title": "Consent.js",
               "description": "This documentation covers all the features provided in the consent.js file. If you want to learn more about our Right Consents solution, please refer to the appropriate documentation.",
-              "source": "@site/docs/techdoc/211-sdk.md",
-              "sourceDirName": "techdoc",
+              "source": "@site/docs/04-techdoc/411-sdk.md",
+              "sourceDirName": "04-techdoc",
               "slug": "/techdoc/sdk",
               "permalink": "/docs/techdoc/sdk",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 211,
+              "sidebarPosition": 411,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
@@ -637,19 +487,19 @@
               "id": "techdoc/swagger",
               "title": "Swagger",
               "description": "Right Consents backend is available as a REST API. The complete API documentation is generated by the backend itself using swagger and open api standards. API is served by the backend itselft and is always sync with the running version.",
-              "source": "@site/docs/techdoc/210-swagger.md",
-              "sourceDirName": "techdoc",
+              "source": "@site/docs/04-techdoc/410-swagger.md",
+              "sourceDirName": "04-techdoc",
               "slug": "/techdoc/swagger",
               "permalink": "/docs/techdoc/swagger",
               "draft": false,
               "tags": [],
               "version": "current",
-              "sidebarPosition": 210,
+              "sidebarPosition": 410,
               "frontMatter": {},
               "sidebar": "docSidebar",
               "previous": {
-                "title": "Collecting consent from an existing HTML form",
-                "permalink": "/docs/guides/collect-into-form-guide"
+                "title": "Configuration",
+                "permalink": "/docs/techdoc/config-ref"
               },
               "next": {
                 "title": "Consent.js",
@@ -661,28 +511,9 @@
           "sidebars": {
             "docSidebar": [
               {
-                "type": "category",
-                "label": "Getting started",
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "getting-started/start-server-guide"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "getting-started/full-install-guide"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "getting-started/config-ref"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "getting-started/authentication-guide"
-                  }
-                ],
-                "collapsed": true,
-                "collapsible": true
+                "type": "link",
+                "label": "Quick Start Guide",
+                "href": "getting-started/quick-start-guide"
               },
               {
                 "type": "category",
@@ -730,6 +561,14 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "techdoc/full-install-guide"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "techdoc/config-ref"
+                  },
+                  {
+                    "type": "doc",
                     "id": "techdoc/swagger"
                   },
                   {
@@ -745,66 +584,6 @@
               {
                 "type": "doc",
                 "id": "api/connecting"
-              },
-              {
-                "type": "category",
-                "label": "Consents",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "api/endpoints/consents/consent-object"
-                  }
-                ],
-                "link": {
-                  "type": "doc",
-                  "id": "api/endpoints/consents/consents"
-                }
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/forms"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/keys"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/models"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/peers"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/receipts"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/records"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/statistics"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/subjects"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/system"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/tokens"
-              },
-              {
-                "type": "doc",
-                "id": "api/endpoints/users"
               }
             ]
           }

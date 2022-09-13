@@ -1,0 +1,15 @@
+{
+  "unversionedId": "getting-started/quick-start-guide",
+  "id": "getting-started/quick-start-guide",
+  "title": "Quick Start",
+  "description": "Preconditions",
+  "source": "@site/docs/01-getting-started/101-quick-start-guide.md",
+  "sourceDirName": "01-getting-started",
+  "slug": "/getting-started/quick-start-guide",
+  "permalink": "/docs/getting-started/quick-start-guide",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 101,
+  "frontMatter": {}
+}

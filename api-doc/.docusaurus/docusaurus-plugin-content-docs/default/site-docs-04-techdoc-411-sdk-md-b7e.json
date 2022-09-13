@@ -1,0 +1,20 @@
+{
+  "unversionedId": "techdoc/sdk",
+  "id": "techdoc/sdk",
+  "title": "Consent.js",
+  "description": "This documentation covers all the features provided in the consent.js file. If you want to learn more about our Right Consents solution, please refer to the appropriate documentation.",
+  "source": "@site/docs/04-techdoc/411-sdk.md",
+  "sourceDirName": "04-techdoc",
+  "slug": "/techdoc/sdk",
+  "permalink": "/docs/techdoc/sdk",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 411,
+  "frontMatter": {},
+  "sidebar": "docSidebar",
+  "previous": {
+    "title": "Swagger",
+    "permalink": "/docs/techdoc/swagger"
+  }
+}

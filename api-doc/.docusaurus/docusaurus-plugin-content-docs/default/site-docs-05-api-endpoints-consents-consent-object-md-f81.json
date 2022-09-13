@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/consents/consent-object",
+  "id": "api/endpoints/consents/consent-object",
+  "title": "consent-object",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/consents/consent-object.md",
+  "sourceDirName": "05-api/endpoints/consents",
+  "slug": "/api/endpoints/consents/consent-object",
+  "permalink": "/docs/api/endpoints/consents/consent-object",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

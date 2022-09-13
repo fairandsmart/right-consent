@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/records",
+  "id": "api/endpoints/records",
+  "title": "records",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/records.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/records",
+  "permalink": "/docs/api/endpoints/records",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

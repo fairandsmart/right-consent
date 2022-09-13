@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/peers",
+  "id": "api/endpoints/peers",
+  "title": "peers",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/peers.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/peers",
+  "permalink": "/docs/api/endpoints/peers",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

@@ -1,0 +1,15 @@
+{
+  "unversionedId": "api/connecting",
+  "id": "api/connecting",
+  "title": "Connecting to the API",
+  "description": "For requests that require authentication, you will need to have your users authenticate via our OAuth mechanisms handled with Keycloak.",
+  "source": "@site/docs/05-api/connecting.md",
+  "sourceDirName": "05-api",
+  "slug": "/api/connecting",
+  "permalink": "/docs/api/connecting",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "apiSidebar"
+}

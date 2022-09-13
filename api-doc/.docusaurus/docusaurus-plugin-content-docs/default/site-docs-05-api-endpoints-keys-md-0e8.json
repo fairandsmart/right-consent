@@ -1,0 +1,14 @@
+{
+  "unversionedId": "api/endpoints/keys",
+  "id": "api/endpoints/keys",
+  "title": "keys",
+  "description": "",
+  "source": "@site/docs/05-api/endpoints/keys.md",
+  "sourceDirName": "05-api/endpoints",
+  "slug": "/api/endpoints/keys",
+  "permalink": "/docs/api/endpoints/keys",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

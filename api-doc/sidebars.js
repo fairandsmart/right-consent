@@ -15,14 +15,9 @@
 const sidebars = {
   docSidebar: [
     {
-      type: 'category',
-      label: 'Getting started',
-      items: [
-        'getting-started/start-server-guide',
-        'getting-started/full-install-guide',
-        'getting-started/config-ref',
-        'getting-started/authentication-guide'
-      ],
+      type: 'link',
+      label: 'Quick Start Guide',
+      href: 'getting-started/quick-start-guide',
     },
     {
       type: 'category',
@@ -46,6 +41,8 @@ const sidebars = {
       type: 'category',
       label: 'Technical Documentation',
       items: [
+        'techdoc/full-install-guide',
+        'techdoc/config-ref',
         'techdoc/swagger',
         'techdoc/sdk'
       ],
