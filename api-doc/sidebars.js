@@ -15,6 +15,7 @@
 const sidebars = {
   docSidebar: [
     'getting-started/quick-start-guide',
+    'getting-started/overview',
     {
       type: 'category',
       label: 'Concepts & Terminology',
@@ -27,7 +28,6 @@ const sidebars = {
       type: 'category',
       label: 'Guides',
       items: [
-        'guides/overview-guide',
         'guides/first-consent-form-guide',
         'guides/discover-api-guide',
         'guides/collect-into-form-guide',

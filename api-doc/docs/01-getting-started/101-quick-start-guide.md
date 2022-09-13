@@ -1,4 +1,4 @@
-# Quick Start
+# Quick Start Guide
 
 ## Preconditions
 
@@ -57,5 +57,3 @@ The main GUI is the **back office**, it administers many aspects of **consent an
 The solution also offers an **API** directly accessible by **client applications** or systems requiring confirmation of consent for actions.
 
 If pre-built HTML forms aren't enough, a **typescript SDK** is the out-of-the-box option to integrate Right Consent in a more **controlled way**.
-
-
