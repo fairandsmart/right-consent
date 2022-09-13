@@ -14,11 +14,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docSidebar: [
-    {
-      type: 'link',
-      label: 'Quick Start Guide',
-      href: 'getting-started/quick-start-guide',
-    },
+    'getting-started/quick-start-guide',
     {
       type: 'category',
       label: 'Concepts & Terminology',
