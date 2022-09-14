@@ -1,0 +1,80 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Transactions
+Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a `ConsentContext`.
+
+## Step 1 : Creating a transaction
+
+The first step of a transaction is to generate a **Consent Context**. A context holds all the information needed to generate a consent form.
+
+### Subject
+The **subject** of a transaction is a unique identifier used to represent an individual. It can be anything from an internal id, a name, a phone number, an email address, a social security number, a passport number, etc. It is used to identify the end-user and to link the consent to them.
+
+When you create another transaction with the same subject, the Consent Manager will be able to retrieve this subject's previous consents and display them in the consent form.
+
+### Layout
+A **layout** is a set of options that will tell the Consent Manager how to display the consent form and which [data models](models) to display. It is used to customize the look and feel of the consent form.
+
+In the **ConsentContext**, you can specify the `layout` field. It must be the id of a custom layout. You can create and save custom layouts using the Consent Manager GUI.
+
+:::tip
+If you don't want to create a custom layout, you can specify the layout you want in the `layoutData` field of the **ConsentContext**
+:::
+
+:::caution
+You must set **either** the `layout` or the `layoutData` field. Not both.
+:::
+
+### Creating the transaction
+
+To create the transation, you must send your **ConsentContext** to the `/consents` endpoint using a `POST` request. The response will contain the id of the transaction.
+
+<Tabs>
+<TabItem value="http" label="curl">
+
+```http
+curl -d "CONSENT_CONTEXT" -H "Authorization: Bearer TOKEN" -X POST https://localhost:4287/consents
+```
+
+</TabItem>
+<TabItem value="js" label="Consent.js">
+
+```js
+import { ConsentsResource } from '@fairandsmart/consents-ce';
+
+const consentContext = { ... };
+
+ConsentsResource.createTransactionJson(consentContext)
+    .subscribe((transactionId) => {
+        // Do something with the transaction
+    });
+```
+
+</TabItem>
+<TabItem value="java" label="Java">
+
+```java
+
+```
+</TabItem>
+</Tabs>
+
+:::info
+For the API Reference, check the [/consents resource](/apiReference#tag/Consent)
+:::
+
+## Step 2 : Displaying the Consent Form
+
+Once you have the transaction id, you can display the consent form to the end-user. The Consent Form is a web page that you can embed in your application.
+
+The url to this form is location in the `Location` header of the response from the `Creating the transaction` request.
+
+:::tip
+You can also reconstruct the url using the transaction id like so : `GET /consents/{txid}/submit`
+:::
+
+## Optional : Manually sending the consent values
+
+In some cases, you will want to update values for a consent without displaying the built-in form. To do this, you can use the `POST /consents/{txid}/submit` endpoint ([see reference](apiReference#tag/Consent/paths/~1consents~1%7Btxid%7D~1submit/post))
+

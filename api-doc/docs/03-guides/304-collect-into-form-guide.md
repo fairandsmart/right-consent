@@ -1,4 +1,4 @@
-# Collecting consent from an existing HTML form
+# Collect from existing form
 
 Learn how to integrate a **[Right Consents Collect Form](https://right-consents.fairandsmart.io/about/integrate-html-form/)** in an existing HTML Form that handle personal information.
 
