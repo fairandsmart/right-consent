@@ -57,7 +57,7 @@ Choose a relevant name and description for that model (only for internal managem
 
 :::info
 
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/consent-elements-doc)
+For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
 :::
 
 Now you are ready for **publishing** that version of the information model by clicking on **'Save Draft'** button and then on the **'Activate'** button.
@@ -111,7 +111,7 @@ As for the information model, do not forget to **publish** thoses versions by cl
 
 :::info
 
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/consent-elements-doc)
+For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
 :::
 
 
@@ -138,7 +138,7 @@ As for other models, do not forget to **publish** thoses versions by clicking on
 
 :::info
 
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/consent-elements-doc)
+For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
 :::
 
 ## Design a collection form
@@ -164,14 +164,14 @@ The 'Next' step will give you access to the Consent Context definition step. Her
 
 :::info
 
-For full documentation about Context please visit the [Consent Context Doc](../concepts/consent-context-doc)
+For full documentation about Context please visit the [Consent Context Doc](../concepts/transactions)
 :::
 
 Now you can click on the 'Get API Call Url' to submit the Consent Context (that include the layout) to the API in order to generate a **Consent Transaction**.
 The generated transaction URL will give an acces to the Consent Collect Workflow either in plain HTML or in JSON depending on your needs of customization during the integration in external applications.
 
 :::tip
-As an administrator, you can create transaction for any user but for a single user it is only possible to generate a transaction for itself. For complete documentation about authentication go to the [dedicated guide](../getting-started/authentication-guide)
+As an administrator, you can create transaction for any user but for a single user it is only possible to generate a transaction for itself. For complete documentation about authentication go to the [dedicated guide](../techdoc/authentication-guide)
 :::
 
 You will notice that the generated URL contains also a token. That will ensure a transaction level authentication, allowing to send that self authentified link by email for exemple.

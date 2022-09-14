@@ -5,3 +5,4 @@ Gemfile.lock
 */**~
 api-doc/node_modules
 api-doc/.docusaurus
+api-doc/build

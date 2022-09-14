@@ -53,7 +53,7 @@ Or you can include the library in your HTML page:
 When the consent.js file is imported via a script tag, the SDK features are available in the `window.FairAndSmart` global variable of your web page.
 
 :::info
-The full documentation for the library is available [here](techdoc/sdk#api-calls).
+The full documentation for the library is available [here](../techdoc/sdk#api-calls).
 :::
 
 

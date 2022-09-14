@@ -1,7 +1,6 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Transactions
+In this section, we will learn about creating and displaying consent transactions.
+
 Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a `ConsentContext`.
 
 ## Step 1 : Creating a transaction
@@ -33,6 +32,9 @@ You must set **either** the `layout` or the `layoutData` field. Not both.
 ### Creating the transaction
 
 To create the transation, you must send your **ConsentContext** to the `/consents` endpoint using a `POST` request. The response will contain the id of the transaction.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="http" label="curl">

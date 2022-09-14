@@ -18,7 +18,15 @@ const sidebars = {
     'getting-started/overview',
     {
       type: 'category',
-        label: 'Concepts & Terminology',
+      label: 'Concepts & Terminology',
+      link: {
+        type: 'generated-index',
+        title: 'Concepts & Terminology',
+        description: 'Learn about the most important Right Consents concepts!',
+        slug: '/concepts/guide',
+        keywords: ['guides'],
+        image: '/img/logo.svg',
+      },
       items: [
         'concepts/models',
         'concepts/transactions',

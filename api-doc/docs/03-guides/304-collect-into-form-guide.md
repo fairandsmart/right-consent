@@ -88,7 +88,7 @@ You will need, first, to import the script file in your HTML file like so:
 ```
 
 :::info
- More on the SDK configuration and integration [here](/docs/sdk/#balise-script)
+ More on the SDK configuration and integration [here](../techdoc/sdk#balise-script)
 :::
 
 Then, write a function that calls the Consent Collector. This function has to declare a

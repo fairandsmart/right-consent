@@ -50,12 +50,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Right Consents',
         logo: {
           alt: 'FairAndSmart',
           src: 'img/logo.svg',
         },
         items: [
+          {
+            href: 'https://right-consents.fairandsmart.io',
+            label: 'Right Consents',
+            className: 'title'
+          },
           {
             type: 'doc',
             docId: 'getting-started/quick-start-guide',
@@ -68,8 +72,8 @@ const config = {
             label: 'API Reference',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/fairandsmart/right-consents',
+            className: 'header-github-link',
             position: 'right',
           }
         ],
