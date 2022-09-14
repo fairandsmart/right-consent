@@ -1,4 +1,4 @@
-# Configuration
+# Configuration Reference
 
 Backend configuration is located in a specific file:
 
@@ -6,7 +6,7 @@ Backend configuration is located in a specific file:
 $ consent-manager-back/src/main/resources/application.properties
 ```
 
-Most of the configuration elements can be override at startup by providing a command line alternative avoiding the need to recompile the component. 
+Most of the configuration elements can be override at startup by providing a command line alternative avoiding the need to recompile the component.
 
 ```bash
 $ java -jar -Dquarkus.http.port=9999 ...
@@ -122,7 +122,7 @@ consent.support.enabled=true
 consent.support.news=true
 consent.support.bugs=true
 consent.support.stats=true
-quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".url=https://hub.fairandsmart.com/ 
+quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".url=https://hub.fairandsmart.com/
 quarkus.rest-client."com.fairandsmart.consent.support.RemoteSupportService".scope=javax.inject.Singleton
 ```
 

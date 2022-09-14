@@ -1,4 +1,4 @@
-# Consent Elements
+# Models
 
 This guide is an introduction to the six types of models used by Right Consents to build consent forms.
 
@@ -19,7 +19,7 @@ Specific information shall be provided to the end-user for each processing to ma
 - if relevant, the contact information of all the involved **third parties**
 
 The only **possible values** for a processing element are **"accepted"** or **"rejected"** - empty values are **NOT** allowed.
- 
+
 :::info
 A Processing **MUST** be accompanied by an Information model to create a valid consent form.
 :::

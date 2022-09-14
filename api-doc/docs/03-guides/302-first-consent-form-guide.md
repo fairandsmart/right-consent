@@ -1,4 +1,4 @@
-# Creating a Consent Form
+# Build a Consent Form
 First Design of a Consent Form with Right Consents
 
 Learn how to design your first **consent form** by defining element models using Right Consents **backoffice** and form layout with the graphical designer.
@@ -199,4 +199,3 @@ More thant just pushing the generated URL to an email or any other channel, the 
 
 Using that JSON file to generate new transaction can also be done by calling the API directly, for a guided tour of the API please visit the [Discover API Guide](discover-api-guide)
 :::
-

@@ -1,4 +1,4 @@
-# API Discovery
+# Discover API basics
 
 Learn how to use Right Consents **API** for basic operations:
 
@@ -201,4 +201,3 @@ echo ${TX}
 Notice that now the transaction is in state COMMITTED.
 
 Depending on the context configuration, a validation step can also be necessary by sending a code via email or sms to the subject in order to double check identity.
-

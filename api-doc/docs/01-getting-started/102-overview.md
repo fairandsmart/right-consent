@@ -1,4 +1,4 @@
-# Overview
+# Global Overview
 
 Learn the main concepts of consent collect in Right Consents and how to start using it.
 

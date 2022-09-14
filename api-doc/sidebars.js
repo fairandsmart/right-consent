@@ -20,8 +20,11 @@ const sidebars = {
       type: 'category',
       label: 'Concepts & Terminology',
       items: [
-        'concepts/consent-elements-doc',
-        'concepts/consent-context-doc',
+        'concepts/models',
+        'concepts/transactions',
+        'concepts/subjects',
+        'concepts/records',
+        'concepts/receipts',
       ],
     },
     {
@@ -39,7 +42,6 @@ const sidebars = {
       items: [
         'techdoc/full-install-guide',
         'techdoc/config-ref',
-        'techdoc/swagger',
         'techdoc/sdk'
       ],
     }
