@@ -19,7 +19,7 @@ See the [Subject documentation](subjects) for more information.
 ### Layout
 A **layout** is a set of options that will tell the Consent Manager how to display the consent form and which [data models](models) to display. It is used to customize the look and feel of the consent form.
 
-In the **ConsentContext**, you can specify the `layout` field. It must be the id of a custom layout. You can create and save custom layouts using the Consent Manager GUI.
+In the **ConsentContext**, you can specify the `layout` field. It must be the id of a custom layout. You can create custom layouts using the Consent Manager GUI and save them through the API.
 
 :::tip
 If you don't want to create a custom layout, you can specify the layout you want in the `layoutData` field of the **ConsentContext**
@@ -82,5 +82,4 @@ You can also reconstruct the url using the transaction id like so : `GET /consen
 
 ## Optional : Manually sending the consent values
 
-In some cases, you will want to update values for a consent without displaying the built-in form. To do this, you can use the `POST /consents/{txid}/submit` endpoint ([see reference](apiReference#tag/Consent/paths/~1consents~1%7Btxid%7D~1submit/post))
-
+In some cases, you will want to update values for a consent without displaying the built-in form. To do this, you can use the `POST /consents/{txid}/submit` endpoint ([see reference](apiReference#tag/Consent/paths/~1consents~1%7Btxid%7D~1submit/post)).
