@@ -3,6 +3,8 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {RedocStandalone} from 'redoc';
 
+import styles from './api-reference.css';
+
 export default function ApiReference() {
     const {siteConfig} = useDocusaurusContext();
     const options = {
