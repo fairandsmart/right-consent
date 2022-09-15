@@ -11,14 +11,6 @@ main:
         url: /about/integrate-html-form/
       - title: "Enterprise"
         url: /about/enterprise/
-  - title: "Documentation"
-    children:
-      - title: "Quick start"
-        url: /docs/start-server-guide/
-      - title: "All guides"
-        url: /docs/overview-guide/
-      - title: "Technical docs"
-        url: /docs/config-ref/
   - title: "Community"
     children:
       - title: "News"
@@ -27,6 +19,8 @@ main:
         url: /contributing/
       - title: "Edito"
         url: /edito/
+  - title: "Developers"
+    url: /_docusaurus/
 
 # about links
 about:
@@ -46,37 +40,6 @@ about:
         url: /about/mobile-app-tos/
       - title: "Customer privacy center"
         url: /about/customer-privacy-center/
-
-# documentation links
-docs:
-  - title: "Getting started"
-    children:
-      - title: "Quick start guide"
-        url: /docs/start-server-guide/
-      - title: "Full installation guide"
-        url: /docs/full-install-guide/
-  - title: "Guides"
-    children:
-      - title: "Overview"
-        url: /docs/overview-guide/
-      - title: "First consent form"
-        url: /docs/first-consent-form-guide/
-      - title: "API Discovery"
-        url: /docs/discover-api-guide/
-      - title: "Existing forms integration"
-        url: /docs/collect-into-form-guide/
-      - title: "Understanding Authentication"
-        url: /docs/authentication-guide/
-  - title: "Technical documentation"
-    children:
-      - title: "Config Reference"
-        url: /docs/config-ref/
-      - title: "API"
-        url: /docs/api-doc/
-      - title: "Swagger"
-        url: /docs/swagger/
-      - title: "SDK"
-        url: /docs/sdk/
 
 # community links
 community:
