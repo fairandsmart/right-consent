@@ -4,7 +4,6 @@ Learn the main concepts of consent collect in Right Consents and how to start us
 
 - Discover the overall process of consent collect
 - Understand the main steps of collecting and managing users consents in Right consents
--
 
 ## Prerequisites
 
@@ -16,9 +15,7 @@ To complete this guide you need :
 
 In this guide you will discover the overall process of consent collect and the differents steps that compose that process.
 
-<!-- ![First models with Right Consents - Overview](/img/first-models-guide-overview.jpg) -->
-
-This guide also covers how that process is defined in Right Consents and specially the **Consent Transaction** concept and lifecycle.
+This guide also covers how that process is defined in Right Consents and especially the **Consent Transaction** resource and its lifecycle.
 
 ## Consent Collection
 
@@ -41,7 +38,11 @@ This stage is mainlly handled by the **data controller** itself or the **data pr
 
 Like a CMS, Right Consents will handle consent elements **lifecycle** to ensure the **legal validity** by assuming **auditing** and **versionning** but also by generating some **digital proofs** of any produced content.
 
-Consent elements will then be accessibles throught the API for any kind of dissemination goals : processing registry or integration into consent collect forms.
+![Consent Library](/img/consent-library_s.jpg)
+
+:::info
+Consent elements are **accessibles throught the API** for any kind of dissemination goals.
+:::
 
 ### Consent form design
 
@@ -49,7 +50,13 @@ By using the consent elements library, the consent form design allows you to cho
 
 For exemple, Terms of Service needs to be collected at startup of an application or at signup. Some processing consent could be collected only when a specific service is requested. Some processings may concerns a specific application where some others will concerns all of them. All your defined processings may not be consented at the same time and displayed in a single huge form with many entries. If an action performed by a customer only need a single process consent, then only the required element should be displayed. Rights Consents allows to define different **consent layouts** in order to adapt the consent collect for all existing situations.
 
-Right Consents **backoffice** propose a **graphical tool** to design Consent Forms. WHen your design is ready, you can then extract the layout definition for **integration** in any **external application**.
+![Consent Form](/img/consent-form.jpg)
+
+Right Consents **backoffice** propose a **graphical tool** to design Consent Forms. When your design is ready, you can then extract the layout definition for **integration** in any **external application**.
+
+:::info
+Consent form design can be used **directly throught the API** by using them in the consent context layout data field.
+:::
 
 
 ### Consent collect integration
@@ -58,6 +65,12 @@ Once your elements library and your differents layouts and forms are defined you
 
 Right Consents defines the notion of **Consent Transaction** in order to manage the consent collect lifecycle. A transaction is build using a **Consent Context** that will hold all the transaction configuration aspects but also the targeted subject identifier.
 
-At transaction creation, a unique identifier is assigned, and the transaction resource will handle the whole consent submission workflow. Forms and notifications are generated at each step of the transaction lifecycle. At the end of the process, some **Consent Records** are generated for dissemination and a unique **Consent Receipt** is stored for preservation.
+![Consent Records](/img/consent-transaction_s.jpg)
 
-Generated records will then be queryable by any other piece of software that rely on user consent. The transaction is always accessible to retrieve receipt and if configured, to generate a new one (clone) for changing mind about consent.
+During creation, a unique identifier is assigned to the transaction. The trnnsaction handles the whole **consent submission workflow**. Forms and notifications are generated at each step of the transaction lifecycle. At the end of the process, some **Consent Records** are generated for dissemination and a unique **Consent Receipt** is stored for preservation.
+
+![Consent Records](/img/consent-records_s.jpg)
+
+:::info
+Generated records will be queryable by **any other piece of software** that rely on user consent value. The transaction is accessible from its identifier to retrieve receipt at any moment or for changing mind about consent.
+:::
