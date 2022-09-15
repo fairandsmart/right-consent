@@ -47,6 +47,8 @@ services:
       FS_MAILER_HOST: right-consents-mail
       FS_MAILER_PORT: 1025
       FS_PUBLIC_URL: http://localhost:4287
+      # Bypass token issuer verification. Mandatory only when testing the android application 
+      quarkus.oidc.token.issuer: any
     depends_on:
       right-consents-auth:
         condition: service_healthy
