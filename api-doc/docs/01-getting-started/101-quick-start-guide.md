@@ -166,4 +166,4 @@ Now that you are familiar with using Right Consents, you might be interested in 
 * [Global overview](/docs/getting-started/overview)
 * [Concepts & Terminology](/docs/concepts/guide)
 * [Guides](/docs/guides/first-consent-form-guide)
-* [API documentation](/docs/techdoc)
+* [API documentation](/apiReference)
