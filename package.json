@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build-doc": "cd api-doc && npm run build && cp -r build ../_docusaurus && cd .."
+    "build-doc": "cd api-doc && npm run build && rm -rf ../developers && cp -r build ../developers && cd .."
   },
   "repository": {
     "type": "git",

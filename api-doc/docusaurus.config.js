@@ -9,7 +9,7 @@ const config = {
   title: 'Right Consents',
   tagline: 'The universal Open source solution for Consent and Preference Management',
   url: 'https://right-consents.fairandsmart.io/',
-  baseUrl: '/',
+  baseUrl: '/developers/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.webp',
@@ -24,7 +24,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en'],
   },
 
   customFields: {
@@ -56,7 +56,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://right-consents.fairandsmart.io',
+            href: 'https://right-consents.fairandsmart.io/',
             label: 'Right Consents',
             className: 'title'
           },

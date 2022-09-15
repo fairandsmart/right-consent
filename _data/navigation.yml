@@ -20,7 +20,7 @@ main:
       - title: "Edito"
         url: /edito/
   - title: "Developers"
-    url: /_docusaurus/
+    url: /developers/
 
 # about links
 about:

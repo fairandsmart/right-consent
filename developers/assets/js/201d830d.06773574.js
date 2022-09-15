@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_doc=self.webpackChunkapi_doc||[]).push([[1842],{6238:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/developers/blog/tags/hola","allTagsPath":"/developers/blog/tags","count":1}')}}]);
