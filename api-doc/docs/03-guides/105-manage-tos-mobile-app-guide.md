@@ -81,7 +81,7 @@ This guide presents a use case on how to create **Terms Of Service** using the R
 
 :::info
 
- For the full presentation of the backoffice please visit the [Quick start guide](../docs/quick-start-guide)
+ For the full presentation of the backoffice please visit the [Quick start guide](../getting-started/quick-start-guide)
 
 :::
 

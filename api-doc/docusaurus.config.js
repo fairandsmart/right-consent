@@ -82,28 +82,44 @@ const config = {
         style: 'dark',
         links: [
           {
+            title: 'About',
+            items: [
+              {
+                label: 'Overview',
+                href: 'https://right-consents.fairandsmart.io/about/overview/',
+              },
+              {
+                label: 'Features',
+                href: 'https://right-consents.fairandsmart.io/about/features/',
+              },
+              {
+                label: 'Use cases',
+                href: 'https://right-consents.fairandsmart.io/about/integrate-html-form/',
+              },
+              {
+                label: 'Enterprise',
+                href: 'https://right-consents.fairandsmart.io/about/enterprise/',
+              },
+            ],
+          },
+          {
             title: 'Docs',
             items: [
               {
                 label: 'Quick Start',
                 to: '/docs/getting-started/quick-start-guide',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Build a consent form',
+                to: '/docs/guides/first-consent-form-guide',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Developer Kit',
+                to: '/docs/techdoc/sdk',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'API Reference',
+                to: '/apiReference',
               },
             ],
           },
@@ -111,17 +127,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/fairandsmart/right-consents',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Fair & Smart',
+                href: 'https://fairandsmart.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fair&Smart. Built with Docusaurus.`,
       },
       prism: {
         additionalLanguages: ['properties', 'uri'],
