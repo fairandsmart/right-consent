@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_doc=self.webpackChunkapi_doc||[]).push([[7099],{380:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/fr/blog/tags/hello","allTagsPath":"/fr/blog/tags","count":2}')}}]);

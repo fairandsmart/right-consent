@@ -2,6 +2,58 @@
 
 This section will detail the concept and use of models.
 
+Models are designed to hold content that will be used in Right Consents. All models follow the same generic structure and lifecycle plus a specific content part according to the model type. Models are identified by a **unique key** and because of the lifecycle **versionning system**, each specific version holds a unique **serial number**.
+
+Impacts of an update are taken into consideration in the whole system and existing consents.
+
+
+## Models lifecycle
+
+All models follow the same **lifecycle** which has been designed to ensure no collected consent can be lost, altered or falsified.
+If necessary, the consent form which had been displayed to a subject can be recreated exactly from the models serials stored in [**consent records**](/docs/concepts/records).
+
+The lifecycle of a model can be described this way:
+* creation of a **Model Entry**
+* creation of a **Model Version**, initially in a **draft** state
+* activation of the **Model Version**, setting its state to **active**
+* as many iterations as needed of creating and activating new **versions**, each making either **minor** or **major** changes
+* archiving of the model if it becomes irrelevant
+
+
+### Creation
+
+First, you must create a **Model Entry** with at least a **key**, a **type**, and an internal **name** to help you recognize easily your models in the backoffice. An optional description can help you in the model organisation.
+
+
+### Drafting
+
+Then, you will be able to access the **editor** and fill in all the fields and configuration of the **specific type** you choose.
+A preview in the bottom-right corner of the page will help you check the result.
+
+You can save your work at any time (given that no field is in an erroneous state) as a **draft**.
+
+TODO - work in progress
+
+
+
+### Activation
+
+TODO - work in progress
+<!-- minor/major version (effect on records) -->
+
+
+### Version history
+
+TODO - work in progress
+<!-- previous version archiving/history read-only view -->
+
+
+### Suppression
+
+If no record references a Model Entry in the database, the model can be **safely erased** - forever.
+However, if even a single record does reference the model, then it can only be **archived**.
+This means that the model can still be accessed as read-only in the backoffice libraries and through the API.
+
 
 
 ## Models types
@@ -147,56 +199,3 @@ Layouts cannot be saved in the Right Consents Community backoffice, but they can
 :::
 
 ![Models Guide - Form Layout](/img/models/layout.png)
-
-
-
-## Models lifecycle
-
-All models follow the same **lifecycle** which has been designed to ensure no collected consent can be lost, altered or falsified.
-If necessary, the consent form which had been displayed to a subject can be recreated exactly from the models serials stored in [**consent records**](/docs/concepts/records).
-
-The lifecycle of a model can be described this way:
-* creation of a **Model Entry**
-* creation of a **Model Version**, initially in a **draft** state
-* activation of the **Model Version**, setting its state to **active**
-* as many iterations as needed of creating and activating new **versions**, each making either **minor** or **major** changes
-* archiving of the model if it becomes irrelevant
-
-
-
-### Creation
-
-First, you must create a **Model Entry** with at least a **key**, a **type**, and an internal **name** to help you recognize easily your models in the backoffice.
-
-
-
-### Drafting
-
-Then, you will be able to access the **editor** and fill in all the fields and configuration of the specific type you choose.
-A preview in the bottom-right corner of the page will help you check the result.
-
-You can save your work at any time (given that no field is in an erroneous state) as a **draft**.
-
-TODO - work in progress
-
-
-
-### Activation
-
-TODO - work in progress
-<!-- minor/major version (effect on records) -->
-
-
-
-### Version history
-
-TODO - work in progress
-<!-- previous version archiving/history read-only view -->
-
-
-
-### Suppression
-
-If no record references a Model Entry in the database, the model can be **safely erased** - forever.
-However, if even a single record does reference the model, then it can only be **archived**.
-This means that the model can still be accessed as read-only in the backoffice libraries and through the API.
