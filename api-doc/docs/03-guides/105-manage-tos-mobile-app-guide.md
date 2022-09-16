@@ -24,7 +24,7 @@ This guide also covers some basic aspects of designing consent form layout by as
 
 ### Fair&Smart Docker Environment
 
-Please make sure to have a running configured stack with all the components needed to run a local instance of Right Consents. The tutorial can be found [**here**](https://google.com) WOW LINK TO TUTO HERE
+Please make sure to have a running configured stack with all the components needed to run a local instance of Right Consents. The tutorial can be found [**here**](../getting-started/quick-start-guide)
 
 ### Keycloak
 
