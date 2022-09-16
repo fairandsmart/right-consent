@@ -74,3 +74,10 @@ During creation, a unique identifier is assigned to the transaction. The trnnsac
 :::info
 Generated records will be queryable by **any other piece of software** that rely on user consent value. The transaction is accessible from its identifier to retrieve receipt at any moment or for changing mind about consent.
 :::
+
+## What's next?
+
+Now that you are familiar with Right Consents process, you might be interested in further reads:
+* [Concepts & Terminology](/docs/concepts/guide)
+* [Guides](/docs/guides/first-consent-form-guide)
+* [API documentation](/apiReference)
