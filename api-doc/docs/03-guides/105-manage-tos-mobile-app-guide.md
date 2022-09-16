@@ -1,4 +1,4 @@
-# Manage Terms Of Services in mobile app using Right Consents
+# Manage Terms Of Services
 
 Learn how to integrate a terms of service **consent form** in a native Android mobile application using Right Consents **backoffice**.
 
