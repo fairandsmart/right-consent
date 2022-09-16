@@ -42,6 +42,7 @@ const sidebars = {
         'guides/first-consent-form-guide',
         'guides/discover-api-guide',
         'guides/collect-into-form-guide',
+        'guides/manage-tos-mobile-app-guide',
       ],
     },
     {
