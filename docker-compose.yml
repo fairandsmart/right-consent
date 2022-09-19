@@ -36,7 +36,7 @@ services:
   right-consents-back:
     container_name: right-consents-back
     restart: unless-stopped
-    image: fairandsmart/consent-manager-back:2.3.0
+    image: fairandsmart/consent-manager-back:2.4.0
     ports:
       - 4287:8087
     environment:
@@ -44,6 +44,7 @@ services:
       FS_AUTH_FRONT_URL: http://localhost:4285
       FS_GUI_URL: http://localhost:4286
       FS_INSTANCE_LANG: ${FS_INSTANCE_LANG:-en}
+      FS_INSTANCE_IMPORT_DATA: ${FS_INSTANCE_IMPORT_DATA:-true}
       FS_MAILER_HOST: right-consents-mail
       FS_MAILER_PORT: 1025
       FS_PUBLIC_URL: http://localhost:4287
@@ -64,7 +65,7 @@ services:
   right-consents-gui:
     container_name: right-consents-gui
     restart: unless-stopped
-    image: fairandsmart/consent-manager-gui:2.3.0
+    image: fairandsmart/consent-manager-gui:2.4.0
     environment:
       FS_AUTH_URL: http://localhost:4285/auth
       FS_GUI_URL: http://localhost:4286
