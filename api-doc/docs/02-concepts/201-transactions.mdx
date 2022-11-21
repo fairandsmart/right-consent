@@ -1,11 +1,15 @@
 # Transactions
 In this section, we will learn about creating and displaying consent transactions.
 
-Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a `ConsentContext`.
+Consents are sent to the end-user using our Consent Form. To generate a Consent Form, you first need to generate a consent transaction using a **ConsentContext** object.
+
+
 
 ## Step 1 : Creating a transaction
 
-The first step of a transaction is to generate a **Consent Context**. A context holds all the information needed to generate a consent form.
+The first step of a transaction is to generate a **consent context** to hold all the information needed to generate a consent form.
+
+
 
 ### Subject
 The **subject** of a transaction is a unique identifier used to represent an individual. It can be anything from an internal id, a name, a phone number, an email address, a social security number, a passport number, etc. It is used to identify the end-user and to link the consent to them.
@@ -16,22 +20,26 @@ When you create another transaction with the same subject, the Consent Manager w
 See the [Subject documentation](subjects) for more information.
 :::
 
+
+
 ### Layout
 A **layout** is a set of options that will tell the Consent Manager how to display the consent form and which [data models](models) to display. It is used to customize the look and feel of the consent form.
 
 In the **ConsentContext**, you can specify the `layout` field. It must be the id of a custom layout. You can create custom layouts using the Consent Manager GUI and save them through the API.
 
 :::tip
-If you don't want to create a custom layout, you can specify the layout you want in the `layoutData` field of the **ConsentContext**
+If you don't want to create a custom layout, you can specify the layout you want in the `layoutData` field of the **ConsentContext**.
 :::
 
 :::caution
 You must set **either** the `layout` or the `layoutData` field. Not both.
 :::
 
+
+
 ### Creating the transaction
 
-To create the transation, you must send your **ConsentContext** to the `/consents` endpoint using a `POST` request. The response will contain the id of the transaction.
+To create the transaction, you must send your **ConsentContext** to the `/consents` endpoint using a `POST` request. The response will contain the id of the transaction.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -67,8 +75,10 @@ ConsentsResource.createTransactionJson(consentContext)
 </Tabs>
 
 :::info
-For the API Reference, check the [/consents resource](/apiReference#tag/Consent)
+For the API Reference, check the [/consents resource](/apiReference#tag/Consent).
 :::
+
+
 
 ## Step 2 : Displaying the Consent Form
 
@@ -77,9 +87,20 @@ Once you have the transaction id, you can display the consent form to the end-us
 The url to this form is location in the `Location` header of the response from the `Creating the transaction` request.
 
 :::tip
-You can also reconstruct the url using the transaction id like so : `GET /consents/{txid}/submit`
+You can also reconstruct the url using the transaction id like so : `GET /consents/{txid}/submit`.
 :::
+
+
 
 ## Optional : Manually sending the consent values
 
-In some cases, you will want to update values for a consent without displaying the built-in form. To do this, you can use the `POST /consents/{txid}/submit` endpoint ([see reference](/apiReference#tag/Consent/paths/~1consents~1%7Btxid%7D~1submit/post)).
+In some cases, you will want to update values for a consent without displaying the built-in form.
+To do this, you can use the `POST /consents/{txid}/submit` endpoint ([see reference](/apiReference#tag/Consent/paths/~1consents~1%7Btxid%7D~1submit/post)).
+
+
+
+## How to use Peer elements
+
+You can use models from Consent Manager instances which recognize you as a [**peer**](/docs/concepts/peers) in your Consent Contexts.
+These models will be rendered in the form viewed by the subject, but **you will not get access to the subject's consents and answers to peer elements**.
+Indeed, since you do not own these models, the associated consents are fully handled and stored in their owners' Consent Manager instances to ensure adequate **privacy**.

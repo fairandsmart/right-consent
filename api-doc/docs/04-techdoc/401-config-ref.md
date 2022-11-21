@@ -45,7 +45,7 @@ quarkus.http.access-log.rotate=true
 
 Authentication is configured with two types: OpenID-Connect and HTTP BasicAuth.
 
-OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP: Keycloak. This could be changed to fit other needs (LDAP, Active Directory, ...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of other external compliant IdPs (OIDS or SAML) or other sources of accounts (LDAP, Database, etc...).
+OIDC is used for human access and delegates all account management (creation, password lost, granting roles) to an external IdP: Keycloak. This could be changed to fit other needs (LDAP, Active Directory...) but should be considered as a standard. Keycloak can also act as an Identity Broker by allowing to build an identity federation with the integration of other external compliant IdPs (OIDS or SAML) or other sources of accounts (LDAP, Database, etc...).
 
 HTTP BasicAuth is used for System API access only and uses specific keys that can be generated inside the application. You should NOT disable this type of authentication.
 

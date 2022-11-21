@@ -10,6 +10,6 @@ position: left
   - Consent **transaction** with predefined workflow
   - Notifications to users via **email**
   - **Webhook** support
-  - Pluggable authentication (OAuth, OIDC, SAML, HTTP Basic, LDAP, ...)
+  - Pluggable authentication (OAuth, OIDC, SAML, HTTP Basic, LDAP...)
   - Notifications to users via **SMS** (Enterprise Edition)
   - Custom roles with granular permissions (Enterprise Edition)

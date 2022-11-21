@@ -33,6 +33,9 @@ const sidebars = {
         'concepts/subjects',
         'concepts/records',
         'concepts/receipts',
+        'concepts/keys',
+        'concepts/peers',
+        'concepts/webhooks',
       ],
     },
     {
@@ -51,8 +54,9 @@ const sidebars = {
       items: [
         'techdoc/full-install-guide',
         'techdoc/config-ref',
-        'api/connecting',
-        'techdoc/sdk'
+        'techdoc/connecting',
+        'techdoc/sdk',
+        'techdoc/swagger',
       ],
     }
   ]

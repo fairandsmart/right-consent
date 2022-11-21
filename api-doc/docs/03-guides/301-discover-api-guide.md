@@ -46,29 +46,32 @@ Instead of retrieving an OIDC token from IdP you can generate a Key from the bac
 
 To generate an API KEY, go to the backoffice in the 'Integration' section and the 'Security' subsection and create a new API Key with a scope "Owner". The key is only visible at generation, feel free to store it somewhere.
 
-You can create a bash variable allowing nexts command to succeed:
+You can create a bash variable allowing the next command to succeed:
 
 ```bash
 KEY="<PUT THE GENERATED KEY HERE>"
 ```
 
 :::caution
- Be aware that using an API KEY is not as secure as an OIDC token and you **only used in HTTPS calls** to API and never sent to any client side code.
+Be aware that using an API Key is not as secure as an OIDC token and that you should **only use it in HTTPS calls** to the API, and never send it to any client-side code.
 :::
 
 ## Create a Consent Transaction
 
-The transaction is created by an API Admin or Operator for a particular subject. The transaction creation needs to be performed server side to ensure admin access to the API to not be disclosed in client code and to ensure the best integration scenario capabilities. Once created, the transaction URL needs to be forwarded to the targetted subject in the desired channel (email, web redirection, ...).
+The transaction is created by an API Admin or Operator for a particular subject. The transaction creation needs to be performed server side to ensure admin access to the API to not be disclosed in client code and to ensure the best integration scenario capabilities. Once created, the transaction URL needs to be forwarded to the targetted subject in the desired channel (email, web redirection...).
 
 :::info
- It is possible for a simple user to create a transaction by itself for itself. This allows client side deployment but it implies to have a unified authentication scheme and an Ajax aware client application. This integration will be detailed in other guides.
+It is possible for a simple user to create a transaction by themselves for themselves.
+This allows client side deployment but it implies to have a unified authentication scheme and an Ajax aware client application.
+This integration will be detailed in other guides.
 :::
 
 ### Define a Consent Context
 
-In order to create a consent transaction, we have to send a **Consent Context** (subject, layout and configuration) to the API. The context can be designed using the **backoffice form designer** and then adapted to your integration use case ; if you are familiar with its format, you can also generate one from scratch.
+In order to create a consent transaction, we have to send a **Consent Context** (subject, layout and configuration) to the API.
+The context can be designed using the **backoffice form designer** and then adapted to your integration use case; if you are familiar with its format, you can also generate one from scratch.
 
-Here is the simpliest Consent Context possible with a full default configuration.
+Here is the simplest Consent Context possible with a full default configuration.
 
 ```json
 {
@@ -82,7 +85,7 @@ Here is the simpliest Consent Context possible with a full default configuration
 ```
 
 :::info
- This context uses elements already created in the [First Consent Form Guide](first-consent-form-guide): information.001, processing.001
+This context uses elements already created in the [First Consent Form Guide](first-consent-form-guide): information.001, processing.001.
 :::
 
 ### Create the transaction
@@ -101,7 +104,7 @@ TX=`curl -v --header "Content-Type: application/json" \
 The response will contains the created transaction representation in its body. That representation contains transaction id and transaction token for authorization. The response also contains a 'Location' header with the resource URI already formatted.
 
 :::info
- If you try to create the same transaction again, the API will detect an existing one with same context and return the existing one instead of creating a new one avoiding orphean and costly resource consumption.
+If you try to create the same transaction again, the API will detect an existing one with same context and return the existing one instead of creating a new one avoiding orphean and costly resource consumption.
 :::
 
 The transaction workflow lifecycle follow 6 states : CREATED, SUBMITTED, COMMITTED, CANCELLED, TIMEOUT, ROLLBACK. After creation, the transaction is now in state CREATED.

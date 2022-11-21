@@ -39,7 +39,7 @@ $ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e K
 ```
 
 :::tip
-To delete keycloak data, stop the container then run `docker volume rm keycloak-data`
+To delete keycloak data, stop the container then run `docker volume rm keycloak-data`.
 :::
 
 If you want to use a local instance instead of the docker one you can visit [keycloak website](https://www.keycloak.org/docs/latest/server_installation/index.html) for details.
@@ -53,7 +53,7 @@ $ docker run -p 1080:80 -p 1025:25 maildev/maildev
 ```
 
 :::info
-You can also replace this component by any existing outgoing smtp server by changing configuration, or even a postifx local install if you are the kind of person running a local SMTP server on your computer.
+You can also replace this component by any existing outgoing SMTP server by changing configuration, or even a postifx local install if you are the kind of person running a local SMTP server on your computer.
 :::
 
 ## Backend

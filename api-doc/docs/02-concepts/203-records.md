@@ -21,10 +21,17 @@ Its reliability is ensured by:
 
 ## Status rules
 
-TODO - work in progress
+Possible records statuses are:
+- **valid**: the record reflects the current choice of the subject and can be used as a proof
+- **obsolete**: the record reflects a choice that the subject made earlier, but is no longer correct because a newer record exists
+- **expired**: the record reflects a choice that the subject made earlier, but too long ago to be still considered correct *(which means the choice of the subject should be collected again)*
+- **irrelevant**: the record cannot be used as a proof because it either references an inactive model serial *(which means the choice of the subject should be collected again)* or has not been committed *(for example, a two-step validation process was started but never completed)*
+- **unknown**: the record cannot be used as a proof for other reasons; this status is mostly used internally and should not appear in the backoffice
 
 
 
 ## Records VS Receipts
 
-TODO - work in progress
+Records are atomic objects stored in the **database**; they can be queried through the API and rendered for operators in the backoffice, but also work as constitutive bricks for **receipts**.
+
+These are **files** meant to be either human-readable or processable programmatically and represent the choices submitted by a subject in a given [**context**](/docs/concepts/transactions), at a **certain time**, thus they generally aggregate several records - one per context element.

@@ -56,8 +56,7 @@ Choose a relevant name and description for that model (only for internal managem
 ```
 
 :::info
-
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
+For full documentation about Information, please visit the [Consent Elements Doc](/docs/concepts/models).
 :::
 
 Now you are ready for **publishing** that version of the information model by clicking on **'Save Draft'** button and then on the **'Activate'** button.
@@ -110,8 +109,7 @@ As for the information model, do not forget to **publish** thoses versions by cl
 ![Backoffice Processings Screenshot](/img/backoffice-processings.png)
 
 :::info
-
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
+For full documentation about Processing, please visit the [Consent Elements Doc](/docs/concepts/models).
 :::
 
 
@@ -137,8 +135,7 @@ As for other models, do not forget to **publish** thoses versions by clicking on
 ![Backoffice Preferences Screenshot](/img/backoffice-preferences.png)
 
 :::info
-
-For full documentation about Information please visit the [Consent Elements Doc](../concepts/models)
+For full documentation about Preferences, please visit the [Consent Elements Doc](/docs/concepts/models).
 :::
 
 ## Design a collection form
@@ -152,7 +149,6 @@ In the **Integration** section you should be able to open the **Collect** sub se
 The created elements are visible in the right panel and can be drag'n drop in the central design zone to assemble elements in the desired order. We are going to include all the elements we have already defined: information.001, processing.001, processing.002, preference.001
 
 :::info
-
 Information is mandatory for processing collect whereas TOS can only be collected alone without anything else.
 :::
 
@@ -163,15 +159,15 @@ By clicking on 'Next' you will access to the **layout design** for the included 
 The 'Next' step will give you access to the Consent Context definition step. Here you can use the designed layout in a real Consent Context. The difference between Consent Context and Consent Layout is that layout is the same for all users whereas context contains user and context specific information.
 
 :::info
-
-For full documentation about Context please visit the [Consent Context Doc](../concepts/transactions)
+For full documentation about Context, please visit the [Consent Context Doc](/docs/concepts/transactions).
 :::
 
 Now you can click on the 'Get API Call Url' to submit the Consent Context (that include the layout) to the API in order to generate a **Consent Transaction**.
 The generated transaction URL will give an acces to the Consent Collect Workflow either in plain HTML or in JSON depending on your needs of customization during the integration in external applications.
 
 :::tip
-As an administrator, you can create transaction for any user but for a single user it is only possible to generate a transaction for itself. For complete documentation about authentication go to the [dedicated guide](../techdoc/authentication-guide)
+As an administrator, you can create transaction for any user but for a single user it is only possible to generate a transaction for themselves.
+For complete documentation about authentication go to the [dedicated guide](/docs/techdoc/authentication-guide).
 :::
 
 You will notice that the generated URL contains also a token. That will ensure a transaction level authentication, allowing to send that self authentified link by email for exemple.
@@ -196,6 +192,5 @@ More thant just pushing the generated URL to an email or any other channel, the 
 ```
 
 :::info
-
-Using that JSON file to generate new transaction can also be done by calling the API directly, for a guided tour of the API please visit the [Discover API Guide](discover-api-guide)
+Using that JSON file to generate new transaction can also be done by calling the API directly, for a guided tour of the API please visit the [Discover API Guide](discover-api-guide).
 :::

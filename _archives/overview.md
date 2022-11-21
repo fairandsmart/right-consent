@@ -1,6 +1,6 @@
 
 Right Consents is a tool designed for **collecting consent** in compliance with the **GDPR**.  
-The dedicated **backoffice** allows to modelise elements that need to be consented by a user (processings, preferences, ...) ; those elements are directly aligned with the **processing registry** described in the GDPR.
+The dedicated **backoffice** allows to modelise elements that need to be consented by a user (processings, preferences...); those elements are directly aligned with the **processing registry** described in the GDPR.
 An **API** allows **integration** in an existing application or a website for collecting consent keeping an optimal **user experience**. It also allows to query consent base to enforce **processing conformity check** in any other piece of software.    
 The collect process is almost like a payment transaction and generates a standard **consent receipt**.  
 A specific **operator interface** ensure that end-user consent could be collected or changed by a third person (call center operator, DPO, ...).  

@@ -72,7 +72,8 @@ The transaction is created by an API Admin or Operator for a particular subject.
 
 ### Define a Consent Context
 
-In order to create a consent transaction, we have to send a **Consent Context** (subject, layout and configuration) to the API. The context can be designed using the **backoffice form designer** and then adapted to your integration use case ; if you are familiar with its format, you can also generate one from scratch.
+In order to create a consent transaction, we have to send a **Consent Context** (subject, layout and configuration) to the API.
+The context can be designed using the **backoffice form designer** and then adapted to your integration use case; if you are familiar with its format, you can also generate one from scratch.
 
 Here is the simpliest Consent Context possible with a full default configuration.
 

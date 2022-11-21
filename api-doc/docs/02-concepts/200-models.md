@@ -7,6 +7,7 @@ Models are designed to hold content that will be used in Right Consents. All mod
 Impacts of an update are taken into consideration in the whole system and existing consents.
 
 
+
 ## Models lifecycle
 
 All models follow the same **lifecycle** which has been designed to ensure no collected consent can be lost, altered or falsified.
@@ -20,9 +21,11 @@ The lifecycle of a model can be described this way:
 * archiving of the model if it becomes irrelevant
 
 
+
 ### Creation
 
 First, you must create a **Model Entry** with at least a **key**, a **type**, and an internal **name** to help you recognize easily your models in the backoffice. An optional description can help you in the model organisation.
+
 
 
 ### Drafting
@@ -31,24 +34,32 @@ Then, you will be able to access the **editor** and fill in all the fields and c
 A preview in the bottom-right corner of the page will help you check the result.
 
 You can save your work at any time (given that no field is in an erroneous state) as a **draft**.
-
-TODO - work in progress
+The draft may be deleted if necessary, in order to return to the latest version state.
 
 
 
 ### Activation
 
-TODO - work in progress
-<!-- minor/major version (effect on records) -->
+Once you are satisfied with your changes, you can **activate** the version (note that the button is disabled if you have pending changes).
+
+Some types of models will prompt a confirmation window asking whether the new version should be **minor** or **major**:
+* a **minor** version has **no impact on records** already collected with the previous version of the model; it should primarily be used when correcting typos or other changes which do not alter the overall content of the model.
+* a **major** version will **make obsolete all records** which had been collected with the previous version of the model; it should be used when the changes significantly expand, reduce or alter the meaning of the model's content.
+
+![Models Guide - Activation](/img/model-activation.png)
+
 
 
 ### Version history
 
-TODO - work in progress
-<!-- previous version archiving/history read-only view -->
+Right above the preview window, you can see the current version number as well as a **history button** which allows you to display any previous version as read-only.
+This feature is meant to help with traceability and avoiding content loss after unfortunate changes.
+
+![Models Guide - History](/img/model-history.png)
 
 
-### Suppression
+
+### Suppression / Archiving
 
 If no record references a Model Entry in the database, the model can be **safely erased** - forever.
 However, if even a single record does reference the model, then it can only be **archived**.
@@ -100,11 +111,6 @@ This type of model is much simpler than the processing model type because it **d
 - the **input type** (see above) and the **available options** (except for free text inputs)
 - whether answering the preference is **mandatory or optional**
 - the **default values** (if relevant)
-
-<!--:::info
-Preferences are **NOT** included in consent receipts and if a Consent Context is made only of preferences elements, it will not generate any receipt but only records.
-:::-->
-<!-- TODO : preferences DO appear in both HTML and PDF receipts, though... -->
 
 ![Models Guide - Preference: toggle button](/img/models/preference-small-toggle.png)
 ![Models Guide - Preference: free text](/img/models/preference-small-free-text.png)
@@ -199,3 +205,14 @@ Layouts cannot be saved in the Right Consents Community backoffice, but they can
 :::
 
 ![Models Guide - Form Layout](/img/models/layout.png)
+
+
+
+## Models sharing
+
+You can decide which models should be shared with all your [**partners**](/docs/concepts/peers) by toggling their visibility to **shared**.
+Shared models cannot be edited or deleted by partners, but they may be referenced in their own [**contexts**](/docs/concepts/transactions).
+
+All models are private by default.
+
+![Models Guide - Shared Model](/img/model-shared.png)
