@@ -167,7 +167,7 @@ The generated transaction URL will give an acces to the Consent Collect Workflow
 
 :::tip
 As an administrator, you can create transaction for any user but for a single user it is only possible to generate a transaction for themselves.
-For complete documentation about authentication go to the [dedicated guide](/docs/techdoc/authentication-guide).
+For complete documentation about authentication go to the [dedicated guide](/docs/techdoc/connecting).
 :::
 
 You will notice that the generated URL contains also a token. That will ensure a transaction level authentication, allowing to send that self authentified link by email for exemple.

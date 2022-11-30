@@ -61,5 +61,5 @@ npm run start
 1. Go to the root directory.
 2. Build the docusaurus static site and copy the files to the `_docusaurus` directory using the following npm script:
 ```bash
-npm run build-docs
+npm run build-doc
 ```
